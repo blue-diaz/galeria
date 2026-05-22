@@ -3,5 +3,10 @@
     "role": "user",
     "content": "Execução CLI: formatar --write",
     "timestamp": "2026-05-22T19:50:21.002Z"
+  },
+  {
+    "role": "user",
+    "content": "Execução CLI: diagnosticar --export",
+    "timestamp": "2026-05-22T19:52:32.885Z"
   }
 ]

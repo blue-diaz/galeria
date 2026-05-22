@@ -1,0 +1,4037 @@
+{
+  "entradas": {
+    ".env.example": {
+      "count": 0,
+      "hash": "c108480dc0173eff",
+      "ocorrencias": [],
+      "timestamp": 1779479553918
+    },
+    ".github/workflows/ci.yml": {
+      "count": 0,
+      "hash": "fbed911364242be5",
+      "ocorrencias": [],
+      "timestamp": 1779479553960
+    },
+    ".github/workflows/codeql.yml": {
+      "count": 2,
+      "hash": "a1dec89007c6776e",
+      "ocorrencias": [
+        {
+          "linha": 71,
+          "mensagem": "Operação de rede sem política de retry detectada",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": ".github/workflows/codeql.yml",
+          "sugestao": "Adicione mecanismos de retry para evitar falhas intermitentes de rede",
+          "tipo": "workflow-missing-retry"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Workflow instala dependências sem auditoria de segurança",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": ".github/workflows/codeql.yml",
+          "sugestao": "Adicione um passo de npm audit, snyk ou similar para detectar vulnerabilidades",
+          "tipo": "workflow-sem-audit"
+        }
+      ],
+      "timestamp": 1779479553982
+    },
+    ".gitignore": {
+      "count": 0,
+      "hash": "616df5b590daa1ca",
+      "ocorrencias": [],
+      "timestamp": 1779479553983
+    },
+    "CONTRIBUTING.md": {
+      "count": 1,
+      "hash": "7bff017f9ff9166c",
+      "ocorrencias": [
+        {
+          "confianca": 95,
+          "contexto": "> Proveniência e Autoria: Este documento integra o projeto Galeria Black Diaz (licença MIT).",
+          "linha": 1,
+          "mensagem": "Encontrados 1 casos de pontuação repetida",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "CONTRIBUTING.md",
+          "sugestao": "Colapsar pontuação repetida para caracteres únicos",
+          "tipo": "pontuacao-repetida"
+        }
+      ],
+      "timestamp": 1779479554012
+    },
+    "LICENSE": {
+      "count": 0,
+      "hash": "4c3d4b86923a1c15",
+      "ocorrencias": [],
+      "timestamp": 1779479554030
+    },
+    "README.md": {
+      "count": 0,
+      "hash": "f4a604fef6f87c7c",
+      "ocorrencias": [],
+      "timestamp": 1779479554666
+    },
+    "SECURITY.md": {
+      "count": 1,
+      "hash": "71f38cb71b1a823c",
+      "ocorrencias": [
+        {
+          "confianca": 95,
+          "contexto": "<!--",
+          "linha": 1,
+          "mensagem": "Encontrados 1 casos de pontuação repetida",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "SECURITY.md",
+          "sugestao": "Colapsar pontuação repetida para caracteres únicos",
+          "tipo": "pontuacao-repetida"
+        }
+      ],
+      "timestamp": 1779479554669
+    },
+    "THIRD-PARTY-NOTICES.txt": {
+      "count": 0,
+      "hash": "52feb92da25cd773",
+      "ocorrencias": [],
+      "timestamp": 1779479555116
+    },
+    "docs/feeedback/feedback.md": {
+      "count": 0,
+      "hash": "053b11a1ff81bfac",
+      "ocorrencias": [],
+      "timestamp": 1779479554024
+    },
+    "eslint.config.mjs": {
+      "count": 2,
+      "hash": "d2dd954b740b1c89",
+      "ocorrencias": [
+        {
+          "linha": 204,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "eslint.config.mjs",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 204,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "eslint.config.mjs",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554030
+    },
+    "next-env.d.ts": {
+      "count": 0,
+      "hash": "7ad303e40d4fddf4",
+      "ocorrencias": [],
+      "timestamp": 1779479554035
+    },
+    "next.config.mjs": {
+      "count": 2,
+      "hash": "b2de4a94ab92638c",
+      "ocorrencias": [
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "next.config.mjs",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "next.config.mjs",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554041
+    },
+    "package-lock.json": {
+      "count": 0,
+      "hash": "5b7f3f8781135353",
+      "ocorrencias": [],
+      "timestamp": 1779479554093
+    },
+    "package.json": {
+      "count": 0,
+      "hash": "4735820b5229ede9",
+      "ocorrencias": [],
+      "timestamp": 1779479554095
+    },
+    "postcss.config.mjs": {
+      "count": 0,
+      "hash": "e32657baf631d7c5",
+      "ocorrencias": [],
+      "timestamp": 1779479554095
+    },
+    "prometheus-0.7.0.tgz": {
+      "count": 0,
+      "hash": "8689e30e1921ec0c",
+      "ocorrencias": [],
+      "timestamp": 1779479554513
+    },
+    "prometheus.config.json": {
+      "count": 1,
+      "hash": "a6d3c4d82b410b9e",
+      "ocorrencias": [
+        {
+          "linha": 200,
+          "mensagem": "Arquivo parece não estar formatado (parser: json). Considere normalizar com o formatador do Prometheus. (primeira diferença na linha 200)",
+          "nivel": "aviso",
+          "origem": "analista-formatador",
+          "relPath": "prometheus.config.json",
+          "tipo": "formatador-json"
+        }
+      ],
+      "timestamp": 1779479554516
+    },
+    "public/LICENSE.txt": {
+      "count": 0,
+      "hash": "c0c654918629b029",
+      "ocorrencias": [],
+      "timestamp": 1779479554541
+    },
+    "public/icons/black-diaz.jpg": {
+      "count": 0,
+      "hash": "4b0161ca67f38be1",
+      "ocorrencias": [],
+      "timestamp": 1779479554539
+    },
+    "public/svg/badges/decorativos/badge-agentic-coder.svg": {
+      "count": 0,
+      "hash": "b620256a73c4bf99",
+      "ocorrencias": [],
+      "timestamp": 1779479554543
+    },
+    "public/svg/badges/decorativos/badge-ai-native.svg": {
+      "count": 0,
+      "hash": "e9694b645c812aa5",
+      "ocorrencias": [],
+      "timestamp": 1779479554543
+    },
+    "public/svg/badges/decorativos/badge-analitico.svg": {
+      "count": 0,
+      "hash": "e7ac95cf74385ae1",
+      "ocorrencias": [],
+      "timestamp": 1779479554544
+    },
+    "public/svg/badges/decorativos/badge-antigravity.svg": {
+      "count": 0,
+      "hash": "107f502166f98a85",
+      "ocorrencias": [],
+      "timestamp": 1779479554544
+    },
+    "public/svg/badges/decorativos/badge-apaixonado.svg": {
+      "count": 0,
+      "hash": "7df01bc9c291120b",
+      "ocorrencias": [],
+      "timestamp": 1779479554545
+    },
+    "public/svg/badges/decorativos/badge-backend.svg": {
+      "count": 0,
+      "hash": "04e280f7b53cdf27",
+      "ocorrencias": [],
+      "timestamp": 1779479554545
+    },
+    "public/svg/badges/decorativos/badge-blockchain.svg": {
+      "count": 0,
+      "hash": "e9c50331b3bd3d2b",
+      "ocorrencias": [],
+      "timestamp": 1779479554545
+    },
+    "public/svg/badges/decorativos/badge-cloud-architect.svg": {
+      "count": 0,
+      "hash": "44abb5ef9c8e28c8",
+      "ocorrencias": [],
+      "timestamp": 1779479554546
+    },
+    "public/svg/badges/decorativos/badge-colaborador.svg": {
+      "count": 0,
+      "hash": "5cdb2c9c08be5d6c",
+      "ocorrencias": [],
+      "timestamp": 1779479554546
+    },
+    "public/svg/badges/decorativos/badge-congelado.svg": {
+      "count": 0,
+      "hash": "eab771aa569be647",
+      "ocorrencias": [],
+      "timestamp": 1779479554547
+    },
+    "public/svg/badges/decorativos/badge-data-analyst.svg": {
+      "count": 0,
+      "hash": "d5d8c28211f91a02",
+      "ocorrencias": [],
+      "timestamp": 1779479554547
+    },
+    "public/svg/badges/decorativos/badge-data-engineer.svg": {
+      "count": 0,
+      "hash": "10185b0520d1f1c7",
+      "ocorrencias": [],
+      "timestamp": 1779479554547
+    },
+    "public/svg/badges/decorativos/badge-data-scientist.svg": {
+      "count": 0,
+      "hash": "03ded4abf1218770",
+      "ocorrencias": [],
+      "timestamp": 1779479554548
+    },
+    "public/svg/badges/decorativos/badge-dedicado.svg": {
+      "count": 0,
+      "hash": "b4aeb9872ed79527",
+      "ocorrencias": [],
+      "timestamp": 1779479554548
+    },
+    "public/svg/badges/decorativos/badge-devops.svg": {
+      "count": 0,
+      "hash": "4d6d07d649ba3eea",
+      "ocorrencias": [],
+      "timestamp": 1779479554548
+    },
+    "public/svg/badges/decorativos/badge-entusiasta.svg": {
+      "count": 0,
+      "hash": "d48a0abf2a75fe49",
+      "ocorrencias": [],
+      "timestamp": 1779479554549
+    },
+    "public/svg/badges/decorativos/badge-estrategista.svg": {
+      "count": 0,
+      "hash": "c0a786774b6c1d5c",
+      "ocorrencias": [],
+      "timestamp": 1779479554549
+    },
+    "public/svg/badges/decorativos/badge-frontend.svg": {
+      "count": 0,
+      "hash": "0da422f79f490829",
+      "ocorrencias": [],
+      "timestamp": 1779479554549
+    },
+    "public/svg/badges/decorativos/badge-full-stack.svg": {
+      "count": 0,
+      "hash": "e0c585f1fd317b4c",
+      "ocorrencias": [],
+      "timestamp": 1779479554550
+    },
+    "public/svg/badges/decorativos/badge-game-dev.svg": {
+      "count": 0,
+      "hash": "c97aec69f0db0358",
+      "ocorrencias": [],
+      "timestamp": 1779479554550
+    },
+    "public/svg/badges/decorativos/badge-inovador.svg": {
+      "count": 0,
+      "hash": "a991dab02f5f2af9",
+      "ocorrencias": [],
+      "timestamp": 1779479554550
+    },
+    "public/svg/badges/decorativos/badge-inspirador.svg": {
+      "count": 0,
+      "hash": "40cce86f8d17fe89",
+      "ocorrencias": [],
+      "timestamp": 1779479554551
+    },
+    "public/svg/badges/decorativos/badge-machine-learning.svg": {
+      "count": 0,
+      "hash": "58ad575b4acff807",
+      "ocorrencias": [],
+      "timestamp": 1779479554551
+    },
+    "public/svg/badges/decorativos/badge-mentor.svg": {
+      "count": 0,
+      "hash": "95289a199754da53",
+      "ocorrencias": [],
+      "timestamp": 1779479554551
+    },
+    "public/svg/badges/decorativos/badge-mobile.svg": {
+      "count": 0,
+      "hash": "ca0161d331a01dc2",
+      "ocorrencias": [],
+      "timestamp": 1779479554552
+    },
+    "public/svg/badges/decorativos/badge-open-source.svg": {
+      "count": 0,
+      "hash": "f0cef8dde658441c",
+      "ocorrencias": [],
+      "timestamp": 1779479554552
+    },
+    "public/svg/badges/decorativos/badge-otimista.svg": {
+      "count": 0,
+      "hash": "4668b6fc6e815fcf",
+      "ocorrencias": [],
+      "timestamp": 1779479554552
+    },
+    "public/svg/badges/decorativos/badge-persistente.svg": {
+      "count": 0,
+      "hash": "d578674685b43fe1",
+      "ocorrencias": [],
+      "timestamp": 1779479554553
+    },
+    "public/svg/badges/decorativos/badge-qa-engineer.svg": {
+      "count": 0,
+      "hash": "6a27aa5676fb1e28",
+      "ocorrencias": [],
+      "timestamp": 1779479554553
+    },
+    "public/svg/badges/decorativos/badge-security.svg": {
+      "count": 0,
+      "hash": "bb6ae9f35ccc01d5",
+      "ocorrencias": [],
+      "timestamp": 1779479554554
+    },
+    "public/svg/badges/decorativos/badge-software-architect.svg": {
+      "count": 0,
+      "hash": "01fa3cc0d25f3c49",
+      "ocorrencias": [],
+      "timestamp": 1779479554554
+    },
+    "public/svg/badges/decorativos/badge-sre.svg": {
+      "count": 0,
+      "hash": "e82b3196bee0cc44",
+      "ocorrencias": [],
+      "timestamp": 1779479554554
+    },
+    "public/svg/badges/decorativos/badge-tech-lead.svg": {
+      "count": 0,
+      "hash": "7d72a50584e222d2",
+      "ocorrencias": [],
+      "timestamp": 1779479554555
+    },
+    "public/svg/badges/decorativos/badge-ux-ui.svg": {
+      "count": 0,
+      "hash": "e6924fccba2dd8c8",
+      "ocorrencias": [],
+      "timestamp": 1779479554555
+    },
+    "public/svg/badges/decorativos/badge-visionario.svg": {
+      "count": 0,
+      "hash": "9a0378b5d017f923",
+      "ocorrencias": [],
+      "timestamp": 1779479554555
+    },
+    "public/svg/badges/info/badge-alpha.svg": {
+      "count": 0,
+      "hash": "25af0547a70286bb",
+      "ocorrencias": [],
+      "timestamp": 1779479554556
+    },
+    "public/svg/badges/info/badge-beta.svg": {
+      "count": 0,
+      "hash": "606538ef3a243bbc",
+      "ocorrencias": [],
+      "timestamp": 1779479554556
+    },
+    "public/svg/badges/info/badge-build-failing.svg": {
+      "count": 0,
+      "hash": "3b2d32385d398d82",
+      "ocorrencias": [],
+      "timestamp": 1779479554556
+    },
+    "public/svg/badges/info/badge-build-passing.svg": {
+      "count": 0,
+      "hash": "19173dd138cbfa0d",
+      "ocorrencias": [],
+      "timestamp": 1779479554557
+    },
+    "public/svg/badges/info/badge-colecionavel.svg": {
+      "count": 0,
+      "hash": "57fd7c825c02b744",
+      "ocorrencias": [],
+      "timestamp": 1779479554557
+    },
+    "public/svg/badges/info/badge-coverage-80.svg": {
+      "count": 0,
+      "hash": "94b36752d78834d2",
+      "ocorrencias": [],
+      "timestamp": 1779479554557
+    },
+    "public/svg/badges/info/badge-coverage-98.svg": {
+      "count": 0,
+      "hash": "fb40d3d4aa1a70a2",
+      "ocorrencias": [],
+      "timestamp": 1779479554557
+    },
+    "public/svg/badges/info/badge-deprecated.svg": {
+      "count": 0,
+      "hash": "deb67d49790ee2c8",
+      "ocorrencias": [],
+      "timestamp": 1779479554558
+    },
+    "public/svg/badges/info/badge-destaque.svg": {
+      "count": 0,
+      "hash": "f049a2aa1250a2f7",
+      "ocorrencias": [],
+      "timestamp": 1779479554558
+    },
+    "public/svg/badges/info/badge-docs.svg": {
+      "count": 0,
+      "hash": "18da8debbc378271",
+      "ocorrencias": [],
+      "timestamp": 1779479554558
+    },
+    "public/svg/badges/info/badge-edicao-limitada.svg": {
+      "count": 0,
+      "hash": "1d9ea17a95203519",
+      "ocorrencias": [],
+      "timestamp": 1779479554559
+    },
+    "public/svg/badges/info/badge-em-breve.svg": {
+      "count": 0,
+      "hash": "916b8e62079d2c73",
+      "ocorrencias": [],
+      "timestamp": 1779479554559
+    },
+    "public/svg/badges/info/badge-exclusivo.svg": {
+      "count": 0,
+      "hash": "8535c050edd73d6c",
+      "ocorrencias": [],
+      "timestamp": 1779479554559
+    },
+    "public/svg/badges/info/badge-lancamento.svg": {
+      "count": 0,
+      "hash": "9941c9866d88a389",
+      "ocorrencias": [],
+      "timestamp": 1779479554560
+    },
+    "public/svg/badges/info/badge-license-apache.svg": {
+      "count": 0,
+      "hash": "e7d460f77fca268b",
+      "ocorrencias": [],
+      "timestamp": 1779479554560
+    },
+    "public/svg/badges/info/badge-license-gpl.svg": {
+      "count": 0,
+      "hash": "29d71cb2735d5207",
+      "ocorrencias": [],
+      "timestamp": 1779479554561
+    },
+    "public/svg/badges/info/badge-license-mit.svg": {
+      "count": 0,
+      "hash": "55a3778612817e0b",
+      "ocorrencias": [],
+      "timestamp": 1779479554561
+    },
+    "public/svg/badges/info/badge-maintained.svg": {
+      "count": 0,
+      "hash": "0ee8d7f5f1db474f",
+      "ocorrencias": [],
+      "timestamp": 1779479554562
+    },
+    "public/svg/badges/info/badge-novo.svg": {
+      "count": 0,
+      "hash": "69cf138562a0b275",
+      "ocorrencias": [],
+      "timestamp": 1779479554563
+    },
+    "public/svg/badges/info/badge-premium.svg": {
+      "count": 0,
+      "hash": "ce4a46cf4afdf485",
+      "ocorrencias": [],
+      "timestamp": 1779479554563
+    },
+    "public/svg/badges/info/badge-prs-welcome.svg": {
+      "count": 0,
+      "hash": "8fc1246991b03312",
+      "ocorrencias": [],
+      "timestamp": 1779479554563
+    },
+    "public/svg/badges/info/badge-stable.svg": {
+      "count": 0,
+      "hash": "1c136e1c8f04938c",
+      "ocorrencias": [],
+      "timestamp": 1779479554564
+    },
+    "public/svg/badges/info/badge-tests-failing.svg": {
+      "count": 0,
+      "hash": "d95ab754ddc385bb",
+      "ocorrencias": [],
+      "timestamp": 1779479554564
+    },
+    "public/svg/badges/info/badge-tests-passing.svg": {
+      "count": 0,
+      "hash": "88fe9168136a6589",
+      "ocorrencias": [],
+      "timestamp": 1779479554564
+    },
+    "public/svg/badges/info/badge-top1.svg": {
+      "count": 0,
+      "hash": "88ffd0ce49cd3ddb",
+      "ocorrencias": [],
+      "timestamp": 1779479554565
+    },
+    "public/svg/badges/info/badge-urgente.svg": {
+      "count": 0,
+      "hash": "7d5502a53283c736",
+      "ocorrencias": [],
+      "timestamp": 1779479554565
+    },
+    "public/svg/badges/info/badge-version-2.1.0.svg": {
+      "count": 0,
+      "hash": "f0dcf4e1bc608186",
+      "ocorrencias": [],
+      "timestamp": 1779479554565
+    },
+    "public/svg/badges/skills/ferramentas/badge-airflow.svg": {
+      "count": 0,
+      "hash": "5bb2538ed79ca13e",
+      "ocorrencias": [],
+      "timestamp": 1779479554566
+    },
+    "public/svg/badges/skills/ferramentas/badge-ansible.svg": {
+      "count": 0,
+      "hash": "fd610247a1476066",
+      "ocorrencias": [],
+      "timestamp": 1779479554566
+    },
+    "public/svg/badges/skills/ferramentas/badge-antigravity.svg": {
+      "count": 0,
+      "hash": "aec82799feb42350",
+      "ocorrencias": [],
+      "timestamp": 1779479554567
+    },
+    "public/svg/badges/skills/ferramentas/badge-bitbucket.svg": {
+      "count": 0,
+      "hash": "c4be79434a9ef7a1",
+      "ocorrencias": [],
+      "timestamp": 1779479554567
+    },
+    "public/svg/badges/skills/ferramentas/badge-bun.svg": {
+      "count": 0,
+      "hash": "139939bef5afc918",
+      "ocorrencias": [],
+      "timestamp": 1779479554568
+    },
+    "public/svg/badges/skills/ferramentas/badge-circleci.svg": {
+      "count": 0,
+      "hash": "4031eef46865fabb",
+      "ocorrencias": [],
+      "timestamp": 1779479554568
+    },
+    "public/svg/badges/skills/ferramentas/badge-clickup.svg": {
+      "count": 0,
+      "hash": "318e9d2a56b089fe",
+      "ocorrencias": [],
+      "timestamp": 1779479554568
+    },
+    "public/svg/badges/skills/ferramentas/badge-cursor.svg": {
+      "count": 0,
+      "hash": "8b9d886d0670dbb0",
+      "ocorrencias": [],
+      "timestamp": 1779479554569
+    },
+    "public/svg/badges/skills/ferramentas/badge-cypress.svg": {
+      "count": 0,
+      "hash": "2fa485d43cddd6f6",
+      "ocorrencias": [],
+      "timestamp": 1779479554569
+    },
+    "public/svg/badges/skills/ferramentas/badge-datadog.svg": {
+      "count": 0,
+      "hash": "c1cd024a554f5483",
+      "ocorrencias": [],
+      "timestamp": 1779479554569
+    },
+    "public/svg/badges/skills/ferramentas/badge-deno.svg": {
+      "count": 0,
+      "hash": "c6a63e6171bd849d",
+      "ocorrencias": [],
+      "timestamp": 1779479554571
+    },
+    "public/svg/badges/skills/ferramentas/badge-discord.svg": {
+      "count": 0,
+      "hash": "2b7df9a6286daa25",
+      "ocorrencias": [],
+      "timestamp": 1779479554572
+    },
+    "public/svg/badges/skills/ferramentas/badge-docker.svg": {
+      "count": 0,
+      "hash": "eebe678f3f525742",
+      "ocorrencias": [],
+      "timestamp": 1779479554572
+    },
+    "public/svg/badges/skills/ferramentas/badge-esbuild.svg": {
+      "count": 0,
+      "hash": "660d9b63206f0f93",
+      "ocorrencias": [],
+      "timestamp": 1779479554572
+    },
+    "public/svg/badges/skills/ferramentas/badge-eslint.svg": {
+      "count": 0,
+      "hash": "24575f3b72f862bc",
+      "ocorrencias": [],
+      "timestamp": 1779479554573
+    },
+    "public/svg/badges/skills/ferramentas/badge-figma.svg": {
+      "count": 0,
+      "hash": "342486dee6386752",
+      "ocorrencias": [],
+      "timestamp": 1779479554573
+    },
+    "public/svg/badges/skills/ferramentas/badge-git.svg": {
+      "count": 0,
+      "hash": "4b32520d77770d13",
+      "ocorrencias": [],
+      "timestamp": 1779479554574
+    },
+    "public/svg/badges/skills/ferramentas/badge-github-actions.svg": {
+      "count": 0,
+      "hash": "521a7d2913fcf766",
+      "ocorrencias": [],
+      "timestamp": 1779479554574
+    },
+    "public/svg/badges/skills/ferramentas/badge-github.svg": {
+      "count": 0,
+      "hash": "b3e78b7875621abd",
+      "ocorrencias": [],
+      "timestamp": 1779479554574
+    },
+    "public/svg/badges/skills/ferramentas/badge-gitlab.svg": {
+      "count": 0,
+      "hash": "7880a9a4f47fdd1d",
+      "ocorrencias": [],
+      "timestamp": 1779479554575
+    },
+    "public/svg/badges/skills/ferramentas/badge-grafana.svg": {
+      "count": 0,
+      "hash": "0e469db9cbffd1c4",
+      "ocorrencias": [],
+      "timestamp": 1779479554575
+    },
+    "public/svg/badges/skills/ferramentas/badge-helm.svg": {
+      "count": 0,
+      "hash": "ee8b197a23c8d2af",
+      "ocorrencias": [],
+      "timestamp": 1779479554575
+    },
+    "public/svg/badges/skills/ferramentas/badge-insomnia.svg": {
+      "count": 0,
+      "hash": "38fd8ecb5f6f7c3b",
+      "ocorrencias": [],
+      "timestamp": 1779479554576
+    },
+    "public/svg/badges/skills/ferramentas/badge-intellij.svg": {
+      "count": 0,
+      "hash": "772d2e3678a51b8e",
+      "ocorrencias": [],
+      "timestamp": 1779479554576
+    },
+    "public/svg/badges/skills/ferramentas/badge-jenkins.svg": {
+      "count": 0,
+      "hash": "ba23812c02d90255",
+      "ocorrencias": [],
+      "timestamp": 1779479554576
+    },
+    "public/svg/badges/skills/ferramentas/badge-jest.svg": {
+      "count": 0,
+      "hash": "8d91f4add87f5810",
+      "ocorrencias": [],
+      "timestamp": 1779479554577
+    },
+    "public/svg/badges/skills/ferramentas/badge-jira.svg": {
+      "count": 0,
+      "hash": "c5c760d7da632683",
+      "ocorrencias": [],
+      "timestamp": 1779479554577
+    },
+    "public/svg/badges/skills/ferramentas/badge-jupyter.svg": {
+      "count": 0,
+      "hash": "dc04d2d6fd9829e7",
+      "ocorrencias": [],
+      "timestamp": 1779479554577
+    },
+    "public/svg/badges/skills/ferramentas/badge-kubernetes.svg": {
+      "count": 0,
+      "hash": "7af05e101dd870ff",
+      "ocorrencias": [],
+      "timestamp": 1779479554578
+    },
+    "public/svg/badges/skills/ferramentas/badge-lerna.svg": {
+      "count": 0,
+      "hash": "abf276952bd0ce28",
+      "ocorrencias": [],
+      "timestamp": 1779479554578
+    },
+    "public/svg/badges/skills/ferramentas/badge-linear.svg": {
+      "count": 0,
+      "hash": "5c94f39b81c82d85",
+      "ocorrencias": [],
+      "timestamp": 1779479554578
+    },
+    "public/svg/badges/skills/ferramentas/badge-mocha.svg": {
+      "count": 0,
+      "hash": "a3a0ad3236f104d6",
+      "ocorrencias": [],
+      "timestamp": 1779479554579
+    },
+    "public/svg/badges/skills/ferramentas/badge-neovim.svg": {
+      "count": 0,
+      "hash": "521b561faa46dde1",
+      "ocorrencias": [],
+      "timestamp": 1779479554579
+    },
+    "public/svg/badges/skills/ferramentas/badge-newrelic.svg": {
+      "count": 0,
+      "hash": "666b6b1461c9c77c",
+      "ocorrencias": [],
+      "timestamp": 1779479554580
+    },
+    "public/svg/badges/skills/ferramentas/badge-notion.svg": {
+      "count": 0,
+      "hash": "11db6b9cb574f383",
+      "ocorrencias": [],
+      "timestamp": 1779479554580
+    },
+    "public/svg/badges/skills/ferramentas/badge-npm.svg": {
+      "count": 0,
+      "hash": "37a6763c517802e0",
+      "ocorrencias": [],
+      "timestamp": 1779479554580
+    },
+    "public/svg/badges/skills/ferramentas/badge-nx.svg": {
+      "count": 0,
+      "hash": "e0896cc4ae65e96d",
+      "ocorrencias": [],
+      "timestamp": 1779479554580
+    },
+    "public/svg/badges/skills/ferramentas/badge-obsidian.svg": {
+      "count": 0,
+      "hash": "d89bcbfe3aaaf557",
+      "ocorrencias": [],
+      "timestamp": 1779479554581
+    },
+    "public/svg/badges/skills/ferramentas/badge-pagerduty.svg": {
+      "count": 0,
+      "hash": "414453bde3ac0687",
+      "ocorrencias": [],
+      "timestamp": 1779479554581
+    },
+    "public/svg/badges/skills/ferramentas/badge-playwright.svg": {
+      "count": 0,
+      "hash": "b5a756c8e9a8fd60",
+      "ocorrencias": [],
+      "timestamp": 1779479554581
+    },
+    "public/svg/badges/skills/ferramentas/badge-pnpm.svg": {
+      "count": 0,
+      "hash": "b352089cbbcc6008",
+      "ocorrencias": [],
+      "timestamp": 1779479554582
+    },
+    "public/svg/badges/skills/ferramentas/badge-postman.svg": {
+      "count": 0,
+      "hash": "381829681a618779",
+      "ocorrencias": [],
+      "timestamp": 1779479554582
+    },
+    "public/svg/badges/skills/ferramentas/badge-prettier.svg": {
+      "count": 0,
+      "hash": "8b3cedb048666af7",
+      "ocorrencias": [],
+      "timestamp": 1779479554583
+    },
+    "public/svg/badges/skills/ferramentas/badge-prometheus.svg": {
+      "count": 0,
+      "hash": "b6a75717ca468d3b",
+      "ocorrencias": [],
+      "timestamp": 1779479554583
+    },
+    "public/svg/badges/skills/ferramentas/badge-raycast.svg": {
+      "count": 0,
+      "hash": "b6001cbb4eef9507",
+      "ocorrencias": [],
+      "timestamp": 1779479554583
+    },
+    "public/svg/badges/skills/ferramentas/badge-rollup.svg": {
+      "count": 0,
+      "hash": "cbeaaa930d004578",
+      "ocorrencias": [],
+      "timestamp": 1779479554584
+    },
+    "public/svg/badges/skills/ferramentas/badge-selenium.svg": {
+      "count": 0,
+      "hash": "736be54fd407db11",
+      "ocorrencias": [],
+      "timestamp": 1779479554584
+    },
+    "public/svg/badges/skills/ferramentas/badge-sentry.svg": {
+      "count": 0,
+      "hash": "d65dddd2e38f8b6f",
+      "ocorrencias": [],
+      "timestamp": 1779479554584
+    },
+    "public/svg/badges/skills/ferramentas/badge-slack.svg": {
+      "count": 0,
+      "hash": "2053d7d65f416d54",
+      "ocorrencias": [],
+      "timestamp": 1779479554585
+    },
+    "public/svg/badges/skills/ferramentas/badge-sonarqube.svg": {
+      "count": 0,
+      "hash": "f35803c5cdb6abec",
+      "ocorrencias": [],
+      "timestamp": 1779479554585
+    },
+    "public/svg/badges/skills/ferramentas/badge-splunk.svg": {
+      "count": 0,
+      "hash": "461bb756a535e494",
+      "ocorrencias": [],
+      "timestamp": 1779479554585
+    },
+    "public/svg/badges/skills/ferramentas/badge-storybook.svg": {
+      "count": 0,
+      "hash": "56894a08d060e8f6",
+      "ocorrencias": [],
+      "timestamp": 1779479554586
+    },
+    "public/svg/badges/skills/ferramentas/badge-terraform.svg": {
+      "count": 0,
+      "hash": "79865def14f954e4",
+      "ocorrencias": [],
+      "timestamp": 1779479554586
+    },
+    "public/svg/badges/skills/ferramentas/badge-testing-library.svg": {
+      "count": 0,
+      "hash": "73318a5abb5a570c",
+      "ocorrencias": [],
+      "timestamp": 1779479554586
+    },
+    "public/svg/badges/skills/ferramentas/badge-travisci.svg": {
+      "count": 0,
+      "hash": "02ad7a8e5ac8aaf5",
+      "ocorrencias": [],
+      "timestamp": 1779479554587
+    },
+    "public/svg/badges/skills/ferramentas/badge-turbo.svg": {
+      "count": 0,
+      "hash": "48a28c62786284e2",
+      "ocorrencias": [],
+      "timestamp": 1779479554587
+    },
+    "public/svg/badges/skills/ferramentas/badge-vite.svg": {
+      "count": 0,
+      "hash": "57ecddd16895f851",
+      "ocorrencias": [],
+      "timestamp": 1779479554587
+    },
+    "public/svg/badges/skills/ferramentas/badge-vitest.svg": {
+      "count": 0,
+      "hash": "2914a68d7e885a3e",
+      "ocorrencias": [],
+      "timestamp": 1779479554587
+    },
+    "public/svg/badges/skills/ferramentas/badge-vscode.svg": {
+      "count": 0,
+      "hash": "aee3ae6208fde35e",
+      "ocorrencias": [],
+      "timestamp": 1779479554588
+    },
+    "public/svg/badges/skills/ferramentas/badge-webpack.svg": {
+      "count": 0,
+      "hash": "d1ba57e9faef078a",
+      "ocorrencias": [],
+      "timestamp": 1779479554588
+    },
+    "public/svg/badges/skills/ferramentas/badge-yarn.svg": {
+      "count": 0,
+      "hash": "0205474691a9ad50",
+      "ocorrencias": [],
+      "timestamp": 1779479554588
+    },
+    "public/svg/badges/skills/langs/badge-abap.svg": {
+      "count": 0,
+      "hash": "acea2e63070beacb",
+      "ocorrencias": [],
+      "timestamp": 1779479554589
+    },
+    "public/svg/badges/skills/langs/badge-ada.svg": {
+      "count": 0,
+      "hash": "79f18b13902091e4",
+      "ocorrencias": [],
+      "timestamp": 1779479554589
+    },
+    "public/svg/badges/skills/langs/badge-apl.svg": {
+      "count": 0,
+      "hash": "cf417a27d926d9bb",
+      "ocorrencias": [],
+      "timestamp": 1779479554589
+    },
+    "public/svg/badges/skills/langs/badge-awk.svg": {
+      "count": 0,
+      "hash": "bf52dce58d4ba680",
+      "ocorrencias": [],
+      "timestamp": 1779479554590
+    },
+    "public/svg/badges/skills/langs/badge-bash.svg": {
+      "count": 0,
+      "hash": "36dec7810faf13dc",
+      "ocorrencias": [],
+      "timestamp": 1779479554590
+    },
+    "public/svg/badges/skills/langs/badge-c.svg": {
+      "count": 0,
+      "hash": "f5728b826c213c05",
+      "ocorrencias": [],
+      "timestamp": 1779479554590
+    },
+    "public/svg/badges/skills/langs/badge-clojure.svg": {
+      "count": 0,
+      "hash": "a07c9596e8eb841a",
+      "ocorrencias": [],
+      "timestamp": 1779479554591
+    },
+    "public/svg/badges/skills/langs/badge-cobol.svg": {
+      "count": 0,
+      "hash": "ed7be4abde1bb858",
+      "ocorrencias": [],
+      "timestamp": 1779479554591
+    },
+    "public/svg/badges/skills/langs/badge-cpp.svg": {
+      "count": 0,
+      "hash": "35a1c16684084be4",
+      "ocorrencias": [],
+      "timestamp": 1779479554591
+    },
+    "public/svg/badges/skills/langs/badge-crystal.svg": {
+      "count": 0,
+      "hash": "75bc7ff73d5e3406",
+      "ocorrencias": [],
+      "timestamp": 1779479554591
+    },
+    "public/svg/badges/skills/langs/badge-csharp.svg": {
+      "count": 0,
+      "hash": "98ddc1708469ca5b",
+      "ocorrencias": [],
+      "timestamp": 1779479554592
+    },
+    "public/svg/badges/skills/langs/badge-css.svg": {
+      "count": 0,
+      "hash": "8aafb59e2377abc4",
+      "ocorrencias": [],
+      "timestamp": 1779479554592
+    },
+    "public/svg/badges/skills/langs/badge-d.svg": {
+      "count": 0,
+      "hash": "26cde666f334b75d",
+      "ocorrencias": [],
+      "timestamp": 1779479554592
+    },
+    "public/svg/badges/skills/langs/badge-dart.svg": {
+      "count": 0,
+      "hash": "33979efc56e54510",
+      "ocorrencias": [],
+      "timestamp": 1779479554593
+    },
+    "public/svg/badges/skills/langs/badge-delphi.svg": {
+      "count": 0,
+      "hash": "24869d0c9900c7c9",
+      "ocorrencias": [],
+      "timestamp": 1779479554593
+    },
+    "public/svg/badges/skills/langs/badge-eiffel.svg": {
+      "count": 0,
+      "hash": "8e00c7c39272d4b6",
+      "ocorrencias": [],
+      "timestamp": 1779479554593
+    },
+    "public/svg/badges/skills/langs/badge-elixir.svg": {
+      "count": 0,
+      "hash": "e3c1e295712fd22e",
+      "ocorrencias": [],
+      "timestamp": 1779479554593
+    },
+    "public/svg/badges/skills/langs/badge-erlang.svg": {
+      "count": 0,
+      "hash": "26844a4da3397ab1",
+      "ocorrencias": [],
+      "timestamp": 1779479554594
+    },
+    "public/svg/badges/skills/langs/badge-fortran.svg": {
+      "count": 0,
+      "hash": "11366ae53dff75e8",
+      "ocorrencias": [],
+      "timestamp": 1779479554594
+    },
+    "public/svg/badges/skills/langs/badge-fsharp.svg": {
+      "count": 0,
+      "hash": "e3bf7793778ec98e",
+      "ocorrencias": [],
+      "timestamp": 1779479554594
+    },
+    "public/svg/badges/skills/langs/badge-go.svg": {
+      "count": 0,
+      "hash": "c62d26be3ce6aea6",
+      "ocorrencias": [],
+      "timestamp": 1779479554595
+    },
+    "public/svg/badges/skills/langs/badge-groovy.svg": {
+      "count": 0,
+      "hash": "51ace8589e499981",
+      "ocorrencias": [],
+      "timestamp": 1779479554595
+    },
+    "public/svg/badges/skills/langs/badge-haskell.svg": {
+      "count": 0,
+      "hash": "4206da5549961bb4",
+      "ocorrencias": [],
+      "timestamp": 1779479554595
+    },
+    "public/svg/badges/skills/langs/badge-html.svg": {
+      "count": 0,
+      "hash": "25176fbc03fca79c",
+      "ocorrencias": [],
+      "timestamp": 1779479554595
+    },
+    "public/svg/badges/skills/langs/badge-java.svg": {
+      "count": 0,
+      "hash": "12ac7512ed953ada",
+      "ocorrencias": [],
+      "timestamp": 1779479554596
+    },
+    "public/svg/badges/skills/langs/badge-javascript.svg": {
+      "count": 0,
+      "hash": "dac79dc7e2fa1d6d",
+      "ocorrencias": [],
+      "timestamp": 1779479554596
+    },
+    "public/svg/badges/skills/langs/badge-julia.svg": {
+      "count": 0,
+      "hash": "55b8ac289a40054b",
+      "ocorrencias": [],
+      "timestamp": 1779479554596
+    },
+    "public/svg/badges/skills/langs/badge-kotlin.svg": {
+      "count": 0,
+      "hash": "92e7d949d5b96555",
+      "ocorrencias": [],
+      "timestamp": 1779479554597
+    },
+    "public/svg/badges/skills/langs/badge-lua.svg": {
+      "count": 0,
+      "hash": "8d5e17f171b48e09",
+      "ocorrencias": [],
+      "timestamp": 1779479554597
+    },
+    "public/svg/badges/skills/langs/badge-matlab.svg": {
+      "count": 0,
+      "hash": "5514b9476ddb3996",
+      "ocorrencias": [],
+      "timestamp": 1779479554597
+    },
+    "public/svg/badges/skills/langs/badge-nim.svg": {
+      "count": 0,
+      "hash": "6c3a9ccda33d0a22",
+      "ocorrencias": [],
+      "timestamp": 1779479554597
+    },
+    "public/svg/badges/skills/langs/badge-objective-c.svg": {
+      "count": 0,
+      "hash": "0eed610cb5e1625a",
+      "ocorrencias": [],
+      "timestamp": 1779479554598
+    },
+    "public/svg/badges/skills/langs/badge-ocaml.svg": {
+      "count": 0,
+      "hash": "1ff2907ce3ac7983",
+      "ocorrencias": [],
+      "timestamp": 1779479554598
+    },
+    "public/svg/badges/skills/langs/badge-perl.svg": {
+      "count": 0,
+      "hash": "7b7ecd036b681d80",
+      "ocorrencias": [],
+      "timestamp": 1779479554598
+    },
+    "public/svg/badges/skills/langs/badge-php.svg": {
+      "count": 0,
+      "hash": "aeacaa58589bbb9f",
+      "ocorrencias": [],
+      "timestamp": 1779479554599
+    },
+    "public/svg/badges/skills/langs/badge-powershell.svg": {
+      "count": 0,
+      "hash": "f47cb3bebcec8c5b",
+      "ocorrencias": [],
+      "timestamp": 1779479554599
+    },
+    "public/svg/badges/skills/langs/badge-prolog.svg": {
+      "count": 0,
+      "hash": "579403694d54260c",
+      "ocorrencias": [],
+      "timestamp": 1779479554599
+    },
+    "public/svg/badges/skills/langs/badge-python.svg": {
+      "count": 0,
+      "hash": "310fb3e36085d962",
+      "ocorrencias": [],
+      "timestamp": 1779479554599
+    },
+    "public/svg/badges/skills/langs/badge-r.svg": {
+      "count": 0,
+      "hash": "9bff7c9929bb77d3",
+      "ocorrencias": [],
+      "timestamp": 1779479554600
+    },
+    "public/svg/badges/skills/langs/badge-racket.svg": {
+      "count": 0,
+      "hash": "3a9e0d84460d2901",
+      "ocorrencias": [],
+      "timestamp": 1779479554600
+    },
+    "public/svg/badges/skills/langs/badge-ruby.svg": {
+      "count": 0,
+      "hash": "d2a23368cc108513",
+      "ocorrencias": [],
+      "timestamp": 1779479554600
+    },
+    "public/svg/badges/skills/langs/badge-rust.svg": {
+      "count": 0,
+      "hash": "dd94122b6b13ec2a",
+      "ocorrencias": [],
+      "timestamp": 1779479554601
+    },
+    "public/svg/badges/skills/langs/badge-sas.svg": {
+      "count": 0,
+      "hash": "90c26ba36a19b493",
+      "ocorrencias": [],
+      "timestamp": 1779479554601
+    },
+    "public/svg/badges/skills/langs/badge-scala.svg": {
+      "count": 0,
+      "hash": "eaf32697a5693d89",
+      "ocorrencias": [],
+      "timestamp": 1779479554601
+    },
+    "public/svg/badges/skills/langs/badge-scratch.svg": {
+      "count": 0,
+      "hash": "2a3e5660ec1674a2",
+      "ocorrencias": [],
+      "timestamp": 1779479554601
+    },
+    "public/svg/badges/skills/langs/badge-sql.svg": {
+      "count": 0,
+      "hash": "b8059472f66c1b54",
+      "ocorrencias": [],
+      "timestamp": 1779479554602
+    },
+    "public/svg/badges/skills/langs/badge-swift.svg": {
+      "count": 0,
+      "hash": "68409a6661e7d460",
+      "ocorrencias": [],
+      "timestamp": 1779479554602
+    },
+    "public/svg/badges/skills/langs/badge-typescript.svg": {
+      "count": 0,
+      "hash": "8ecbf71b68ed9155",
+      "ocorrencias": [],
+      "timestamp": 1779479554602
+    },
+    "public/svg/badges/skills/langs/badge-verilog.svg": {
+      "count": 0,
+      "hash": "848156cda64cdbbf",
+      "ocorrencias": [],
+      "timestamp": 1779479554603
+    },
+    "public/svg/badges/skills/langs/badge-vhdl.svg": {
+      "count": 0,
+      "hash": "5f895b50d4bc9cac",
+      "ocorrencias": [],
+      "timestamp": 1779479554603
+    },
+    "public/svg/badges/skills/langs/badge-zig.svg": {
+      "count": 0,
+      "hash": "c9903e3ca7e35c6f",
+      "ocorrencias": [],
+      "timestamp": 1779479554603
+    },
+    "public/svg/badges/skills/tecnologias/badge-angular.svg": {
+      "count": 0,
+      "hash": "708659800eaa7084",
+      "ocorrencias": [],
+      "timestamp": 1779479554604
+    },
+    "public/svg/badges/skills/tecnologias/badge-astro.svg": {
+      "count": 0,
+      "hash": "15cf689bbd438f50",
+      "ocorrencias": [],
+      "timestamp": 1779479554604
+    },
+    "public/svg/badges/skills/tecnologias/badge-astrobuild.svg": {
+      "count": 0,
+      "hash": "1a45ea85b03c41ca",
+      "ocorrencias": [],
+      "timestamp": 1779479554604
+    },
+    "public/svg/badges/skills/tecnologias/badge-aws.svg": {
+      "count": 0,
+      "hash": "49724b99693fc205",
+      "ocorrencias": [],
+      "timestamp": 1779479554605
+    },
+    "public/svg/badges/skills/tecnologias/badge-azure.svg": {
+      "count": 0,
+      "hash": "25b253b13ee87fd4",
+      "ocorrencias": [],
+      "timestamp": 1779479554605
+    },
+    "public/svg/badges/skills/tecnologias/badge-blitzjs.svg": {
+      "count": 0,
+      "hash": "b1fdefb5b8496b1e",
+      "ocorrencias": [],
+      "timestamp": 1779479554605
+    },
+    "public/svg/badges/skills/tecnologias/badge-bootstrap.svg": {
+      "count": 0,
+      "hash": "2739fac9b91c6917",
+      "ocorrencias": [],
+      "timestamp": 1779479554605
+    },
+    "public/svg/badges/skills/tecnologias/badge-bunrest.svg": {
+      "count": 0,
+      "hash": "75b45fa4d29462aa",
+      "ocorrencias": [],
+      "timestamp": 1779479554606
+    },
+    "public/svg/badges/skills/tecnologias/badge-cassandra.svg": {
+      "count": 0,
+      "hash": "4f00974daf13b781",
+      "ocorrencias": [],
+      "timestamp": 1779479554606
+    },
+    "public/svg/badges/skills/tecnologias/badge-chakra.svg": {
+      "count": 0,
+      "hash": "7cbeaed8a4dd72c2",
+      "ocorrencias": [],
+      "timestamp": 1779479554606
+    },
+    "public/svg/badges/skills/tecnologias/badge-cloudflare.svg": {
+      "count": 0,
+      "hash": "725484b1c57bae8e",
+      "ocorrencias": [],
+      "timestamp": 1779479554607
+    },
+    "public/svg/badges/skills/tecnologias/badge-digitalocean.svg": {
+      "count": 0,
+      "hash": "3c25ab0db58c40c8",
+      "ocorrencias": [],
+      "timestamp": 1779479554607
+    },
+    "public/svg/badges/skills/tecnologias/badge-django.svg": {
+      "count": 0,
+      "hash": "c47cfc75476d329f",
+      "ocorrencias": [],
+      "timestamp": 1779479554607
+    },
+    "public/svg/badges/skills/tecnologias/badge-dotnet.svg": {
+      "count": 0,
+      "hash": "69a78d7ab75dc85b",
+      "ocorrencias": [],
+      "timestamp": 1779479554608
+    },
+    "public/svg/badges/skills/tecnologias/badge-drizzle.svg": {
+      "count": 0,
+      "hash": "c486d9266ff4a158",
+      "ocorrencias": [],
+      "timestamp": 1779479554608
+    },
+    "public/svg/badges/skills/tecnologias/badge-dynamodb.svg": {
+      "count": 0,
+      "hash": "00e13eac90407c04",
+      "ocorrencias": [],
+      "timestamp": 1779479554608
+    },
+    "public/svg/badges/skills/tecnologias/badge-elasticsearch.svg": {
+      "count": 0,
+      "hash": "0100e5e67ae21ae9",
+      "ocorrencias": [],
+      "timestamp": 1779479554608
+    },
+    "public/svg/badges/skills/tecnologias/badge-elysia.svg": {
+      "count": 0,
+      "hash": "34a3d38b39758e8e",
+      "ocorrencias": [],
+      "timestamp": 1779479554609
+    },
+    "public/svg/badges/skills/tecnologias/badge-expo.svg": {
+      "count": 0,
+      "hash": "bd7aacaa8f8dcaf2",
+      "ocorrencias": [],
+      "timestamp": 1779479554609
+    },
+    "public/svg/badges/skills/tecnologias/badge-express.svg": {
+      "count": 0,
+      "hash": "f642a36d174bcf68",
+      "ocorrencias": [],
+      "timestamp": 1779479554609
+    },
+    "public/svg/badges/skills/tecnologias/badge-fastapi.svg": {
+      "count": 0,
+      "hash": "1a236e282422338d",
+      "ocorrencias": [],
+      "timestamp": 1779479554610
+    },
+    "public/svg/badges/skills/tecnologias/badge-fiber.svg": {
+      "count": 0,
+      "hash": "e0766890172f178f",
+      "ocorrencias": [],
+      "timestamp": 1779479554610
+    },
+    "public/svg/badges/skills/tecnologias/badge-firebase.svg": {
+      "count": 0,
+      "hash": "a284894f278528fb",
+      "ocorrencias": [],
+      "timestamp": 1779479554610
+    },
+    "public/svg/badges/skills/tecnologias/badge-flask.svg": {
+      "count": 0,
+      "hash": "75b280f56c75913a",
+      "ocorrencias": [],
+      "timestamp": 1779479554611
+    },
+    "public/svg/badges/skills/tecnologias/badge-flutter.svg": {
+      "count": 0,
+      "hash": "32b7c00dfac263b8",
+      "ocorrencias": [],
+      "timestamp": 1779479554611
+    },
+    "public/svg/badges/skills/tecnologias/badge-fly.svg": {
+      "count": 0,
+      "hash": "66f14976f897d800",
+      "ocorrencias": [],
+      "timestamp": 1779479554611
+    },
+    "public/svg/badges/skills/tecnologias/badge-gcp.svg": {
+      "count": 0,
+      "hash": "65f02ee7000e7186",
+      "ocorrencias": [],
+      "timestamp": 1779479554611
+    },
+    "public/svg/badges/skills/tecnologias/badge-gin.svg": {
+      "count": 0,
+      "hash": "4b7d33c670a18068",
+      "ocorrencias": [],
+      "timestamp": 1779479554612
+    },
+    "public/svg/badges/skills/tecnologias/badge-gradle.svg": {
+      "count": 0,
+      "hash": "e6a4f24241276803",
+      "ocorrencias": [],
+      "timestamp": 1779479554612
+    },
+    "public/svg/badges/skills/tecnologias/badge-graphql.svg": {
+      "count": 0,
+      "hash": "9f62d720bf2f55aa",
+      "ocorrencias": [],
+      "timestamp": 1779479554612
+    },
+    "public/svg/badges/skills/tecnologias/badge-grpc.svg": {
+      "count": 0,
+      "hash": "6a4f80f9ef6278cd",
+      "ocorrencias": [],
+      "timestamp": 1779479554613
+    },
+    "public/svg/badges/skills/tecnologias/badge-htmx.svg": {
+      "count": 0,
+      "hash": "5e28f7e668e40da8",
+      "ocorrencias": [],
+      "timestamp": 1779479554613
+    },
+    "public/svg/badges/skills/tecnologias/badge-huggingface.svg": {
+      "count": 0,
+      "hash": "fafa8b4b64daf109",
+      "ocorrencias": [],
+      "timestamp": 1779479554613
+    },
+    "public/svg/badges/skills/tecnologias/badge-ionic.svg": {
+      "count": 0,
+      "hash": "e1e238380514385a",
+      "ocorrencias": [],
+      "timestamp": 1779479554613
+    },
+    "public/svg/badges/skills/tecnologias/badge-kafka.svg": {
+      "count": 0,
+      "hash": "8186d3aca70f76f6",
+      "ocorrencias": [],
+      "timestamp": 1779479554614
+    },
+    "public/svg/badges/skills/tecnologias/badge-langchain.svg": {
+      "count": 0,
+      "hash": "4aabcc62c7100241",
+      "ocorrencias": [],
+      "timestamp": 1779479554614
+    },
+    "public/svg/badges/skills/tecnologias/badge-laravel.svg": {
+      "count": 0,
+      "hash": "64fa70b3b283e0f8",
+      "ocorrencias": [],
+      "timestamp": 1779479554614
+    },
+    "public/svg/badges/skills/tecnologias/badge-linux.svg": {
+      "count": 0,
+      "hash": "75c9f76ebde98cb5",
+      "ocorrencias": [],
+      "timestamp": 1779479554615
+    },
+    "public/svg/badges/skills/tecnologias/badge-mariadb.svg": {
+      "count": 0,
+      "hash": "942623a628238a20",
+      "ocorrencias": [],
+      "timestamp": 1779479554615
+    },
+    "public/svg/badges/skills/tecnologias/badge-material-ui.svg": {
+      "count": 0,
+      "hash": "d77fbfe394df274e",
+      "ocorrencias": [],
+      "timestamp": 1779479554615
+    },
+    "public/svg/badges/skills/tecnologias/badge-maven.svg": {
+      "count": 0,
+      "hash": "d91d4f3668bab09b",
+      "ocorrencias": [],
+      "timestamp": 1779479554615
+    },
+    "public/svg/badges/skills/tecnologias/badge-mongodb.svg": {
+      "count": 0,
+      "hash": "352080cb0e4dab22",
+      "ocorrencias": [],
+      "timestamp": 1779479554616
+    },
+    "public/svg/badges/skills/tecnologias/badge-mysql.svg": {
+      "count": 0,
+      "hash": "789ca1f5c2bf2efb",
+      "ocorrencias": [],
+      "timestamp": 1779479554616
+    },
+    "public/svg/badges/skills/tecnologias/badge-nestjs.svg": {
+      "count": 0,
+      "hash": "56d9ea540ea6cfcd",
+      "ocorrencias": [],
+      "timestamp": 1779479554616
+    },
+    "public/svg/badges/skills/tecnologias/badge-netlify.svg": {
+      "count": 0,
+      "hash": "82fe49f889f9d36c",
+      "ocorrencias": [],
+      "timestamp": 1779479554617
+    },
+    "public/svg/badges/skills/tecnologias/badge-nextjs.svg": {
+      "count": 0,
+      "hash": "af793a6f72ba3892",
+      "ocorrencias": [],
+      "timestamp": 1779479554617
+    },
+    "public/svg/badges/skills/tecnologias/badge-nginx.svg": {
+      "count": 0,
+      "hash": "e66e785f3104d61d",
+      "ocorrencias": [],
+      "timestamp": 1779479554617
+    },
+    "public/svg/badges/skills/tecnologias/badge-nhost.svg": {
+      "count": 0,
+      "hash": "d74e00b85dd47305",
+      "ocorrencias": [],
+      "timestamp": 1779479554617
+    },
+    "public/svg/badges/skills/tecnologias/badge-nodejs.svg": {
+      "count": 0,
+      "hash": "99350ab3f79e7ba6",
+      "ocorrencias": [],
+      "timestamp": 1779479554618
+    },
+    "public/svg/badges/skills/tecnologias/badge-numpy.svg": {
+      "count": 0,
+      "hash": "f115717f40c64fb1",
+      "ocorrencias": [],
+      "timestamp": 1779479554618
+    },
+    "public/svg/badges/skills/tecnologias/badge-nuxt.svg": {
+      "count": 0,
+      "hash": "a25db45b1c0c0375",
+      "ocorrencias": [],
+      "timestamp": 1779479554618
+    },
+    "public/svg/badges/skills/tecnologias/badge-openai.svg": {
+      "count": 0,
+      "hash": "586f05ed72e4fc6c",
+      "ocorrencias": [],
+      "timestamp": 1779479554618
+    },
+    "public/svg/badges/skills/tecnologias/badge-pandas.svg": {
+      "count": 0,
+      "hash": "96db7c34b74b3e02",
+      "ocorrencias": [],
+      "timestamp": 1779479554619
+    },
+    "public/svg/badges/skills/tecnologias/badge-phoenix.svg": {
+      "count": 0,
+      "hash": "c653da5253f6442c",
+      "ocorrencias": [],
+      "timestamp": 1779479554619
+    },
+    "public/svg/badges/skills/tecnologias/badge-planetscale.svg": {
+      "count": 0,
+      "hash": "f7f9128e69987121",
+      "ocorrencias": [],
+      "timestamp": 1779479554619
+    },
+    "public/svg/badges/skills/tecnologias/badge-postgresql.svg": {
+      "count": 0,
+      "hash": "98d38a074b672b64",
+      "ocorrencias": [],
+      "timestamp": 1779479554620
+    },
+    "public/svg/badges/skills/tecnologias/badge-prisma.svg": {
+      "count": 0,
+      "hash": "145016dd47263ea4",
+      "ocorrencias": [],
+      "timestamp": 1779479554620
+    },
+    "public/svg/badges/skills/tecnologias/badge-pytorch.svg": {
+      "count": 0,
+      "hash": "25a5cd229d49a632",
+      "ocorrencias": [],
+      "timestamp": 1779479554620
+    },
+    "public/svg/badges/skills/tecnologias/badge-qwik.svg": {
+      "count": 0,
+      "hash": "8fb2257577e7bc9d",
+      "ocorrencias": [],
+      "timestamp": 1779479554620
+    },
+    "public/svg/badges/skills/tecnologias/badge-qwikcity.svg": {
+      "count": 0,
+      "hash": "c7edfa7374baab1e",
+      "ocorrencias": [],
+      "timestamp": 1779479554621
+    },
+    "public/svg/badges/skills/tecnologias/badge-rabbitmq.svg": {
+      "count": 0,
+      "hash": "eaf7facb5798d38a",
+      "ocorrencias": [],
+      "timestamp": 1779479554621
+    },
+    "public/svg/badges/skills/tecnologias/badge-rails.svg": {
+      "count": 0,
+      "hash": "b5f0ad05d28c0b06",
+      "ocorrencias": [],
+      "timestamp": 1779479554621
+    },
+    "public/svg/badges/skills/tecnologias/badge-railway.svg": {
+      "count": 0,
+      "hash": "b6083863206a35e6",
+      "ocorrencias": [],
+      "timestamp": 1779479554621
+    },
+    "public/svg/badges/skills/tecnologias/badge-react-native.svg": {
+      "count": 0,
+      "hash": "8bb6a4f144fd6901",
+      "ocorrencias": [],
+      "timestamp": 1779479554622
+    },
+    "public/svg/badges/skills/tecnologias/badge-react.svg": {
+      "count": 0,
+      "hash": "4e6422a712345c3d",
+      "ocorrencias": [],
+      "timestamp": 1779479554622
+    },
+    "public/svg/badges/skills/tecnologias/badge-redis.svg": {
+      "count": 0,
+      "hash": "cd3b92bf010e0227",
+      "ocorrencias": [],
+      "timestamp": 1779479554622
+    },
+    "public/svg/badges/skills/tecnologias/badge-remix.svg": {
+      "count": 0,
+      "hash": "ba91bfb8b6da6d0f",
+      "ocorrencias": [],
+      "timestamp": 1779479554623
+    },
+    "public/svg/badges/skills/tecnologias/badge-remult.svg": {
+      "count": 0,
+      "hash": "6dcbb3cf85b86631",
+      "ocorrencias": [],
+      "timestamp": 1779479554623
+    },
+    "public/svg/badges/skills/tecnologias/badge-render.svg": {
+      "count": 0,
+      "hash": "e052beaf0bf4cfc1",
+      "ocorrencias": [],
+      "timestamp": 1779479554623
+    },
+    "public/svg/badges/skills/tecnologias/badge-rest.svg": {
+      "count": 0,
+      "hash": "b6e6780771da3735",
+      "ocorrencias": [],
+      "timestamp": 1779479554624
+    },
+    "public/svg/badges/skills/tecnologias/badge-sass.svg": {
+      "count": 0,
+      "hash": "3f133f086a284b9e",
+      "ocorrencias": [],
+      "timestamp": 1779479554624
+    },
+    "public/svg/badges/skills/tecnologias/badge-socketio.svg": {
+      "count": 0,
+      "hash": "3f8a9ca532b58dea",
+      "ocorrencias": [],
+      "timestamp": 1779479554624
+    },
+    "public/svg/badges/skills/tecnologias/badge-solid.svg": {
+      "count": 0,
+      "hash": "6b2a25e05bf6aecd",
+      "ocorrencias": [],
+      "timestamp": 1779479554624
+    },
+    "public/svg/badges/skills/tecnologias/badge-solidstart.svg": {
+      "count": 0,
+      "hash": "f69a1317ebae0588",
+      "ocorrencias": [],
+      "timestamp": 1779479554625
+    },
+    "public/svg/badges/skills/tecnologias/badge-spring.svg": {
+      "count": 0,
+      "hash": "f450efafcf56e721",
+      "ocorrencias": [],
+      "timestamp": 1779479554625
+    },
+    "public/svg/badges/skills/tecnologias/badge-sqlite.svg": {
+      "count": 0,
+      "hash": "7759da430a565d30",
+      "ocorrencias": [],
+      "timestamp": 1779479554626
+    },
+    "public/svg/badges/skills/tecnologias/badge-styled-components.svg": {
+      "count": 0,
+      "hash": "0f71f8ef94430ec2",
+      "ocorrencias": [],
+      "timestamp": 1779479554626
+    },
+    "public/svg/badges/skills/tecnologias/badge-supabase.svg": {
+      "count": 0,
+      "hash": "8fc548c1ea3bcaf3",
+      "ocorrencias": [],
+      "timestamp": 1779479554626
+    },
+    "public/svg/badges/skills/tecnologias/badge-svelte.svg": {
+      "count": 0,
+      "hash": "ad49829a1d2056df",
+      "ocorrencias": [],
+      "timestamp": 1779479554626
+    },
+    "public/svg/badges/skills/tecnologias/badge-tailwind.svg": {
+      "count": 0,
+      "hash": "f067c785f6febb98",
+      "ocorrencias": [],
+      "timestamp": 1779479554627
+    },
+    "public/svg/badges/skills/tecnologias/badge-tensorflow.svg": {
+      "count": 0,
+      "hash": "af194cda5025bafe",
+      "ocorrencias": [],
+      "timestamp": 1779479554627
+    },
+    "public/svg/badges/skills/tecnologias/badge-trpc.svg": {
+      "count": 0,
+      "hash": "ebdf30a5e5674f7d",
+      "ocorrencias": [],
+      "timestamp": 1779479554627
+    },
+    "public/svg/badges/skills/tecnologias/badge-turso.svg": {
+      "count": 0,
+      "hash": "238e8a747622d84b",
+      "ocorrencias": [],
+      "timestamp": 1779479554627
+    },
+    "public/svg/badges/skills/tecnologias/badge-typeorm.svg": {
+      "count": 0,
+      "hash": "436bb3cad8840563",
+      "ocorrencias": [],
+      "timestamp": 1779479554628
+    },
+    "public/svg/badges/skills/tecnologias/badge-umijs.svg": {
+      "count": 0,
+      "hash": "4c633d5c5b3a3054",
+      "ocorrencias": [],
+      "timestamp": 1779479554628
+    },
+    "public/svg/badges/skills/tecnologias/badge-vercel.svg": {
+      "count": 0,
+      "hash": "c2458a69ed312b25",
+      "ocorrencias": [],
+      "timestamp": 1779479554628
+    },
+    "public/svg/badges/skills/tecnologias/badge-vue.svg": {
+      "count": 0,
+      "hash": "09a1d2e8d73435b1",
+      "ocorrencias": [],
+      "timestamp": 1779479554629
+    },
+    "public/svg/badges/skills/tecnologias/badge-websocket.svg": {
+      "count": 0,
+      "hash": "27482f1d74824d3a",
+      "ocorrencias": [],
+      "timestamp": 1779479554629
+    },
+    "public/svg/banner/capa-1.svg": {
+      "count": 0,
+      "hash": "f9c8bc1d14d855f8",
+      "ocorrencias": [],
+      "timestamp": 1779479554630
+    },
+    "public/svg/banner/capa-10.svg": {
+      "count": 0,
+      "hash": "3c1ae3340214089f",
+      "ocorrencias": [],
+      "timestamp": 1779479554630
+    },
+    "public/svg/banner/capa-11.svg": {
+      "count": 0,
+      "hash": "a0c134b24dc61010",
+      "ocorrencias": [],
+      "timestamp": 1779479554631
+    },
+    "public/svg/banner/capa-12.svg": {
+      "count": 0,
+      "hash": "f70783d579010223",
+      "ocorrencias": [],
+      "timestamp": 1779479554631
+    },
+    "public/svg/banner/capa-13.svg": {
+      "count": 0,
+      "hash": "361dd27cafdda27a",
+      "ocorrencias": [],
+      "timestamp": 1779479554632
+    },
+    "public/svg/banner/capa-14.svg": {
+      "count": 0,
+      "hash": "c7d3ad3300e93156",
+      "ocorrencias": [],
+      "timestamp": 1779479554632
+    },
+    "public/svg/banner/capa-15.svg": {
+      "count": 0,
+      "hash": "a8950d2268c60ded",
+      "ocorrencias": [],
+      "timestamp": 1779479554633
+    },
+    "public/svg/banner/capa-16.svg": {
+      "count": 0,
+      "hash": "1923ada983bb2150",
+      "ocorrencias": [],
+      "timestamp": 1779479554634
+    },
+    "public/svg/banner/capa-17.svg": {
+      "count": 0,
+      "hash": "7f24b593379e4eed",
+      "ocorrencias": [],
+      "timestamp": 1779479554634
+    },
+    "public/svg/banner/capa-2.svg": {
+      "count": 0,
+      "hash": "70d6458c06b9070a",
+      "ocorrencias": [],
+      "timestamp": 1779479554635
+    },
+    "public/svg/banner/capa-3.svg": {
+      "count": 0,
+      "hash": "07c20d32be91db15",
+      "ocorrencias": [],
+      "timestamp": 1779479554635
+    },
+    "public/svg/banner/capa-4.svg": {
+      "count": 0,
+      "hash": "82b0751f148f69bc",
+      "ocorrencias": [],
+      "timestamp": 1779479554636
+    },
+    "public/svg/banner/capa-5.svg": {
+      "count": 0,
+      "hash": "311a4d65caff0245",
+      "ocorrencias": [],
+      "timestamp": 1779479554636
+    },
+    "public/svg/banner/capa-6.svg": {
+      "count": 0,
+      "hash": "9e0a5cf8552db743",
+      "ocorrencias": [],
+      "timestamp": 1779479554638
+    },
+    "public/svg/banner/capa-7.svg": {
+      "count": 0,
+      "hash": "080a0f68fc7724e0",
+      "ocorrencias": [],
+      "timestamp": 1779479554638
+    },
+    "public/svg/banner/capa-8.svg": {
+      "count": 0,
+      "hash": "dee0a92eb3669139",
+      "ocorrencias": [],
+      "timestamp": 1779479554639
+    },
+    "public/svg/banner/capa-9.svg": {
+      "count": 0,
+      "hash": "60ce9b498c4e012e",
+      "ocorrencias": [],
+      "timestamp": 1779479554639
+    },
+    "public/svg/banner/capa-dark-1.svg": {
+      "count": 0,
+      "hash": "049e1219532169ba",
+      "ocorrencias": [],
+      "timestamp": 1779479554640
+    },
+    "public/svg/banner/capa-dark-2.svg": {
+      "count": 0,
+      "hash": "6ae0dd3827d00ede",
+      "ocorrencias": [],
+      "timestamp": 1779479554640
+    },
+    "public/svg/banner/capa-dark-3.svg": {
+      "count": 0,
+      "hash": "b947bdc6292b1e05",
+      "ocorrencias": [],
+      "timestamp": 1779479554640
+    },
+    "public/svg/social/social-behance.svg": {
+      "count": 0,
+      "hash": "c01d11361b9f4c61",
+      "ocorrencias": [],
+      "timestamp": 1779479554641
+    },
+    "public/svg/social/social-bitbucket.svg": {
+      "count": 0,
+      "hash": "8613e796babbf19c",
+      "ocorrencias": [],
+      "timestamp": 1779479554641
+    },
+    "public/svg/social/social-bluesky.svg": {
+      "count": 0,
+      "hash": "02415aa3b979a90d",
+      "ocorrencias": [],
+      "timestamp": 1779479554641
+    },
+    "public/svg/social/social-codeberg.svg": {
+      "count": 0,
+      "hash": "eea8f6113d686085",
+      "ocorrencias": [],
+      "timestamp": 1779479554642
+    },
+    "public/svg/social/social-codepen.svg": {
+      "count": 0,
+      "hash": "1267b543829fa325",
+      "ocorrencias": [],
+      "timestamp": 1779479554642
+    },
+    "public/svg/social/social-devto.svg": {
+      "count": 0,
+      "hash": "3dee5a21dd0329b0",
+      "ocorrencias": [],
+      "timestamp": 1779479554642
+    },
+    "public/svg/social/social-discord.svg": {
+      "count": 0,
+      "hash": "c9077af787e0e9b3",
+      "ocorrencias": [],
+      "timestamp": 1779479554642
+    },
+    "public/svg/social/social-dribbble.svg": {
+      "count": 0,
+      "hash": "df249aa418093242",
+      "ocorrencias": [],
+      "timestamp": 1779479554643
+    },
+    "public/svg/social/social-element.svg": {
+      "count": 0,
+      "hash": "5512d0753997209b",
+      "ocorrencias": [],
+      "timestamp": 1779479554643
+    },
+    "public/svg/social/social-email.svg": {
+      "count": 0,
+      "hash": "b0cc7b36cb82a158",
+      "ocorrencias": [],
+      "timestamp": 1779479554643
+    },
+    "public/svg/social/social-facebook.svg": {
+      "count": 0,
+      "hash": "d6e837c25dba7c8e",
+      "ocorrencias": [],
+      "timestamp": 1779479554643
+    },
+    "public/svg/social/social-github.svg": {
+      "count": 0,
+      "hash": "463793844006ad73",
+      "ocorrencias": [],
+      "timestamp": 1779479554644
+    },
+    "public/svg/social/social-gitlab.svg": {
+      "count": 0,
+      "hash": "71e2e979a54ba07a",
+      "ocorrencias": [],
+      "timestamp": 1779479554644
+    },
+    "public/svg/social/social-gmail.svg": {
+      "count": 0,
+      "hash": "e2b343b0b97c906a",
+      "ocorrencias": [],
+      "timestamp": 1779479554644
+    },
+    "public/svg/social/social-hashnode.svg": {
+      "count": 0,
+      "hash": "2de12e51868e3912",
+      "ocorrencias": [],
+      "timestamp": 1779479554645
+    },
+    "public/svg/social/social-instagram.svg": {
+      "count": 0,
+      "hash": "e84926c9f23f26d4",
+      "ocorrencias": [],
+      "timestamp": 1779479554645
+    },
+    "public/svg/social/social-kakaotalk.svg": {
+      "count": 0,
+      "hash": "8e1d2419f3ecbfd6",
+      "ocorrencias": [],
+      "timestamp": 1779479554645
+    },
+    "public/svg/social/social-keybase.svg": {
+      "count": 0,
+      "hash": "6576083e5f5e13a3",
+      "ocorrencias": [],
+      "timestamp": 1779479554645
+    },
+    "public/svg/social/social-line.svg": {
+      "count": 0,
+      "hash": "339859ab84c2fc09",
+      "ocorrencias": [],
+      "timestamp": 1779479554646
+    },
+    "public/svg/social/social-linkedin.svg": {
+      "count": 0,
+      "hash": "3a119de21913dd48",
+      "ocorrencias": [],
+      "timestamp": 1779479554646
+    },
+    "public/svg/social/social-mastodon.svg": {
+      "count": 0,
+      "hash": "242cf4094649edcb",
+      "ocorrencias": [],
+      "timestamp": 1779479554647
+    },
+    "public/svg/social/social-matrix.svg": {
+      "count": 0,
+      "hash": "e89f2da67675647d",
+      "ocorrencias": [],
+      "timestamp": 1779479554647
+    },
+    "public/svg/social/social-medium.svg": {
+      "count": 0,
+      "hash": "0adc95831e29014f",
+      "ocorrencias": [],
+      "timestamp": 1779479554647
+    },
+    "public/svg/social/social-messenger.svg": {
+      "count": 0,
+      "hash": "7d46a06b58fcaea2",
+      "ocorrencias": [],
+      "timestamp": 1779479554647
+    },
+    "public/svg/social/social-newsletter.svg": {
+      "count": 0,
+      "hash": "4231701c8d80f98c",
+      "ocorrencias": [],
+      "timestamp": 1779479554648
+    },
+    "public/svg/social/social-outlook.svg": {
+      "count": 0,
+      "hash": "062fef1da6b5a197",
+      "ocorrencias": [],
+      "timestamp": 1779479554648
+    },
+    "public/svg/social/social-phone.svg": {
+      "count": 0,
+      "hash": "3987ae102432f352",
+      "ocorrencias": [],
+      "timestamp": 1779479554648
+    },
+    "public/svg/social/social-pinterest.svg": {
+      "count": 0,
+      "hash": "9790f6bedc7b8d88",
+      "ocorrencias": [],
+      "timestamp": 1779479554649
+    },
+    "public/svg/social/social-proton.svg": {
+      "count": 0,
+      "hash": "cc82d3a78065a7c3",
+      "ocorrencias": [],
+      "timestamp": 1779479554649
+    },
+    "public/svg/social/social-quora.svg": {
+      "count": 0,
+      "hash": "5406b2f9f04dda31",
+      "ocorrencias": [],
+      "timestamp": 1779479554649
+    },
+    "public/svg/social/social-reddit.svg": {
+      "count": 0,
+      "hash": "6ccf27a9eaad6f69",
+      "ocorrencias": [],
+      "timestamp": 1779479554650
+    },
+    "public/svg/social/social-rss.svg": {
+      "count": 0,
+      "hash": "3637b4e1f982b25c",
+      "ocorrencias": [],
+      "timestamp": 1779479554650
+    },
+    "public/svg/social/social-signal.svg": {
+      "count": 0,
+      "hash": "c53f862acb49c54e",
+      "ocorrencias": [],
+      "timestamp": 1779479554650
+    },
+    "public/svg/social/social-skype.svg": {
+      "count": 0,
+      "hash": "5d78e85f97ae6cfb",
+      "ocorrencias": [],
+      "timestamp": 1779479554650
+    },
+    "public/svg/social/social-slack.svg": {
+      "count": 0,
+      "hash": "9f2a5f5b6ac68e57",
+      "ocorrencias": [],
+      "timestamp": 1779479554651
+    },
+    "public/svg/social/social-snapchat.svg": {
+      "count": 0,
+      "hash": "fe3b34bae5bff88c",
+      "ocorrencias": [],
+      "timestamp": 1779479554651
+    },
+    "public/svg/social/social-soundcloud.svg": {
+      "count": 0,
+      "hash": "34c5fe219b39180c",
+      "ocorrencias": [],
+      "timestamp": 1779479554651
+    },
+    "public/svg/social/social-spotify.svg": {
+      "count": 0,
+      "hash": "9c6b05b54a8c3b1a",
+      "ocorrencias": [],
+      "timestamp": 1779479554652
+    },
+    "public/svg/social/social-stackoverflow.svg": {
+      "count": 0,
+      "hash": "90c605a6b3bc7aa3",
+      "ocorrencias": [],
+      "timestamp": 1779479554652
+    },
+    "public/svg/social/social-steam.svg": {
+      "count": 0,
+      "hash": "73a749c3c82a0c73",
+      "ocorrencias": [],
+      "timestamp": 1779479554652
+    },
+    "public/svg/social/social-substack.svg": {
+      "count": 0,
+      "hash": "76454a6cc2e13fa1",
+      "ocorrencias": [],
+      "timestamp": 1779479554652
+    },
+    "public/svg/social/social-teams.svg": {
+      "count": 0,
+      "hash": "e02b0072178c088a",
+      "ocorrencias": [],
+      "timestamp": 1779479554653
+    },
+    "public/svg/social/social-telegram.svg": {
+      "count": 0,
+      "hash": "234e751dde32a6f8",
+      "ocorrencias": [],
+      "timestamp": 1779479554653
+    },
+    "public/svg/social/social-threads.svg": {
+      "count": 0,
+      "hash": "7d7d59aa0f880eb8",
+      "ocorrencias": [],
+      "timestamp": 1779479554653
+    },
+    "public/svg/social/social-tiktok.svg": {
+      "count": 0,
+      "hash": "f8f11281f641cae5",
+      "ocorrencias": [],
+      "timestamp": 1779479554654
+    },
+    "public/svg/social/social-tumblr.svg": {
+      "count": 0,
+      "hash": "cfde0a6ffaf4a287",
+      "ocorrencias": [],
+      "timestamp": 1779479554654
+    },
+    "public/svg/social/social-twitch.svg": {
+      "count": 0,
+      "hash": "3bfae4a4720bd72a",
+      "ocorrencias": [],
+      "timestamp": 1779479554654
+    },
+    "public/svg/social/social-viber.svg": {
+      "count": 0,
+      "hash": "04c1ece971bc5ae2",
+      "ocorrencias": [],
+      "timestamp": 1779479554655
+    },
+    "public/svg/social/social-vk.svg": {
+      "count": 0,
+      "hash": "4885918994d56d2e",
+      "ocorrencias": [],
+      "timestamp": 1779479554655
+    },
+    "public/svg/social/social-website.svg": {
+      "count": 0,
+      "hash": "fd3501d4c4aeb7f7",
+      "ocorrencias": [],
+      "timestamp": 1779479554655
+    },
+    "public/svg/social/social-wechat.svg": {
+      "count": 0,
+      "hash": "4d092b8192f3b33a",
+      "ocorrencias": [],
+      "timestamp": 1779479554655
+    },
+    "public/svg/social/social-whatsapp.svg": {
+      "count": 0,
+      "hash": "39c96dd20bf1c0f9",
+      "ocorrencias": [],
+      "timestamp": 1779479554656
+    },
+    "public/svg/social/social-x.svg": {
+      "count": 0,
+      "hash": "c64f438a9bb45ba1",
+      "ocorrencias": [],
+      "timestamp": 1779479554656
+    },
+    "public/svg/social/social-xing.svg": {
+      "count": 0,
+      "hash": "e065386a2835376d",
+      "ocorrencias": [],
+      "timestamp": 1779479554656
+    },
+    "public/svg/social/social-yahoo.svg": {
+      "count": 0,
+      "hash": "9b19221f460b5616",
+      "ocorrencias": [],
+      "timestamp": 1779479554657
+    },
+    "public/svg/social/social-youtube.svg": {
+      "count": 0,
+      "hash": "fb5877780da1986e",
+      "ocorrencias": [],
+      "timestamp": 1779479554657
+    },
+    "public/svg/social/social-zoom.svg": {
+      "count": 0,
+      "hash": "fa5311f898652594",
+      "ocorrencias": [],
+      "timestamp": 1779479554657
+    },
+    "src/app/api/clones/[id]/badge.svg/route.ts": {
+      "count": 2,
+      "hash": "a6ea240e24ce69d8",
+      "ocorrencias": [
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554676
+    },
+    "src/app/api/clones/[id]/route.ts": {
+      "count": 2,
+      "hash": "254c292463b53124",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554678
+    },
+    "src/app/api/clones/[id]/unic/badge.svg/route.ts": {
+      "count": 2,
+      "hash": "8b7ed1e57b597ca1",
+      "ocorrencias": [
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554682
+    },
+    "src/app/api/clones/[id]/unic/route.ts": {
+      "count": 2,
+      "hash": "f60f8a89a0af90ce",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554684
+    },
+    "src/app/api/github-langs/[username]/route.ts": {
+      "count": 2,
+      "hash": "19212899725a2fd1",
+      "ocorrencias": [
+        {
+          "linha": 94,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 94,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554687
+    },
+    "src/app/api/github-langs/preview/[theme]/route.ts": {
+      "count": 2,
+      "hash": "e09fb2701aa157cb",
+      "ocorrencias": [
+        {
+          "linha": 74,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 74,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554691
+    },
+    "src/app/api/github-stats/[username]/route.ts": {
+      "count": 2,
+      "hash": "cb6e83e9e1a14e6b",
+      "ocorrencias": [
+        {
+          "linha": 91,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 91,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554693
+    },
+    "src/app/api/github-stats/preview/[theme]/route.ts": {
+      "count": 2,
+      "hash": "2406cdae9b377bc5",
+      "ocorrencias": [
+        {
+          "linha": 74,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 74,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554696
+    },
+    "src/app/api/status-badge/route.ts": {
+      "count": 2,
+      "hash": "1b125c4ff7551e76",
+      "ocorrencias": [
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/status-badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/status-badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554698
+    },
+    "src/app/api/svg/[...filename]/route.ts": {
+      "count": 2,
+      "hash": "3e1796971848f910",
+      "ocorrencias": [
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/[...filename]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/[...filename]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554701
+    },
+    "src/app/api/svg/svgManipulator.ts": {
+      "count": 2,
+      "hash": "299935fa062dbade",
+      "ocorrencias": [
+        {
+          "linha": 54,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+1 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 54,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+1 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554704
+    },
+    "src/app/api/visitors/[id]/badge.svg/route.ts": {
+      "count": 2,
+      "hash": "5ae97dccd3d03745",
+      "ocorrencias": [
+        {
+          "linha": 49,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 49,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554708
+    },
+    "src/app/api/visitors/[id]/route.ts": {
+      "count": 2,
+      "hash": "0710dae9b2754d4c",
+      "ocorrencias": [
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554711
+    },
+    "src/app/blog/[slug]/MDXRenderer.tsx": {
+      "count": 0,
+      "hash": "14c7639e388cd197",
+      "ocorrencias": [],
+      "timestamp": 1779479554715
+    },
+    "src/app/blog/[slug]/PostContent.tsx": {
+      "count": 1,
+      "hash": "fbcbeba3fb33f1d8",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/PostContent.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/PostContent.tsx",
+          "tipo": "evidencia_contextual"
+        }
+      ],
+      "timestamp": 1779479554727
+    },
+    "src/app/blog/[slug]/page.tsx": {
+      "count": 2,
+      "hash": "2c0cf127b8deb134",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/page.tsx",
+          "tipo": "evidencia_contextual"
+        }
+      ],
+      "timestamp": 1779479554719
+    },
+    "src/app/blog/category/[category]/page.tsx": {
+      "count": 4,
+      "hash": "108c45a7b6ee505f",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/category/[category]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/category/[category]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554730
+    },
+    "src/app/blog/layout.tsx": {
+      "count": 2,
+      "hash": "b331f52c8e40ddf1",
+      "ocorrencias": [
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/layout.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/layout.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554733
+    },
+    "src/app/blog/page.tsx": {
+      "count": 2,
+      "hash": "1904ba089b9333bf",
+      "ocorrencias": [
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554736
+    },
+    "src/app/blog/tag/[tag]/page.tsx": {
+      "count": 2,
+      "hash": "16f2f1fe96d4c62a",
+      "ocorrencias": [
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554739
+    },
+    "src/app/components/Footer.tsx": {
+      "count": 0,
+      "hash": "cbcdfe2fcc54d02b",
+      "ocorrencias": [],
+      "timestamp": 1779479554743
+    },
+    "src/app/components/FooterMobileExtras.tsx": {
+      "count": 0,
+      "hash": "1efeaf9adcef84ce",
+      "ocorrencias": [],
+      "timestamp": 1779479554746
+    },
+    "src/app/components/Header.tsx": {
+      "count": 0,
+      "hash": "7fcd27f1823ddf99",
+      "ocorrencias": [],
+      "timestamp": 1779479554750
+    },
+    "src/app/components/Logo.tsx": {
+      "count": 2,
+      "hash": "0d354e80b0c723b6",
+      "ocorrencias": [
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/Logo.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/Logo.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554753
+    },
+    "src/app/components/ScrollToTop.tsx": {
+      "count": 2,
+      "hash": "106cfb647c437955",
+      "ocorrencias": [
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ScrollToTop.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ScrollToTop.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554756
+    },
+    "src/app/components/VideoEmbed.tsx": {
+      "count": 0,
+      "hash": "b6af7d8bc8788d0c",
+      "ocorrencias": [],
+      "timestamp": 1779479554794
+    },
+    "src/app/components/ui/Badge.tsx": {
+      "count": 0,
+      "hash": "2ab5a6a20914a0d8",
+      "ocorrencias": [],
+      "timestamp": 1779479554758
+    },
+    "src/app/components/ui/Button.tsx": {
+      "count": 0,
+      "hash": "80575b58488bbf37",
+      "ocorrencias": [],
+      "timestamp": 1779479554760
+    },
+    "src/app/components/ui/Card.tsx": {
+      "count": 0,
+      "hash": "5c97ed87f1b1c243",
+      "ocorrencias": [],
+      "timestamp": 1779479554763
+    },
+    "src/app/components/ui/CodeModal.tsx": {
+      "count": 2,
+      "hash": "0391253eb7dfd2c2",
+      "ocorrencias": [
+        {
+          "linha": 30,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/CodeModal.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 30,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/CodeModal.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554767
+    },
+    "src/app/components/ui/Container.tsx": {
+      "count": 0,
+      "hash": "c5586f995ceb44bc",
+      "ocorrencias": [],
+      "timestamp": 1779479554769
+    },
+    "src/app/components/ui/FeatureItem.tsx": {
+      "count": 0,
+      "hash": "984020494697e417",
+      "ocorrencias": [],
+      "timestamp": 1779479554770
+    },
+    "src/app/components/ui/Input.tsx": {
+      "count": 0,
+      "hash": "561f6f42171b7343",
+      "ocorrencias": [],
+      "timestamp": 1779479554772
+    },
+    "src/app/components/ui/Panel.tsx": {
+      "count": 0,
+      "hash": "d375056627294e57",
+      "ocorrencias": [],
+      "timestamp": 1779479554773
+    },
+    "src/app/components/ui/PostCard.tsx": {
+      "count": 0,
+      "hash": "92a90f5480a9fd68",
+      "ocorrencias": [],
+      "timestamp": 1779479554776
+    },
+    "src/app/components/ui/SVGCard.tsx": {
+      "count": 0,
+      "hash": "64d531b86fffd1a3",
+      "ocorrencias": [],
+      "timestamp": 1779479554779
+    },
+    "src/app/components/ui/SVGGalleryInstructions.tsx": {
+      "count": 2,
+      "hash": "c0ba30155c1d06cf",
+      "ocorrencias": [
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/SVGGalleryInstructions.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/SVGGalleryInstructions.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554785
+    },
+    "src/app/components/ui/SVGGalleryNotification.tsx": {
+      "count": 0,
+      "hash": "b95bc2dd64850f02",
+      "ocorrencias": [],
+      "timestamp": 1779479554787
+    },
+    "src/app/components/ui/Tag.tsx": {
+      "count": 0,
+      "hash": "0dd53dbdd04b045c",
+      "ocorrencias": [],
+      "timestamp": 1779479554789
+    },
+    "src/app/components/ui/buttonStyles.ts": {
+      "count": 2,
+      "hash": "1220bd49270cb9a6",
+      "ocorrencias": [
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/buttonStyles.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/buttonStyles.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554762
+    },
+    "src/app/error.tsx": {
+      "count": 0,
+      "hash": "63ad5ada04ddd3f7",
+      "ocorrencias": [],
+      "timestamp": 1779479554797
+    },
+    "src/app/galeria/_components/CategoryNav.tsx": {
+      "count": 2,
+      "hash": "4807dd64905e8463",
+      "ocorrencias": [
+        {
+          "linha": 46,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 46,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554801
+    },
+    "src/app/galeria/_components/GalleryGrid.tsx": {
+      "count": 2,
+      "hash": "1b7db6655550bc09",
+      "ocorrencias": [
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554810
+    },
+    "src/app/galeria/_components/SearchInput.tsx": {
+      "count": 2,
+      "hash": "5328c20849fb39f6",
+      "ocorrencias": [
+        {
+          "linha": 19,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/SearchInput.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 19,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/SearchInput.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554812
+    },
+    "src/app/galeria/decorativos/page.tsx": {
+      "count": 0,
+      "hash": "6c728dd2777e1d43",
+      "ocorrencias": [],
+      "timestamp": 1779479554815
+    },
+    "src/app/galeria/ferramentas/page.tsx": {
+      "count": 0,
+      "hash": "b9a3a178e37bb080",
+      "ocorrencias": [],
+      "timestamp": 1779479554817
+    },
+    "src/app/galeria/info/_components/GitHubStatsPreview.tsx": {
+      "count": 21,
+      "hash": "9ef5be08d4e501d6",
+      "ocorrencias": [
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito shadow (shadow-lg, shadow-black/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 51,
+          "mensagem": "Possível conflito shadow (shadow-lg, shadow-[var(--accent-teal)]/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 55,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 58,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 78,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 93,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 108,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 149,
+          "mensagem": "Possível conflito shadow (shadow-inner, shadow-black/30). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 160,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 126,
+          "mensagem": "Possível conflito shadow (shadow-md, shadow-[var(--accent-cyan)]/10). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 126,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 182,
+          "mensagem": "Possível conflito shadow (shadow-md, shadow-[var(--accent-teal)]/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 182,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 182,
+          "mensagem": "Possível conflito shadow (hover:shadow-lg, hover:shadow-[var(--accent-cyan)]/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 182,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 182,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554832
+    },
+    "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx": {
+      "count": 21,
+      "hash": "42cefa387ed422f9",
+      "ocorrencias": [
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito shadow (shadow-lg, shadow-black/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 50,
+          "mensagem": "Possível conflito shadow (shadow-lg, shadow-[var(--accent-teal)]/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 54,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 57,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 77,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 92,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 107,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 148,
+          "mensagem": "Possível conflito shadow (shadow-inner, shadow-black/30). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 159,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 125,
+          "mensagem": "Possível conflito shadow (shadow-md, shadow-[var(--accent-cyan)]/10). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 125,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 181,
+          "mensagem": "Possível conflito shadow (shadow-md, shadow-[var(--accent-teal)]/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 181,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 181,
+          "mensagem": "Possível conflito shadow (hover:shadow-lg, hover:shadow-[var(--accent-cyan)]/20). Verifique duplicidades.",
+          "nivel": "aviso",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 181,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 181,
+          "mensagem": "Possível conflito de variantes para shadow (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 39,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 39,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554848
+    },
+    "src/app/galeria/info/page.tsx": {
+      "count": 0,
+      "hash": "c6a540c5a6359485",
+      "ocorrencias": [],
+      "timestamp": 1779479554851
+    },
+    "src/app/galeria/langs/page.tsx": {
+      "count": 0,
+      "hash": "7d9c27efb303494e",
+      "ocorrencias": [],
+      "timestamp": 1779479554853
+    },
+    "src/app/galeria/layout.tsx": {
+      "count": 2,
+      "hash": "ba42c5350b528d7e",
+      "ocorrencias": [
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/layout.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/layout.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554854
+    },
+    "src/app/galeria/page.tsx": {
+      "count": 0,
+      "hash": "42fe398e3e83b8ed",
+      "ocorrencias": [],
+      "timestamp": 1779479554857
+    },
+    "src/app/galeria/skills/page.tsx": {
+      "count": 0,
+      "hash": "b11e2db69a9354d3",
+      "ocorrencias": [],
+      "timestamp": 1779479554860
+    },
+    "src/app/galeria/social/page.tsx": {
+      "count": 0,
+      "hash": "4895a77a991989e9",
+      "ocorrencias": [],
+      "timestamp": 1779479554862
+    },
+    "src/app/galeria/tecnologias/page.tsx": {
+      "count": 0,
+      "hash": "c70d573ca0649eb9",
+      "ocorrencias": [],
+      "timestamp": 1779479554864
+    },
+    "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx": {
+      "count": 3,
+      "hash": "bd5366ec7f526884",
+      "ocorrencias": [
+        {
+          "linha": 9,
+          "mensagem": "Interface 'BadgeVariant' deve estar em types/",
+          "nivel": "aviso",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "interface-inline-exportada"
+        },
+        {
+          "linha": 64,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 64,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554882
+    },
+    "src/app/galeria/visitors/page.tsx": {
+      "count": 0,
+      "hash": "c8482d1995b69f7a",
+      "ocorrencias": [],
+      "timestamp": 1779479554884
+    },
+    "src/app/layout.tsx": {
+      "count": 0,
+      "hash": "25c7de54458b048c",
+      "ocorrencias": [],
+      "timestamp": 1779479554888
+    },
+    "src/app/loading.tsx": {
+      "count": 0,
+      "hash": "788f8bf86832d8c3",
+      "ocorrencias": [],
+      "timestamp": 1779479554890
+    },
+    "src/app/manifest.ts": {
+      "count": 0,
+      "hash": "26cacaa861c82e8a",
+      "ocorrencias": [],
+      "timestamp": 1779479554891
+    },
+    "src/app/not-found.tsx": {
+      "count": 2,
+      "hash": "31cc26a3bfd01a9d",
+      "ocorrencias": [
+        {
+          "linha": 5,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/not-found.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 5,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/not-found.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554893
+    },
+    "src/app/page.tsx": {
+      "count": 0,
+      "hash": "ba6e0c175ad65dbb",
+      "ocorrencias": [],
+      "timestamp": 1779479554896
+    },
+    "src/app/politica-de-privacidade/page.tsx": {
+      "count": 2,
+      "hash": "a30a0bbd21385d95",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+13 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/politica-de-privacidade/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+13 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/politica-de-privacidade/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554909
+    },
+    "src/app/robots.ts": {
+      "count": 0,
+      "hash": "5e2c113ffcdd2711",
+      "ocorrencias": [],
+      "timestamp": 1779479554910
+    },
+    "src/app/sitemap.ts": {
+      "count": 0,
+      "hash": "3e31c205a4ccbac1",
+      "ocorrencias": [],
+      "timestamp": 1779479554911
+    },
+    "src/app/style/components.css": {
+      "count": 0,
+      "hash": "5790b9405c57c6f6",
+      "ocorrencias": [],
+      "timestamp": 1779479554940
+    },
+    "src/app/style/globals.css": {
+      "count": 0,
+      "hash": "ca1e6224536def76",
+      "ocorrencias": [],
+      "timestamp": 1779479554953
+    },
+    "src/app/style/responsive.css": {
+      "count": 0,
+      "hash": "2fb031084c06a2ca",
+      "ocorrencias": [],
+      "timestamp": 1779479554963
+    },
+    "src/app/termos-de-uso/page.tsx": {
+      "count": 2,
+      "hash": "8fa7418be37cef9e",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/termos-de-uso/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/termos-de-uso/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554974
+    },
+    "src/lib/cloneBadgeBase.ts": {
+      "count": 2,
+      "hash": "cd8a304ecaf816bb",
+      "ocorrencias": [
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeBase.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeBase.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554975
+    },
+    "src/lib/cloneBadgeSvg.ts": {
+      "count": 4,
+      "hash": "20a8da1b412c8efc",
+      "ocorrencias": [
+        {
+          "linha": 24,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 24,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554977
+    },
+    "src/lib/clones.ts": {
+      "count": 2,
+      "hash": "62b63eeaba14e5c7",
+      "ocorrencias": [
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/clones.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/clones.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554978
+    },
+    "src/lib/gallery/decorativos.ts": {
+      "count": 0,
+      "hash": "198d61d69a5dd20e",
+      "ocorrencias": [],
+      "timestamp": 1779479554983
+    },
+    "src/lib/gallery/index.ts": {
+      "count": 0,
+      "hash": "57e4c059f3dab0da",
+      "ocorrencias": [],
+      "timestamp": 1779479554983
+    },
+    "src/lib/gallery/info.ts": {
+      "count": 2,
+      "hash": "f47ee0243f49a5ac",
+      "ocorrencias": [
+        {
+          "linha": 25,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/info.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 25,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/info.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479554987
+    },
+    "src/lib/gallery/skills.ts": {
+      "count": 2,
+      "hash": "522d7ee9f3c3072d",
+      "ocorrencias": [
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/skills.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/skills.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555010
+    },
+    "src/lib/gallery/social.ts": {
+      "count": 0,
+      "hash": "c003da77c63ac8a0",
+      "ocorrencias": [],
+      "timestamp": 1779479555017
+    },
+    "src/lib/gallery/types.ts": {
+      "count": 0,
+      "hash": "fdcc86995e8cb02a",
+      "ocorrencias": [],
+      "timestamp": 1779479555019
+    },
+    "src/lib/getBaseUrl.ts": {
+      "count": 2,
+      "hash": "1e6d2a9bb43249ed",
+      "ocorrencias": [
+        {
+          "linha": 26,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/getBaseUrl.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 26,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/getBaseUrl.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555021
+    },
+    "src/lib/github-langs-svg.ts": {
+      "count": 2,
+      "hash": "fc65e293798bb6f4",
+      "ocorrencias": [
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+26 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-langs-svg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+26 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-langs-svg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555028
+    },
+    "src/lib/github-stats-svg.ts": {
+      "count": 2,
+      "hash": "ecbdc613d1d6c562",
+      "ocorrencias": [
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+34 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+34 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555036
+    },
+    "src/lib/github-stats.ts": {
+      "count": 2,
+      "hash": "4eeb0e9b61c15e01",
+      "ocorrencias": [
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+20 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+20 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555047
+    },
+    "src/lib/posts.ts": {
+      "count": 2,
+      "hash": "a118bbb9c3158d97",
+      "ocorrencias": [
+        {
+          "linha": 138,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/posts.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 138,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/posts.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555050
+    },
+    "src/lib/statusBadgeSvg.ts": {
+      "count": 2,
+      "hash": "993f09b349c84ccd",
+      "ocorrencias": [
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/statusBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/statusBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555055
+    },
+    "src/lib/svgGalleryData.ts": {
+      "count": 0,
+      "hash": "de2617e823558570",
+      "ocorrencias": [],
+      "timestamp": 1779479555059
+    },
+    "src/lib/visitorBadgeBase.ts": {
+      "count": 0,
+      "hash": "884abe6c2a34458c",
+      "ocorrencias": [],
+      "timestamp": 1779479555060
+    },
+    "src/lib/visitorBadgeSvg.ts": {
+      "count": 2,
+      "hash": "491d8ef1c6758c89",
+      "ocorrencias": [
+        {
+          "linha": 33,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 33,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555063
+    },
+    "src/lib/visitors.ts": {
+      "count": 0,
+      "hash": "03da70445d7ba673",
+      "ocorrencias": [],
+      "timestamp": 1779479555065
+    },
+    "src/types/blog.ts": {
+      "count": 0,
+      "hash": "eb616274b49b4e04",
+      "ocorrencias": [],
+      "timestamp": 1779479555066
+    },
+    "src/types/clone.ts": {
+      "count": 0,
+      "hash": "36c18c2b354f5670",
+      "ocorrencias": [],
+      "timestamp": 1779479555067
+    },
+    "src/types/galeria.ts": {
+      "count": 0,
+      "hash": "9129bc66a5c968d8",
+      "ocorrencias": [],
+      "timestamp": 1779479555069
+    },
+    "src/types/github.ts": {
+      "count": 0,
+      "hash": "6d1bd432c0461010",
+      "ocorrencias": [],
+      "timestamp": 1779479555071
+    },
+    "src/types/index.ts": {
+      "count": 0,
+      "hash": "3a8020e1608d9641",
+      "ocorrencias": [],
+      "timestamp": 1779479555072
+    },
+    "src/types/statusBadge.ts": {
+      "count": 0,
+      "hash": "76cda8c966b49ba9",
+      "ocorrencias": [],
+      "timestamp": 1779479555073
+    },
+    "src/types/svg.ts": {
+      "count": 0,
+      "hash": "ee11a7a5b8652942",
+      "ocorrencias": [],
+      "timestamp": 1779479555074
+    },
+    "src/types/ui.ts": {
+      "count": 0,
+      "hash": "bb8f6b785edbca1f",
+      "ocorrencias": [],
+      "timestamp": 1779479555077
+    },
+    "src/types/visitor.ts": {
+      "count": 0,
+      "hash": "e61fe17747e16e3f",
+      "ocorrencias": [],
+      "timestamp": 1779479555078
+    },
+    "svgo.config.js": {
+      "count": 2,
+      "hash": "8fb88bcf42fd85d0",
+      "ocorrencias": [
+        {
+          "linha": 68,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "svgo.config.js",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 68,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "svgo.config.js",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555080
+    },
+    "tailwind.config.ts": {
+      "count": 2,
+      "hash": "9dac18d8751504bf",
+      "ocorrencias": [
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+36 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "tailwind.config.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+36 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "tailwind.config.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779479555083
+    },
+    "tsconfig.json": {
+      "count": 0,
+      "hash": "a7616c65686c3054",
+      "ocorrencias": [],
+      "timestamp": 1779479555117
+    },
+    "tsconfig.tsbuildinfo": {
+      "count": 0,
+      "hash": "58d64bbf3d639fa5",
+      "ocorrencias": [],
+      "timestamp": 1779479555132
+    },
+    "vercel.json": {
+      "count": 1,
+      "hash": "8e386a553ba9d2da",
+      "ocorrencias": [
+        {
+          "linha": 9,
+          "mensagem": "Arquivo parece não estar formatado (parser: json). Considere normalizar com o formatador do Prometheus. (primeira diferença na linha 9)",
+          "nivel": "aviso",
+          "origem": "analista-formatador",
+          "relPath": "vercel.json",
+          "tipo": "formatador-json"
+        }
+      ],
+      "timestamp": 1779479555134
+    }
+  },
+  "versao": 1
+}

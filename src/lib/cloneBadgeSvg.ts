@@ -1,3 +1,8 @@
+/**
+ * Renderizador de SVG de badge de clones.
+ * Substitui placeholders do template base com valores fornecidos.
+ */
+
 import { CLONE_BADGE_SVG_BASE } from '@/lib/cloneBadgeBase';
 import type { CloneBadgeShape, CloneBadgeStyleOptions } from '@/types/clone';
 
@@ -35,6 +40,13 @@ function resolveRx(options: CloneBadgeStyleOptions | undefined): number {
   }
 }
 
+/**
+ * Renderiza o SVG completo do badge de clone com os valores fornecidos.
+ * @param label - Texto do label (ex: "clones")
+ * @param value - Valor numérico ou texto a exibir
+ * @param options - Opções de estilo opcionais
+ * @returns String SVG completa
+ */
 export function renderCloneBadgeSvg(
   label: string,
   value: string,

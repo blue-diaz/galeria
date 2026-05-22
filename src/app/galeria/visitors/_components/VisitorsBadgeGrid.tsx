@@ -5,15 +5,9 @@ import Button from '../../../components/ui/Button';
 import Card from '../../../components/ui/Card';
 import CodeModal from '../../../components/ui/CodeModal';
 import SVGGalleryNotification from '../../../components/ui/SVGGalleryNotification';
+import type { VisitorVariant } from '@/types/visitor';
 
-interface BadgeVariant {
-  id: string;
-  title: string;
-  alt: string;
-  labelForMarkdown: string;
-  query: Record<string, string>;
-  previewQuery?: Record<string, string>;
-}
+type BadgeVariant = VisitorVariant;
 
 function toQueryString(params: Record<string, string> | undefined): string {
   if (params === undefined) return '';
