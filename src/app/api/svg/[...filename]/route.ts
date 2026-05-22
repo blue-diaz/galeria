@@ -4,69 +4,73 @@ import { type NextRequest, NextResponse } from 'next/server';
 import path from 'path';
 import { isValidDimension, manipulateSvgDimensions } from '../svgManipulator';
 
-// Cache simples em memória; invalida quando o mtime do arquivo muda.
 const svgCache = new Map<string, CacheEntry>();
 
-const SVG_ROOT = path.join(process.cwd(), 'public', 'svg');
-const MAX_WALK = 10000;
+function findSvgRoot(): string {
+  const candidates = [
+    path.join(process.cwd(), 'public', 'svg'),
+    path.join(process.cwd(), '..', 'public', 'svg'),
+    path.resolve('public', 'svg'),
+  ];
+  for (const dir of candidates) {
+    try {
+      if (fs.statSync(dir).isDirectory()) return dir;
+    } catch {
+      continue;
+    }
+  }
+  return candidates[0]!;
+}
+
+const SVG_ROOT = findSvgRoot();
+
+const nameMap = new Map<string, string>();
+function buildNameMap() {
+  const walk = (dir: string) => {
+    let entries: string[];
+    try {
+      entries = fs.readdirSync(dir);
+    } catch {
+      return;
+    }
+    for (const entry of entries) {
+      const full = path.join(dir, entry);
+      try {
+        const st = fs.statSync(full);
+        if (st.isDirectory()) {
+          walk(full);
+        } else if (st.isFile() && entry.toLowerCase().endsWith('.svg')) {
+          nameMap.set(entry, full);
+        }
+      } catch {
+        continue;
+      }
+    }
+  };
+  try {
+    walk(SVG_ROOT);
+  } catch {}
+}
+buildNameMap();
 
 function isSafeSvgRequestPath(filename: string): boolean {
   if (filename.trim() === '') return false;
-  // Bloqueia path traversal e paths absolutos (POSIX/Windows).
   if (filename.includes('..')) return false;
   if (filename.startsWith('/') || filename.startsWith('\\')) return false;
   if (filename.includes('\\')) return false;
   if (path.isAbsolute(filename)) return false;
-  // Apenas SVGs.
   if (!filename.toLowerCase().endsWith('.svg')) return false;
-  // Permite somente caracteres previsíveis (evita espaços, % estranhos, etc.).
   if (!/^[a-zA-Z0-9._\-/]+$/.test(filename)) return false;
   return true;
 }
 
 function findSvgPath(filename: string): string | null {
-  // caminho direto (permite subpastas na URL)
   const direct = path.join(SVG_ROOT, filename);
   try {
-    const fd = fs.openSync(direct, 'r');
-    const st = fs.fstatSync(fd);
-    fs.closeSync(fd);
-    if (st.isFile()) return direct;
+    if (fs.statSync(direct).isFile()) return direct;
   } catch {
-    // arquivo não existe ou não pode ser aberto
   }
-
-  // busca por basename dentro de public/svg (recursiva, BFS)
-  const target = path.basename(filename);
-  const stack: string[] = [SVG_ROOT];
-  let iterations = 0;
-  while (stack.length > 0) {
-    if (++iterations > MAX_WALK) break;
-    const cur = stack.shift();
-    if (cur === undefined) break;
-    let entries: string[];
-    try {
-      entries = fs.readdirSync(cur);
-    } catch {
-      continue;
-    }
-    for (const entry of entries) {
-      const full = path.join(cur, entry);
-      try {
-        const fd = fs.openSync(full, 'r');
-        const st = fs.fstatSync(fd);
-        fs.closeSync(fd);
-        if (st.isDirectory()) {
-          stack.push(full);
-        } else if (st.isFile() && entry === target) {
-          return full;
-        }
-      } catch {
-        // ignora entradas inacessíveis
-      }
-    }
-  }
-  return null;
+  return nameMap.get(path.basename(filename)) ?? null;
 }
 
 export async function GET(
@@ -97,37 +101,29 @@ export async function GET(
     if (svgPath === null)
       return new NextResponse('SVG not found', { status: 404 });
 
-    let fd: number | undefined;
-    try {
-      fd = fs.openSync(svgPath, 'r');
-      const stat = fs.fstatSync(fd);
-      const cached = svgCache.get(svgPath);
-      const isFresh = cached?.mtimeMs === stat.mtimeMs;
-      const baseContent = isFresh
-        ? cached.content
-        : fs.readFileSync(fd, 'utf-8');
-      if (!isFresh) {
-        svgCache.set(svgPath, { content: baseContent, mtimeMs: stat.mtimeMs });
-      }
-
-      let svgContent = baseContent;
-      svgContent = manipulateSvgDimensions(
-        svgContent,
-        widthParam,
-        heightParam,
-        fitParam,
-      );
-      return new NextResponse(svgContent, {
-        headers: {
-          'Content-Type': 'image/svg+xml; charset=utf-8',
-          'Cache-Control': 'public, max-age=31536000, immutable',
-        },
-      });
-    } finally {
-      if (fd !== undefined) {
-        fs.closeSync(fd);
-      }
+    const stat = fs.statSync(svgPath);
+    const cached = svgCache.get(svgPath);
+    const isFresh = cached?.mtimeMs === stat.mtimeMs;
+    const baseContent = isFresh
+      ? cached.content
+      : fs.readFileSync(svgPath, 'utf-8');
+    if (!isFresh) {
+      svgCache.set(svgPath, { content: baseContent, mtimeMs: stat.mtimeMs });
     }
+
+    let svgContent = baseContent;
+    svgContent = manipulateSvgDimensions(
+      svgContent,
+      widthParam,
+      heightParam,
+      fitParam,
+    );
+    return new NextResponse(svgContent, {
+      headers: {
+        'Content-Type': 'image/svg+xml; charset=utf-8',
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      },
+    });
   } catch (error) {
     console.error('Error serving SVG:', error);
     return new NextResponse('Internal Server Error', { status: 500 });

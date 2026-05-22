@@ -31,7 +31,7 @@ const TWITTER_CARD = 'summary_large_image';
 const TWITTER_TITLE = 'Galeria Black Diaz';
 const TWITTER_DESCRIPTION = 'Recursos gratuitos para seus perfis no GitHub';
 // icon file moved into /icons folder
-const ICON_IMAGE = '/icons/blue-diaz.jpg';
+const ICON_IMAGE = '/icons/black-diaz.jpg';
 const TWITTER_IMAGE = ICON_IMAGE;
 const MAX_VIDEO_PREVIEW = -1;
 const MAX_IMAGE_PREVIEW = 'large';

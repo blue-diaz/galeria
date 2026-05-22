@@ -75,16 +75,6 @@ const nextConfig = {
       },
     ];
   },
-
-  // Turbopack (Next.js 16 default)
-  turbopack: {
-    rules: {
-      '*.svg': {
-        loaders: ['@svgr/webpack'],
-        as: '*.js',
-      },
-    },
-  },
 };
 
 export default nextConfig;
