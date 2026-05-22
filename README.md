@@ -9,8 +9,8 @@ Referências a materiais externos devem ser linkadas e reescritas com palavras p
 
 **Plataforma open-source de badges SVG e cards dinâmicos para perfis GitHub**
 
-[![CI](https://github.com/black-diaz/galeria/actions/workflows/ci.yml/badge.svg)](https://github.com/black-diaz/galeria/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/black-diaz/galeria/actions/workflows/codeql.yml/badge.svg)](https://github.com/black-diaz/galeria/actions/workflows/codeql.yml)
+[![CI](https://github.com/blue-diaz/galeria/actions/workflows/ci.yml/badge.svg)](https://github.com/blue-diaz/galeria/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/blue-diaz/galeria/actions/workflows/codeql.yml/badge.svg)](https://github.com/blue-diaz/galeria/actions/workflows/codeql.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
 [![Node](https://img.shields.io/badge/Node-24.x-green.svg)](https://nodejs.org)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black.svg)](https://nextjs.org)
@@ -67,7 +67,7 @@ Galeria Black Diaz é uma plataforma que oferece uma coleção de **150+ badges 
 ### Instalação
 
 ```bash
-git clone https://github.com/black-diaz/galeria.git
+git clone https://github.com/blue-diaz/galeria.git
 cd galeria
 npm install
 cp .env.example .env.local  # opcional
@@ -106,19 +106,19 @@ Os badges estão em `public/svg/` e são servidos via `/api/svg/[...filename]`:
 ### GitHub Stats Cards
 
 ```md
-![GitHub Stats](https://galeria-tau-ten.vercel.app/api/github-stats/black-diaz?theme=dark)
+![GitHub Stats](https://galeria-tau-ten.vercel.app/api/github-stats/blue-diaz?theme=dark)
 ```
 
 ### GitHub Top Languages
 
 ```md
-![Top Langs](https://galeria-tau-ten.vercel.app/api/github-langs/black-diaz?theme=dark)
+![Top Langs](https://galeria-tau-ten.vercel.app/api/github-langs/blue-diaz?theme=dark)
 ```
 
 ### Contador de Visitantes
 
 ```md
-![Visitors](https://galeria-tau-ten.vercel.app/api/visitors/black-diaz/badge.svg)
+![Visitors](https://galeria-tau-ten.vercel.app/api/visitors/blue-diaz/badge.svg)
 ```
 
 ### Status Badge
@@ -233,7 +233,7 @@ Contribuições são bem-vindas! Siga o guia em [CONTRIBUTING.md](./CONTRIBUTING
 
 ### Outros Problemas
 
-[Abra uma issue](https://github.com/black-diaz/galeria/issues) descrevendo o problema.
+[Abra uma issue](https://github.com/blue-diaz/galeria/issues) descrevendo o problema.
 
 ---
 
@@ -256,12 +256,12 @@ MIT — veja [LICENSE](./LICENSE)
 ## Contato
 
 - **Site:** https://galeria-tau-ten.vercel.app
-- **GitHub:** https://github.com/black-diaz
-- **Issues:** https://github.com/black-diaz/galeria/issues
+- **GitHub:** https://github.com/blue-diaz
+- **Issues:** https://github.com/blue-diaz/galeria/issues
 
 ---
 
-# black-diaz
+# blue-diaz
 
 # galeria
 # galeria

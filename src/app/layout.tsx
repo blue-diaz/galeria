@@ -18,11 +18,11 @@ const SITE_KEYWORDS = [
   'galeria',
   'blog',
   'recursos gratuitos',
-  'black-diaz',
+  'blue-diaz',
   'desenvolvimento',
 ];
 const AUTHOR_NAME = 'Black Diaz';
-const AUTHOR_URL = 'https://github.com/black-diaz';
+const AUTHOR_URL = 'https://github.com/blue-diaz';
 const OG_TYPE = 'website';
 const OG_LOCALE = 'pt_BR';
 const OG_SITE_NAME = 'Galeria Black Diaz';
@@ -31,7 +31,7 @@ const TWITTER_CARD = 'summary_large_image';
 const TWITTER_TITLE = 'Galeria Black Diaz';
 const TWITTER_DESCRIPTION = 'Recursos gratuitos para seus perfis no GitHub';
 // icon file moved into /icons folder
-const ICON_IMAGE = '/icons/black-diaz.jpg';
+const ICON_IMAGE = '/icons/blue-diaz.jpg';
 const TWITTER_IMAGE = ICON_IMAGE;
 const MAX_VIDEO_PREVIEW = -1;
 const MAX_IMAGE_PREVIEW = 'large';

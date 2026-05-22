@@ -90,7 +90,7 @@ git clone https://github.com/SEU-USUARIO/galeria.git
 cd galeria
 
 # Adicione o repositório original como upstream
-git remote add upstream https://github.com/black-diaz/galeria.git
+git remote add upstream https://github.com/blue-diaz/galeria.git
 
 # Instale dependências
 npm install
@@ -382,7 +382,7 @@ Se encontrar vulnerabilidades de segurança:
 2. Entre em contato diretamente:
 
 - Email: mocoto.persona@gmail.com
-- GitHub (privado quando possível): https://github.com/black-diaz/galeria
+- GitHub (privado quando possível): https://github.com/blue-diaz/galeria
 
 3. Aguarde confirmação antes de disclosure
 
@@ -398,9 +398,9 @@ Se encontrar vulnerabilidades de segurança:
 
 ### Onde Pedir Ajuda
 
-- 🐛 **Bugs**: [Abrir Issue](https://github.com/black-diaz/galeria/issues/new/choose)
-- 💡 **Features**: [Feature Request](https://github.com/black-diaz/galeria/issues/new/choose)
-- ❓ **Dúvidas**: [Question Issue](https://github.com/black-diaz/galeria/issues/new/choose)
+- 🐛 **Bugs**: [Abrir Issue](https://github.com/blue-diaz/galeria/issues/new/choose)
+- 💡 **Features**: [Feature Request](https://github.com/blue-diaz/galeria/issues/new/choose)
+- ❓ **Dúvidas**: [Question Issue](https://github.com/blue-diaz/galeria/issues/new/choose)
 - 📧 **Suporte**: [Email](mailto:mocoto.persona@gmail.com)
 
 ### Comunicação
@@ -423,7 +423,7 @@ Todos os contribuidores serão:
 
 Novo por aqui? Comece com:
 
-1. 🔍 **Good First Issues**: [Ver issues](https://github.com/black-diaz/galeria/labels/good%20first%20issue)
+1. 🔍 **Good First Issues**: [Ver issues](https://github.com/blue-diaz/galeria/labels/good%20first%20issue)
 2. 📚 **Documentação**: Sempre precisa melhorias
 3. 🐛 **Typos**: Correções simples são bem-vindas
 4. 🎨 **SVGs**: Contribua com novos designs

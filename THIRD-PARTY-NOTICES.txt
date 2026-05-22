@@ -2385,7 +2385,7 @@ e de código aberto:
   dependências sem alteração.
 
 Responsável: Black Diaz
-Contato: https://github.com/black-diaz
+Contato: https://github.com/blue-diaz
 
 ================================================================================
 FIM DO ARQUIVO
