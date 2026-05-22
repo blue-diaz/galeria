@@ -7,7 +7,7 @@ Referências a materiais externos devem ser linkadas e reescritas com palavras p
 
 # 🎨 Galeria Black Diaz
 
-**Plataforma open-source de badges SVG e cards dinâmicos para perfis GitHub**
+*Plataforma open-source de badges SVG e cards dinâmicos para perfis GitHub*
 
 [![CI](https://github.com/blue-diaz/galeria/actions/workflows/ci.yml/badge.svg)](https://github.com/blue-diaz/galeria/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/blue-diaz/galeria/actions/workflows/codeql.yml/badge.svg)](https://github.com/blue-diaz/galeria/actions/workflows/codeql.yml)
