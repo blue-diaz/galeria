@@ -25,7 +25,7 @@ export default function SVGCard({
       <div className="bg-black maxH300 mb-3 overflow-hidden rounded-md border border-[var(--border-default)]">
         <img
           className="size-full object-cover"
-          src={`/api/svg/${filename}`}
+          src={`/svg/${filename}`}
           alt={alt}
         />
       </div>
