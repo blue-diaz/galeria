@@ -49,7 +49,7 @@
     "next": "^16.2.6",
     "next-mdx-remote": "^6.0.0",
     "postcss": "^8.5.14",
-    "prometheus": "file:prometheus-0.7.0.tgz",
+    "prometheus": "file:prometheus-0.8.9.tgz",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "styled-components": "^6.4.1",

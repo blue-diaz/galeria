@@ -433,7 +433,7 @@ Novo por aqui? Comece com:
 **Dúvidas sobre contribuição?**
 
 - 📧 Email: mocoto.persona@gmail.com
-- 🌐 Website: [galeria-tau-ten.vercel.app](https://galeria-tau-ten.vercel.app)
+- 🌐 Website: [black-diaz.vercel.app](https://black-diaz.vercel.app)
 
 ---
 

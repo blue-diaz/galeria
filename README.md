@@ -16,7 +16,7 @@ Referências a materiais externos devem ser linkadas e reescritas com palavras p
 [![Next.js](https://img.shields.io/badge/Next.js-16-black.svg)](https://nextjs.org)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](./package.json)
 
-[Demo](https://galeria-tau-ten.vercel.app) · [Galeria](https://galeria-tau-ten.vercel.app/galeria) · [Blog](https://galeria-tau-ten.vercel.app/blog)
+[Demo](https://black-diaz.vercel.app) · [Galeria](https://black-diaz.vercel.app/galeria) · [Blog](https://black-diaz.vercel.app/blog)
 
 </div>
 
@@ -85,11 +85,11 @@ Acesse: http://localhost:3000
 Os badges estão em `public/svg/` e são servidos via `/api/svg/[...filename]`:
 
 ```md
-![TypeScript](https://galeria-tau-ten.vercel.app/api/svg/badges/skills/langs/badge-typescript.svg)
-![React](https://galeria-tau-ten.vercel.app/api/svg/badges/skills/tecnologias/badge-react.svg)
-![Docker](https://galeria-tau-ten.vercel.app/api/svg/badges/skills/ferramentas/badge-docker.svg)
-![Full Stack](https://galeria-tau-ten.vercel.app/api/svg/badges/decorativos/badge-fullstack.svg)
-![Build Passing](https://galeria-tau-ten.vercel.app/api/svg/badges/info/badge-build-passing.svg)
+![TypeScript](https://black-diaz.vercel.app/api/svg/badges/skills/langs/badge-typescript.svg)
+![React](https://black-diaz.vercel.app/api/svg/badges/skills/tecnologias/badge-react.svg)
+![Docker](https://black-diaz.vercel.app/api/svg/badges/skills/ferramentas/badge-docker.svg)
+![Full Stack](https://black-diaz.vercel.app/api/svg/badges/decorativos/badge-fullstack.svg)
+![Build Passing](https://black-diaz.vercel.app/api/svg/badges/info/badge-build-passing.svg)
 ```
 
 ### Parâmetros de dimensão
@@ -100,31 +100,31 @@ Os badges estão em `public/svg/` e são servidos via `/api/svg/[...filename]`:
 | `height`  | `120`          | Altura em px       |
 
 ```md
-![Badge](https://galeria-tau-ten.vercel.app/api/svg/badges/skills/langs/badge-typescript.svg?width=300&height=120)
+![Badge](https://black-diaz.vercel.app/api/svg/badges/skills/langs/badge-typescript.svg?width=300&height=120)
 ```
 
 ### GitHub Stats Cards
 
 ```md
-![GitHub Stats](https://galeria-tau-ten.vercel.app/api/github-stats/blue-diaz?theme=dark)
+![GitHub Stats](https://black-diaz.vercel.app/api/github-stats/blue-diaz?theme=dark)
 ```
 
 ### GitHub Top Languages
 
 ```md
-![Top Langs](https://galeria-tau-ten.vercel.app/api/github-langs/blue-diaz?theme=dark)
+![Top Langs](https://black-diaz.vercel.app/api/github-langs/blue-diaz?theme=dark)
 ```
 
 ### Contador de Visitantes
 
 ```md
-![Visitors](https://galeria-tau-ten.vercel.app/api/visitors/blue-diaz/badge)
+![Visitors](https://black-diaz.vercel.app/api/visitors/blue-diaz/badge)
 ```
 
 ### Status Badge
 
 ```md
-![Status](https://galeria-tau-ten.vercel.app/api/status-badge?theme=dark&variant=online)
+![Status](https://black-diaz.vercel.app/api/status-badge?theme=dark&variant=online)
 ```
 
 ### Temas disponíveis
@@ -255,7 +255,7 @@ MIT — veja [LICENSE](./LICENSE)
 
 ## Contato
 
-- **Site:** https://galeria-tau-ten.vercel.app
+- **Site:** https://black-diaz.vercel.app
 - **GitHub:** https://github.com/blue-diaz
 - **Issues:** https://github.com/blue-diaz/galeria/issues
 
