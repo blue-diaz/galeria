@@ -40,12 +40,12 @@ function getClientBaseUrl(): string {
 
 function getBadgePath(id: string, cloneId: string, visitorId: string): string {
   if (id.startsWith('unic-clones')) {
-    return `/api/clones/${cloneId}/unic/badge.svg`;
+    return `/api/unic-clones/${cloneId}/badge`;
   }
   if (id.startsWith('clones-')) {
-    return `/api/clones/${cloneId}/badge.svg`;
+    return `/api/clones/${cloneId}/badge`;
   }
-  return `/api/visitors/${visitorId}/badge.svg`;
+  return `/api/visitors/${visitorId}/badge`;
 }
 
 export default function VisitorsBadgeGrid(): React.ReactElement {
@@ -72,14 +72,14 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           label: 'visitors',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: '00fff7',
+          valueColor: '00ffff',
           textColor: 'ffffff',
         },
         previewQuery: {
           label: 'visitors',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: '00fff7',
+          valueColor: '00ffff',
           textColor: 'ffffff',
           increment: '0',
         },
@@ -93,14 +93,14 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           label: 'visitors',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: 'ff00aa',
+          valueColor: 'ff00ff',
           textColor: 'ffffff',
         },
         previewQuery: {
           label: 'visitors',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: 'ff00aa',
+          valueColor: 'ff00ff',
           textColor: 'ffffff',
           increment: '0',
         },
@@ -114,14 +114,14 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           label: 'clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: '00ff88',
+          valueColor: '00ff66',
           textColor: 'ffffff',
         },
         previewQuery: {
           label: 'clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: '00ff88',
+          valueColor: '00ff66',
           textColor: 'ffffff',
           increment: '0',
         },
@@ -135,14 +135,14 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           label: 'clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: 'ff6600',
+          valueColor: 'ff4400',
           textColor: 'ffffff',
         },
         previewQuery: {
           label: 'clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: 'ff6600',
+          valueColor: 'ff4400',
           textColor: 'ffffff',
           increment: '0',
         },
@@ -156,14 +156,14 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           label: 'unic clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: 'aa00ff',
+          valueColor: '8800ff',
           textColor: 'ffffff',
         },
         previewQuery: {
           label: 'unic clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: 'aa00ff',
+          valueColor: '8800ff',
           textColor: 'ffffff',
           increment: '0',
         },
@@ -177,14 +177,14 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           label: 'unic clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: '00ccbb',
+          valueColor: '00ffcc',
           textColor: 'ffffff',
         },
         previewQuery: {
           label: 'unic clones',
           shape: 'square',
           labelColor: '0a0a0f',
-          valueColor: '00ccbb',
+          valueColor: '00ffcc',
           textColor: 'ffffff',
           increment: '0',
         },

@@ -130,6 +130,14 @@ export async function fetchGitHubStats(username: string): Promise<GitHubStats> {
   try {
     console.error(`📡 Fetching GitHub stats for ${username}...`);
 
+    const tokenTrimmed = typeof token === 'string' ? token.trim() : '';
+
+    if (tokenTrimmed.length === 0) {
+      console.error('⚠ No GitHub token - using REST API directly');
+      const fallback = await fetchGitHubStatsRest(username);
+      return fallback;
+    }
+
     const query = `
       query {
         user(login: "${username}") {
@@ -171,16 +179,8 @@ export async function fetchGitHubStats(username: string): Promise<GitHubStats> {
       Accept: 'application/vnd.github.v3+json',
     };
 
-    // Token é OPCIONAL - melhora apenas rate limit
-    const tokenTrimmed = typeof token === 'string' ? token.trim() : '';
-    if (tokenTrimmed.length > 0) {
-      headers['Authorization'] = `Bearer ${tokenTrimmed}`;
-      console.error('✓ Using GitHub token for authentication');
-    } else {
-      console.error(
-        '⚠ No GitHub token available - using unauthenticated requests (60 req/hour limit)',
-      );
-    }
+    headers['Authorization'] = `Bearer ${tokenTrimmed}`;
+    console.error('✓ Using GitHub token for authentication');
 
     let response: Response;
     try {

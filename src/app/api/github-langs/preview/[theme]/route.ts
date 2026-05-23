@@ -1,8 +1,3 @@
-/**
- * API route para preview de linguagens do GitHub.
- * Gera SVG de exemplo com dados fictícios para visualização do tema.
- */
-
 import { generateLanguagesPreviewSVG } from '@/lib/github-langs-svg';
 import type { GitHubCardTheme, GitHubCommonParams } from '@/types/github';
 import { NextResponse } from 'next/server';
@@ -64,9 +59,7 @@ export async function GET(
     return new NextResponse(svg, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
-        Pragma: 'no-cache',
-        Expires: '0',
+        'Cache-Control': 'public, max-age=86400, s-maxage=86400, immutable',
       },
     });
   } catch (error) {

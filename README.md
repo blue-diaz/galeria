@@ -118,7 +118,7 @@ Os badges estão em `public/svg/` e são servidos via `/api/svg/[...filename]`:
 ### Contador de Visitantes
 
 ```md
-![Visitors](https://galeria-tau-ten.vercel.app/api/visitors/blue-diaz/badge.svg)
+![Visitors](https://galeria-tau-ten.vercel.app/api/visitors/blue-diaz/badge)
 ```
 
 ### Status Badge

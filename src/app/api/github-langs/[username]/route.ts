@@ -1,8 +1,3 @@
-/**
- * API route para linguagens do GitHub.
- * Gera SVGs com estatísticas de linguagens mais usadas por um usuário.
- */
-
 import { generateLanguagesSVG } from '@/lib/github-langs-svg';
 import { fetchGitHubTopLanguages } from '@/lib/github-stats';
 import type { GitHubCardTheme, GitHubCommonParams } from '@/types/github';
@@ -18,6 +13,15 @@ const THEMES = [
   'ocean',
   'forest',
 ] as const satisfies readonly GitHubCardTheme[];
+
+const THEME_BG: Record<string, [string, string]> = {
+  dark: ['#0d1117', '#58a6ff'],
+  light: ['#ffffff', '#0366d6'],
+  neon: ['#0a0e27', '#00ff88'],
+  sunset: ['#1a0b2e', '#ff6b35'],
+  ocean: ['#0a1628', '#00d4ff'],
+  forest: ['#0d2818', '#52b788'],
+};
 
 function parseTheme(value: string | null | undefined): GitHubCardTheme {
   if (value === null || value === undefined) return 'dark';
@@ -61,6 +65,11 @@ function getDisplayName(
   return `@${defaultUsername}`;
 }
 
+function renderErrorSvg(theme: string, title: string): string {
+  const bg = THEME_BG[theme] ?? THEME_BG['dark'] as [string, string];
+  return `<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="200" rx="12" fill="${bg[0]}"/><text x="300" y="95" text-anchor="middle" fill="${bg[1]}" font-family="'Segoe UI',Ubuntu,Arial,sans-serif" font-size="22" font-weight="700">${title}</text><text x="300" y="130" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI',Ubuntu,Arial,sans-serif" font-size="14">Aguardando dados...</text></svg>`;
+}
+
 export async function GET(
   request: Request,
   { params }: { params: Promise<{ username: string }> },
@@ -83,15 +92,19 @@ export async function GET(
     return new NextResponse(svg, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': 'no-store, no-cache, must-revalidate, max-age=0',
-        Pragma: 'no-cache',
-        Expires: '0',
+        'Cache-Control': 'public, max-age=43200, s-maxage=86400',
       },
     });
   } catch (error) {
     console.error('Erro ao gerar SVG de linguagens:', error);
-    return new NextResponse('Erro ao buscar linguagens do GitHub', {
-      status: 500,
+    const config = parseCommonParams(searchParams);
+    const svg = renderErrorSvg(config.theme, 'GitHub Top Languages');
+    return new NextResponse(svg, {
+      status: 200,
+      headers: {
+        'Content-Type': 'image/svg+xml; charset=utf-8',
+        'Cache-Control': 'public, max-age=300, s-maxage=600',
+      },
     });
   }
 }

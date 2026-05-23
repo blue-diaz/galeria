@@ -77,13 +77,13 @@ export default function SVGGalleryInstructions(): React.ReactElement {
 
       <Panel className="mt-2.5 overflow-x-auto">
         <code className="whitespace-nowrap text-sm">
-          {`![Visitors](${baseUrl}/api/visitors/seu-usuario/badge.svg)`}
+          {`![Visitors](${baseUrl}/api/visitors/seu-usuario/badge)`}
         </code>
       </Panel>
 
       <Panel className="mt-2.5 overflow-x-auto">
         <code className="whitespace-nowrap text-sm">
-          {`<img src="${baseUrl}/api/visitors/seu-usuario/badge.svg" alt="Visitors" />`}
+          {`<img src="${baseUrl}/api/visitors/seu-usuario/badge" alt="Visitors" />`}
         </code>
       </Panel>
 
@@ -97,20 +97,20 @@ export default function SVGGalleryInstructions(): React.ReactElement {
           Você pode escolher o texto livremente via <code>label</code> (ex.:
           visitors, views, visitantes).
         </div>
-        <code className="mb-1.5">{`![Visitors](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=visitors)`}</code>
-        <code className="mb-1.5">{`![Views](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=views)`}</code>
-        <code className="mb-1.5">{`![Visitantes](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=visitantes)`}</code>
-        <code>{`![Sem incrementar](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=visitas&increment=0)`}</code>
+        <code className="mb-1.5">{`![Visitors](${baseUrl}/api/visitors/seu-usuario/badge?label=visitors)`}</code>
+        <code className="mb-1.5">{`![Views](${baseUrl}/api/visitors/seu-usuario/badge?label=views)`}</code>
+        <code className="mb-1.5">{`![Visitantes](${baseUrl}/api/visitors/seu-usuario/badge?label=visitantes)`}</code>
+        <code>{`![Sem incrementar](${baseUrl}/api/visitors/seu-usuario/badge?label=visitas&increment=0)`}</code>
       </div>
 
       <div className="mt-2.5 flex flex-col items-start justify-center overflow-x-auto rounded border border-[var(--vscode-border)] bg-[var(--vscode-bg)] p-5 text-left">
         <div className="mb-2 text-sm text-[var(--text-muted)]">
           Cores e formatos (hex com 3 ou 6 dígitos; com ou sem <code>#</code>):
         </div>
-        <code className="mb-1.5">{`![Pill azul](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=views&shape=pill&labelColor=111111&valueColor=2563eb&textColor=ffffff)`}</code>
-        <code className="mb-1.5">{`![Square verde](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=visitors&shape=square&labelColor=111111&valueColor=22c55e&textColor=ffffff)`}</code>
-        <code className="mb-1.5">{`![Rounded roxo](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=visitantes&shape=rounded&labelColor=0f172a&valueColor=7c3aed&textColor=ffffff)`}</code>
-        <code>{`![Sem incrementar](${baseUrl}/api/visitors/seu-usuario/badge.svg?label=views&increment=0&shape=pill&labelColor=111111&valueColor=f97316&textColor=ffffff)`}</code>
+        <code className="mb-1.5">{`![Pill azul](${baseUrl}/api/visitors/seu-usuario/badge?label=views&shape=pill&labelColor=111111&valueColor=2563eb&textColor=ffffff)`}</code>
+        <code className="mb-1.5">{`![Square verde](${baseUrl}/api/visitors/seu-usuario/badge?label=visitors&shape=square&labelColor=111111&valueColor=22c55e&textColor=ffffff)`}</code>
+        <code className="mb-1.5">{`![Rounded roxo](${baseUrl}/api/visitors/seu-usuario/badge?label=visitantes&shape=rounded&labelColor=0f172a&valueColor=7c3aed&textColor=ffffff)`}</code>
+        <code>{`![Sem incrementar](${baseUrl}/api/visitors/seu-usuario/badge?label=views&increment=0&shape=pill&labelColor=111111&valueColor=f97316&textColor=ffffff)`}</code>
       </div>
     </section>
   );

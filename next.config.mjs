@@ -25,6 +25,28 @@ const nextConfig = {
     ],
   },
 
+  // Rewrites para URLs mais limpas (compatibilidade reversa mantida)
+  async rewrites() {
+    return [
+      {
+        source: '/api/visitors/:id/badge.svg',
+        destination: '/api/visitors/:id/badge',
+      },
+      {
+        source: '/api/clones/:id/badge.svg',
+        destination: '/api/clones/:id/badge',
+      },
+      {
+        source: '/api/clones/:id/unic/badge.svg',
+        destination: '/api/unic-clones/:id/badge',
+      },
+      {
+        source: '/api/clones/:id/unic',
+        destination: '/api/unic-clones/:id',
+      },
+    ];
+  },
+
   // Cabeçalhos de segurança e performance
   async headers() {
     return [
