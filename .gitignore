@@ -1,7 +1,9 @@
-.doutor
-node_modules
+
 .next
+node_modules
+
 # Environment variables
+
 .env
 .env.local
 .env.*.local
@@ -10,6 +12,7 @@ node_modules
 .env.test.local
 
 # IDE
+
 .vscode
 .idea
 *.swp
@@ -17,11 +20,13 @@ node_modules
 *~
 
 # OS
+
 .DS_Store
 Thumbs.db
 next-env.d.ts
 
 # Build & Logs
+
 out/
 dist/
 *.log

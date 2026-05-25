@@ -10,10 +10,10 @@
  * - lib/gallery/info.ts - Dados dos badges de info
  */
 
-import { decorativosItems } from './gallery/decorativos';
-import { infoItems } from './gallery/info';
-import { socialItems } from './gallery/social';
-import { skillsItems } from './gallery/skills';
+import { decorativosItems } from '@lib/gallery';
+import { infoItems } from '@lib/gallery';
+import { socialItems } from '@lib/gallery';
+import { skillsItems } from '@lib/gallery';
 import {
   categoryLabels,
   type CategoryType,

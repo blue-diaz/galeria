@@ -1,8 +1,6 @@
 import Link from "next/link";
-import Container from "./components/ui/Container";
-import Card from "./components/ui/Card";
-import Badge from "./components/ui/Badge";
-import { svgItems } from "../lib/svgGalleryData";
+import { Container, Card, Badge } from "@app/components/ui";
+import { svgItems } from "@lib";
 
 export default function HomePage(): React.ReactElement {
   const totalSvgs = svgItems.length;

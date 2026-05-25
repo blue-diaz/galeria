@@ -1,6 +1,4 @@
-import Container from "./components/ui/Container";
-import Card from "./components/ui/Card";
-import Button from "./components/ui/Button";
+import { Container, Card, Button } from "@app/components/ui";
 
 const ERROR_CODE = "404";
 const ERROR_TITLE = "Página não encontrada";

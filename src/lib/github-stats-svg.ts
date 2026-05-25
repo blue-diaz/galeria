@@ -8,7 +8,7 @@ import type {
   GitHubStats,
   GitHubStatsThemeConfig,
 } from "@/types/github";
-import { formatNumber } from "./github-stats";
+import { formatNumber } from "@lib";
 
 // Ícones SVG semânticos (Font Awesome style)
 const icons = {

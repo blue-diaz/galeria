@@ -1,9 +1,7 @@
 import type { Metadata } from 'next';
 import { Analytics } from '@vercel/analytics/next';
 import { SpeedInsights } from '@vercel/speed-insights/next';
-import Footer from './components/Footer';
-import Header from './components/Header';
-import ScrollToTop from './components/ScrollToTop';
+import { Footer, Header, ScrollToTop } from '@app/components';
 import './style/globals.css';
 import './style/responsive.css';
 import './style/components.css';
