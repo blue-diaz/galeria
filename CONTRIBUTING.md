@@ -222,12 +222,12 @@ interface BadgeProps {
 }
 
 const createBadge = (props: BadgeProps): string => {
-  // ...
+  // implementation
 };
 
 // ❌ Ruim
 const createBadge = (props: any) => {
-  // ...
+  // implementation
 };
 ```
 

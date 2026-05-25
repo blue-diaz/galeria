@@ -68,8 +68,7 @@ function findSvgPath(filename: string): string | null {
   const direct = path.join(SVG_ROOT, filename);
   try {
     if (fs.statSync(direct).isFile()) return direct;
-  } catch {
-  }
+  } catch {}
   return nameMap.get(path.basename(filename)) ?? null;
 }
 

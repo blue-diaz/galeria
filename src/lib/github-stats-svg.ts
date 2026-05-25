@@ -97,8 +97,10 @@ const defaultTheme: GitHubStatsThemeConfig = {
  * Obtém um tema de forma segura, retornando 'dark' como fallback
  */
 function getTheme(themeKey: string): GitHubStatsThemeConfig {
-  const selectedTheme = themes[themeKey as GitHubCardTheme];
-  return selectedTheme ?? defaultTheme;
+  if (themeKey in themes) {
+    return themes[themeKey as GitHubCardTheme];
+  }
+  return defaultTheme;
 }
 
 /**
@@ -138,8 +140,12 @@ export function generateGitHubStatsSVG(
   const padding = 20;
   const cardPadding = 15;
 
-  // Estatísticas com ícones SVG
-  const statsData = [
+  const statsData: Array<{
+    label: string;
+    value: string;
+    icon: keyof typeof icons;
+    color: string;
+  }> = [
     {
       label: "Commits",
       value: formatNumber(stats.totalCommits),
@@ -205,7 +211,7 @@ export function generateGitHubStatsSVG(
   <g><rect x="${positionX}" y="${positionY}" width="${cardWidth}" height="${cardHeight}"
           rx="10" fill="${theme.cardBg}" stroke="${theme.borderColor}"
           stroke-width="1.5"/><svg x="${positionX + cardPadding}" y="${positionY + cardPadding}" width="24" height="24" viewBox="0 0 24 24"><g style="color: ${stat.color}">
-        ${icons[stat.icon as keyof typeof icons]}
+        ${icons[stat.icon]}
       </g></svg><text x="${positionX + cardPadding}" y="${positionY + cardHeight - 30}"
           font-family="'Segoe UI', Ubuntu, Arial, sans-serif"
           font-size="28" font-weight="700" fill="${stat.color}">
@@ -246,8 +252,10 @@ export function generatePreviewSVG(
     publicRepos: 24,
   };
 
+  const validTheme = theme in themes ? (theme as GitHubCardTheme) : "dark";
+
   return generateGitHubStatsSVG(mockStats, "seu-usuario", {
-    theme: theme as "dark" | "light" | "neon" | "sunset" | "ocean" | "forest",
+    theme: validTheme,
     ...config,
   });
 }

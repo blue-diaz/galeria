@@ -1,0 +1,2680 @@
+{
+  "entradas": {
+    ".github/workflows/ci.yml": {
+      "count": 0,
+      "hash": "671dff2dea72402a",
+      "ocorrencias": [],
+      "timestamp": 1779681066514
+    },
+    ".github/workflows/codeql.yml": {
+      "count": 2,
+      "hash": "fab46be961e04a34",
+      "ocorrencias": [
+        {
+          "linha": 71,
+          "mensagem": "Operação de rede sem política de retry detectada",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": ".github/workflows/codeql.yml",
+          "sugestao": "Adicione mecanismos de retry para evitar falhas intermitentes de rede",
+          "tipo": "workflow-missing-retry"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Workflow instala dependências sem auditoria de segurança",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": ".github/workflows/codeql.yml",
+          "sugestao": "Adicione um passo de npm audit, snyk ou similar para detectar vulnerabilidades",
+          "tipo": "workflow-sem-audit"
+        }
+      ],
+      "timestamp": 1779681066554
+    },
+    "CONTRIBUTING.md": {
+      "count": 1,
+      "hash": "dfda8007f3f57db2",
+      "ocorrencias": [
+        {
+          "confianca": 95,
+          "contexto": "> Proveniência e Autoria: Este documento integra o projeto Galeria Black Diaz (licença MIT).",
+          "linha": 1,
+          "mensagem": "Encontrados 1 casos de pontuação repetida",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "CONTRIBUTING.md",
+          "sugestao": "Colapsar pontuação repetida para caracteres únicos",
+          "tipo": "pontuacao-repetida"
+        }
+      ],
+      "timestamp": 1779681066590
+    },
+    "LICENSE": {
+      "count": 0,
+      "hash": "416b5842614e0b1",
+      "ocorrencias": [],
+      "timestamp": 1779681066637
+    },
+    "README.md": {
+      "count": 0,
+      "hash": "b58eea8b77954d5a",
+      "ocorrencias": [],
+      "timestamp": 1779681068064
+    },
+    "SECURITY.md": {
+      "count": 0,
+      "hash": "c09f36d2f0e1fabf",
+      "ocorrencias": [],
+      "timestamp": 1779681068067
+    },
+    "THIRD-PARTY-NOTICES.txt": {
+      "count": 0,
+      "hash": "6933fa8578f0dc00",
+      "ocorrencias": [],
+      "timestamp": 1779681068833
+    },
+    "docs/feedback/feedback.md": {
+      "count": 0,
+      "hash": "90a652380e8fb073",
+      "ocorrencias": [],
+      "timestamp": 1779681066599
+    },
+    "eslint.config.mjs": {
+      "count": 2,
+      "hash": "5ef1f7175bc39cb5",
+      "ocorrencias": [
+        {
+          "linha": 204,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "eslint.config.mjs",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 204,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "eslint.config.mjs",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681066636
+    },
+    "next.config.mjs": {
+      "count": 5,
+      "hash": "e622f695e815c7ea",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "next.config.mjs",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 75,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "next.config.mjs",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 19,
+          "mensagem": "[ML 60%] Número mágico: 60 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "next.config.mjs",
+          "sugestao": "Criar constante com nome descritivo para 60",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+2 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "next.config.mjs",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+2 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "next.config.mjs",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681066646
+    },
+    "package-lock.json": {
+      "count": 0,
+      "hash": "95c4c04e8a65a588",
+      "ocorrencias": [],
+      "timestamp": 1779681066830
+    },
+    "package.json": {
+      "count": 0,
+      "hash": "5e066fb5a4043588",
+      "ocorrencias": [],
+      "timestamp": 1779681066836
+    },
+    "postcss.config.mjs": {
+      "count": 0,
+      "hash": "17d13faeb1b78b73",
+      "ocorrencias": [],
+      "timestamp": 1779681066838
+    },
+    "prometheus-0.10.0.tgz": {
+      "count": 0,
+      "hash": "2a62e9f0f8a8b81b",
+      "ocorrencias": [],
+      "timestamp": 1779681068048
+    },
+    "prometheus.config.json": {
+      "count": 1,
+      "hash": "7d31fa0194d6d57d",
+      "ocorrencias": [
+        {
+          "linha": 203,
+          "mensagem": "Arquivo parece não estar formatado (parser: json). Considere normalizar com o formatador do Prometheus. (primeira diferença na linha 203)",
+          "nivel": "aviso",
+          "origem": "analista-formatador",
+          "relPath": "prometheus.config.json",
+          "tipo": "formatador-json"
+        }
+      ],
+      "timestamp": 1779681068052
+    },
+    "src/app/api/clones/[id]/badge/route.ts": {
+      "count": 5,
+      "hash": "8f81706c73e51d5a",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 108,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 11,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068099
+    },
+    "src/app/api/clones/[id]/route.ts": {
+      "count": 5,
+      "hash": "2cc5a6536d2b115a",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 34,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 13,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068108
+    },
+    "src/app/api/clones/[id]/unic/badge.svg/route.ts": {
+      "count": 5,
+      "hash": "61d36b652d45449e",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 108,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 11,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068119
+    },
+    "src/app/api/clones/[id]/unic/route.ts": {
+      "count": 5,
+      "hash": "cc854bef5cdd136b",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 34,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 13,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068123
+    },
+    "src/app/api/github-langs/[username]/route.ts": {
+      "count": 4,
+      "hash": "81e3c75949784a40",
+      "ocorrencias": [
+        {
+          "linha": 95,
+          "mensagem": "[ML 60%] Número mágico: 86400 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "sugestao": "Criar constante com nome descritivo para 86400",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 27,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 95,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 95,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068134
+    },
+    "src/app/api/github-langs/preview/[theme]/route.ts": {
+      "count": 4,
+      "hash": "5de3d6839d14c6d8",
+      "ocorrencias": [
+        {
+          "linha": 62,
+          "mensagem": "[ML 60%] Número mágico: 86400 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "sugestao": "Criar constante com nome descritivo para 86400",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 17,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 62,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 62,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068141
+    },
+    "src/app/api/github-stats/[username]/route.ts": {
+      "count": 4,
+      "hash": "3d26afc3b6b68297",
+      "ocorrencias": [
+        {
+          "linha": 93,
+          "mensagem": "[ML 60%] Número mágico: 86400 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "sugestao": "Criar constante com nome descritivo para 86400",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 27,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 93,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 93,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068152
+    },
+    "src/app/api/github-stats/preview/[theme]/route.ts": {
+      "count": 4,
+      "hash": "c51121923b9651c4",
+      "ocorrencias": [
+        {
+          "linha": 62,
+          "mensagem": "[ML 60%] Número mágico: 86400 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "sugestao": "Criar constante com nome descritivo para 86400",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 17,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 62,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 62,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068157
+    },
+    "src/app/api/status-badge/route.ts": {
+      "count": 3,
+      "hash": "ae274b34ebdad36e",
+      "ocorrencias": [
+        {
+          "linha": 18,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/status-badge/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/status-badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/status-badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068160
+    },
+    "src/app/api/svg/[...filename]/route.ts": {
+      "count": 3,
+      "hash": "705f78cbc11f943c",
+      "ocorrencias": [
+        {
+          "linha": 94,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/svg/[...filename]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 84,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/[...filename]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 84,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/[...filename]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068169
+    },
+    "src/app/api/svg/svgManipulator.ts": {
+      "count": 5,
+      "hash": "a8830f7533270ec7",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (91%). Fatores: Alta complexidade ciclomática (59), Aninhamento profundo (7 níveis)",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 84,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 7,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 54,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+1 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 54,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+1 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068178
+    },
+    "src/app/api/unic-clones/[id]/badge/route.ts": {
+      "count": 5,
+      "hash": "61d36b652d45449e",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 108,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 11,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 47,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068185
+    },
+    "src/app/api/unic-clones/[id]/route.ts": {
+      "count": 5,
+      "hash": "cc854bef5cdd136b",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 34,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 13,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068190
+    },
+    "src/app/api/visitors/[id]/badge/route.ts": {
+      "count": 5,
+      "hash": "cec9675d793f269e",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 110,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 11,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 49,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 49,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068197
+    },
+    "src/app/api/visitors/[id]/route.ts": {
+      "count": 5,
+      "hash": "29ae5a3bde76edb4",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 38,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 17,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068201
+    },
+    "src/app/blog/[slug]/MDXRenderer.tsx": {
+      "count": 0,
+      "hash": "36e5aa6289cd6738",
+      "ocorrencias": [],
+      "timestamp": 1779681068207
+    },
+    "src/app/blog/[slug]/PostContent.tsx": {
+      "count": 4,
+      "hash": "9ec838d56706a3b1",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/PostContent.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/PostContent.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/[slug]/PostContent.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 63,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/[slug]/PostContent.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 68,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/[slug]/PostContent.tsx",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        }
+      ],
+      "timestamp": 1779681068227
+    },
+    "src/app/blog/[slug]/page.tsx": {
+      "count": 3,
+      "hash": "c8f5f3ff6656ab20",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "linha": 22,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/[slug]/page.tsx",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        }
+      ],
+      "timestamp": 1779681068212
+    },
+    "src/app/blog/category/[category]/page.tsx": {
+      "count": 6,
+      "hash": "27572c9ac3fa9747",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/category/[category]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/category/[category]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (91%). Fatores: Aninhamento profundo (8 níveis), Promises sem tratamento de erro",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 46,
+          "mensagem": "[ML 95%] Aninhamento excessivo (8 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068232
+    },
+    "src/app/blog/layout.tsx": {
+      "count": 2,
+      "hash": "2389389a042b6b2d",
+      "ocorrencias": [
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/layout.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/layout.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068238
+    },
+    "src/app/blog/page.tsx": {
+      "count": 4,
+      "hash": "6174fd0a18747f4b",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (9 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/page.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 33,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/page.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068242
+    },
+    "src/app/blog/tag/[tag]/page.tsx": {
+      "count": 4,
+      "hash": "9ce74be62dadad6d",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (91%). Fatores: Aninhamento profundo (8 níveis), Promises sem tratamento de erro",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 46,
+          "mensagem": "[ML 95%] Aninhamento excessivo (8 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068248
+    },
+    "src/app/components/Footer.tsx": {
+      "count": 0,
+      "hash": "1514c84192374f47",
+      "ocorrencias": [],
+      "timestamp": 1779681068253
+    },
+    "src/app/components/FooterMobileExtras.tsx": {
+      "count": 0,
+      "hash": "92a0e0b8d6c31713",
+      "ocorrencias": [],
+      "timestamp": 1779681068258
+    },
+    "src/app/components/Header.tsx": {
+      "count": 0,
+      "hash": "7c44194e195492dc",
+      "ocorrencias": [],
+      "timestamp": 1779681068268
+    },
+    "src/app/components/Logo.tsx": {
+      "count": 4,
+      "hash": "9ad3c682d7027351",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/Logo.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 29,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/Logo.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/Logo.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/Logo.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068275
+    },
+    "src/app/components/ScrollToTop.tsx": {
+      "count": 2,
+      "hash": "fb6fc7ad2589603f",
+      "ocorrencias": [
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ScrollToTop.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ScrollToTop.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068280
+    },
+    "src/app/components/VideoEmbed.tsx": {
+      "count": 1,
+      "hash": "435c9ce7e8af74cf",
+      "ocorrencias": [
+        {
+          "linha": 105,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/VideoEmbed.tsx",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        }
+      ],
+      "timestamp": 1779681068352
+    },
+    "src/app/components/index.ts": {
+      "count": 0,
+      "hash": "4d38496dd08c4b42",
+      "ocorrencias": [],
+      "timestamp": 1779681068271
+    },
+    "src/app/components/ui/Badge.tsx": {
+      "count": 0,
+      "hash": "e5c8a66b4d93478c",
+      "ocorrencias": [],
+      "timestamp": 1779681068284
+    },
+    "src/app/components/ui/Button.tsx": {
+      "count": 0,
+      "hash": "63e893f37882c690",
+      "ocorrencias": [],
+      "timestamp": 1779681068289
+    },
+    "src/app/components/ui/Card.tsx": {
+      "count": 0,
+      "hash": "cfb347c5a3f83ece",
+      "ocorrencias": [],
+      "timestamp": 1779681068295
+    },
+    "src/app/components/ui/CodeModal.tsx": {
+      "count": 2,
+      "hash": "3a7ba7bb8f42d1c6",
+      "ocorrencias": [
+        {
+          "linha": 30,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/CodeModal.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 30,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/CodeModal.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068299
+    },
+    "src/app/components/ui/Container.tsx": {
+      "count": 0,
+      "hash": "60d184be64c3512",
+      "ocorrencias": [],
+      "timestamp": 1779681068303
+    },
+    "src/app/components/ui/FeatureItem.tsx": {
+      "count": 0,
+      "hash": "3e5317fc3bd0295d",
+      "ocorrencias": [],
+      "timestamp": 1779681068307
+    },
+    "src/app/components/ui/Input.tsx": {
+      "count": 0,
+      "hash": "bbccf333e9c609b9",
+      "ocorrencias": [],
+      "timestamp": 1779681068311
+    },
+    "src/app/components/ui/Panel.tsx": {
+      "count": 0,
+      "hash": "c690a12f336408ad",
+      "ocorrencias": [],
+      "timestamp": 1779681068313
+    },
+    "src/app/components/ui/PostCard.tsx": {
+      "count": 2,
+      "hash": "d8686b03bbc4139d",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/ui/PostCard.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 56,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/ui/PostCard.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        }
+      ],
+      "timestamp": 1779681068319
+    },
+    "src/app/components/ui/SVGCard.tsx": {
+      "count": 0,
+      "hash": "f4a3aecfd9749fc0",
+      "ocorrencias": [],
+      "timestamp": 1779681068326
+    },
+    "src/app/components/ui/SVGGalleryInstructions.tsx": {
+      "count": 2,
+      "hash": "aa36faeeb3b9c9b2",
+      "ocorrencias": [
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/SVGGalleryInstructions.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/SVGGalleryInstructions.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068336
+    },
+    "src/app/components/ui/SVGGalleryNotification.tsx": {
+      "count": 0,
+      "hash": "47d6cfd02e6e2267",
+      "ocorrencias": [],
+      "timestamp": 1779681068339
+    },
+    "src/app/components/ui/Tag.tsx": {
+      "count": 0,
+      "hash": "2641722ced03dff0",
+      "ocorrencias": [],
+      "timestamp": 1779681068345
+    },
+    "src/app/components/ui/buttonStyles.ts": {
+      "count": 2,
+      "hash": "6bf43aecfc5a59b2",
+      "ocorrencias": [
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/buttonStyles.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/buttonStyles.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068292
+    },
+    "src/app/components/ui/index.ts": {
+      "count": 0,
+      "hash": "9eddc82bc4010e97",
+      "ocorrencias": [],
+      "timestamp": 1779681068308
+    },
+    "src/app/error.tsx": {
+      "count": 0,
+      "hash": "21261e8254ffe148",
+      "ocorrencias": [],
+      "timestamp": 1779681068356
+    },
+    "src/app/galeria/_components/CategoryNav.tsx": {
+      "count": 4,
+      "hash": "7417d6b3ec94f12",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (9 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 49,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 46,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 46,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068362
+    },
+    "src/app/galeria/_components/GalleryGrid.tsx": {
+      "count": 5,
+      "hash": "7f73e28e8ee0690",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (9 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 107,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 38,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068374
+    },
+    "src/app/galeria/_components/SearchInput.tsx": {
+      "count": 2,
+      "hash": "27dc1f9d6d422840",
+      "ocorrencias": [
+        {
+          "linha": 19,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/SearchInput.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 19,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/SearchInput.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068379
+    },
+    "src/app/galeria/_components/index.ts": {
+      "count": 0,
+      "hash": "ca3227e3a9c97e28",
+      "ocorrencias": [],
+      "timestamp": 1779681068375
+    },
+    "src/app/galeria/decorativos/page.tsx": {
+      "count": 0,
+      "hash": "ac46c7fa2fe22c11",
+      "ocorrencias": [],
+      "timestamp": 1779681068382
+    },
+    "src/app/galeria/ferramentas/page.tsx": {
+      "count": 0,
+      "hash": "88b08c21a9100c80",
+      "ocorrencias": [],
+      "timestamp": 1779681068386
+    },
+    "src/app/galeria/info/_components/GitHubStatsPreview.tsx": {
+      "count": 15,
+      "hash": "e6c95827ce1cb8ab",
+      "ocorrencias": [
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 55,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 58,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 78,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 93,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 108,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 160,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 126,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 182,
+          "mensagem": "Possível conflito de variantes para shadow-size (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 182,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (10 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 128,
+          "mensagem": "[ML 95%] Aninhamento excessivo (10 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068408
+    },
+    "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx": {
+      "count": 15,
+      "hash": "83a22aed2186d0af",
+      "ocorrencias": [
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 54,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 57,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 77,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 92,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 107,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 159,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 125,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 181,
+          "mensagem": "Possível conflito de variantes para shadow-size (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 181,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (10 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 127,
+          "mensagem": "[ML 95%] Aninhamento excessivo (10 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 39,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 39,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+24 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068430
+    },
+    "src/app/galeria/info/_components/index.ts": {
+      "count": 0,
+      "hash": "a8bd83191659063b",
+      "ocorrencias": [],
+      "timestamp": 1779681068431
+    },
+    "src/app/galeria/info/page.tsx": {
+      "count": 0,
+      "hash": "509116733932de8d",
+      "ocorrencias": [],
+      "timestamp": 1779681068438
+    },
+    "src/app/galeria/langs/page.tsx": {
+      "count": 0,
+      "hash": "71277f1b3a0776e4",
+      "ocorrencias": [],
+      "timestamp": 1779681068443
+    },
+    "src/app/galeria/layout.tsx": {
+      "count": 2,
+      "hash": "5e8d16a22990d2ce",
+      "ocorrencias": [
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/layout.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/layout.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068445
+    },
+    "src/app/galeria/page.tsx": {
+      "count": 0,
+      "hash": "f57ec3188b308139",
+      "ocorrencias": [],
+      "timestamp": 1779681068452
+    },
+    "src/app/galeria/skills/page.tsx": {
+      "count": 0,
+      "hash": "dc49f54af7fec3a5",
+      "ocorrencias": [],
+      "timestamp": 1779681068455
+    },
+    "src/app/galeria/social/page.tsx": {
+      "count": 0,
+      "hash": "d2ff59f0b6a67ac2",
+      "ocorrencias": [],
+      "timestamp": 1779681068458
+    },
+    "src/app/galeria/tecnologias/page.tsx": {
+      "count": 0,
+      "hash": "d8e900362be25dca",
+      "ocorrencias": [],
+      "timestamp": 1779681068462
+    },
+    "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx": {
+      "count": 5,
+      "hash": "66c18ae992aaa3f6",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (9 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 266,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 13,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 58,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 58,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068481
+    },
+    "src/app/galeria/visitors/_components/index.ts": {
+      "count": 0,
+      "hash": "d7e6988b291d9a1d",
+      "ocorrencias": [],
+      "timestamp": 1779681068463
+    },
+    "src/app/galeria/visitors/page.tsx": {
+      "count": 0,
+      "hash": "39c5abb8a4baf7ef",
+      "ocorrencias": [],
+      "timestamp": 1779681068484
+    },
+    "src/app/layout.tsx": {
+      "count": 1,
+      "hash": "4afe058d3a22f686",
+      "ocorrencias": [
+        {
+          "linha": 127,
+          "mensagem": "[ML 72%] Type assertion insegura: +Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/layout.tsx",
+          "sugestao": "Validar o tipo antes de fazer cast, usar type guards",
+          "tipo": "ml-unsafe-type-assumption"
+        }
+      ],
+      "timestamp": 1779681068492
+    },
+    "src/app/loading.tsx": {
+      "count": 0,
+      "hash": "719803ad3e5497f0",
+      "ocorrencias": [],
+      "timestamp": 1779681068494
+    },
+    "src/app/manifest.ts": {
+      "count": 0,
+      "hash": "ee8d3bd2755fb4af",
+      "ocorrencias": [],
+      "timestamp": 1779681068496
+    },
+    "src/app/not-found.tsx": {
+      "count": 2,
+      "hash": "8a99d7a15f40c49a",
+      "ocorrencias": [
+        {
+          "linha": 5,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/not-found.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 5,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/not-found.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068499
+    },
+    "src/app/page.tsx": {
+      "count": 0,
+      "hash": "831f33e84098d564",
+      "ocorrencias": [],
+      "timestamp": 1779681068503
+    },
+    "src/app/politica-de-privacidade/page.tsx": {
+      "count": 2,
+      "hash": "2fd284859c0690f3",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+13 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/politica-de-privacidade/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+13 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/politica-de-privacidade/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068520
+    },
+    "src/app/robots.ts": {
+      "count": 0,
+      "hash": "5968202f61788c16",
+      "ocorrencias": [],
+      "timestamp": 1779681068523
+    },
+    "src/app/sitemap.ts": {
+      "count": 0,
+      "hash": "2d90f1e0cdc9b14",
+      "ocorrencias": [],
+      "timestamp": 1779681068525
+    },
+    "src/app/style/components.css": {
+      "count": 0,
+      "hash": "58f9f5a3117c767a",
+      "ocorrencias": [],
+      "timestamp": 1779681068568
+    },
+    "src/app/style/globals.css": {
+      "count": 0,
+      "hash": "a71dc657a8136818",
+      "ocorrencias": [],
+      "timestamp": 1779681068588
+    },
+    "src/app/style/responsive.css": {
+      "count": 0,
+      "hash": "b590f4c3e730395",
+      "ocorrencias": [],
+      "timestamp": 1779681068607
+    },
+    "src/app/termos-de-uso/page.tsx": {
+      "count": 2,
+      "hash": "607c32460c353fae",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/termos-de-uso/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/termos-de-uso/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068621
+    },
+    "src/lib/cloneBadgeBase.ts": {
+      "count": 2,
+      "hash": "3bbf96d6f00194ec",
+      "ocorrencias": [
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeBase.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeBase.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068623
+    },
+    "src/lib/cloneBadgeSvg.ts": {
+      "count": 5,
+      "hash": "27e4b993d48fe00e",
+      "ocorrencias": [
+        {
+          "linha": 28,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 29,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Problemas de documentação (media): poor-naming, poor-naming, poor-naming (+1 mais)",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 29,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Problemas de documentação (media): poor-naming, poor-naming, poor-naming (+1 mais)",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068628
+    },
+    "src/lib/clones.ts": {
+      "count": 3,
+      "hash": "e73c910928729955",
+      "ocorrencias": [
+        {
+          "linha": 8,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/clones.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/clones.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/clones.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068631
+    },
+    "src/lib/gallery/decorativos.ts": {
+      "count": 0,
+      "hash": "2075cffc48865d2e",
+      "ocorrencias": [],
+      "timestamp": 1779681068640
+    },
+    "src/lib/gallery/index.ts": {
+      "count": 0,
+      "hash": "2c1cb81095814756",
+      "ocorrencias": [],
+      "timestamp": 1779681068641
+    },
+    "src/lib/gallery/info.ts": {
+      "count": 2,
+      "hash": "7c3091424007110a",
+      "ocorrencias": [
+        {
+          "linha": 25,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/info.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 25,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/info.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068645
+    },
+    "src/lib/gallery/skills.ts": {
+      "count": 3,
+      "hash": "13733a1476eecca4",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Arquivo muito longo (1364 linhas)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/gallery/skills.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/skills.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/skills.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068670
+    },
+    "src/lib/gallery/social.ts": {
+      "count": 0,
+      "hash": "39de252a7b83292c",
+      "ocorrencias": [],
+      "timestamp": 1779681068677
+    },
+    "src/lib/gallery/types.ts": {
+      "count": 0,
+      "hash": "94ac3fb71c233fc6",
+      "ocorrencias": [],
+      "timestamp": 1779681068679
+    },
+    "src/lib/getBaseUrl.ts": {
+      "count": 3,
+      "hash": "792c4388e3a26fcf",
+      "ocorrencias": [
+        {
+          "linha": 37,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/getBaseUrl.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 26,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/getBaseUrl.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 26,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/getBaseUrl.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068683
+    },
+    "src/lib/github-langs-svg.ts": {
+      "count": 3,
+      "hash": "51a3302f90e1eda8",
+      "ocorrencias": [
+        {
+          "linha": 127,
+          "mensagem": "[ML 72%] Type assertion insegura: as number",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-langs-svg.ts",
+          "sugestao": "Validar o tipo antes de fazer cast, usar type guards",
+          "tipo": "ml-unsafe-type-assumption"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+26 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-langs-svg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+26 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-langs-svg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068692
+    },
+    "src/lib/github-stats-svg.ts": {
+      "count": 3,
+      "hash": "ef4d234316a37c55",
+      "ocorrencias": [
+        {
+          "linha": 183,
+          "mensagem": "[ML 60%] Número mágico: 60 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "sugestao": "Criar constante com nome descritivo para 60",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+34 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+34 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068704
+    },
+    "src/lib/github-stats.ts": {
+      "count": 7,
+      "hash": "5426703bd7790e84",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (91%). Fatores: Alta complexidade ciclomática (77), Aninhamento profundo (10 níveis)",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats.ts",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 285,
+          "mensagem": "[ML 78%] Possível race condition: estado compartilhado entre operações async",
+          "nivel": "erro",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats.ts",
+          "sugestao": "Usar locks ou atomic operations para estado compartilhado",
+          "tipo": "ml-race-condition"
+        },
+        {
+          "linha": 153,
+          "mensagem": "[ML 95%] Aninhamento excessivo (10 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 109,
+          "mensagem": "[ML 60%] Número mágico: 60 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats.ts",
+          "sugestao": "Criar constante com nome descritivo para 60",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 227,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == null",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+19 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+19 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068723
+    },
+    "src/lib/index.ts": {
+      "count": 0,
+      "hash": "645c06ec8cbe1bd5",
+      "ocorrencias": [],
+      "timestamp": 1779681068724
+    },
+    "src/lib/posts.ts": {
+      "count": 3,
+      "hash": "5847a1ae2fee62c2",
+      "ocorrencias": [
+        {
+          "linha": 38,
+          "mensagem": "[ML 72%] Type assertion insegura: as string",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/posts.ts",
+          "sugestao": "Validar o tipo antes de fazer cast, usar type guards",
+          "tipo": "ml-unsafe-type-assumption"
+        },
+        {
+          "linha": 138,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/posts.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 138,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/posts.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068731
+    },
+    "src/lib/statusBadgeSvg.ts": {
+      "count": 3,
+      "hash": "8d61b2590dec62bd",
+      "ocorrencias": [
+        {
+          "linha": 79,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/statusBadgeSvg.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/statusBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/statusBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068738
+    },
+    "src/lib/svgGalleryData.ts": {
+      "count": 0,
+      "hash": "8af030cada1fc450",
+      "ocorrencias": [],
+      "timestamp": 1779681068743
+    },
+    "src/lib/visitorBadgeBase.ts": {
+      "count": 2,
+      "hash": "7d270dc419abfa91",
+      "ocorrencias": [
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeBase.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeBase.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068744
+    },
+    "src/lib/visitorBadgeSvg.ts": {
+      "count": 5,
+      "hash": "7d1f1499660ce290",
+      "ocorrencias": [
+        {
+          "linha": 27,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 43,
+          "mensagem": "Problemas de documentação (media): poor-naming, poor-naming, poor-naming (+2 mais)",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 28,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 43,
+          "mensagem": "Problemas de documentação (media): poor-naming, poor-naming, poor-naming (+2 mais)",
+          "nivel": "aviso",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068748
+    },
+    "src/lib/visitors.ts": {
+      "count": 1,
+      "hash": "d1fcb91004d27a52",
+      "ocorrencias": [
+        {
+          "linha": 8,
+          "mensagem": "[ML 88%] Comparação potencialmente insegura: == undefined",
+          "nivel": "aviso",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/visitors.ts",
+          "sugestao": "Usar === em vez de ==, evitar hardcoded secrets",
+          "tipo": "ml-insecure-comparison"
+        }
+      ],
+      "timestamp": 1779681068751
+    },
+    "src/types/blog.ts": {
+      "count": 0,
+      "hash": "41dd8c4a0be767c6",
+      "ocorrencias": [],
+      "timestamp": 1779681068754
+    },
+    "src/types/clone.ts": {
+      "count": 0,
+      "hash": "64964c959fa551c5",
+      "ocorrencias": [],
+      "timestamp": 1779681068755
+    },
+    "src/types/galeria.ts": {
+      "count": 0,
+      "hash": "8631ed7ee3927e52",
+      "ocorrencias": [],
+      "timestamp": 1779681068758
+    },
+    "src/types/github.ts": {
+      "count": 0,
+      "hash": "85192fdf42080d3",
+      "ocorrencias": [],
+      "timestamp": 1779681068760
+    },
+    "src/types/index.ts": {
+      "count": 0,
+      "hash": "e5f6680236557023",
+      "ocorrencias": [],
+      "timestamp": 1779681068762
+    },
+    "src/types/statusBadge.ts": {
+      "count": 0,
+      "hash": "c13e1eb1094305ab",
+      "ocorrencias": [],
+      "timestamp": 1779681068763
+    },
+    "src/types/svg.ts": {
+      "count": 0,
+      "hash": "f112fb223fa91ea3",
+      "ocorrencias": [],
+      "timestamp": 1779681068764
+    },
+    "src/types/ui.ts": {
+      "count": 0,
+      "hash": "b9111894d4cf0211",
+      "ocorrencias": [],
+      "timestamp": 1779681068768
+    },
+    "src/types/visitor.ts": {
+      "count": 0,
+      "hash": "f2e69f3a7443310",
+      "ocorrencias": [],
+      "timestamp": 1779681068769
+    },
+    "svgo.config.js": {
+      "count": 4,
+      "hash": "811db761ea47730d",
+      "ocorrencias": [
+        {
+          "linha": 0,
+          "mensagem": "ML: Alta probabilidade de bugs (70%). Fatores: Aninhamento profundo (7 níveis)",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "svgo.config.js",
+          "tipo": "ml-alta-probabilidade-bugs"
+        },
+        {
+          "linha": 18,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "svgo.config.js",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 68,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "svgo.config.js",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 68,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "svgo.config.js",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068773
+    },
+    "tailwind.config.ts": {
+      "count": 2,
+      "hash": "c1200169eaef658b",
+      "ocorrencias": [
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+36 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "tailwind.config.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+36 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "tailwind.config.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1779681068777
+    },
+    "tsconfig.json": {
+      "count": 0,
+      "hash": "c9b581d53f61dc47",
+      "ocorrencias": [],
+      "timestamp": 1779681068835
+    },
+    "vercel.json": {
+      "count": 1,
+      "hash": "173fd3fc37c8c1ae",
+      "ocorrencias": [
+        {
+          "linha": 9,
+          "mensagem": "Arquivo parece não estar formatado (parser: json). Considere normalizar com o formatador do Prometheus. (primeira diferença na linha 9)",
+          "nivel": "aviso",
+          "origem": "analista-formatador",
+          "relPath": "vercel.json",
+          "tipo": "formatador-json"
+        }
+      ],
+      "timestamp": 1779681068837
+    }
+  },
+  "versao": 1
+}

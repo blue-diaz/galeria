@@ -69,7 +69,10 @@ const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
 const defaultTheme: GitHubLangsThemeConfig = themes.dark;
 
 function getTheme(themeKey: string): GitHubLangsThemeConfig {
-  return themes[themeKey as GitHubCardTheme] ?? defaultTheme;
+  if (themeKey in themes) {
+    return themes[themeKey as GitHubCardTheme];
+  }
+  return defaultTheme;
 }
 
 function formatPercent(value: number): string {
@@ -122,13 +125,17 @@ export function generateLanguagesSVG(
   const baseWidth = 600;
   const baseHeight = 320;
 
+  const customWidth = config?.width;
+  const customHeight = config?.height;
   const layoutWidth =
-    Number.isFinite(config?.width) && (config?.width ?? 0) > 0
-      ? (config?.width as number)
+    customWidth !== undefined && Number.isFinite(customWidth) && customWidth > 0
+      ? customWidth
       : baseWidth;
   const layoutHeight =
-    Number.isFinite(config?.height) && (config?.height ?? 0) > 0
-      ? (config?.height as number)
+    customHeight !== undefined &&
+    Number.isFinite(customHeight) &&
+    customHeight > 0
+      ? customHeight
       : baseHeight;
 
   const width = Math.max(layoutWidth, 360);

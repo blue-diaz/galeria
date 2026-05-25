@@ -1,0 +1,24 @@
+{
+  "arquetipo": "next-fullstack",
+  "arquivosRaiz": [
+    "CONTRIBUTING.md",
+    "LICENSE",
+    "README.md",
+    "SECURITY.md",
+    "THIRD-PARTY-NOTICES.txt",
+    "eslint.config.mjs",
+    "next.config.mjs",
+    "package-lock.json",
+    "package.json",
+    "postcss.config.mjs",
+    "prometheus-0.10.0.tgz",
+    "prometheus.config.json",
+    "svgo.config.js",
+    "tailwind.config.ts",
+    "tsconfig.json",
+    "vercel.json"
+  ],
+  "confidence": 83,
+  "timestamp": "2026-05-25T03:51:06.285Z",
+  "version": 1
+}
