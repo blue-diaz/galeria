@@ -1,0 +1,14 @@
+{
+  "ocorrencias": [
+    {
+      "linha": 285,
+      "mensagem": "[ML 78%] Possível race condition: estado compartilhado entre operações async",
+      "nivel": "erro",
+      "relPath": "src/lib/github-stats.ts",
+      "sugestao": "Usar locks ou atomic operations para estado compartilhado",
+      "tipo": "ml-race-condition"
+    }
+  ],
+  "timestamp": "2026-05-25T23:40:48.650Z",
+  "total": 1
+}
