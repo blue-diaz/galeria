@@ -58,7 +58,7 @@ Use o [Feature Request Template](.github/ISSUE_TEMPLATE/feature_request.yml) inc
 
 2. **Organizar**:
 
-- Badges → `public/svg/badges/` (ex.: `skills/`, `info/`, `decorativos/`)
+- Badges → `public/svg/badges/` (e.g. `skills/`, `info/`, `decorativos/`)
 - Banners → `public/svg/banner/`
 - Logos → `public/svg/mim/`
 
