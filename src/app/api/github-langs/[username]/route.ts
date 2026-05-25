@@ -5,6 +5,11 @@ import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
+const CACHE_MAX_AGE_OK = 43200;
+const CACHE_S_MAXAGE_OK = 86400;
+const CACHE_MAX_AGE_ERR = 300;
+const CACHE_S_MAXAGE_ERR = 600;
+
 const THEMES = [
   'dark',
   'light',
@@ -66,7 +71,7 @@ function getDisplayName(
 }
 
 function renderErrorSvg(theme: string, title: string): string {
-  const bg = THEME_BG[theme] ?? THEME_BG['dark'] as [string, string];
+  const bg = THEME_BG[theme] ?? (THEME_BG['dark'] as [string, string]);
   return `<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="200" rx="12" fill="${bg[0]}"/><text x="300" y="95" text-anchor="middle" fill="${bg[1]}" font-family="'Segoe UI',Ubuntu,Arial,sans-serif" font-size="22" font-weight="700">${title}</text><text x="300" y="130" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI',Ubuntu,Arial,sans-serif" font-size="14">Aguardando dados...</text></svg>`;
 }
 
@@ -92,7 +97,7 @@ export async function GET(
     return new NextResponse(svg, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': 'public, max-age=43200, s-maxage=86400',
+        'Cache-Control': `public, max-age=${CACHE_MAX_AGE_OK}, s-maxage=${CACHE_S_MAXAGE_OK}`,
       },
     });
   } catch (error) {
@@ -103,7 +108,7 @@ export async function GET(
       status: 200,
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': 'public, max-age=300, s-maxage=600',
+        'Cache-Control': `public, max-age=${CACHE_MAX_AGE_ERR}, s-maxage=${CACHE_S_MAXAGE_ERR}`,
       },
     });
   }

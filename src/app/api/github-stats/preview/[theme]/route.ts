@@ -4,6 +4,8 @@ import { NextResponse } from 'next/server';
 
 export const dynamic = 'force-dynamic';
 
+const CACHE_DURATION = 86400;
+
 const THEMES = [
   'dark',
   'light',
@@ -59,7 +61,7 @@ export async function GET(
     return new NextResponse(svg, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': 'public, max-age=86400, s-maxage=86400, immutable',
+        'Cache-Control': `public, max-age=${CACHE_DURATION}, s-maxage=${CACHE_DURATION}, immutable`,
       },
     });
   } catch (error) {

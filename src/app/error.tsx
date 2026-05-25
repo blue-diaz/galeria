@@ -1,8 +1,6 @@
 "use client";
 
-import Container from "./components/ui/Container";
-import Card from "./components/ui/Card";
-import Button from "./components/ui/Button";
+import { Container, Card, Button } from "@app/components/ui";
 
 export default function Error({
   error,

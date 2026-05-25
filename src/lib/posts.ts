@@ -33,16 +33,27 @@ function parsePostFile(filename: string): Post {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
+  const title = data['title'];
+  const description = data['description'];
+  const date = data['date'];
+  const author = data['author'];
+  const category = data['category'];
+  const tags = data['tags'];
+  const image = data['image'];
+  const videoUrl = data['videoUrl'];
+
   return {
     slug,
-    title: (data['title'] as string) ?? '',
-    description: (data['description'] as string) ?? '',
-    date: (data['date'] as string) ?? '',
-    author: (data['author'] as string) ?? 'Black Diaz',
-    category: (data['category'] as string) ?? 'Geral',
-    tags: (data['tags'] as string[]) ?? [],
-    image: data['image'] as string | undefined,
-    videoUrl: data['videoUrl'] as string | undefined,
+    title: typeof title === 'string' ? title : '',
+    description: typeof description === 'string' ? description : '',
+    date: typeof date === 'string' ? date : '',
+    author: typeof author === 'string' ? author : 'Black Diaz',
+    category: typeof category === 'string' ? category : 'Geral',
+    tags: Array.isArray(tags)
+      ? tags.filter((t): t is string => typeof t === 'string')
+      : [],
+    image: typeof image === 'string' ? image : undefined,
+    videoUrl: typeof videoUrl === 'string' ? videoUrl : undefined,
     published: data['published'] !== false,
     content,
     readingTime: calculateReadingTime(content),

@@ -17,7 +17,10 @@
     "coverage/**",
     ".git/**",
     "**/*.log",
-    ".prometheus/**"
+    ".prometheus/**",
+    "public/**",
+    ".gitignore",
+    "THIRD-PARTY-LICENSES.txt"
   ],
   "CLI_INCLUDE_PATTERNS": [],
   "CLI_INCLUDE_GROUPS": [],

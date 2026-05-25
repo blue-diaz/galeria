@@ -388,32 +388,43 @@ export async function fetchGitHubTopLanguages(
       `📊 Processing ${reposToProcess.length} repositories for language analysis...`,
     );
 
-    for (const repo of reposToProcess) {
-      if (repo.languages_url === undefined) {
-        continue;
-      }
+    const results = await Promise.allSettled(
+      reposToProcess.map(async (repo) => {
+        if (repo.languages_url === undefined) return new Map();
 
-      try {
         // eslint-disable-next-line no-undef
         const langResponse = await fetch(repo.languages_url, {
           headers,
           cache: 'no-store',
         });
 
-        if (!langResponse.ok) {
-          continue;
-        }
+        if (!langResponse.ok) return new Map();
 
         const langData = (await langResponse
           .json()
           .catch(() => ({}))) as Record<string, number>;
+
+        const repoLanguages = new Map<string, number>();
         for (const [lang, bytes] of Object.entries(langData)) {
           const safeBytes = Number.isFinite(bytes) ? Math.max(bytes, 1) : 0;
           if (safeBytes === 0) continue;
-          languageTotals.set(lang, (languageTotals.get(lang) ?? 0) + safeBytes);
+          repoLanguages.set(lang, safeBytes);
         }
-      } catch (langError) {
-        console.error('Erro ao buscar linguagens do repositório:', langError);
+        return repoLanguages;
+      }),
+    );
+
+    for (const result of results) {
+      if (result.status === 'rejected') {
+        console.error(
+          'Erro ao buscar linguagens do repositório:',
+          result.reason,
+        );
+        continue;
+      }
+      const repoLanguages = result.value;
+      for (const [lang, bytes] of repoLanguages) {
+        languageTotals.set(lang, (languageTotals.get(lang) ?? 0) + bytes);
       }
     }
 
