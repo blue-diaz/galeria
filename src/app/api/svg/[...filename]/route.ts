@@ -4,7 +4,11 @@ import { isValidDimension, manipulateSvgDimensions } from '../svgManipulator';
 const svgContentCache = new Map<string, string>();
 
 const configuredBaseOrigin =
+<<<<<<< HEAD
   process.env.NEXT_PUBLIC_APP_URL ?? process.env.APP_URL;
+=======
+  process.env['NEXT_PUBLIC_APP_URL'] ?? process.env['APP_URL'];
+>>>>>>> dev
 
 if (!configuredBaseOrigin) {
   throw new Error(
