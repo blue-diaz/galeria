@@ -1,7 +1,7 @@
-import type { SVGGalleryNotificationProps } from '@/types/ui';
+import type { SVGGalleryNotificationProps } from "@/types/ui";
 
 export default function SVGGalleryNotification({
-  message
+  message,
 }: SVGGalleryNotificationProps): React.ReactElement {
   return (
     <div className="iconMd shadowNotification notificationFixedTopRight rounded border border-[var(--accent-green)] bg-[var(--success)] px-5 py-3 font-mono font-medium text-[var(--vscode-bg)]">

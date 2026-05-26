@@ -34,7 +34,8 @@ export function getBaseUrl(): string {
 
   const normalize = (url: string): string => url.replace(/\/$/, '');
 
-  if (envUrl !== undefined && envUrl !== null && envUrl !== '') return normalize(envUrl);
+  if (envUrl !== undefined && envUrl !== null && envUrl !== '')
+    return normalize(envUrl);
 
   // Em produção na Vercel, preferimos a URL canônica do projeto (alias),
   // ao invés do deployment URL aleatório em `VERCEL_URL`.
@@ -51,14 +52,14 @@ export function getBaseUrl(): string {
     // Atenção: isso pode gerar URLs com o deployment URL ao invés do domínio final.
     if (vercelUrl !== undefined && vercelUrl !== null && vercelUrl !== '') {
       console.warn(
-        '[getBaseUrl] NEXT_PUBLIC_CANONICAL_URL não configurada em produção; usando VERCEL_URL como fallback.'
+        '[getBaseUrl] NEXT_PUBLIC_CANONICAL_URL não configurada em produção; usando VERCEL_URL como fallback.',
       );
       return `${HTTPS_PREFIX}${vercelUrl}`;
     }
 
     // Falha explícita apenas no ambiente que realmente importa (produção na Vercel).
     throw new Error(
-      'Base URL não configurada para produção. Defina NEXT_PUBLIC_CANONICAL_URL (ex: https://seu-dominio) '
+      'Base URL não configurada para produção. Defina NEXT_PUBLIC_CANONICAL_URL (ex: https://seu-dominio) ',
     );
   }
 

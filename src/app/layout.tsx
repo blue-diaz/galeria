@@ -8,7 +8,8 @@ import './style/components.css';
 
 const SITE_TITLE_DEFAULT = 'Galeria Black Diaz';
 const SITE_TITLE_TEMPLATE = '%s | Galeria Black Diaz';
-const SITE_DESCRIPTION = 'Recursos gratuitos para seus perfis no GitHub - SVGs e Blog';
+const SITE_DESCRIPTION =
+  'Recursos gratuitos para seus perfis no GitHub - SVGs e Blog';
 const SITE_KEYWORDS = [
   'svg',
   'github',
@@ -16,7 +17,7 @@ const SITE_KEYWORDS = [
   'blog',
   'recursos gratuitos',
   'blue-diaz',
-  'desenvolvimento'
+  'desenvolvimento',
 ];
 const AUTHOR_NAME = 'Black Diaz';
 const AUTHOR_URL = 'https://github.com/blue-diaz';
@@ -48,7 +49,7 @@ const PRECONNECT_HREF = 'https://cdnjs.cloudflare.com';
 export const metadata: Metadata = {
   title: {
     default: SITE_TITLE_DEFAULT,
-    template: SITE_TITLE_TEMPLATE
+    template: SITE_TITLE_TEMPLATE,
   },
   description: SITE_DESCRIPTION,
   keywords: SITE_KEYWORDS,
@@ -60,13 +61,13 @@ export const metadata: Metadata = {
     description: OG_DESCRIPTION,
     type: OG_TYPE,
     locale: OG_LOCALE,
-    siteName: OG_SITE_NAME
+    siteName: OG_SITE_NAME,
   },
   twitter: {
     card: TWITTER_CARD,
     title: TWITTER_TITLE,
     description: TWITTER_DESCRIPTION,
-    images: [TWITTER_IMAGE]
+    images: [TWITTER_IMAGE],
   },
   robots: {
     index: true,
@@ -76,8 +77,8 @@ export const metadata: Metadata = {
       follow: true,
       'max-video-preview': MAX_VIDEO_PREVIEW,
       'max-image-preview': MAX_IMAGE_PREVIEW,
-      'max-snippet': MAX_SNIPPET
-    }
+      'max-snippet': MAX_SNIPPET,
+    },
   },
   icons: {
     icon: [
@@ -86,27 +87,27 @@ export const metadata: Metadata = {
       {
         url: ICON_IMAGE,
         sizes: ICON_SIZES_192,
-        type: ICON_TYPE_PNG
+        type: ICON_TYPE_PNG,
       },
       {
         url: ICON_IMAGE,
         sizes: ICON_SIZES_512,
-        type: ICON_TYPE_PNG
-      }
+        type: ICON_TYPE_PNG,
+      },
     ],
-    apple: ICON_IMAGE
+    apple: ICON_IMAGE,
   },
-  manifest: MANIFEST_PATH
+  manifest: MANIFEST_PATH,
 };
 
 export const viewport = {
   width: VIEWPORT_WIDTH,
   initialScale: INITIAL_SCALE,
-  maximumScale: MAXIMUM_SCALE
+  maximumScale: MAXIMUM_SCALE,
 };
 
 export default function RootLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }): React.ReactElement {

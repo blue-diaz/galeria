@@ -1,6 +1,6 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function FooterMobileExtras(): React.ReactElement | null {
   const [open, setOpen] = useState(false);
@@ -14,11 +14,15 @@ export default function FooterMobileExtras(): React.ReactElement | null {
         type="button"
         className="inline-flex items-center gap-2 rounded border border-[var(--vscode-border)] bg-transparent px-3 py-2 text-sm font-medium text-[var(--text-primary)]"
       >
-        {open ? <i className="fas fa-chevron-up" /> : <i className="fas fa-chevron-down" />} Mais
-        opções
+        {open ? (
+          <i className="fas fa-chevron-up" />
+        ) : (
+          <i className="fas fa-chevron-down" />
+        )}{" "}
+        Mais opções
       </button>
 
-      <div id="footer-extras" className={`${open ? 'mt-3 block' : 'hidden'}`}>
+      <div id="footer-extras" className={`${open ? "mt-3 block" : "hidden"}`}>
         <div className="mb-4 text-sm text-[var(--text-secondary)]">
           <a
             href="/LICENSE.txt"

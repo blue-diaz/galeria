@@ -10,7 +10,7 @@ function findSvgRoot(): string {
   const candidates = [
     path.join(process.cwd(), 'public', 'svg'),
     path.join(process.cwd(), '..', 'public', 'svg'),
-    path.resolve('public', 'svg')
+    path.resolve('public', 'svg'),
   ];
   for (const dir of candidates) {
     try {
@@ -78,7 +78,7 @@ function findSvgPath(filename: string): string | null {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ filename: string | string[] }> }
+  { params }: { params: Promise<{ filename: string | string[] }> },
 ): Promise<NextResponse> {
   try {
     const { filename: raw } = await params;
@@ -101,23 +101,31 @@ export async function GET(
       return new NextResponse('Invalid height parameter', { status: 400 });
 
     const svgPath = findSvgPath(filename);
-    if (svgPath === null) return new NextResponse('SVG not found', { status: 404 });
+    if (svgPath === null)
+      return new NextResponse('SVG not found', { status: 404 });
 
     const stat = fs.statSync(svgPath);
     const cached = svgCache.get(svgPath);
     const isFresh = cached?.mtimeMs === stat.mtimeMs;
-    const baseContent = isFresh ? cached.content : fs.readFileSync(svgPath, 'utf-8');
+    const baseContent = isFresh
+      ? cached.content
+      : fs.readFileSync(svgPath, 'utf-8');
     if (!isFresh) {
       svgCache.set(svgPath, { content: baseContent, mtimeMs: stat.mtimeMs });
     }
 
     let svgContent = baseContent;
-    svgContent = manipulateSvgDimensions(svgContent, widthParam, heightParam, fitParam);
+    svgContent = manipulateSvgDimensions(
+      svgContent,
+      widthParam,
+      heightParam,
+      fitParam,
+    );
     return new NextResponse(svgContent, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': 'public, max-age=31536000, immutable'
-      }
+        'Cache-Control': 'public, max-age=31536000, immutable',
+      },
     });
   } catch (error) {
     console.error('Error serving SVG:', error);

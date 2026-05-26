@@ -8,7 +8,7 @@ const shortname = process.env['NEXT_PUBLIC_DISQUS_SHORTNAME'];
 export default function DisqusComments({
   identifier,
   title,
-  url
+  url,
 }: DisqusCommentsProps): React.ReactElement | null {
   const containerRef = useRef<HTMLDivElement>(null);
   const isLoaded = useRef(false);
@@ -23,14 +23,13 @@ export default function DisqusComments({
           interface DisqusConfig {
             page: { identifier: string; title: string; url: string };
           }
-          (window as unknown as Record<string, unknown>)['disqus_config'] = function (
-            this: DisqusConfig
-          ): void {
-            this.page.identifier = identifier;
-            this.page.title = title;
-            this.page.url = url;
-          };
-        }
+          (window as unknown as Record<string, unknown>)['disqus_config'] =
+            function (this: DisqusConfig): void {
+              this.page.identifier = identifier;
+              this.page.title = title;
+              this.page.url = url;
+            };
+        },
       });
       return;
     }
@@ -53,7 +52,10 @@ export default function DisqusComments({
       <div id="disqus_thread" ref={containerRef} />
       <noscript>
         Por favor, ative o JavaScript para ver os{' '}
-        <a href={`https://${shortname}.disqus.com/?ref_noscript`}>comentários do Disqus</a>.
+        <a href={`https://${shortname}.disqus.com/?ref_noscript`}>
+          comentários do Disqus
+        </a>
+        .
       </noscript>
     </div>
   );

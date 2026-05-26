@@ -200,10 +200,7 @@
     "arquivo-orfao": {
       "severity": "error",
       "allowTestFiles": false,
-      "exclude": [
-        "**/*.test.ts",
-        "**/*.spec.ts"
-      ]
+      "exclude": ["**/*.test.ts", "**/*.spec.ts"]
     },
     "dependencia-circular": {
       "severity": "error",
@@ -212,9 +209,7 @@
     },
     "poor-naming": {
       "severity": "error",
-      "exclude": [
-        "**/*.d.ts"
-      ]
+      "exclude": ["**/*.d.ts"]
     },
     "unused-import": {
       "severity": "error",
@@ -227,12 +222,7 @@
     },
     "missing-jsdoc": {
       "severity": "warning",
-      "exclude": [
-        "**/*.test.ts",
-        "**/*.spec.ts",
-        "test/**/*",
-        "tests/**/*"
-      ]
+      "exclude": ["**/*.test.ts", "**/*.spec.ts", "test/**/*", "tests/**/*"]
     },
     "unhandled-async": {
       "severity": "error",
@@ -250,9 +240,7 @@
     "excludeFromOrphanCheck": true,
     "allowAnyType": true
   },
-  "analystsExclude": [
-    "problema-documentacao"
-  ],
+  "analystsExclude": ["problema-documentacao"],
   "analistaGithubActions": {
     "checkActionsDesatualizadas": true,
     "checkPermissoesExcessivas": true,
@@ -262,9 +250,7 @@
     "checkFaltaCache": true,
     "minScoreAceitavel": 70,
     "actionsIgnoradas": [],
-    "caminhosWorkflow": [
-      ".github/workflows/"
-    ]
+    "caminhosWorkflow": [".github/workflows/"]
   },
   "detectorMarkdown": {
     "checkProveniencia": true,
@@ -322,9 +308,7 @@
   "ANALISE_INCREMENTAL_VERSION": 1,
   "ESTRUTURA_CAMADAS": {},
   "PLUGINS": {
-    "enabled": [
-      "core"
-    ],
+    "enabled": ["core"],
     "autoload": true,
     "registry": "@prometheus/plugins"
   },

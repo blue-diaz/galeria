@@ -62,7 +62,7 @@
     "next": "^16.2.6",
     "next-mdx-remote": "^6.0.0",
     "postcss": "^8.5.15",
-    "prometheus": "file:prometheus-0.10.0.tgz",
+    "prometheus-cli": "^0.10.2",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
     "styled-components": "^6.4.2",

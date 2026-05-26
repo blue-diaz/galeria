@@ -5,7 +5,7 @@ export const runtime = 'edge';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ): Promise<NextResponse> {
   const { id: rawId } = await params;
   try {
@@ -16,7 +16,8 @@ export async function GET(
 
     const { searchParams } = new URL(request.url);
     const incrementParam = searchParams.get('increment');
-    const shouldIncrement = incrementParam === null ? true : incrementParam !== '0';
+    const shouldIncrement =
+      incrementParam === null ? true : incrementParam !== '0';
 
     const redis = getClonesRedis();
     const key = cloneKey(id);
@@ -39,15 +40,15 @@ export async function GET(
       {
         id,
         count,
-        configured: true
+        configured: true,
       },
       {
         headers: {
           'Cache-Control': 'no-store',
           'Access-Control-Allow-Origin': '*',
-          'X-Clones-Configured': '1'
-        }
-      }
+          'X-Clones-Configured': '1',
+        },
+      },
     );
   } catch (error) {
     console.error('Clones counter error:', error);
@@ -57,15 +58,15 @@ export async function GET(
         id,
         count: 0,
         configured: false,
-        error: 'Clones counter not configured'
+        error: 'Clones counter not configured',
       },
       {
         headers: {
           'Cache-Control': 'no-store',
           'Access-Control-Allow-Origin': '*',
-          'X-Clones-Configured': '0'
-        }
-      }
+          'X-Clones-Configured': '0',
+        },
+      },
     );
   }
 }
