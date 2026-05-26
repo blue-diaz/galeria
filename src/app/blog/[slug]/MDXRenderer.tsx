@@ -5,12 +5,10 @@ import { MDXRemote } from 'next-mdx-remote';
 import Button from '../../components/ui/Button';
 
 const components = {
-  Button,
+  Button
 };
 
-export default function ContentRenderer({
-  content,
-}: ContentRendererProps): React.ReactElement {
+export default function ContentRenderer({ content }: ContentRendererProps): React.ReactElement {
   return (
     <div className="prose prose-invert max-w-none">
       <MDXRemote {...content} components={components} />

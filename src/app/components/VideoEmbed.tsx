@@ -13,26 +13,24 @@ function getEmbedUrl(videoUrl: string): string | null {
   }
 
   const hostname = url.hostname.toLowerCase();
-  const normalizedHost = hostname.startsWith('www.')
-    ? hostname.substring(4)
-    : hostname;
-  const pathname = url.pathname;
-  const searchParams = url.searchParams;
+  const normalizedHost = hostname.startsWith('www.') ? hostname.substring(4) : hostname;
+  const { pathname } = url;
+  const { searchParams } = url;
 
   // YouTube
   if (
     normalizedHost === YOUTUBE_COM ||
     normalizedHost === YOUTUBE_BE ||
-    normalizedHost.endsWith('.' + YOUTUBE_COM)
+    normalizedHost.endsWith(`.${YOUTUBE_COM}`)
   ) {
     let videoId: string | null = null;
 
     if (normalizedHost === YOUTUBE_BE) {
       const parts = pathname.split('/').filter(Boolean);
-      if (parts[0]) videoId = parts[0];
+      if (parts[0] !== undefined) videoId = parts[0];
     } else {
       const vParam = searchParams.get('v');
-      if (vParam) {
+      if (vParam !== null) {
         videoId = vParam;
       } else {
         const parts = pathname.split('/').filter(Boolean);
@@ -40,8 +38,8 @@ function getEmbedUrl(videoUrl: string): string | null {
         const second = parts[1];
         if (
           parts.length >= 2 &&
-          first &&
-          second &&
+          first !== undefined &&
+          second !== undefined &&
           ['embed', 'v', 'e'].includes(first)
         ) {
           videoId = second;
@@ -49,23 +47,20 @@ function getEmbedUrl(videoUrl: string): string | null {
       }
     }
 
-    if (videoId) return `https://www.youtube.com/embed/${videoId}`;
+    if (videoId !== null) return `https://www.youtube.com/embed/${videoId}`;
   }
 
   // Vimeo
-  if (
-    normalizedHost === VIMEO_COM ||
-    normalizedHost.endsWith('.' + VIMEO_COM)
-  ) {
+  if (normalizedHost === VIMEO_COM || normalizedHost.endsWith(`.${VIMEO_COM}`)) {
     const parts = pathname.split('/').filter(Boolean);
     const id = parts[0];
-    if (id && /^\d+$/.test(id)) return `https://player.vimeo.com/video/${id}`;
+    if (id !== undefined && /^\d+$/.test(id)) return `https://player.vimeo.com/video/${id}`;
   }
 
   // Loom
-  if (normalizedHost === LOOM_COM || normalizedHost.endsWith('.' + LOOM_COM)) {
+  if (normalizedHost === LOOM_COM || normalizedHost.endsWith(`.${LOOM_COM}`)) {
     const parts = pathname.split('/').filter(Boolean);
-    if (parts[0] === 'share' && parts[1]) {
+    if (parts[0] === 'share' && parts[1] !== undefined) {
       const id = parts[1];
       if (/^[a-zA-Z0-9]+$/.test(id)) return `https://www.loom.com/embed/${id}`;
     }
@@ -79,8 +74,7 @@ function getEmbedUrl(videoUrl: string): string | null {
     return url.toString();
   }
   if (
-    (hostname === 'player.vimeo.com' ||
-      hostname.endsWith('.player.vimeo.com')) &&
+    (hostname === 'player.vimeo.com' || hostname.endsWith('.player.vimeo.com')) &&
     pathname.startsWith('/video/')
   ) {
     return url.toString();
@@ -95,11 +89,7 @@ function getEmbedUrl(videoUrl: string): string | null {
   return null;
 }
 
-export default function VideoEmbed({
-  url,
-}: {
-  url: string;
-}): React.ReactElement | null {
+export default function VideoEmbed({ url }: { url: string }): React.ReactElement | null {
   const embedUrl = getEmbedUrl(url);
 
   if (embedUrl === null) {

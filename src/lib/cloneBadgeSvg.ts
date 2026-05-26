@@ -50,7 +50,7 @@ function resolveRx(options: CloneBadgeStyleOptions | undefined): number {
 export function renderCloneBadgeSvg(
   label: string,
   value: string,
-  options?: CloneBadgeStyleOptions,
+  options?: CloneBadgeStyleOptions
 ): string {
   const safeLabel = escapeXml(label);
   const safeValue = escapeXml(value);

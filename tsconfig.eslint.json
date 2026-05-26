@@ -1,0 +1,28 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "paths": {
+      "@/*": ["./src/*"],
+      "@app/components": ["./src/app/components/index.ts"],
+      "@app/components/ui": ["./src/app/components/ui/index.ts"],
+      "@app/galeria/_components": ["./src/app/galeria/_components/index.ts"],
+      "@app/galeria/info/_components": ["./src/app/galeria/info/_components/index.ts"],
+      "@app/galeria/visitors/_components": ["./src/app/galeria/visitors/_components/index.ts"],
+      "@lib": ["./src/lib/index.ts"],
+      "@lib/gallery": ["./src/lib/gallery/index.ts"],
+      "@types": ["./src/types/index.ts"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.mjs",
+    ".next/types/**/*.ts",
+    ".next/dev/types/**/*.ts"
+  ]
+}

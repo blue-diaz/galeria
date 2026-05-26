@@ -1,8 +1,8 @@
-import Link from "next/link";
-import CategoryNav from "../_components/CategoryNav";
-import GalleryGrid from "../_components/GalleryGrid";
-import SVGGalleryInstructions from "../../components/ui/SVGGalleryInstructions";
-import { getSkillsLangsItems } from "@/lib/svgGalleryData";
+import Link from 'next/link';
+import CategoryNav from '../_components/CategoryNav';
+import GalleryGrid from '../_components/GalleryGrid';
+import SVGGalleryInstructions from '../../components/ui/SVGGalleryInstructions';
+import { getSkillsLangsItems } from '@/lib/svgGalleryData';
 
 export default function LangsPage(): React.ReactElement {
   const items = getSkillsLangsItems();
@@ -12,7 +12,7 @@ export default function LangsPage(): React.ReactElement {
       <div className="py-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 rounded-md border border-[var(--accent-teal)] back-link-bg px-5 py-2.5 font-medium text-[var(--accent-cyan)] no-underline transition-all hover:-translate-x-1 hover:text-white"
+          className="back-link-bg inline-flex items-center gap-2 rounded-md border border-[var(--accent-teal)] px-5 py-2.5 font-medium text-[var(--accent-cyan)] no-underline transition-all hover:-translate-x-1 hover:text-white"
         >
           <i className="fas fa-arrow-left" /> Voltar para Home
         </Link>
