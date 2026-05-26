@@ -1,342 +1,326 @@
 {
-    "$schema": "./node_modules/prometheus/dist/types/core/config/config.schema.json",
-    "locale": "pt",
-    "verbose": true,
-    "logLevel": "debug",
-    "logEstruturado": true,
-    "devMode": true,
-    "safeMode": true,
-    "enforceStrictMode": true,
-    "allowPlugins": true,
-    "allowExec": false,
-    "allowMutateFs": false,
-    "exclude": [
-        "node_modules/**",
-        "dist/**",
-        "build/**",
-        "coverage/**",
-        ".git/**",
-        "**/*.log",
-        ".prometheus/**",
-        "public/**",
-        ".gitignore",
-        "THIRD-PARTY-LICENSES.txt"
+  "$schema": "./node_modules/prometheus/dist/types/core/config/config.schema.json",
+  "locale": "pt",
+  "verbose": true,
+  "logLevel": "debug",
+  "logEstruturado": true,
+  "devMode": true,
+  "safeMode": true,
+  "enforceStrictMode": true,
+  "allowPlugins": true,
+  "allowExec": false,
+  "allowMutateFs": false,
+  "exclude": [
+    "node_modules/**",
+    "dist/**",
+    "build/**",
+    "coverage/**",
+    ".git/**",
+    "**/*.log",
+    ".prometheus/**",
+    "public/**",
+    ".gitignore",
+    "THIRD-PARTY-LICENSES.txt"
+  ],
+  "CLI_INCLUDE_PATTERNS": [],
+  "CLI_INCLUDE_GROUPS": [],
+  "CLI_EXCLUDE_PATTERNS": [],
+  "INCLUDE_EXCLUDE_RULES": {
+    "dirRules": {},
+    "defaultExcludes": true
+  },
+  "SCANNER_EXTENSOES_COM_AST": [
+    ".js",
+    ".jsx",
+    ".ts",
+    ".tsx",
+    ".mjs",
+    ".cjs",
+    ".java",
+    ".kt",
+    ".kts",
+    ".gradle",
+    ".gradle.kts",
+    ".xml",
+    ".html",
+    ".htm",
+    ".css"
+  ],
+  "SCAN_ONLY": false,
+  "ANALISE_SCAN_ONLY": false,
+  "ANALISE_LIMITES": {
+    "FUNCOES_LONGAS": {
+      "MAX_LINHAS": 30,
+      "MAX_PARAMETROS": 3,
+      "MAX_ANINHAMENTO": 2
+    },
+    "CODIGO_FRAGIL": {
+      "MAX_LINHAS_FUNCAO": 30,
+      "MAX_PARAMETROS": 3,
+      "MAX_NESTED_CALLBACKS": 2
+    }
+  },
+  "ANALISE_AST_CACHE_ENABLED": true,
+  "ANALISE_METRICAS_ENABLED": true,
+  "ANALISE_METRICAS_HISTORICO_PATH": ".prometheus/historico-metricas/metricas-historico.json",
+  "ANALISE_TIMEOUT_POR_ANALISTA_MS": 30000,
+  "WORKER_POOL_ENABLED": true,
+  "WORKER_POOL_MAX_WORKERS": 0,
+  "WORKER_POOL_BATCH_SIZE": 10,
+  "PERF_SNAPSHOT_DIR": "docs/perf",
+  "AUTOANALISE_CONCURRENCY": 5,
+  "ESTRUTURA_TARGETS": {
+    "TESTS_RAIZ_DIR": "src",
+    "SCRIPTS_DIR": "src/scripts",
+    "CONFIG_DIR": "config",
+    "TYPES_DIR": "types",
+    "DOCS_FRAGMENTS_DIR": "docs/fragments"
+  },
+  "nameConventions": {
+    "srcDirectory": "src",
+    "distDirectory": "dist",
+    "docsDirectory": "docs",
+    "typesDirectory": "types",
+    "testsDirectory": "tests",
+    "configDirectory": "config",
+    "scriptsDirectory": "scripts",
+    "assetsDirectory": "assets",
+    "utilsDirectory": "utils",
+    "servicesDirectory": "services",
+    "componentsDirectory": "components",
+    "modelsDirectory": "models",
+    "middlewareDirectory": "middleware",
+    "routesDirectory": "routes",
+    "controllersDirectory": "controllers",
+    "viewsDirectory": "views",
+    "stylesDirectory": "styles",
+    "imagesDirectory": "images",
+    "localesDirectory": "locales"
+  },
+  "conventions": {
+    "typesDirectory": "src/types"
+  },
+  "ESTRUTURA_ARQUIVOS_RAIZ_MAX": 5,
+  "REPO_ARQUETIPO": "cli-modular",
+  "STRUCTURE_AUTO_FIX": false,
+  "STRUCTURE_PLUGINS": [],
+  "STRUCTURE_REVERSE_MAP_PATH": ".prometheus/mapa-reversao.json",
+  "ESTRUTURA_PLANO_MAX_FILE_SIZE": 131072,
+  "STRUCTURE_CONCURRENCY": 5,
+  "languageSupport": {
+    "javascript": {
+      "enabled": true,
+      "parser": "babel",
+      "plugin": "core"
+    },
+    "typescript": {
+      "enabled": true,
+      "parser": "babel",
+      "plugin": "core"
+    },
+    "html": {
+      "enabled": true,
+      "parser": "htmlparser2",
+      "plugin": "core"
+    },
+    "css": {
+      "enabled": true,
+      "parser": "css-tree",
+      "plugin": "core"
+    },
+    "xml": {
+      "enabled": true,
+      "parser": "fast-xml-parser",
+      "plugin": "core"
+    },
+    "php": {
+      "enabled": true,
+      "parser": "heuristic",
+      "plugin": "core"
+    },
+    "python": {
+      "enabled": true,
+      "parser": "heuristic",
+      "plugin": "core"
+    },
+    "go": {
+      "enabled": true,
+      "parser": "heuristic",
+      "plugin": "core"
+    },
+    "rust": {
+      "enabled": true,
+      "parser": "heuristic",
+      "plugin": "core"
+    },
+    "java": {
+      "enabled": true,
+      "parser": "java",
+      "plugin": "core"
+    },
+    "kotlin": {
+      "enabled": true,
+      "parser": "kotlin",
+      "plugin": "core"
+    }
+  },
+  "languages": {
+    "javascript": true,
+    "typescript": true,
+    "html": true,
+    "css": true,
+    "xml": true,
+    "python": true,
+    "go": true,
+    "rust": true,
+    "java": true,
+    "kotlin": true,
+    "php": true
+  },
+  "suppress": {
+    "rules": [],
+    "severity": {
+      "unused-import": "error",
+      "poor-naming": "error",
+      "unhandled-async": "error",
+      "missing-jsdoc": "warning",
+      "weak-crypto": "error",
+      "magic-constants": "warning"
+    },
+    "paths": []
+  },
+  "rules": {
+    "formatador-markdown": {
+      "severity": "off"
+    },
+    "tipo-inseguro": {
+      "severity": "error",
+      "exclude": []
+    },
+    "arquivo-orfao": {
+      "severity": "error",
+      "allowTestFiles": false,
+      "exclude": ["**/*.test.ts", "**/*.spec.ts"]
+    },
+    "dependencia-circular": {
+      "severity": "error",
+      "showFullPath": true,
+      "failFast": true
+    },
+    "poor-naming": {
+      "severity": "error",
+      "exclude": ["**/*.d.ts"]
+    },
+    "unused-import": {
+      "severity": "error",
+      "exclude": []
+    },
+    "duplicate-code": {
+      "severity": "error",
+      "exclude": [],
+      "threshold": 3
+    },
+    "missing-jsdoc": {
+      "severity": "warning",
+      "exclude": ["**/*.test.ts", "**/*.spec.ts", "test/**/*", "tests/**/*"]
+    },
+    "unhandled-async": {
+      "severity": "error",
+      "exclude": []
+    }
+  },
+  "testPatterns": {
+    "files": [
+      "**/*.test.*",
+      "**/*.spec.*",
+      "test/**/*",
+      "tests/**/*",
+      "**/__tests__/**"
     ],
-    "CLI_INCLUDE_PATTERNS": [],
-    "CLI_INCLUDE_GROUPS": [],
-    "CLI_EXCLUDE_PATTERNS": [],
-    "INCLUDE_EXCLUDE_RULES": {
-        "dirRules": {},
-        "defaultExcludes": true
+    "excludeFromOrphanCheck": true,
+    "allowAnyType": true
+  },
+  "analystsExclude": ["problema-documentacao"],
+  "analistaGithubActions": {
+    "checkActionsDesatualizadas": true,
+    "checkPermissoesExcessivas": true,
+    "checkSecretsHardcoded": true,
+    "checkFaltaTimeout": true,
+    "checkRunInseguro": true,
+    "checkFaltaCache": true,
+    "minScoreAceitavel": 70,
+    "actionsIgnoradas": [],
+    "caminhosWorkflow": [".github/workflows/"]
+  },
+  "detectorMarkdown": {
+    "checkProveniencia": true,
+    "checkLicenses": true,
+    "checkReferences": true,
+    "headerLines": 30,
+    "whitelist": {
+      "paths": [],
+      "patterns": [],
+      "dirs": []
     },
-    "SCANNER_EXTENSOES_COM_AST": [
-        ".js",
-        ".jsx",
-        ".ts",
-        ".tsx",
-        ".mjs",
-        ".cjs",
-        ".java",
-        ".kt",
-        ".kts",
-        ".gradle",
-        ".gradle.kts",
-        ".xml",
-        ".html",
-        ".htm",
-        ".css"
-    ],
-    "SCAN_ONLY": false,
-    "ANALISE_SCAN_ONLY": false,
-    "ANALISE_LIMITES": {
-        "FUNCOES_LONGAS": {
-            "MAX_LINHAS": 30,
-            "MAX_PARAMETROS": 3,
-            "MAX_ANINHAMENTO": 2
-        },
-        "CODIGO_FRAGIL": {
-            "MAX_LINHAS_FUNCAO": 30,
-            "MAX_PARAMETROS": 3,
-            "MAX_NESTED_CALLBACKS": 2
-        }
-    },
-    "ANALISE_AST_CACHE_ENABLED": true,
-    "ANALISE_METRICAS_ENABLED": true,
-    "ANALISE_METRICAS_HISTORICO_PATH": ".prometheus/historico-metricas/metricas-historico.json",
-    "ANALISE_TIMEOUT_POR_ANALISTA_MS": 30000,
-    "WORKER_POOL_ENABLED": true,
-    "WORKER_POOL_MAX_WORKERS": 0,
-    "WORKER_POOL_BATCH_SIZE": 10,
-    "PERF_SNAPSHOT_DIR": "docs/perf",
-    "AUTOANALISE_CONCURRENCY": 5,
-    "ESTRUTURA_TARGETS": {
-        "TESTS_RAIZ_DIR": "src",
-        "SCRIPTS_DIR": "src/scripts",
-        "CONFIG_DIR": "config",
-        "TYPES_DIR": "types",
-        "DOCS_FRAGMENTS_DIR": "docs/fragments"
-    },
-    "nameConventions": {
-        "srcDirectory": "src",
-        "distDirectory": "dist",
-        "docsDirectory": "docs",
-        "typesDirectory": "types",
-        "testsDirectory": "tests",
-        "configDirectory": "config",
-        "scriptsDirectory": "scripts",
-        "assetsDirectory": "assets",
-        "utilsDirectory": "utils",
-        "servicesDirectory": "services",
-        "componentsDirectory": "components",
-        "modelsDirectory": "models",
-        "middlewareDirectory": "middleware",
-        "routesDirectory": "routes",
-        "controllersDirectory": "controllers",
-        "viewsDirectory": "views",
-        "stylesDirectory": "styles",
-        "imagesDirectory": "images",
-        "localesDirectory": "locales"
-    },
-    "conventions": {
-        "typesDirectory": "src/types"
-    },
-    "ESTRUTURA_ARQUIVOS_RAIZ_MAX": 5,
-    "REPO_ARQUETIPO": "cli-modular",
-    "STRUCTURE_AUTO_FIX": false,
-    "STRUCTURE_PLUGINS": [],
-    "STRUCTURE_REVERSE_MAP_PATH": ".prometheus/mapa-reversao.json",
-    "ESTRUTURA_PLANO_MAX_FILE_SIZE": 131072,
-    "STRUCTURE_CONCURRENCY": 5,
-    "languageSupport": {
-        "javascript": {
-            "enabled": true,
-            "parser": "babel",
-            "plugin": "core"
-        },
-        "typescript": {
-            "enabled": true,
-            "parser": "babel",
-            "plugin": "core"
-        },
-        "html": {
-            "enabled": true,
-            "parser": "htmlparser2",
-            "plugin": "core"
-        },
-        "css": {
-            "enabled": true,
-            "parser": "css-tree",
-            "plugin": "core"
-        },
-        "xml": {
-            "enabled": true,
-            "parser": "fast-xml-parser",
-            "plugin": "core"
-        },
-        "php": {
-            "enabled": true,
-            "parser": "heuristic",
-            "plugin": "core"
-        },
-        "python": {
-            "enabled": true,
-            "parser": "heuristic",
-            "plugin": "core"
-        },
-        "go": {
-            "enabled": true,
-            "parser": "heuristic",
-            "plugin": "core"
-        },
-        "rust": {
-            "enabled": true,
-            "parser": "heuristic",
-            "plugin": "core"
-        },
-        "java": {
-            "enabled": true,
-            "parser": "java",
-            "plugin": "core"
-        },
-        "kotlin": {
-            "enabled": true,
-            "parser": "kotlin",
-            "plugin": "core"
-        }
-    },
-    "languages": {
-        "javascript": true,
-        "typescript": true,
-        "html": true,
-        "css": true,
-        "xml": true,
-        "python": true,
-        "go": true,
-        "rust": true,
-        "java": true,
-        "kotlin": true,
-        "php": true
-    },
-    "suppress": {
-        "rules": [],
-        "severity": {
-            "unused-import": "error",
-            "poor-naming": "error",
-            "unhandled-async": "error",
-            "missing-jsdoc": "warning",
-            "weak-crypto": "error",
-            "magic-constants": "warning"
-        },
-        "paths": []
-    },
-    "rules": {
-        "formatador-markdown": {
-            "severity": "off"
-        },
-        "tipo-inseguro": {
-            "severity": "error",
-            "exclude": []
-        },
-        "arquivo-orfao": {
-            "severity": "error",
-            "allowTestFiles": false,
-            "exclude": [
-                "**/*.test.ts",
-                "**/*.spec.ts"
-            ]
-        },
-        "dependencia-circular": {
-            "severity": "error",
-            "showFullPath": true,
-            "failFast": true
-        },
-        "poor-naming": {
-            "severity": "error",
-            "exclude": [
-                "**/*.d.ts"
-            ]
-        },
-        "unused-import": {
-            "severity": "error",
-            "exclude": []
-        },
-        "duplicate-code": {
-            "severity": "error",
-            "exclude": [],
-            "threshold": 3
-        },
-        "missing-jsdoc": {
-            "severity": "warning",
-            "exclude": [
-                "**/*.test.ts",
-                "**/*.spec.ts",
-                "test/**/*",
-                "tests/**/*"
-            ]
-        },
-        "unhandled-async": {
-            "severity": "error",
-            "exclude": []
-        }
-    },
-    "testPatterns": {
-        "files": [
-            "**/*.test.*",
-            "**/*.spec.*",
-            "test/**/*",
-            "tests/**/*",
-            "**/__tests__/**"
-        ],
-        "excludeFromOrphanCheck": true,
-        "allowAnyType": true
-    },
-    "analystsExclude": [
-        "problema-documentacao"
-    ],
-    "analistaGithubActions": {
-        "checkActionsDesatualizadas": true,
-        "checkPermissoesExcessivas": true,
-        "checkSecretsHardcoded": true,
-        "checkFaltaTimeout": true,
-        "checkRunInseguro": true,
-        "checkFaltaCache": true,
-        "minScoreAceitavel": 70,
-        "actionsIgnoradas": [],
-        "caminhosWorkflow": [
-            ".github/workflows/"
-        ]
-    },
-    "detectorMarkdown": {
-        "checkProveniencia": true,
-        "checkLicenses": true,
-        "checkReferences": true,
-        "headerLines": 30,
-        "whitelist": {
-            "paths": [],
-            "patterns": [],
-            "dirs": []
-        },
-        "whitelistMode": "merge"
-    },
-    "GUARDIAN_ENABLED": true,
-    "GUARDIAN_ENFORCE_PROTECTION": true,
-    "GUARDIAN_BASELINE": ".prometheus/guardian-baseline.json",
-    "GUARDIAN_ALLOW_ADDS": false,
-    "GUARDIAN_ALLOW_CHG": false,
-    "GUARDIAN_ALLOW_DELS": false,
-    "GUARDIAN_STRICT_MODE": true,
-    "GUARDIAN_REPORT_ENABLED": true,
-    "REPORT_OUTPUT_DIR": "reports",
-    "REPORT_EXPORT_FULL": true,
-    "REPORT_FRAGMENT_OCCURRENCES": 500,
-    "REPORT_FRAGMENT_FILEENTRIES": 200,
-    "REPORT_FRAGMENT_SUMMARY_TOPN": 10,
-    "REPORT_SILENCE_LOGS": false,
-    "PROMETHEUS_STATE_DIR": ".prometheus",
-    "STATE_DIR": ".prometheus",
-    "ZELADOR_STATE_DIR": ".prometheus",
-    "ZELADOR_ABANDONED_DIR": ".prometheus/abandonados",
-    "ZELADOR_PENDING_PATH": ".prometheus/pendentes.json",
-    "ZELADOR_REACTIVATE_PATH": ".prometheus/reativar.json",
-    "ZELADOR_HISTORY_PATH": ".prometheus/historico.json",
-    "ZELADOR_REPORT_PATH": ".prometheus/poda-prometheus.md",
-    "SUPPRESS_PARCIAL_LOGS": false,
-    "RELATORIO_SAUDE_TABELA_ENABLED": true,
-    "RELATORIO_SAUDE_DETALHADO_VERBOSE": true,
-    "ZELADOR_GHOST_INACTIVITY_DAYS": 7,
-    "ZELADOR_LINE_THRESHOLD": 5,
-    "COMPACT_MODE": false,
-    "PARSE_ERRO_AGRUPAR": true,
-    "PARSE_ERRO_MAX_POR_ARQUIVO": 1,
-    "PARSE_ERRO_FALHA": false,
-    "VIGIA_TOP_N": 10,
-    "ANALISE_METRICAS_HISTORICO_MAX": 200,
-    "ANALISE_PRIORIZACAO_ENABLED": true,
-    "ANALISE_PRIORIZACAO_PESOS": {
-        "duracaoMs": 1,
-        "ocorrencias": 2,
-        "penalidadeReuso": 0.5
-    },
-    "ANALISE_INCREMENTAL_ENABLED": false,
-    "ANALISE_INCREMENTAL_STATE_PATH": ".prometheus/incremental-analise.json",
-    "ANALISE_INCREMENTAL_VERSION": 1,
-    "ESTRUTURA_CAMADAS": {},
-    "PLUGINS": {
-        "enabled": [
-            "core"
-        ],
-        "autoload": true,
-        "registry": "@prometheus/plugins"
-    },
-    "DEV_MODE_STRICT": true,
-    "CHECK_ASYNC_AWAIT": true,
-    "CHECK_ERROR_HANDLING": true,
-    "CHECK_TYPE_COVERAGE": true,
-    "TYPE_COVERAGE_THRESHOLD": 100,
-    "ENFORCE_MODULE_BOUNDARIES": true,
-    "MAX_CYCLOMATIC_COMPLEXITY": 5,
-    "MAX_FILE_LENGTH": 300,
-    "FAIL_ON_WARNINGS": false,
-    "FAIL_ON_ORPHAN_FILES": true,
-    "CACHE_STRATEGY": "never"
+    "whitelistMode": "merge"
+  },
+  "GUARDIAN_ENABLED": true,
+  "GUARDIAN_ENFORCE_PROTECTION": true,
+  "GUARDIAN_BASELINE": ".prometheus/guardian-baseline.json",
+  "GUARDIAN_ALLOW_ADDS": false,
+  "GUARDIAN_ALLOW_CHG": false,
+  "GUARDIAN_ALLOW_DELS": false,
+  "GUARDIAN_STRICT_MODE": true,
+  "GUARDIAN_REPORT_ENABLED": true,
+  "REPORT_OUTPUT_DIR": "reports",
+  "REPORT_EXPORT_FULL": true,
+  "REPORT_FRAGMENT_OCCURRENCES": 500,
+  "REPORT_FRAGMENT_FILEENTRIES": 200,
+  "REPORT_FRAGMENT_SUMMARY_TOPN": 10,
+  "REPORT_SILENCE_LOGS": false,
+  "PROMETHEUS_STATE_DIR": ".prometheus",
+  "STATE_DIR": ".prometheus",
+  "ZELADOR_STATE_DIR": ".prometheus",
+  "ZELADOR_ABANDONED_DIR": ".prometheus/abandonados",
+  "ZELADOR_PENDING_PATH": ".prometheus/pendentes.json",
+  "ZELADOR_REACTIVATE_PATH": ".prometheus/reativar.json",
+  "ZELADOR_HISTORY_PATH": ".prometheus/historico.json",
+  "ZELADOR_REPORT_PATH": ".prometheus/poda-prometheus.md",
+  "SUPPRESS_PARCIAL_LOGS": false,
+  "RELATORIO_SAUDE_TABELA_ENABLED": true,
+  "RELATORIO_SAUDE_DETALHADO_VERBOSE": true,
+  "ZELADOR_GHOST_INACTIVITY_DAYS": 7,
+  "ZELADOR_LINE_THRESHOLD": 5,
+  "COMPACT_MODE": false,
+  "PARSE_ERRO_AGRUPAR": true,
+  "PARSE_ERRO_MAX_POR_ARQUIVO": 1,
+  "PARSE_ERRO_FALHA": false,
+  "VIGIA_TOP_N": 10,
+  "ANALISE_METRICAS_HISTORICO_MAX": 200,
+  "ANALISE_PRIORIZACAO_ENABLED": true,
+  "ANALISE_PRIORIZACAO_PESOS": {
+    "duracaoMs": 1,
+    "ocorrencias": 2,
+    "penalidadeReuso": 0.5
+  },
+  "ANALISE_INCREMENTAL_ENABLED": false,
+  "ANALISE_INCREMENTAL_STATE_PATH": ".prometheus/incremental-analise.json",
+  "ANALISE_INCREMENTAL_VERSION": 1,
+  "ESTRUTURA_CAMADAS": {},
+  "PLUGINS": {
+    "enabled": ["core"],
+    "autoload": true,
+    "registry": "@prometheus/plugins"
+  },
+  "DEV_MODE_STRICT": true,
+  "CHECK_ASYNC_AWAIT": true,
+  "CHECK_ERROR_HANDLING": true,
+  "CHECK_TYPE_COVERAGE": true,
+  "TYPE_COVERAGE_THRESHOLD": 100,
+  "ENFORCE_MODULE_BOUNDARIES": true,
+  "MAX_CYCLOMATIC_COMPLEXITY": 5,
+  "MAX_FILE_LENGTH": 300,
+  "FAIL_ON_WARNINGS": false,
+  "FAIL_ON_ORPHAN_FILES": true,
+  "CACHE_STRATEGY": "never"
 }
