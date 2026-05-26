@@ -3,6 +3,7 @@ import { fetchGitHubTopLanguages } from '@/lib/github-stats';
 import type { GitHubCardTheme, GitHubCommonParams } from '@/types/github';
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 const CACHE_MAX_AGE_OK = 43200;

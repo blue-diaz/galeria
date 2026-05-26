@@ -2,6 +2,7 @@ import { generateLanguagesPreviewSVG } from '@/lib/github-langs-svg';
 import type { GitHubCardTheme, GitHubCommonParams } from '@/types/github';
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 const CACHE_DURATION = 86400;

@@ -3,6 +3,7 @@ import { generateGitHubStatsSVG } from '@/lib/github-stats-svg';
 import type { GitHubCardTheme, GitHubCommonParams } from '@/types/github';
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 const CACHE_MAX_AGE_OK = 43200;
@@ -86,6 +87,23 @@ export async function GET(
     const stats = await fetchGitHubStats(username);
     const config = parseCommonParams(searchParams);
     const displayName = getDisplayName(searchParams, username);
+
+    const allZero = stats.totalCommits === 0 &&
+      stats.totalPullRequests === 0 &&
+      stats.totalContributions === 0 &&
+      stats.followers === 0 &&
+      stats.publicRepos === 0;
+
+    if (allZero) {
+      const svg = renderErrorSvg(config.theme, 'GitHub Stats');
+      return new NextResponse(svg, {
+        status: 200,
+        headers: {
+          'Content-Type': 'image/svg+xml; charset=utf-8',
+          'Cache-Control': `public, max-age=${CACHE_MAX_AGE_ERR}, s-maxage=${CACHE_S_MAXAGE_ERR}`,
+        },
+      });
+    }
 
     const svg = generateGitHubStatsSVG(stats, displayName, {
       ...config,

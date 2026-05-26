@@ -14,7 +14,7 @@ export type { GitHubStats };
  * - DEFAULT_GITHUB_GRAPHQL_URL: endpoint GraphQL do GitHub
  */
 const DEFAULT_REPOS_PER_PAGE = 100;
-const MAX_REPOS_TO_PROCESS = 30;
+const MAX_REPOS_TO_PROCESS = 10;
 const DEFAULT_GITHUB_GRAPHQL_URL = 'https://api.github.com/graphql';
 
 const LANGUAGE_COLORS: Record<string, string> = {
