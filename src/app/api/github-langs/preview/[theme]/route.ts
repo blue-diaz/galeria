@@ -2,6 +2,7 @@ import { generateLanguagesPreviewSVG } from '@/lib/github-langs-svg';
 import type { GitHubCardTheme, GitHubCommonParams } from '@/types/github';
 import { NextResponse } from 'next/server';
 
+export const runtime = 'edge';
 export const dynamic = 'force-dynamic';
 
 const CACHE_DURATION = 86400;
@@ -12,7 +13,7 @@ const THEMES = [
   'neon',
   'sunset',
   'ocean',
-  'forest'
+  'forest',
 ] as const satisfies readonly GitHubCardTheme[];
 
 function parseTheme(value: string | null | undefined): GitHubCardTheme {
@@ -25,9 +26,12 @@ function parseTheme(value: string | null | undefined): GitHubCardTheme {
 
 function parseCommonParams(searchParams: URLSearchParams): GitHubCommonParams {
   const theme = parseTheme(searchParams.get('theme'));
-  const borderRadius = searchParams.get('border_radius') ?? searchParams.get('borderRadius');
-  const showBorder = searchParams.get('show_border') ?? searchParams.get('showBorder');
-  const borderWidth = searchParams.get('border_width') ?? searchParams.get('borderWidth');
+  const borderRadius =
+    searchParams.get('border_radius') ?? searchParams.get('borderRadius');
+  const showBorder =
+    searchParams.get('show_border') ?? searchParams.get('showBorder');
+  const borderWidth =
+    searchParams.get('border_width') ?? searchParams.get('borderWidth');
   const widthParam = searchParams.get('width') ?? searchParams.get('w');
   const heightParam = searchParams.get('height') ?? searchParams.get('h');
 
@@ -36,15 +40,16 @@ function parseCommonParams(searchParams: URLSearchParams): GitHubCommonParams {
     ...(borderRadius !== null && { borderRadius: parseInt(borderRadius) }),
     ...(showBorder !== null && { showBorder: showBorder === 'true' }),
     ...(borderWidth !== null && { borderWidth: parseInt(borderWidth) }),
-    ...(widthParam !== null && !Number.isNaN(Number(widthParam)) && { width: Number(widthParam) }),
+    ...(widthParam !== null &&
+      !Number.isNaN(Number(widthParam)) && { width: Number(widthParam) }),
     ...(heightParam !== null &&
-      !Number.isNaN(Number(heightParam)) && { height: Number(heightParam) })
+      !Number.isNaN(Number(heightParam)) && { height: Number(heightParam) }),
   };
 }
 
 export async function GET(
   request: Request,
-  { params }: { params: Promise<{ theme: string }> }
+  { params }: { params: Promise<{ theme: string }> },
 ): Promise<Response> {
   try {
     const { theme: themeParam } = await params;
@@ -57,8 +62,8 @@ export async function GET(
     return new NextResponse(svg, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': `public, max-age=${CACHE_DURATION}, s-maxage=${CACHE_DURATION}, immutable`
-      }
+        'Cache-Control': `public, max-age=${CACHE_DURATION}, s-maxage=${CACHE_DURATION}, immutable`,
+      },
     });
   } catch (error) {
     console.error('Erro ao gerar preview de linguagens:', error);

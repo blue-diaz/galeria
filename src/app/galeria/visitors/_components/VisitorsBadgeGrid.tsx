@@ -17,7 +17,8 @@ function toQueryString(params: Record<string, string> | undefined): string {
 }
 
 function getClientBaseUrl(): string {
-  const origin = typeof window !== 'undefined' ? window.location?.origin : undefined;
+  const origin =
+    typeof window !== 'undefined' ? window.location?.origin : undefined;
   if (origin !== undefined && origin !== null && origin !== '') return origin;
 
   const envSiteUrl = process.env['NEXT_PUBLIC_SITE_URL'];
@@ -26,7 +27,11 @@ function getClientBaseUrl(): string {
   }
 
   const envCanonicalUrl = process.env['NEXT_PUBLIC_CANONICAL_URL'];
-  if (envCanonicalUrl !== undefined && envCanonicalUrl !== null && envCanonicalUrl !== '') {
+  if (
+    envCanonicalUrl !== undefined &&
+    envCanonicalUrl !== null &&
+    envCanonicalUrl !== ''
+  ) {
     return envCanonicalUrl.replace(/\/$/, '');
   }
 
@@ -68,7 +73,7 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           shape: 'square',
           labelColor: '0a0a0f',
           valueColor: '00ffff',
-          textColor: 'ffffff'
+          textColor: 'ffffff',
         },
         previewQuery: {
           label: 'visitors',
@@ -76,8 +81,8 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           labelColor: '0a0a0f',
           valueColor: '00ffff',
           textColor: 'ffffff',
-          increment: '0'
-        }
+          increment: '0',
+        },
       },
       {
         id: 'visitors-cyber',
@@ -89,7 +94,7 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           shape: 'square',
           labelColor: '0a0a0f',
           valueColor: 'ff00ff',
-          textColor: 'ffffff'
+          textColor: 'ffffff',
         },
         previewQuery: {
           label: 'visitors',
@@ -97,8 +102,8 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           labelColor: '0a0a0f',
           valueColor: 'ff00ff',
           textColor: 'ffffff',
-          increment: '0'
-        }
+          increment: '0',
+        },
       },
       {
         id: 'clones-neon',
@@ -110,7 +115,7 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           shape: 'square',
           labelColor: '0a0a0f',
           valueColor: '00ff66',
-          textColor: 'ffffff'
+          textColor: 'ffffff',
         },
         previewQuery: {
           label: 'clones',
@@ -118,8 +123,8 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           labelColor: '0a0a0f',
           valueColor: '00ff66',
           textColor: 'ffffff',
-          increment: '0'
-        }
+          increment: '0',
+        },
       },
       {
         id: 'clones-cyber',
@@ -131,7 +136,7 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           shape: 'square',
           labelColor: '0a0a0f',
           valueColor: 'ff4400',
-          textColor: 'ffffff'
+          textColor: 'ffffff',
         },
         previewQuery: {
           label: 'clones',
@@ -139,8 +144,8 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           labelColor: '0a0a0f',
           valueColor: 'ff4400',
           textColor: 'ffffff',
-          increment: '0'
-        }
+          increment: '0',
+        },
       },
       {
         id: 'unic-clones-neon',
@@ -152,7 +157,7 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           shape: 'square',
           labelColor: '0a0a0f',
           valueColor: '8800ff',
-          textColor: 'ffffff'
+          textColor: 'ffffff',
         },
         previewQuery: {
           label: 'unic clones',
@@ -160,8 +165,8 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           labelColor: '0a0a0f',
           valueColor: '8800ff',
           textColor: 'ffffff',
-          increment: '0'
-        }
+          increment: '0',
+        },
       },
       {
         id: 'unic-clones-cyber',
@@ -173,7 +178,7 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           shape: 'square',
           labelColor: '0a0a0f',
           valueColor: '00ffcc',
-          textColor: 'ffffff'
+          textColor: 'ffffff',
         },
         previewQuery: {
           label: 'unic clones',
@@ -181,16 +186,20 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
           labelColor: '0a0a0f',
           valueColor: '00ffcc',
           textColor: 'ffffff',
-          increment: '0'
-        }
-      }
+          increment: '0',
+        },
+      },
     ],
-    []
+    [],
   );
 
   const generateMarkdownCode = (variant: BadgeVariant): string => {
     const baseUrl = getClientBaseUrl();
-    const path = getBadgePath(variant.id, cloneIdPlaceholder, visitorIdPlaceholder);
+    const path = getBadgePath(
+      variant.id,
+      cloneIdPlaceholder,
+      visitorIdPlaceholder,
+    );
     const queryString = toQueryString(variant.query);
     const imageUrl = `${baseUrl}${path}${queryString}`;
     return `![${variant.labelForMarkdown}](${imageUrl})`;
@@ -207,7 +216,9 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
       await navigator.clipboard.writeText(code);
       showNotificationMessage('✓ Código copiado com sucesso!');
     } catch {
-      showNotificationMessage('✗ Não foi possível copiar (permissão do navegador).');
+      showNotificationMessage(
+        '✗ Não foi possível copiar (permissão do navegador).',
+      );
     }
   };
 
@@ -216,7 +227,9 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
       await navigator.clipboard.writeText(currentCode);
       showNotificationMessage('✓ Código copiado!');
     } catch {
-      showNotificationMessage('✗ Não foi possível copiar (permissão do navegador).');
+      showNotificationMessage(
+        '✗ Não foi possível copiar (permissão do navegador).',
+      );
     }
   };
 
@@ -229,10 +242,12 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
         </h1>
         <p className="text-[var(--text-muted)]">
           Badges cyberpunk neon de visitors e clones. Copie o código e troque{' '}
-          <code>seu-usuario</code> pelo seu usuário ou <code>seu-repo</code> pelo seu repositório.
+          <code>seu-usuario</code> pelo seu usuário ou <code>seu-repo</code>{' '}
+          pelo seu repositório.
         </p>
         <p className="mt-2 text-sm text-[var(--text-muted)]">
-          Observação: os previews usam <code>increment=0</code> para não inflar os contadores.
+          Observação: os previews usam <code>increment=0</code> para não inflar
+          os contadores.
         </p>
       </div>
 
@@ -248,7 +263,7 @@ export default function VisitorsBadgeGrid(): React.ReactElement {
               className="svgCard cardSvg animateFadeInUp"
               style={
                 {
-                  '--animation-delay': `${index * 0.1}s`
+                  '--animation-delay': `${index * 0.1}s`,
                 } as React.CSSProperties
               }
             >

@@ -2,7 +2,11 @@
 
 import type { ButtonProps, Size, Variant } from '@/types/ui';
 import React from 'react';
-import { BUTTON_BASE_CLASSES, SIZE_CLASSES, VARIANT_CLASSES } from './buttonStyles';
+import {
+  BUTTON_BASE_CLASSES,
+  SIZE_CLASSES,
+  VARIANT_CLASSES,
+} from './buttonStyles';
 
 export default function Button({
   children,
@@ -11,7 +15,12 @@ export default function Button({
   size = 'md',
   ...props
 }: ButtonProps): React.ReactElement {
-  const classes = [BUTTON_BASE_CLASSES, VARIANT_CLASSES[variant], SIZE_CLASSES[size], className]
+  const classes = [
+    BUTTON_BASE_CLASSES,
+    VARIANT_CLASSES[variant],
+    SIZE_CLASSES[size],
+    className,
+  ]
     .filter(Boolean)
     .join(' ');
 
@@ -19,7 +28,8 @@ export default function Button({
 
   if (isAnchor) {
     // render anchor when href provided (works with next/link or direct <a>)
-    const { href, ...anchorProps } = props as React.AnchorHTMLAttributes<HTMLAnchorElement>;
+    const { href, ...anchorProps } =
+      props as React.AnchorHTMLAttributes<HTMLAnchorElement>;
     return (
       <a {...anchorProps} href={href} className={classes}>
         {children}
@@ -41,9 +51,11 @@ export default function Button({
 export function getButtonClasses(
   variant: Variant = 'secondary',
   size: Size = 'md',
-  className = ''
+  className = '',
 ): string {
   const base =
     'font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-[var(--accent-light)]';
-  return [base, VARIANT_CLASSES[variant], SIZE_CLASSES[size], className].filter(Boolean).join(' ');
+  return [base, VARIANT_CLASSES[variant], SIZE_CLASSES[size], className]
+    .filter(Boolean)
+    .join(' ');
 }

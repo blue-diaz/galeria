@@ -2,9 +2,9 @@
  * Componente de instruções que explica como usar os SVGs e badges
  * e mostra exemplos de uso no GitHub README.
  */
-import FeatureItem from './FeatureItem';
-import Panel from './Panel';
-import { getBaseUrl } from '@/lib/getBaseUrl';
+import FeatureItem from "./FeatureItem";
+import Panel from "./Panel";
+import { getBaseUrl } from "@/lib/getBaseUrl";
 
 export default function SVGGalleryInstructions(): React.ReactElement {
   const baseUrl = getBaseUrl();
@@ -22,7 +22,7 @@ export default function SVGGalleryInstructions(): React.ReactElement {
           Cole no seu README.md do GitHub
         </FeatureItem>
         <FeatureItem icon={<i className="fas fa-check-circle" />}>
-          Pronto! Seu perfil está mais bonito{' '}
+          Pronto! Seu perfil está mais bonito{" "}
           <i className="fas fa-star text-[var(--accent-yellow)]" />
         </FeatureItem>
       </ul>
@@ -62,7 +62,9 @@ export default function SVGGalleryInstructions(): React.ReactElement {
         <strong>Parâmetros disponíveis:</strong>
       </div>
       <div className="mt-2.5 flex flex-col items-start justify-center overflow-x-auto rounded border border-[var(--vscode-border)] bg-[var(--vscode-bg)] p-5 text-center">
-        <code className="mb-1.5">?width=500 ou ?w=500 - Define largura em pixels</code>
+        <code className="mb-1.5">
+          ?width=500 ou ?w=500 - Define largura em pixels
+        </code>
         <code className="mb-1.5">?width=100% - Largura 100% (responsivo)</code>
         <code className="mb-1.5">?height=200 ou ?h=200 - Define altura</code>
         <code>?width=600&height=300 - Define ambos explicitamente</code>
@@ -87,12 +89,13 @@ export default function SVGGalleryInstructions(): React.ReactElement {
 
       <div className="mt-2.5 flex flex-col items-start justify-center overflow-x-auto rounded border border-[var(--vscode-border)] bg-[var(--vscode-bg)] p-5 text-left">
         <div className="mb-2 text-sm text-[var(--text-muted)]">
-          Dicas rápidas (substitua <code>seu-usuario</code> pelo seu username do GitHub, por exemplo
+          Dicas rápidas (substitua <code>seu-usuario</code> pelo seu username do
+          GitHub, por exemplo
           <code>lopos</code>):
         </div>
         <div className="mb-1 text-sm text-[var(--text-muted)]">
-          Você pode escolher o texto livremente via <code>label</code> (ex.: visitors, views,
-          visitantes).
+          Você pode escolher o texto livremente via <code>label</code> (ex.:
+          visitors, views, visitantes).
         </div>
         <code className="mb-1.5">{`![Visitors](${baseUrl}/api/visitors/seu-usuario/badge?label=visitors)`}</code>
         <code className="mb-1.5">{`![Views](${baseUrl}/api/visitors/seu-usuario/badge?label=views)`}</code>

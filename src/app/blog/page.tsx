@@ -1,11 +1,12 @@
 // Link/Logo not required in the listing page (layout provides header)
-import { getAllPosts, getAllCategories } from '@/lib/posts';
-import Container from '../components/ui/Container';
-import PostCard from '../components/ui/PostCard';
-import Button from '../components/ui/Button';
+import { getAllPosts, getAllCategories } from "@/lib/posts";
+import Container from "../components/ui/Container";
+import PostCard from "../components/ui/PostCard";
+import Button from "../components/ui/Button";
 
-const BLOG_TITLE = 'Blog';
-const BLOG_DESCRIPTION = 'Tutoriais, artigos e recursos sobre desenvolvimento web';
+const BLOG_TITLE = "Blog";
+const BLOG_DESCRIPTION =
+  "Tutoriais, artigos e recursos sobre desenvolvimento web";
 
 export default function BlogPage(): React.ReactElement {
   const posts = getAllPosts();
@@ -16,13 +17,15 @@ export default function BlogPage(): React.ReactElement {
         <h1 className="textGradientTealCyan mb-4 inline-flex items-center gap-4 text-5xl font-bold">
           <i className="fas fa-blog" /> {BLOG_TITLE}
         </h1>
-        <p className="text-xl text-[var(--text-secondary)]">{BLOG_DESCRIPTION}</p>
+        <p className="text-xl text-[var(--text-secondary)]">
+          {BLOG_DESCRIPTION}
+        </p>
       </div>
 
       {categories.length > 0 && (
         <div className="mb-10 flex flex-wrap justify-center gap-3">
           <Button href="/blog" variant="primary" size="sm">
-            {' '}
+            {" "}
             <i className="fas fa-th" /> Todos
           </Button>
           {categories.map((category) => (

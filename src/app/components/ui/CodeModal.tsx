@@ -1,16 +1,16 @@
 /**
  * Modal para exibir e copiar o código Markdown de um SVG/badge
  */
-import type { CodeModalProps } from '@/types/ui';
+import type { CodeModalProps } from "@/types/ui";
 
-const MODAL_TITLE = 'Código Markdown';
-const COPY_BUTTON_TEXT = 'Copiar Código';
+const MODAL_TITLE = "Código Markdown";
+const COPY_BUTTON_TEXT = "Copiar Código";
 
 export default function CodeModal({
   code,
   isOpen,
   onClose,
-  onCopy
+  onCopy,
 }: CodeModalProps): React.ReactElement | null {
   if (!isOpen) {
     return null;
@@ -18,7 +18,10 @@ export default function CodeModal({
 
   return (
     <div className="modalOverlay" onClick={onClose}>
-      <div className="modalContent codeModal" onClick={(e) => e.stopPropagation()}>
+      <div
+        className="modalContent codeModal"
+        onClick={(e) => e.stopPropagation()}
+      >
         <div className="mb-5 flex items-center justify-between">
           <h2>
             <i className="fas fa-code" /> {MODAL_TITLE}
