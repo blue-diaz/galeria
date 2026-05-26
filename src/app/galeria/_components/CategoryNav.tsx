@@ -41,15 +41,11 @@ export default function CategoryNav(): React.ReactElement {
           <Link
             key={cat.slug}
             href={cat.slug === '' ? '/galeria' : `/galeria/${cat.slug}`}
-            className={`
-              inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium
-              no-underline transition-all duration-200
-              ${
-                isActive(cat.slug)
-                  ? 'bg-[var(--accent-teal)] text-white shadow-lg'
-                  : 'border border-[var(--vscode-border)] bg-[var(--vscode-editor)] text-[var(--text-muted)] hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)]'
-              }
-            `}
+            className={`inline-flex items-center gap-2 rounded-lg px-4 py-2.5 text-sm font-medium no-underline transition-all duration-200 ${
+              isActive(cat.slug)
+                ? 'bg-[var(--accent-teal)] text-white shadow-lg'
+                : 'border border-[var(--vscode-border)] bg-[var(--vscode-editor)] text-[var(--text-muted)] hover:border-[var(--accent-cyan)] hover:text-[var(--accent-cyan)]'
+            } `}
           >
             <i className={cat.icon} />
             <span>{cat.label}</span>
