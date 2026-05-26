@@ -1,20 +1,35 @@
-import { getAllTags, getPostsByTag } from '@/lib/posts';
-import type { BlogTagPageProps } from '@/types/blog';
-import Container from '../../../components/ui/Container';
-import PostCard from '../../../components/ui/PostCard';
+import { getAllTags, getPostsByTag } from "@/lib/posts";
+import type { BlogTagPageProps } from "@/types/blog";
+import Container from "../../../components/ui/Container";
+import PostCard from "../../../components/ui/PostCard";
+import { notFound } from "next/navigation";
 
 export function generateStaticParams(): Array<{ tag: string }> {
   const tags = getAllTags();
   return tags.map((tag) => ({ tag }));
 }
 
-export async function generateMetadata({ params }: BlogTagPageProps): Promise<{ title: string }> {
-  const { tag } = await params;
+async function resolveParams(
+  params: BlogTagPageProps["params"],
+): Promise<{ tag: string }> {
+  try {
+    return await params;
+  } catch {
+    notFound();
+  }
+}
+
+export async function generateMetadata({
+  params,
+}: BlogTagPageProps): Promise<{ title: string }> {
+  const { tag } = await resolveParams(params);
   return { title: `#${tag} | Blog Black Diaz` };
 }
 
-export default async function TagPage({ params }: BlogTagPageProps): Promise<React.ReactElement> {
-  const { tag } = await params;
+export default async function TagPage({
+  params,
+}: BlogTagPageProps): Promise<React.ReactElement> {
+  const { tag } = await resolveParams(params);
   const posts = getPostsByTag(tag);
 
   return (
@@ -23,7 +38,9 @@ export default async function TagPage({ params }: BlogTagPageProps): Promise<Rea
         <h1 className="textGradientTealCyan mb-4 inline-flex items-center gap-4 text-5xl font-bold">
           <i className="fas fa-tags" /> {tag}
         </h1>
-        <p className="text-xl text-[var(--text-secondary)]">Posts com esta tag</p>
+        <p className="text-xl text-[var(--text-secondary)]">
+          Posts com esta tag
+        </p>
       </div>
 
       {posts.length === 0 ? (

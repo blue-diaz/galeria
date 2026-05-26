@@ -1,13 +1,16 @@
-'use client';
+"use client";
 
-import type { PostCardProps } from '@/types/blog';
-import { useRouter } from 'next/navigation';
-import React from 'react';
-import Badge from './Badge';
-import Card from './Card';
-import Tag from './Tag';
+import type { PostCardProps } from "@/types/blog";
+import { useRouter } from "next/navigation";
+import React from "react";
+import Badge from "./Badge";
+import Card from "./Card";
+import Tag from "./Tag";
 
-export default function PostCard({ post, className = '' }: PostCardProps): React.ReactElement {
+export default function PostCard({
+  post,
+  className = "",
+}: PostCardProps): React.ReactElement {
   const router = useRouter();
 
   const handleCardClick = (): void => {
@@ -15,7 +18,7 @@ export default function PostCard({ post, className = '' }: PostCardProps): React
   };
 
   const handleKeyDown = (e: React.KeyboardEvent): void => {
-    if (e.key === 'Enter' || e.key === ' ') {
+    if (e.key === "Enter" || e.key === " ") {
       handleCardClick();
     }
   };
@@ -37,7 +40,8 @@ export default function PostCard({ post, className = '' }: PostCardProps): React
           <i className="fas fa-folder iconWithMarginRight" /> {post.category}
         </Badge>
         <span className="inline-flex items-center gap-1.5 text-[var(--text-secondary)]">
-          <i className="fas fa-calendar" /> {new Date(post.date).toLocaleDateString('pt-BR')}
+          <i className="fas fa-calendar" />{" "}
+          {new Date(post.date).toLocaleDateString("pt-BR")}
         </span>
       </div>
       <h2 className="m-0 break-words">{post.title}</h2>

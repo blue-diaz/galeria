@@ -3,11 +3,11 @@ import Container from '../components/ui/Container';
 
 export const metadata: Metadata = {
   title: 'Galeria SVG - Black Diaz',
-  description: 'SVGs animados gratuitos para seus projetos no GitHub'
+  description: 'SVGs animados gratuitos para seus projetos no GitHub',
 };
 
 export default function GaleriaLayout({
-  children
+  children,
 }: {
   children: React.ReactNode;
 }): React.ReactElement {

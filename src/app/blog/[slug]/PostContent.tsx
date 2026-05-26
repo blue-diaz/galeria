@@ -1,17 +1,17 @@
-﻿'use client';
+﻿"use client";
 
-import VideoEmbed from '@/app/components/VideoEmbed';
-import type { PostContentProps } from '@/types/blog';
-import dynamic from 'next/dynamic';
-import Link from 'next/link';
-import Badge from '../../components/ui/Badge';
-import Button from '../../components/ui/Button';
-import Container from '../../components/ui/Container';
-import Tag from '../../components/ui/Tag';
+import VideoEmbed from "@/app/components/VideoEmbed";
+import type { PostContentProps } from "@/types/blog";
+import dynamic from "next/dynamic";
+import Link from "next/link";
+import Badge from "../../components/ui/Badge";
+import Button from "../../components/ui/Button";
+import Container from "../../components/ui/Container";
+import Tag from "../../components/ui/Tag";
 
 const ContentRenderer = dynamic(
   async () => {
-    const module = await import('./MDXRenderer');
+    const module = await import("./MDXRenderer");
     return module;
   },
   {
@@ -22,24 +22,31 @@ const ContentRenderer = dynamic(
         <div className="h-4 w-full rounded bg-[var(--vscode-border)]" />
         <div className="h-4 w-5/6 rounded bg-[var(--vscode-border)]" />
       </div>
-    )
-  }
+    ),
+  },
 );
 
-export default function PostContent({ post, mdxContent }: PostContentProps): React.ReactElement {
+export default function PostContent({
+  post,
+  mdxContent,
+}: PostContentProps): React.ReactElement {
   return (
     <Container max="md" className="px-0 py-10">
       <article className="postArticle maxW72ch mx-auto rounded-none border-0 border-[var(--vscode-border)] bg-[var(--vscode-editor)] py-8 shadow-none">
         <div className="postHeader px-4">
           <div className="postMetaContainer mb-8 border-b-2 border-[var(--vscode-border)] pb-6">
             <div className="postMeta textSm mb-4 flex flex-wrap gap-3">
-              <Link href={`/blog/category/${post.category}`} className="no-underline">
+              <Link
+                href={`/blog/category/${post.category}`}
+                className="no-underline"
+              >
                 <Badge tone="info" className="inline-flex items-center gap-1.5">
                   <i className="fas fa-folder" /> {post.category}
                 </Badge>
               </Link>
               <span className="inline-flex items-center gap-1.5 text-[var(--text-secondary)]">
-                <i className="fas fa-calendar" /> {new Date(post.date).toLocaleDateString('pt-BR')}
+                <i className="fas fa-calendar" />{" "}
+                {new Date(post.date).toLocaleDateString("pt-BR")}
               </span>
               <span className="inline-flex items-center gap-1.5 text-[var(--text-secondary)]">
                 <i className="fas fa-clock" /> {post.readingTime}
@@ -58,7 +65,7 @@ export default function PostContent({ post, mdxContent }: PostContentProps): Rea
             </div>
           </div>
 
-          {post.videoUrl !== undefined && post.videoUrl !== '' && (
+          {post.videoUrl !== undefined && post.videoUrl !== "" && (
             <div className="mb-8">
               <VideoEmbed url={post.videoUrl} />
             </div>
@@ -81,7 +88,7 @@ export default function PostContent({ post, mdxContent }: PostContentProps): Rea
               </div>
             </div>
             <Button href="/blog" variant="secondary">
-              {' '}
+              {" "}
               <i className="fas fa-arrow-left" /> Voltar ao Blog
             </Button>
           </div>

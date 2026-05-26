@@ -1,7 +1,9 @@
 import { VISITOR_BADGE_SVG_BASE } from '@/lib/visitorBadgeBase';
-import type { VisitorBadgeShape, VisitorBadgeStyleOptions } from '@/types/visitor';
+import type {
+  VisitorBadgeShape,
+  VisitorBadgeStyleOptions,
+} from '@/types/visitor';
 
-// Re-export para manter compatibilidade
 export type { VisitorBadgeShape, VisitorBadgeStyleOptions };
 
 function escapeXml(value: string): string {
@@ -39,10 +41,8 @@ function resolveRx(options: VisitorBadgeStyleOptions | undefined): number {
 export function renderVisitorBadgeSvg(
   label: string,
   value: string,
-  options?: VisitorBadgeStyleOptions
+  options?: VisitorBadgeStyleOptions,
 ): string {
-  // Badge simples (estilo “flat”) sem depender de libs.
-  // Medidas fixas para manter previsibilidade no GitHub README.
   const safeLabel = escapeXml(label);
   const safeValue = escapeXml(value);
 
