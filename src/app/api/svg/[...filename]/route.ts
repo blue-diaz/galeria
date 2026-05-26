@@ -3,6 +3,28 @@ import { isValidDimension, manipulateSvgDimensions } from '../svgManipulator';
 
 const svgContentCache = new Map<string, string>();
 
+const configuredBaseOrigin =
+  process.env['NEXT_PUBLIC_APP_URL'] ?? process.env['APP_URL'];
+
+if (!configuredBaseOrigin) {
+  throw new Error(
+    'Missing APP_URL (or NEXT_PUBLIC_APP_URL) for trusted SVG fetch origin',
+  );
+}
+
+const parsedBaseOrigin = new URL(configuredBaseOrigin);
+if (
+  (parsedBaseOrigin.protocol !== 'http:' &&
+    parsedBaseOrigin.protocol !== 'https:') ||
+  parsedBaseOrigin.pathname !== '/' ||
+  parsedBaseOrigin.search !== '' ||
+  parsedBaseOrigin.hash !== ''
+) {
+  throw new Error('APP_URL/NEXT_PUBLIC_APP_URL must be a valid origin URL');
+}
+
+const SVG_FETCH_BASE_ORIGIN = parsedBaseOrigin.origin;
+
 function isSafeSvgRequestPath(filename: string): boolean {
   if (filename.trim() === '') return false;
   if (filename.includes('..')) return false;
@@ -55,8 +77,10 @@ export async function GET(
       });
     }
 
-    const url = new URL(request.url);
-    const staticUrl = `${url.origin}/svg/${filename}`;
+    const staticUrl = new URL(
+      `/svg/${filename}`,
+      SVG_FETCH_BASE_ORIGIN,
+    ).toString();
 
     const response = await fetch(staticUrl);
     if (!response.ok) {
