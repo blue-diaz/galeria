@@ -1,10 +1,10 @@
-"use client";
+'use client';
 
-import { Container, Card, Button } from "@app/components/ui";
+import { Container, Card, Button } from '@app/components/ui';
 
 export default function Error({
   error,
-  reset,
+  reset
 }: {
   error: Error & { digest?: string };
   reset: () => void;
@@ -14,13 +14,9 @@ export default function Error({
       <Container max="sm">
         <Card className="shadowCardLg px-6 py-8 text-center">
           <i className="fas fa-exclamation-triangle icon2xl text-[var(--error)]" />
-          <h1 className="my-5 font-mono text-2xl text-[var(--text-bright)]">
-            Algo deu errado!
-          </h1>
+          <h1 className="my-5 font-mono text-2xl text-[var(--text-bright)]">Algo deu errado!</h1>
           <p className="mb-7 text-base leading-relaxed text-[var(--text-secondary)]">
-            {error.message !== ""
-              ? error.message
-              : "Ocorreu um erro inesperado."}
+            {error.message !== '' ? error.message : 'Ocorreu um erro inesperado.'}
           </p>
           <Button onClick={() => reset()} variant="primary" size="md">
             <i className="fas fa-redo" /> Tentar novamente

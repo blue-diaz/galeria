@@ -1,36 +1,36 @@
-"use client";
+'use client';
 
-import { useState, type ChangeEvent, type ReactElement } from "react";
-import { getBaseUrl } from "@/lib/getBaseUrl";
+import { useState, type ChangeEvent, type ReactElement } from 'react';
+import { getBaseUrl } from '@/lib/getBaseUrl';
 
 const themes = [
-  { name: "dark", label: "Dark", color: "#0d1117", textColor: "#fff" },
-  { name: "light", label: "Light", color: "#f0f6fc", textColor: "#1f2328" },
-  { name: "neon", label: "Neon", color: "#00ff88", textColor: "#0a0a0a" },
-  { name: "sunset", label: "Sunset", color: "#ff7b3a", textColor: "#1a1a2e" },
-  { name: "ocean", label: "Ocean", color: "#0077b6", textColor: "#e0f7fa" },
-  { name: "forest", label: "Forest", color: "#2d6a4f", textColor: "#d8f3dc" },
+  { name: 'dark', label: 'Dark', color: '#0d1117', textColor: '#fff' },
+  { name: 'light', label: 'Light', color: '#f0f6fc', textColor: '#1f2328' },
+  { name: 'neon', label: 'Neon', color: '#00ff88', textColor: '#0a0a0a' },
+  { name: 'sunset', label: 'Sunset', color: '#ff7b3a', textColor: '#1a1a2e' },
+  { name: 'ocean', label: 'Ocean', color: '#0077b6', textColor: '#e0f7fa' },
+  { name: 'forest', label: 'Forest', color: '#2d6a4f', textColor: '#d8f3dc' }
 ];
 
 export default function GitHubStatsPreview(): ReactElement {
-  const [selectedTheme, setSelectedTheme] = useState("dark");
-  const [username, setUsername] = useState("seu-usuario");
+  const [selectedTheme, setSelectedTheme] = useState('dark');
+  const [username, setUsername] = useState('seu-usuario');
   const [copied, setCopied] = useState(false);
-  const [width, setWidth] = useState("");
-  const [height, setHeight] = useState("");
+  const [width, setWidth] = useState('');
+  const [height, setHeight] = useState('');
 
   const baseUrl = getBaseUrl();
 
   const sizeParams = new URLSearchParams();
-  if (width.trim() !== "") sizeParams.set("width", width.trim());
-  if (height.trim() !== "") sizeParams.set("height", height.trim());
+  if (width.trim() !== '') sizeParams.set('width', width.trim());
+  if (height.trim() !== '') sizeParams.set('height', height.trim());
   const sizeQuery = sizeParams.toString();
 
   const codeParams = new URLSearchParams(sizeQuery);
-  codeParams.set("theme", selectedTheme);
+  codeParams.set('theme', selectedTheme);
   const codeUrl = `${baseUrl}/api/github-stats/${username}?${codeParams.toString()}`;
 
-  const querySuffix = sizeQuery === "" ? "" : `?${sizeQuery}`;
+  const querySuffix = sizeQuery === '' ? '' : `?${sizeQuery}`;
   const previewUrl = `${baseUrl}/api/github-stats/preview/${selectedTheme}${querySuffix}`;
 
   const handleCopy = (): void => {
@@ -52,9 +52,7 @@ export default function GitHubStatsPreview(): ReactElement {
             <i className="fas fa-chart-line" />
           </div>
           <div>
-            <h2 className="textGradientTealCyan text-xl font-bold md:text-2xl">
-              GitHub Stats SVG
-            </h2>
+            <h2 className="textGradientTealCyan text-xl font-bold md:text-2xl">GitHub Stats SVG</h2>
             <p className="mt-0.5 text-xs text-[var(--text-secondary)] md:text-sm">
               Commits, PRs e contribuições em tempo real
             </p>
@@ -71,9 +69,7 @@ export default function GitHubStatsPreview(): ReactElement {
           <input
             type="text"
             value={username}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setUsername(e.currentTarget.value)
-            }
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setUsername(e.currentTarget.value)}
             placeholder="seu-usuario"
             className="border-[var(--border-default)]/60 focus:border-[var(--accent-cyan)]/50 focus:ring-[var(--accent-cyan)]/15 w-full rounded-xl border bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2"
           />
@@ -86,9 +82,7 @@ export default function GitHubStatsPreview(): ReactElement {
             type="text"
             inputMode="numeric"
             value={width}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setWidth(e.currentTarget.value)
-            }
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setWidth(e.currentTarget.value)}
             placeholder="600"
             className="border-[var(--border-default)]/60 focus:border-[var(--accent-cyan)]/50 focus:ring-[var(--accent-cyan)]/15 w-full rounded-xl border bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2"
           />
@@ -101,9 +95,7 @@ export default function GitHubStatsPreview(): ReactElement {
             type="text"
             inputMode="numeric"
             value={height}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setHeight(e.currentTarget.value)
-            }
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setHeight(e.currentTarget.value)}
             placeholder="320"
             className="border-[var(--border-default)]/60 focus:border-[var(--accent-cyan)]/50 focus:ring-[var(--accent-cyan)]/15 w-full rounded-xl border bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2"
           />
@@ -125,8 +117,8 @@ export default function GitHubStatsPreview(): ReactElement {
                 onClick={() => setSelectedTheme(t.name)}
                 className={`group/theme relative flex items-center gap-2 rounded-xl border px-3.5 py-2 text-xs font-semibold transition-all duration-200 ${
                   isActive
-                    ? "border-[var(--accent-cyan)]/60 bg-[var(--accent-teal)]/20 shadow-[var(--accent-cyan)]/10 text-[var(--text-bright)] shadow-md"
-                    : "border-[var(--border-default)]/40 hover:border-[var(--accent-teal)]/50 bg-transparent text-[var(--text-secondary)] hover:bg-[rgb(26_77_92_/_12%)] hover:text-[var(--accent-cyan)]"
+                    ? 'border-[var(--accent-cyan)]/60 bg-[var(--accent-teal)]/20 shadow-[var(--accent-cyan)]/10 text-[var(--text-bright)] shadow-md'
+                    : 'border-[var(--border-default)]/40 hover:border-[var(--accent-teal)]/50 bg-transparent text-[var(--text-secondary)] hover:bg-[rgb(26_77_92_/_12%)] hover:text-[var(--accent-cyan)]'
                 }`}
               >
                 <span
@@ -164,7 +156,7 @@ export default function GitHubStatsPreview(): ReactElement {
             className="max-w-full rounded-lg"
             onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
               const target = e.currentTarget;
-              target.style.display = "none";
+              target.style.display = 'none';
             }}
           />
         </div>
@@ -182,8 +174,8 @@ export default function GitHubStatsPreview(): ReactElement {
               onClick={handleCopy}
               className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-[11px] font-semibold transition-all duration-200 ${
                 copied
-                  ? "bg-[var(--accent-teal)]/30 text-[var(--accent-light)]"
-                  : "shadow-[var(--accent-teal)]/20 hover:shadow-[var(--accent-cyan)]/20 bg-gradient-to-r from-[var(--accent-teal)] to-[var(--accent-cyan)] text-white shadow-md hover:shadow-lg"
+                  ? 'bg-[var(--accent-teal)]/30 text-[var(--accent-light)]'
+                  : 'shadow-[var(--accent-teal)]/20 hover:shadow-[var(--accent-cyan)]/20 bg-gradient-to-r from-[var(--accent-teal)] to-[var(--accent-cyan)] text-white shadow-md hover:shadow-lg'
               }`}
             >
               {copied ? (
@@ -220,10 +212,10 @@ export default function GitHubStatsPreview(): ReactElement {
               <span className="bg-[var(--accent-teal)]/20 mt-0.5 flex size-4 shrink-0 items-center justify-center rounded text-[10px] font-bold text-[var(--accent-cyan)]">
                 1
               </span>
-              Substitua{" "}
+              Substitua{' '}
               <code className="rounded bg-[rgb(0_0_0_/_30%)] px-1.5 py-0.5 font-mono text-[var(--accent-cyan)]">
                 seu-usuario
-              </code>{" "}
+              </code>{' '}
               pelo seu username
             </li>
             <li className="flex items-start gap-2">

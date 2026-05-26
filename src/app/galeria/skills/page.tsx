@@ -1,8 +1,8 @@
-import Link from "next/link";
-import CategoryNav from "../_components/CategoryNav";
-import GalleryGrid from "../_components/GalleryGrid";
-import SVGGalleryInstructions from "../../components/ui/SVGGalleryInstructions";
-import { getSkillsItems, categoryLabels } from "@/lib/svgGalleryData";
+import Link from 'next/link';
+import CategoryNav from '../_components/CategoryNav';
+import GalleryGrid from '../_components/GalleryGrid';
+import SVGGalleryInstructions from '../../components/ui/SVGGalleryInstructions';
+import { getSkillsItems, categoryLabels } from '@/lib/svgGalleryData';
 
 export default function SkillsPage(): React.ReactElement {
   const items = getSkillsItems();
@@ -31,12 +31,7 @@ export default function SkillsPage(): React.ReactElement {
 
       <CategoryNav />
 
-      <GalleryGrid
-        items={items}
-        title={title}
-        icon={icon}
-        description={description}
-      />
+      <GalleryGrid items={items} title={title} icon={icon} description={description} />
 
       <SVGGalleryInstructions />
     </>

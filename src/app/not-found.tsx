@@ -1,10 +1,9 @@
-import { Container, Card, Button } from "@app/components/ui";
+import { Container, Card, Button } from '@app/components/ui';
 
-const ERROR_CODE = "404";
-const ERROR_TITLE = "Página não encontrada";
-const ERROR_MESSAGE =
-  "A página que você está procurando não existe ou foi movida.";
-const HOME_BUTTON_TEXT = "Voltar para Home";
+const ERROR_CODE = '404';
+const ERROR_TITLE = 'Página não encontrada';
+const ERROR_MESSAGE = 'A página que você está procurando não existe ou foi movida.';
+const HOME_BUTTON_TEXT = 'Voltar para Home';
 
 export default function NotFound(): React.ReactElement {
   return (
@@ -15,9 +14,7 @@ export default function NotFound(): React.ReactElement {
             {ERROR_CODE}
           </h1>
           <i className="fas fa-search text-[3rem] text-[var(--accent-tertiary)]" />
-          <h2 className="my-5 font-mono text-2xl text-[var(--text-bright)]">
-            {ERROR_TITLE}
-          </h2>
+          <h2 className="my-5 font-mono text-2xl text-[var(--text-bright)]">{ERROR_TITLE}</h2>
           <p className="mb-7 text-base leading-relaxed text-[var(--text-secondary)]">
             {ERROR_MESSAGE}
           </p>
