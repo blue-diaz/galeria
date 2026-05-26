@@ -10,15 +10,8 @@
  * - lib/gallery/info.ts - Dados dos badges de info
  */
 
-import { decorativosItems } from '@lib/gallery';
-import { infoItems } from '@lib/gallery';
-import { socialItems } from '@lib/gallery';
-import { skillsItems } from '@lib/gallery';
-import {
-  categoryLabels,
-  type CategoryType,
-  type SVGItem,
-} from './gallery/types';
+import { decorativosItems, infoItems, socialItems, skillsItems } from '@lib/gallery';
+import { categoryLabels, type CategoryType, type SVGItem } from './gallery/types';
 
 // Re-exporta tipos para compatibilidade
 export type { CategoryType, SVGItem };
@@ -31,11 +24,11 @@ const combinedItems: SVGItem[] = [
   ...decorativosItems,
   ...infoItems,
   ...socialItems,
-  ...skillsItems,
+  ...skillsItems
 ];
 
 export const svgItems: SVGItem[] = Array.from(
-  new Map(combinedItems.map((item) => [item.id, item])).values(),
+  new Map(combinedItems.map((item) => [item.id, item])).values()
 );
 
 // Funções auxiliares para filtrar por categoria
@@ -83,7 +76,7 @@ const SKILLS_LANGS_IDS = new Set<string>([
   'badge-css',
   'badge-julia',
   'badge-zig',
-  'badge-clojure',
+  'badge-clojure'
 ]);
 
 const SKILLS_FERRAMENTAS_IDS = new Set<string>([
@@ -148,7 +141,7 @@ const SKILLS_FERRAMENTAS_IDS = new Set<string>([
   'badge-airflow',
   'badge-antigravity',
   'badge-cursor',
-  'badge-congelado',
+  'badge-congelado'
 ]);
 
 export const getSkillsLangsItems = (): SVGItem[] =>
@@ -159,8 +152,7 @@ export const getSkillsFerramentasItems = (): SVGItem[] =>
 
 export const getSkillsTecnologiasItems = (): SVGItem[] =>
   skillsItems.filter(
-    (item) =>
-      !SKILLS_LANGS_IDS.has(item.id) && !SKILLS_FERRAMENTAS_IDS.has(item.id),
+    (item) => !SKILLS_LANGS_IDS.has(item.id) && !SKILLS_FERRAMENTAS_IDS.has(item.id)
   );
 
 export const getInfoItems = (): SVGItem[] => infoItems;

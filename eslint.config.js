@@ -1,6 +1,6 @@
 import js from '@eslint/js';
-import typescript from '@typescript-eslint/eslint-plugin';
-import typescriptParser from '@typescript-eslint/parser';
+import tsPlugin from '@typescript-eslint/eslint-plugin';
+import tsParser from '@typescript-eslint/parser';
 import react from 'eslint-plugin-react';
 import reactHooks from 'eslint-plugin-react-hooks';
 import tailwind from 'eslint-plugin-tailwindcss';
@@ -8,10 +8,8 @@ import prettier from 'eslint-plugin-prettier';
 import prettierConfig from 'eslint-config-prettier';
 
 export default [
-  // Configuração base do ESLint
   js.configs.recommended,
 
-  // Ignorar arquivos
   {
     ignores: [
       'node_modules/**',
@@ -19,6 +17,15 @@ export default [
       'scripts/**',
       'dist/**',
       'build/**',
+      'coverage/**',
+      'tests/**',
+      'file1.ts',
+      'file2.ts',
+      'tmp-cache-file.ts',
+      '.deprecados/**',
+      'tests/fixtures/**',
+      'pre-public/**',
+      'relatorios/**',
       '*.config.js',
       '*.config.mjs',
       '*.config.ts',
@@ -28,18 +35,17 @@ export default [
     ],
   },
 
-  // Configuração para TypeScript
   {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
-      parser: typescriptParser,
+      parser: tsParser,
       parserOptions: {
-        ecmaVersion: 'latest',
+        project: './tsconfig.eslint.json',
         sourceType: 'module',
+        ecmaVersion: 'latest',
         ecmaFeatures: {
           jsx: true,
         },
-        project: './tsconfig.json',
       },
       globals: {
         React: 'readonly',
@@ -52,23 +58,28 @@ export default [
         Blob: 'readonly',
         setTimeout: 'readonly',
         process: 'readonly',
+        require: 'readonly',
+        module: 'readonly',
+        __dirname: 'readonly',
       },
     },
+    linterOptions: {
+      reportUnusedDisableDirectives: true,
+    },
     plugins: {
-      '@typescript-eslint': typescript,
+      '@typescript-eslint': tsPlugin,
       react: react,
       'react-hooks': reactHooks,
       prettier: prettier,
       tailwindcss: tailwind,
     },
     rules: {
-      // Tailwind CSS
       'tailwindcss/classnames-order': 'warn',
       'tailwindcss/enforces-shorthand': 'warn',
       'tailwindcss/migration-from-tailwind-2': 'off',
       'tailwindcss/no-contradicting-classname': 'error',
       'tailwindcss/no-custom-classname': 'off',
-      // Regras TypeScript rigorosas
+
       '@typescript-eslint/no-explicit-any': 'error',
       '@typescript-eslint/no-unused-vars': [
         'error',
@@ -91,6 +102,7 @@ export default [
         'error',
         {
           prefer: 'type-imports',
+          disallowTypeAnnotations: false,
         },
       ],
       '@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
@@ -126,9 +138,8 @@ export default [
         },
       ],
 
-      // Regras React
-      'react/react-in-jsx-scope': 'off', // Next.js não precisa
-      'react/prop-types': 'off', // TypeScript já faz isso
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
       'react/jsx-uses-react': 'off',
       'react/jsx-uses-vars': 'error',
       'react/jsx-no-undef': 'error',
@@ -158,11 +169,9 @@ export default [
       'react/jsx-no-useless-fragment': 'error',
       'react/jsx-props-no-spreading': 'off',
 
-      // React Hooks
       'react-hooks/rules-of-hooks': 'error',
       'react-hooks/exhaustive-deps': 'warn',
 
-      // Regras gerais rigorosas
       'no-console': ['warn', { allow: ['warn', 'error'] }],
       'no-debugger': 'error',
       'no-alert': 'error',
@@ -170,6 +179,7 @@ export default [
       'prefer-const': 'error',
       'prefer-arrow-callback': 'error',
       'no-duplicate-imports': 'error',
+      'object-shorthand': 'error',
       eqeqeq: ['error', 'always'],
       curly: ['error', 'all'],
       'no-eval': 'error',
@@ -192,7 +202,6 @@ export default [
         },
       ],
 
-      // Formatação (via Prettier)
       'prettier/prettier': [
         'error',
         {
@@ -214,7 +223,16 @@ export default [
     },
   },
 
-  // Configuração para arquivos JavaScript
+  {
+    files: ['**/*.test.ts', '**/*.test.tsx', '**/*.spec.ts', '**/*.spec.tsx'],
+    rules: {
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-non-null-assertion': 'off',
+      '@typescript-eslint/ban-ts-comment': 'off',
+    },
+  },
+
   {
     files: ['**/*.js', '**/*.jsx'],
     languageOptions: {
@@ -254,7 +272,6 @@ export default [
     },
   },
 
-  // Configuração para arquivos .mjs (Node scripts/configs)
   {
     files: ['**/*.mjs'],
     languageOptions: {
@@ -271,6 +288,5 @@ export default [
     },
   },
 
-  // Desabilitar regras conflitantes com Prettier
   prettierConfig,
 ];

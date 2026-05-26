@@ -1,33 +1,33 @@
-"use client";
+'use client';
 
-import { useState, type ChangeEvent, type ReactElement } from "react";
-import { getBaseUrl } from "@/lib/getBaseUrl";
+import { useState, type ChangeEvent, type ReactElement } from 'react';
+import { getBaseUrl } from '@/lib/getBaseUrl';
 
 const themes = [
-  { name: "dark", label: "Dark", color: "#0d1117", textColor: "#fff" },
-  { name: "light", label: "Light", color: "#f0f6fc", textColor: "#1f2328" },
-  { name: "neon", label: "Neon", color: "#00ff88", textColor: "#0a0a0a" },
-  { name: "sunset", label: "Sunset", color: "#ff7b3a", textColor: "#1a1a2e" },
-  { name: "ocean", label: "Ocean", color: "#0077b6", textColor: "#e0f7fa" },
-  { name: "forest", label: "Forest", color: "#2d6a4f", textColor: "#d8f3dc" },
+  { name: 'dark', label: 'Dark', color: '#0d1117', textColor: '#fff' },
+  { name: 'light', label: 'Light', color: '#f0f6fc', textColor: '#1f2328' },
+  { name: 'neon', label: 'Neon', color: '#00ff88', textColor: '#0a0a0a' },
+  { name: 'sunset', label: 'Sunset', color: '#ff7b3a', textColor: '#1a1a2e' },
+  { name: 'ocean', label: 'Ocean', color: '#0077b6', textColor: '#e0f7fa' },
+  { name: 'forest', label: 'Forest', color: '#2d6a4f', textColor: '#d8f3dc' }
 ];
 
 export default function GitHubTopLangsPreview(): ReactElement {
-  const [selectedTheme, setSelectedTheme] = useState("dark");
-  const [username, setUsername] = useState("seu-usuario");
+  const [selectedTheme, setSelectedTheme] = useState('dark');
+  const [username, setUsername] = useState('seu-usuario');
   const [copied, setCopied] = useState(false);
-  const [width, setWidth] = useState("");
-  const [height, setHeight] = useState("");
+  const [width, setWidth] = useState('');
+  const [height, setHeight] = useState('');
 
   const baseUrl = getBaseUrl();
 
   const sizeParams = new URLSearchParams();
-  if (width.trim() !== "") sizeParams.set("width", width.trim());
-  if (height.trim() !== "") sizeParams.set("height", height.trim());
+  if (width.trim() !== '') sizeParams.set('width', width.trim());
+  if (height.trim() !== '') sizeParams.set('height', height.trim());
   const sizeQuery = sizeParams.toString();
 
   const codeParams = new URLSearchParams(sizeQuery);
-  codeParams.set("theme", selectedTheme);
+  codeParams.set('theme', selectedTheme);
   const codeUrl = `${baseUrl}/api/github-langs/${username}?${codeParams.toString()}`;
 
   const previewUrl = codeUrl;
@@ -40,18 +40,18 @@ export default function GitHubTopLangsPreview(): ReactElement {
   };
 
   return (
-    <div className="group relative flex h-full flex-col overflow-hidden rounded-2xl border border-[var(--border-default)]/50 bg-[rgb(15_23_42_/_25%)] p-6 shadow-lg shadow-black/20 backdrop-blur-sm transition-all duration-500 hover:border-[var(--accent-teal)]/60 hover:shadow-[var(--shadow-card-hover-teal)] md:p-8">
+    <div className="border-[var(--border-default)]/50 shadow-black/20 hover:border-[var(--accent-teal)]/60 group relative flex h-full flex-col overflow-hidden rounded-2xl border bg-[rgb(15_23_42_/_25%)] p-6 shadow-lg backdrop-blur-sm transition-all duration-500 hover:shadow-[var(--shadow-card-hover-teal)] md:p-8">
       {/* Accent glow on hover */}
-      <div className="pointer-events-none absolute -inset-1 rounded-3xl bg-gradient-to-r from-[var(--accent-teal)]/0 via-[var(--accent-teal)]/0 to-[var(--accent-cyan)]/0 opacity-0 blur-xl transition-all duration-700 group-hover:from-[var(--accent-teal)]/5 group-hover:via-[var(--accent-teal)]/5 group-hover:to-[var(--accent-cyan)]/5 group-hover:opacity-100" />
+      <div className="from-[var(--accent-teal)]/0 via-[var(--accent-teal)]/0 to-[var(--accent-cyan)]/0 group-hover:from-[var(--accent-teal)]/5 group-hover:via-[var(--accent-teal)]/5 group-hover:to-[var(--accent-cyan)]/5 pointer-events-none absolute -inset-1 rounded-3xl bg-gradient-to-r opacity-0 blur-xl transition-all duration-700 group-hover:opacity-100" />
 
       {/* Header */}
       <div className="relative mb-6">
         <div className="flex items-center gap-3">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--accent-teal)] to-[var(--accent-cyan)] text-base text-white shadow-lg shadow-[var(--accent-teal)]/20">
+          <div className="shadow-[var(--accent-teal)]/20 flex size-10 items-center justify-center rounded-xl bg-gradient-to-br from-[var(--accent-teal)] to-[var(--accent-cyan)] text-base text-white shadow-lg">
             <i className="fas fa-code" />
           </div>
           <div>
-            <h2 className="text-xl font-bold textGradientTealCyan md:text-2xl">
+            <h2 className="textGradientTealCyan text-xl font-bold md:text-2xl">
               GitHub Top Languages
             </h2>
             <p className="mt-0.5 text-xs text-[var(--text-secondary)] md:text-sm">
@@ -70,11 +70,9 @@ export default function GitHubTopLangsPreview(): ReactElement {
           <input
             type="text"
             value={username}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setUsername(e.currentTarget.value)
-            }
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setUsername(e.currentTarget.value)}
             placeholder="seu-usuario"
-            className="w-full rounded-xl border border-[var(--border-default)]/60 bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:border-[var(--accent-cyan)]/50 focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-cyan)]/15"
+            className="border-[var(--border-default)]/60 focus:border-[var(--accent-cyan)]/50 focus:ring-[var(--accent-cyan)]/15 w-full rounded-xl border bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2"
           />
         </div>
         <div className="md:col-span-3">
@@ -85,11 +83,9 @@ export default function GitHubTopLangsPreview(): ReactElement {
             type="text"
             inputMode="numeric"
             value={width}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setWidth(e.currentTarget.value)
-            }
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setWidth(e.currentTarget.value)}
             placeholder="600"
-            className="w-full rounded-xl border border-[var(--border-default)]/60 bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:border-[var(--accent-cyan)]/50 focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-cyan)]/15"
+            className="border-[var(--border-default)]/60 focus:border-[var(--accent-cyan)]/50 focus:ring-[var(--accent-cyan)]/15 w-full rounded-xl border bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2"
           />
         </div>
         <div className="md:col-span-4">
@@ -100,11 +96,9 @@ export default function GitHubTopLangsPreview(): ReactElement {
             type="text"
             inputMode="numeric"
             value={height}
-            onChange={(e: ChangeEvent<HTMLInputElement>) =>
-              setHeight(e.currentTarget.value)
-            }
+            onChange={(e: ChangeEvent<HTMLInputElement>) => setHeight(e.currentTarget.value)}
             placeholder="320"
-            className="w-full rounded-xl border border-[var(--border-default)]/60 bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:border-[var(--accent-cyan)]/50 focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2 focus:ring-[var(--accent-cyan)]/15"
+            className="border-[var(--border-default)]/60 focus:border-[var(--accent-cyan)]/50 focus:ring-[var(--accent-cyan)]/15 w-full rounded-xl border bg-[rgb(15_23_42_/_60%)] px-4 py-2.5 text-sm text-[var(--text-bright)] placeholder-[var(--text-tertiary)] transition-all focus:bg-[rgb(15_23_42_/_80%)] focus:outline-none focus:ring-2"
           />
         </div>
       </div>
@@ -124,12 +118,12 @@ export default function GitHubTopLangsPreview(): ReactElement {
                 onClick={() => setSelectedTheme(t.name)}
                 className={`group/theme relative flex items-center gap-2 rounded-xl border px-3.5 py-2 text-xs font-semibold transition-all duration-200 ${
                   isActive
-                    ? "border-[var(--accent-cyan)]/60 bg-[var(--accent-teal)]/20 text-[var(--text-bright)] shadow-md shadow-[var(--accent-cyan)]/10"
-                    : "border-[var(--border-default)]/40 bg-transparent text-[var(--text-secondary)] hover:border-[var(--accent-teal)]/50 hover:bg-[rgb(26_77_92_/_12%)] hover:text-[var(--accent-cyan)]"
+                    ? 'border-[var(--accent-cyan)]/60 bg-[var(--accent-teal)]/20 shadow-[var(--accent-cyan)]/10 text-[var(--text-bright)] shadow-md'
+                    : 'border-[var(--border-default)]/40 hover:border-[var(--accent-teal)]/50 bg-transparent text-[var(--text-secondary)] hover:bg-[rgb(26_77_92_/_12%)] hover:text-[var(--accent-cyan)]'
                 }`}
               >
                 <span
-                  className="h-3.5 w-3.5 shrink-0 rounded-full border border-white/10"
+                  className="size-3.5 shrink-0 rounded-full border border-white/10"
                   style={{ backgroundColor: t.color }}
                 />
                 <span>{t.label}</span>
@@ -145,12 +139,12 @@ export default function GitHubTopLangsPreview(): ReactElement {
       </div>
 
       {/* Preview - window frame style */}
-      <div className="relative mb-5 overflow-hidden rounded-xl border border-[var(--border-default)]/40 bg-[rgb(10_10_10_/_80%)] shadow-inner shadow-black/30 backdrop-blur-sm">
+      <div className="border-[var(--border-default)]/40 shadow-black/30 relative mb-5 overflow-hidden rounded-xl border bg-[rgb(10_10_10_/_80%)] shadow-inner backdrop-blur-sm">
         {/* Window chrome */}
-        <div className="flex items-center gap-1.5 border-b border-[var(--border-default)]/20 bg-[rgb(15_23_42_/_40%)] px-4 py-2.5">
-          <span className="h-2.5 w-2.5 rounded-full bg-red-500/80" />
-          <span className="h-2.5 w-2.5 rounded-full bg-yellow-500/80" />
-          <span className="h-2.5 w-2.5 rounded-full bg-green-500/80" />
+        <div className="border-[var(--border-default)]/20 flex items-center gap-1.5 border-b bg-[rgb(15_23_42_/_40%)] px-4 py-2.5">
+          <span className="size-2.5 rounded-full bg-red-500/80" />
+          <span className="size-2.5 rounded-full bg-yellow-500/80" />
+          <span className="size-2.5 rounded-full bg-green-500/80" />
           <span className="ml-2 text-[10px] text-[var(--text-tertiary)]">
             github-langs — {selectedTheme}
           </span>
@@ -162,7 +156,8 @@ export default function GitHubTopLangsPreview(): ReactElement {
             alt="GitHub Top Languages Preview"
             className="max-w-full rounded-lg"
             onError={(e: React.SyntheticEvent<HTMLImageElement>) => {
-              e.currentTarget.style.display = "none";
+              const target = e.currentTarget;
+              target.style.display = 'none';
             }}
           />
         </div>
@@ -170,8 +165,8 @@ export default function GitHubTopLangsPreview(): ReactElement {
 
       {/* Code + Copy */}
       <div className="relative">
-        <div className="overflow-hidden rounded-xl border border-[var(--border-default)]/30 bg-[rgb(0_0_0_/_40%)] backdrop-blur-sm">
-          <div className="flex items-center justify-between border-b border-[var(--border-default)]/10 px-4 py-2">
+        <div className="border-[var(--border-default)]/30 overflow-hidden rounded-xl border bg-[rgb(0_0_0_/_40%)] backdrop-blur-sm">
+          <div className="border-[var(--border-default)]/10 flex items-center justify-between border-b px-4 py-2">
             <span className="text-[10px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)]">
               Markdown
             </span>
@@ -180,8 +175,8 @@ export default function GitHubTopLangsPreview(): ReactElement {
               onClick={handleCopy}
               className={`flex items-center gap-1.5 rounded-lg px-3 py-1.5 text-[11px] font-semibold transition-all duration-200 ${
                 copied
-                  ? "bg-[var(--accent-teal)]/30 text-[var(--accent-light)]"
-                  : "bg-gradient-to-r from-[var(--accent-teal)] to-[var(--accent-cyan)] text-white shadow-md shadow-[var(--accent-teal)]/20 hover:shadow-lg hover:shadow-[var(--accent-cyan)]/20"
+                  ? 'bg-[var(--accent-teal)]/30 text-[var(--accent-light)]'
+                  : 'shadow-[var(--accent-teal)]/20 hover:shadow-[var(--accent-cyan)]/20 bg-gradient-to-r from-[var(--accent-teal)] to-[var(--accent-cyan)] text-white shadow-md hover:shadow-lg'
               }`}
             >
               {copied ? (
@@ -198,7 +193,7 @@ export default function GitHubTopLangsPreview(): ReactElement {
             </button>
           </div>
           <div className="overflow-x-auto px-4 py-3">
-            <code className="whitespace-nowrap text-xs text-[var(--accent-cyan)]/90">
+            <code className="text-[var(--accent-cyan)]/90 whitespace-nowrap text-xs">
               {`![GitHub Top Languages](${codeUrl})`}
             </code>
           </div>
@@ -206,32 +201,32 @@ export default function GitHubTopLangsPreview(): ReactElement {
       </div>
 
       {/* Instructions - collapsible style */}
-      <details className="relative mt-4 group/details">
+      <details className="group/details relative mt-4">
         <summary className="cursor-pointer list-none text-[11px] font-semibold uppercase tracking-wider text-[var(--text-tertiary)] transition-colors hover:text-[var(--accent-cyan)]">
           <i className="fas fa-info-circle mr-1.5" />
           Como usar
           <i className="fas fa-chevron-down ml-1.5 text-[9px] transition-transform group-open/details:rotate-180" />
         </summary>
-        <div className="mt-3 rounded-xl border border-[var(--border-default)]/20 bg-[rgb(26_77_92_/_8%)] p-4">
+        <div className="border-[var(--border-default)]/20 mt-3 rounded-xl border bg-[rgb(26_77_92_/_8%)] p-4">
           <ol className="space-y-2 text-xs text-[var(--text-secondary)]">
             <li className="flex items-start gap-2">
-              <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded bg-[var(--accent-teal)]/20 text-[10px] font-bold text-[var(--accent-cyan)]">
+              <span className="bg-[var(--accent-teal)]/20 mt-0.5 flex size-4 shrink-0 items-center justify-center rounded text-[10px] font-bold text-[var(--accent-cyan)]">
                 1
               </span>
-              Substitua{" "}
+              Substitua{' '}
               <code className="rounded bg-[rgb(0_0_0_/_30%)] px-1.5 py-0.5 font-mono text-[var(--accent-cyan)]">
                 seu-usuario
-              </code>{" "}
+              </code>{' '}
               pelo seu username
             </li>
             <li className="flex items-start gap-2">
-              <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded bg-[var(--accent-teal)]/20 text-[10px] font-bold text-[var(--accent-cyan)]">
+              <span className="bg-[var(--accent-teal)]/20 mt-0.5 flex size-4 shrink-0 items-center justify-center rounded text-[10px] font-bold text-[var(--accent-cyan)]">
                 2
               </span>
               Escolha o tema e ajuste largura/altura se necessário
             </li>
             <li className="flex items-start gap-2">
-              <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded bg-[var(--accent-teal)]/20 text-[10px] font-bold text-[var(--accent-cyan)]">
+              <span className="bg-[var(--accent-teal)]/20 mt-0.5 flex size-4 shrink-0 items-center justify-center rounded text-[10px] font-bold text-[var(--accent-cyan)]">
                 3
               </span>
               Copie o código e cole no seu README.md

@@ -1,24 +1,22 @@
-import { getAllCategories, getPostsByCategory } from "@/lib/posts";
-import type { BlogCategoryPageProps } from "@/types/blog";
-import Container from "../../../components/ui/Container";
-import PostCard from "../../../components/ui/PostCard";
+import { getAllCategories, getPostsByCategory } from '@/lib/posts';
+import type { BlogCategoryPageProps } from '@/types/blog';
+import Container from '../../../components/ui/Container';
+import PostCard from '../../../components/ui/PostCard';
 
 export function generateStaticParams(): Array<{ category: string }> {
   const categories = getAllCategories();
   return categories.map((category) => ({ category }));
 }
 
-// eslint-disable-next-line require-await
 export async function generateMetadata({
-  params,
+  params
 }: BlogCategoryPageProps): Promise<{ title: string }> {
   const { category } = await params;
   return { title: `${category} | Blog Black Diaz` };
 }
 
-// eslint-disable-next-line require-await
 export default async function CategoryPage({
-  params,
+  params
 }: BlogCategoryPageProps): Promise<React.ReactElement> {
   const { category } = await params;
   const posts = getPostsByCategory(category);
@@ -29,9 +27,7 @@ export default async function CategoryPage({
         <h1 className="textGradientTealCyan mb-4 inline-flex items-center gap-4 text-5xl font-bold">
           <i className="fas fa-folder" /> {category}
         </h1>
-        <p className="text-xl text-[var(--text-secondary)]">
-          Posts da categoria selecionada
-        </p>
+        <p className="text-xl text-[var(--text-secondary)]">Posts da categoria selecionada</p>
       </div>
 
       {posts.length === 0 ? (

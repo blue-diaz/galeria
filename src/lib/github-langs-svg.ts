@@ -6,7 +6,7 @@ import type {
   GitHubCardTheme,
   GitHubLangsCardConfig,
   GitHubLangsThemeConfig,
-  GitHubLanguageStat,
+  GitHubLanguageStat
 } from '@/types/github';
 
 const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
@@ -17,7 +17,7 @@ const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
     secondaryColor: '#79c0ff',
     textColor: '#c9d1d9',
     accentGradient: ['#58a6ff', '#1f6feb'],
-    borderColor: 'rgba(88, 166, 255, 0.3)',
+    borderColor: 'rgba(88, 166, 255, 0.3)'
   },
   light: {
     bgGradient: ['#ffffff', '#f6f8fa'],
@@ -26,7 +26,7 @@ const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
     secondaryColor: '#0052a3',
     textColor: '#24292e',
     accentGradient: ['#0366d6', '#005cc5'],
-    borderColor: 'rgba(3, 102, 214, 0.25)',
+    borderColor: 'rgba(3, 102, 214, 0.25)'
   },
   neon: {
     bgGradient: ['#0a0e27', '#1c1f3b'],
@@ -35,7 +35,7 @@ const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
     secondaryColor: '#00ddff',
     textColor: '#e0e0e0',
     accentGradient: ['#00ff88', '#ff006e'],
-    borderColor: 'rgba(0, 255, 136, 0.35)',
+    borderColor: 'rgba(0, 255, 136, 0.35)'
   },
   sunset: {
     bgGradient: ['#1a0b2e', '#2d1b3d'],
@@ -44,7 +44,7 @@ const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
     secondaryColor: '#f7931e',
     textColor: '#fdc830',
     accentGradient: ['#ff6b35', '#f37335'],
-    borderColor: 'rgba(255, 107, 53, 0.35)',
+    borderColor: 'rgba(255, 107, 53, 0.35)'
   },
   ocean: {
     bgGradient: ['#0a1628', '#0f2540'],
@@ -53,7 +53,7 @@ const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
     secondaryColor: '#0099cc',
     textColor: '#a8dadc',
     accentGradient: ['#00d4ff', '#0099cc'],
-    borderColor: 'rgba(0, 212, 255, 0.35)',
+    borderColor: 'rgba(0, 212, 255, 0.35)'
   },
   forest: {
     bgGradient: ['#0d2818', '#1a4d2e'],
@@ -62,8 +62,8 @@ const themes: Record<GitHubCardTheme, GitHubLangsThemeConfig> = {
     secondaryColor: '#2d6a4f',
     textColor: '#d8f3dc',
     accentGradient: ['#52b788', '#2d6a4f'],
-    borderColor: 'rgba(82, 183, 136, 0.35)',
-  },
+    borderColor: 'rgba(82, 183, 136, 0.35)'
+  }
 };
 
 const defaultTheme: GitHubLangsThemeConfig = themes.dark;
@@ -91,7 +91,7 @@ function escapeXml(text: string): string {
 function renderBars(
   languages: GitHubLanguageStat[],
   theme: GitHubLangsThemeConfig,
-  width: number,
+  width: number
 ): string {
   const startX = 40;
   const barAreaWidth = Math.max(width - 220, 140);
@@ -113,7 +113,7 @@ function renderBars(
 export function generateLanguagesSVG(
   languages: GitHubLanguageStat[],
   username: string = 'username',
-  config?: GitHubLangsCardConfig,
+  config?: GitHubLangsCardConfig
 ): string {
   const themeKey: GitHubCardTheme = config?.theme ?? 'dark';
   const theme = getTheme(themeKey);
@@ -132,9 +132,7 @@ export function generateLanguagesSVG(
       ? customWidth
       : baseWidth;
   const layoutHeight =
-    customHeight !== undefined &&
-    Number.isFinite(customHeight) &&
-    customHeight > 0
+    customHeight !== undefined && Number.isFinite(customHeight) && customHeight > 0
       ? customHeight
       : baseHeight;
 
@@ -160,18 +158,18 @@ export function generateLanguagesSVG(
 
 export function generateLanguagesPreviewSVG(
   theme: GitHubLangsCardConfig['theme'] = 'dark',
-  config: Partial<Omit<GitHubLangsCardConfig, 'theme'>> = {},
+  config: Partial<Omit<GitHubLangsCardConfig, 'theme'>> = {}
 ): string {
   const mockData: GitHubLanguageStat[] = [
     { name: 'TypeScript', value: 320, percentage: 32, color: '#3178c6' },
     { name: 'JavaScript', value: 260, percentage: 26, color: '#f1e05a' },
     { name: 'Python', value: 180, percentage: 18, color: '#3572A5' },
     { name: 'Go', value: 140, percentage: 14, color: '#00ADD8' },
-    { name: 'CSS', value: 100, percentage: 10, color: '#563d7c' },
+    { name: 'CSS', value: 100, percentage: 10, color: '#563d7c' }
   ];
 
   return generateLanguagesSVG(mockData, 'seu-usuario', {
     ...config,
-    theme,
+    theme
   });
 }

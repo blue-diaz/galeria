@@ -16,12 +16,12 @@ const categories: GalleryCategory[] = [
   {
     slug: 'ferramentas',
     label: 'Ferramentas',
-    icon: 'fas fa-screwdriver-wrench',
+    icon: 'fas fa-screwdriver-wrench'
   },
   { slug: 'tecnologias', label: 'Tecnologias', icon: 'fas fa-microchip' },
   { slug: 'decorativos', label: 'Decorativos', icon: 'fas fa-star' },
   { slug: 'info', label: 'Info/Status', icon: 'fas fa-info-circle' },
-  { slug: 'visitors', label: 'Visitors', icon: 'fas fa-users' },
+  { slug: 'visitors', label: 'Visitors', icon: 'fas fa-users' }
 ];
 
 export default function CategoryNav(): React.ReactElement {
@@ -36,7 +36,7 @@ export default function CategoryNav(): React.ReactElement {
 
   return (
     <nav className="mb-8">
-      <div className="flex flex-wrap justify-center category-nav-gap">
+      <div className="category-nav-gap flex flex-wrap justify-center">
         {categories.map((cat) => (
           <Link
             key={cat.slug}

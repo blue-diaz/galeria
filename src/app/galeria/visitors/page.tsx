@@ -1,7 +1,7 @@
-import Link from "next/link";
-import CategoryNav from "../_components/CategoryNav";
-import SVGGalleryInstructions from "../../components/ui/SVGGalleryInstructions";
-import VisitorsBadgeGrid from "./_components/VisitorsBadgeGrid";
+import Link from 'next/link';
+import CategoryNav from '../_components/CategoryNav';
+import SVGGalleryInstructions from '../../components/ui/SVGGalleryInstructions';
+import VisitorsBadgeGrid from './_components/VisitorsBadgeGrid';
 
 export default function VisitorsPage(): React.ReactElement {
   return (
@@ -9,7 +9,7 @@ export default function VisitorsPage(): React.ReactElement {
       <div className="py-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 rounded-md border border-[var(--accent-teal)] back-link-bg px-5 py-2.5 font-medium text-[var(--accent-cyan)] no-underline transition-all hover:-translate-x-1 hover:text-white"
+          className="back-link-bg inline-flex items-center gap-2 rounded-md border border-[var(--accent-teal)] px-5 py-2.5 font-medium text-[var(--accent-cyan)] no-underline transition-all hover:-translate-x-1 hover:text-white"
         >
           <i className="fas fa-arrow-left" /> Voltar para Home
         </Link>

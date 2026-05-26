@@ -11,35 +11,35 @@ export const infoItems: SVGItem[] = [
     title: 'Build Passing',
     filename: 'badges/info/badge-build-passing.svg',
     alt: 'Build Passing Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-tests',
     title: 'Tests Passing',
     filename: 'badges/info/badge-tests-passing.svg',
     alt: 'Tests Passing Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-coverage',
     title: 'Coverage 98%',
     filename: 'badges/info/badge-coverage-98.svg',
     alt: 'Coverage Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-version',
     title: 'Version 2.1.0',
     filename: 'badges/info/badge-version-2.1.0.svg',
     alt: 'Version Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-license',
     title: 'License MIT',
     filename: 'badges/info/badge-license-mit.svg',
     alt: 'License MIT Badge',
-    category: 'info',
+    category: 'info'
   },
   /* -------------------------- NOVOS BADGES INFO -------------------------- */
   {
@@ -47,153 +47,153 @@ export const infoItems: SVGItem[] = [
     title: 'Build Failing',
     filename: 'badges/info/badge-build-failing.svg',
     alt: 'Build Failing Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-tests-failing',
     title: 'Tests Failing',
     filename: 'badges/info/badge-tests-failing.svg',
     alt: 'Tests Failing Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-coverage-80',
     title: 'Coverage 80%',
     filename: 'badges/info/badge-coverage-80.svg',
     alt: 'Coverage 80% Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-docs',
     title: 'Docs Available',
     filename: 'badges/info/badge-docs.svg',
     alt: 'Documentation Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-maintained',
     title: 'Maintained',
     filename: 'badges/info/badge-maintained.svg',
     alt: 'Maintained Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-deprecated',
     title: 'Deprecated',
     filename: 'badges/info/badge-deprecated.svg',
     alt: 'Deprecated Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-stable',
     title: 'Stable',
     filename: 'badges/info/badge-stable.svg',
     alt: 'Stable Release Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-beta',
     title: 'Beta',
     filename: 'badges/info/badge-beta.svg',
     alt: 'Beta Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-alpha',
     title: 'Alpha',
     filename: 'badges/info/badge-alpha.svg',
     alt: 'Alpha Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-license-apache',
     title: 'License Apache 2.0',
     filename: 'badges/info/badge-license-apache.svg',
     alt: 'License Apache 2.0 Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-license-gpl',
     title: 'License GPL',
     filename: 'badges/info/badge-license-gpl.svg',
     alt: 'License GPL Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-prs-welcome',
     title: 'PRs Welcome',
     filename: 'badges/info/badge-prs-welcome.svg',
     alt: 'PRs Welcome Badge',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-colecionavel',
     title: 'Colecionavel',
     filename: 'badges/info/badge-colecionavel.svg',
     alt: 'Badge Colecionavel',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-destaque',
     title: 'Destaque',
     filename: 'badges/info/badge-destaque.svg',
     alt: 'Badge Destaque',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-edicao-limitada',
     title: 'Edicao Limitada',
     filename: 'badges/info/badge-edicao-limitada.svg',
     alt: 'Badge Edicao Limitada',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-em-breve',
     title: 'Em Breve',
     filename: 'badges/info/badge-em-breve.svg',
     alt: 'Badge Em Breve',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-exclusivo',
     title: 'Exclusivo',
     filename: 'badges/info/badge-exclusivo.svg',
     alt: 'Badge Exclusivo',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-lancamento',
     title: 'Lancamento',
     filename: 'badges/info/badge-lancamento.svg',
     alt: 'Badge Lancamento',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-novo',
     title: 'Novo',
     filename: 'badges/info/badge-novo.svg',
     alt: 'Badge Novo',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-premium',
     title: 'Premium',
     filename: 'badges/info/badge-premium.svg',
     alt: 'Badge Premium',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-top1',
     title: 'Top1',
     filename: 'badges/info/badge-top1.svg',
     alt: 'Badge Top1',
-    category: 'info',
+    category: 'info'
   },
   {
     id: 'badge-urgente',
     title: 'Urgente',
     filename: 'badges/info/badge-urgente.svg',
     alt: 'Badge Urgente',
-    category: 'info',
-  },
+    category: 'info'
+  }
 ];

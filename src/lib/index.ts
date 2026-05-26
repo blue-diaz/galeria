@@ -11,3 +11,4 @@ export * from './svgGalleryData';
 export * from './visitorBadgeBase';
 export * from './visitorBadgeSvg';
 export * from './visitors';
+export * from './gallery/index';

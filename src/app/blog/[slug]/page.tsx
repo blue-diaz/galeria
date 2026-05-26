@@ -7,21 +7,18 @@ import PostContent from './PostContent';
 export function generateStaticParams(): Array<{ slug: string }> {
   const posts = getAllPosts();
   return posts.map((post) => ({
-    slug: post.slug,
+    slug: post.slug
   }));
 }
 
-// eslint-disable-next-line require-await
-export async function generateMetadata({
-  params,
-}: BlogSlugPageProps): Promise<BlogPostMetadata> {
+export async function generateMetadata({ params }: BlogSlugPageProps): Promise<BlogPostMetadata> {
   try {
     const { slug } = await params;
     const post = getPostContent(slug);
 
     if (post === null) {
       return {
-        title: 'Post não encontrado',
+        title: 'Post não encontrado'
       };
     }
 
@@ -35,20 +32,18 @@ export async function generateMetadata({
         type: 'article',
         publishedTime: post.date,
         authors: [post.author],
-        tags: post.tags,
-      },
+        tags: post.tags
+      }
     };
   } catch (error) {
     console.error('Erro ao gerar metadata do post:', error);
     return {
-      title: 'Post',
+      title: 'Post'
     };
   }
 }
 
-export default async function PostPage({
-  params,
-}: BlogSlugPageProps): Promise<React.ReactElement> {
+export default async function PostPage({ params }: BlogSlugPageProps): Promise<React.ReactElement> {
   const { slug } = await params;
   const post = getPostContent(slug);
 

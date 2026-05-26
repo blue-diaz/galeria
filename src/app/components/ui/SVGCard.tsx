@@ -1,6 +1,6 @@
-import type { SVGCardProps } from "@/types/ui";
-import Button from "./Button";
-import Card from "./Card";
+import type { SVGCardProps } from '@/types/ui';
+import Button from './Button';
+import Card from './Card';
 
 export default function SVGCard({
   id,
@@ -10,24 +10,20 @@ export default function SVGCard({
   index,
   onCopy,
   onDownload,
-  onViewCode,
+  onViewCode
 }: SVGCardProps): React.ReactElement {
   return (
     <Card
       key={id}
       className="svgCard cardSvg animateFadeInUp"
-      style={{ "--animation-delay": `${index * 0.1}s` } as React.CSSProperties}
+      style={{ '--animation-delay': `${index * 0.1}s` } as React.CSSProperties}
     >
       <div className="svgCardTitle text3xl mb-4 font-mono font-semibold text-[var(--text-bright)]">
         {title}
       </div>
 
       <div className="bg-black maxH300 mb-3 overflow-hidden rounded-md border border-[var(--border-default)]">
-        <img
-          className="size-full object-cover"
-          src={`/svg/${filename}`}
-          alt={alt}
-        />
+        <img className="size-full object-cover" src={`/svg/${filename}`} alt={alt} />
       </div>
 
       <div className="svgCardActions flex flex-wrap gap-2">

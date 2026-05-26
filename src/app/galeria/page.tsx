@@ -1,15 +1,15 @@
-"use client";
-import Link from "next/link";
+'use client';
+import Link from 'next/link';
 
-import { useState } from "react";
-import CategoryNav from "./_components/CategoryNav";
-import GalleryGrid from "./_components/GalleryGrid";
-import SearchInput from "./_components/SearchInput";
-import SVGGalleryInstructions from "../components/ui/SVGGalleryInstructions";
-import { svgItems } from "@/lib/svgGalleryData";
+import { useState } from 'react';
+import CategoryNav from './_components/CategoryNav';
+import GalleryGrid from './_components/GalleryGrid';
+import SearchInput from './_components/SearchInput';
+import SVGGalleryInstructions from '../components/ui/SVGGalleryInstructions';
+import { svgItems } from '@/lib/svgGalleryData';
 
 export default function GaleriaPage(): React.ReactElement {
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const filteredItems = svgItems.filter((item) => {
     const text = `${item.title} ${item.filename} ${item.alt}`.toLowerCase();
     return text.includes(search.toLowerCase());
@@ -20,7 +20,7 @@ export default function GaleriaPage(): React.ReactElement {
       <div className="py-6">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 rounded-md border border-[var(--accent-teal)] back-link-bg px-5 py-2.5 font-medium text-[var(--accent-cyan)] no-underline transition-all hover:-translate-x-1 hover:text-white"
+          className="back-link-bg inline-flex items-center gap-2 rounded-md border border-[var(--accent-teal)] px-5 py-2.5 font-medium text-[var(--accent-cyan)] no-underline transition-all hover:-translate-x-1 hover:text-white"
         >
           <i className="fas fa-arrow-left" /> Voltar para Home
         </Link>

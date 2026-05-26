@@ -6,8 +6,7 @@ export function isValidDimension(input: string | null): {
 } {
   if (input === null) return { ok: false, isPercent: false };
   if (/^\d+%$/.test(input)) return { ok: true, isPercent: true };
-  if (/^\d+$/.test(input))
-    return { ok: parseInt(input, 10) > 0, isPercent: false };
+  if (/^\d+$/.test(input)) return { ok: parseInt(input, 10) > 0, isPercent: false };
   return { ok: false, isPercent: false };
 }
 
@@ -15,7 +14,7 @@ export function manipulateSvgDimensions(
   svgContent: string,
   widthParam: string | null,
   heightParam: string | null,
-  fitParam: string | null = null,
+  fitParam: string | null = null
 ): string {
   const widthInfo = isValidDimension(widthParam);
   const heightInfo = isValidDimension(heightParam);
@@ -71,10 +70,8 @@ export function manipulateSvgDimensions(
   const vbValues = viewBox.split(/[\s,]+/).map(Number);
   if (vbValues.length === 4) {
     const [, , vbWRaw, vbHRaw] = vbValues;
-    const hasVbW =
-      vbWRaw !== undefined && Number.isFinite(vbWRaw) && vbWRaw !== 0;
-    const hasVbH =
-      vbHRaw !== undefined && Number.isFinite(vbHRaw) && vbHRaw !== 0;
+    const hasVbW = vbWRaw !== undefined && Number.isFinite(vbWRaw) && vbWRaw !== 0;
+    const hasVbH = vbHRaw !== undefined && Number.isFinite(vbHRaw) && vbHRaw !== 0;
 
     if (hasVbW && hasVbH) {
       if (widthParam !== null && heightParam === null && !widthInfo.isPercent) {
@@ -84,11 +81,7 @@ export function manipulateSvgDimensions(
           newHeight = `${Math.round(widthValue * ratio)}`;
         }
       }
-      if (
-        heightParam !== null &&
-        widthParam === null &&
-        !heightInfo.isPercent
-      ) {
+      if (heightParam !== null && widthParam === null && !heightInfo.isPercent) {
         const heightValue = parseInt(heightParam, 10);
         if (Number.isFinite(heightValue) && heightValue > 0) {
           const ratio = vbWRaw / vbHRaw;
@@ -102,9 +95,7 @@ export function manipulateSvgDimensions(
   let newPreserveAspectRatio = preserveAspectRatio;
   let normalizedFit: FitMode | null = null;
   if (fitParam !== null) {
-    normalizedFit = ['fill', 'cover', 'contain'].includes(fitParam)
-      ? (fitParam as FitMode)
-      : null;
+    normalizedFit = ['fill', 'cover', 'contain'].includes(fitParam) ? (fitParam as FitMode) : null;
   }
 
   if (normalizedFit !== null) {
