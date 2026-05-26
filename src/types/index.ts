@@ -54,3 +54,4 @@ export type {
 } from './ui';
 export type { FitMode, CacheEntry } from './svg';
 export type { StatusBadgeTheme } from './statusBadge';
+export type { DisqusCommentsProps } from './disqus';

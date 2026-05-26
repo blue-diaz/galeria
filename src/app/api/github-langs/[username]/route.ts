@@ -64,7 +64,7 @@ function getDisplayName(searchParams: URLSearchParams, defaultUsername: string):
 }
 
 function renderErrorSvg(theme: string, title: string): string {
-  const [bg0, bg1] = (THEME_BG[theme] ?? THEME_BG['dark'])!;
+  const [bg0, bg1] = (THEME_BG[theme] ?? THEME_BG['dark']) as [string, string];
   return `<svg width="600" height="200" viewBox="0 0 600 200" xmlns="http://www.w3.org/2000/svg"><rect width="600" height="200" rx="12" fill="${bg0}"/><text x="300" y="95" text-anchor="middle" fill="${bg1}" font-family="'Segoe UI',Ubuntu,Arial,sans-serif" font-size="22" font-weight="700">${title}</text><text x="300" y="130" text-anchor="middle" fill="#8b949e" font-family="'Segoe UI',Ubuntu,Arial,sans-serif" font-size="14">Aguardando dados...</text></svg>`;
 }
 

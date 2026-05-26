@@ -94,6 +94,84 @@ interface GitHubGraphQLResponse {
   errors?: GitHubGraphQLError[] | null;
 }
 
+function buildGraphQLQuery(username: string): string {
+  return `
+    query {
+      user(login: "${username}") {
+        followers { totalCount }
+        repositories(first: ${DEFAULT_REPOS_PER_PAGE}, ownerAffiliations: OWNER, isFork: false) {
+          totalCount
+          nodes {
+            defaultBranchRef {
+              target { ... on Commit { history { totalCount } } }
+            }
+          }
+        }
+        pullRequests(first: 1) { totalCount }
+        contributionsCollection {
+          contributionCalendar { totalContributions }
+        }
+      }
+    }
+  `;
+}
+
+function computeTotalCommits(user: GitHubGraphQLUser): number {
+  const repoNodes = user.repositories?.nodes ?? null;
+  if (!Array.isArray(repoNodes)) return 0;
+  let total = 0;
+  for (const repo of repoNodes) {
+    total += repo.defaultBranchRef?.target?.history?.totalCount ?? 0;
+  }
+  return total;
+}
+
+async function executeGraphQL(
+  username: string,
+  token: string
+): Promise<GitHubGraphQLResponse | null> {
+  const query = buildGraphQLQuery(username);
+  const headers: Record<string, string> = {
+    'Content-Type': 'application/json',
+    Accept: 'application/vnd.github.v3+json',
+    Authorization: `Bearer ${token}`
+  };
+
+  let response: Response;
+  try {
+    // eslint-disable-next-line no-undef
+    response = await fetch(DEFAULT_GITHUB_GRAPHQL_URL, {
+      method: 'POST',
+      headers,
+      body: JSON.stringify({ query }),
+      cache: 'no-store'
+    });
+  } catch (error) {
+    console.error('❌ Erro ao chamar GitHub GraphQL API:', error);
+    return null;
+  }
+
+  if (!response.ok) {
+    console.error(`❌ GitHub GraphQL API error: ${response.status}`);
+    return null;
+  }
+
+  let data: GitHubGraphQLResponse;
+  try {
+    data = (await response.json()) as GitHubGraphQLResponse;
+  } catch (error) {
+    console.error('❌ Erro ao fazer parse do JSON (GraphQL):', error);
+    return null;
+  }
+
+  if (Array.isArray(data.errors) && data.errors.length > 0) {
+    console.error('❌ GraphQL errors:', data.errors[0]?.message ?? 'Unknown error');
+    return null;
+  }
+
+  return data;
+}
+
 /**
  * Busca estatísticas do usuário do GitHub via GitHub GraphQL API
  *
@@ -111,131 +189,36 @@ interface GitHubGraphQLResponse {
  *
  * @param username - Nome de usuário do GitHub (qualquer usuário público)
  * @returns Promise com estatísticas do usuário
- *
- * @example
- * ```ts
- * fetchGitHubStats('octocat')
- *   .then((stats) => {
- *     console.log(stats.followers);
- *   })
- *   .catch(console.error);
- *
- * // Funciona sem token também:
- * void fetchGitHubStats('torvalds');
- * ```
  */
 export async function fetchGitHubStats(username: string): Promise<GitHubStats> {
   const token = process.env['GITHUB_TOKEN'];
 
+  console.error(`📡 Fetching GitHub stats for ${username}...`);
+
+  const tokenTrimmed = token?.trim() ?? '';
+
+  if (tokenTrimmed.length === 0) {
+    console.error('⚠ No GitHub token - using REST API directly');
+    const fallback = await fetchGitHubStatsRest(username);
+    return fallback;
+  }
+
+  console.error('✓ Using GitHub token for authentication');
+
   try {
-    console.error(`📡 Fetching GitHub stats for ${username}...`);
-
-    const tokenTrimmed = typeof token === 'string' ? token.trim() : '';
-
-    if (tokenTrimmed.length === 0) {
-      console.error('⚠ No GitHub token - using REST API directly');
-      const fallback = await fetchGitHubStatsRest(username);
-      return fallback;
-    }
-
-    const query = `
-      query {
-        user(login: "${username}") {
-          followers {
-            totalCount
-          }
-          repositories(first: ${DEFAULT_REPOS_PER_PAGE}, ownerAffiliations: OWNER, isFork: false) {
-            totalCount
-            nodes {
-              defaultBranchRef {
-                target {
-                  ... on Commit {
-                    history {
-                      totalCount
-                    }
-                  }
-                }
-              }
-            }
-          }
-          pullRequests(first: 1) {
-            totalCount
-          }
-          contributionsCollection {
-            totalCommitContributions
-            totalIssueContributions
-            totalPullRequestContributions
-            totalPullRequestReviewContributions
-            contributionCalendar {
-              totalContributions
-            }
-          }
-        }
-      }
-    `;
-
-    const headers: Record<string, string> = {
-      'Content-Type': 'application/json',
-      Accept: 'application/vnd.github.v3+json'
-    };
-
-    headers['Authorization'] = `Bearer ${tokenTrimmed}`;
-    console.error('✓ Using GitHub token for authentication');
-
-    let response: Response;
-    try {
-      // eslint-disable-next-line no-undef
-      response = await fetch(DEFAULT_GITHUB_GRAPHQL_URL, {
-        method: 'POST',
-        headers,
-        body: JSON.stringify({ query }),
-        cache: 'no-store'
-      });
-    } catch (error) {
-      console.error('❌ Erro ao chamar GitHub GraphQL API:', error);
-      const fallback = await fetchGitHubStatsRest(username);
-      return fallback;
-    }
-
-    if (!response.ok) {
-      console.error(`❌ GitHub GraphQL API error: ${response.status}`);
-      const fallback = await fetchGitHubStatsRest(username);
-      return fallback;
-    }
-
-    let data: GitHubGraphQLResponse;
-    try {
-      data = (await response.json()) as GitHubGraphQLResponse;
-    } catch (error) {
-      console.error('❌ Erro ao fazer parse do JSON (GraphQL):', error);
-      const fallback = await fetchGitHubStatsRest(username);
-      return fallback;
-    }
-
-    // Verifica se houve erro na resposta GraphQL
-    if (Array.isArray(data.errors) && data.errors.length > 0) {
-      console.error('❌ GraphQL errors:', data.errors[0]?.message ?? 'Unknown error');
-      const fallback = await fetchGitHubStatsRest(username);
-      return fallback;
+    const data = await executeGraphQL(username, tokenTrimmed);
+    if (data === null) {
+      return await fetchGitHubStatsRest(username);
     }
 
     const user = data.data?.user;
 
     if (user === null || user === undefined) {
       console.error(`❌ Usuário "${username}" não encontrado no GraphQL`);
-      const fallback = await fetchGitHubStatsRest(username);
-      return fallback;
+      return await fetchGitHubStatsRest(username);
     }
 
-    // Calcula total de commits
-    let totalCommits = 0;
-    const repoNodes = user.repositories?.nodes ?? null;
-    if (Array.isArray(repoNodes)) {
-      for (const repo of repoNodes) {
-        const commits = repo.defaultBranchRef?.target?.history?.totalCount ?? 0;
-        totalCommits += commits;
-      }
-    }
+    const totalCommits = computeTotalCommits(user);
 
     const stats: GitHubStats = {
       totalCommits: Number.isFinite(totalCommits) ? totalCommits : 0,

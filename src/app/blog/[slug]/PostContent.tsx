@@ -1,9 +1,11 @@
 ﻿'use client';
 
+import DisqusComments from '@/app/components/DisqusComments';
 import VideoEmbed from '@/app/components/VideoEmbed';
 import type { PostContentProps } from '@/types/blog';
 import dynamic from 'next/dynamic';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 import Badge from '../../components/ui/Badge';
 import Button from '../../components/ui/Button';
 import Container from '../../components/ui/Container';
@@ -27,6 +29,12 @@ const ContentRenderer = dynamic(
 );
 
 export default function PostContent({ post, mdxContent }: PostContentProps): React.ReactElement {
+  const [pageUrl, setPageUrl] = useState('');
+
+  useEffect(() => {
+    setPageUrl(window.location.href);
+  }, []);
+
   return (
     <Container max="md" className="px-0 py-10">
       <article className="postArticle maxW72ch mx-auto rounded-none border-0 border-[var(--vscode-border)] bg-[var(--vscode-editor)] py-8 shadow-none">
@@ -85,6 +93,8 @@ export default function PostContent({ post, mdxContent }: PostContentProps): Rea
               <i className="fas fa-arrow-left" /> Voltar ao Blog
             </Button>
           </div>
+
+          <DisqusComments identifier={post.slug} title={post.title} url={pageUrl} />
         </div>
       </article>
     </Container>

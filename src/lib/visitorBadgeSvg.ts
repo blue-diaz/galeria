@@ -1,7 +1,6 @@
 import { VISITOR_BADGE_SVG_BASE } from '@/lib/visitorBadgeBase';
 import type { VisitorBadgeShape, VisitorBadgeStyleOptions } from '@/types/visitor';
 
-// Re-export para manter compatibilidade
 export type { VisitorBadgeShape, VisitorBadgeStyleOptions };
 
 function escapeXml(value: string): string {
@@ -36,13 +35,19 @@ function resolveRx(options: VisitorBadgeStyleOptions | undefined): number {
   }
 }
 
+/**
+ * Renderiza um badge SVG de visitante com label, valor e opções de estilo.
+ *
+ * @param label - Texto do label (ex: "visitantes")
+ * @param value - Valor numérico formatado (ex: "1.234")
+ * @param options - Opções de estilo opcionais (cor, formato, etc.)
+ * @returns String SVG do badge
+ */
 export function renderVisitorBadgeSvg(
   label: string,
   value: string,
   options?: VisitorBadgeStyleOptions
 ): string {
-  // Badge simples (estilo “flat”) sem depender de libs.
-  // Medidas fixas para manter previsibilidade no GitHub README.
   const safeLabel = escapeXml(label);
   const safeValue = escapeXml(value);
 

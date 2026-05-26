@@ -33,14 +33,7 @@ function parsePostFile(filename: string): Post {
   const fileContents = fs.readFileSync(fullPath, 'utf8');
   const { data, content } = matter(fileContents);
 
-  const title = data['title'];
-  const description = data['description'];
-  const date = data['date'];
-  const author = data['author'];
-  const category = data['category'];
-  const tags = data['tags'];
-  const image = data['image'];
-  const videoUrl = data['videoUrl'];
+  const { title, description, date, author, category, tags, image, videoUrl } = data;
 
   return {
     slug,

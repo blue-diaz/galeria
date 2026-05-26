@@ -2,23 +2,34 @@ import { getAllCategories, getPostsByCategory } from '@/lib/posts';
 import type { BlogCategoryPageProps } from '@/types/blog';
 import Container from '../../../components/ui/Container';
 import PostCard from '../../../components/ui/PostCard';
+import { notFound } from 'next/navigation';
 
 export function generateStaticParams(): Array<{ category: string }> {
   const categories = getAllCategories();
   return categories.map((category) => ({ category }));
 }
 
+async function resolveParams(
+  params: BlogCategoryPageProps['params']
+): Promise<{ category: string }> {
+  try {
+    return await params;
+  } catch {
+    notFound();
+  }
+}
+
 export async function generateMetadata({
   params
 }: BlogCategoryPageProps): Promise<{ title: string }> {
-  const { category } = await params;
+  const { category } = await resolveParams(params);
   return { title: `${category} | Blog Black Diaz` };
 }
 
 export default async function CategoryPage({
   params
 }: BlogCategoryPageProps): Promise<React.ReactElement> {
-  const { category } = await params;
+  const { category } = await resolveParams(params);
   const posts = getPostsByCategory(category);
 
   return (

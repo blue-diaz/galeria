@@ -2,19 +2,28 @@ import { getAllTags, getPostsByTag } from '@/lib/posts';
 import type { BlogTagPageProps } from '@/types/blog';
 import Container from '../../../components/ui/Container';
 import PostCard from '../../../components/ui/PostCard';
+import { notFound } from 'next/navigation';
 
 export function generateStaticParams(): Array<{ tag: string }> {
   const tags = getAllTags();
   return tags.map((tag) => ({ tag }));
 }
 
+async function resolveParams(params: BlogTagPageProps['params']): Promise<{ tag: string }> {
+  try {
+    return await params;
+  } catch {
+    notFound();
+  }
+}
+
 export async function generateMetadata({ params }: BlogTagPageProps): Promise<{ title: string }> {
-  const { tag } = await params;
+  const { tag } = await resolveParams(params);
   return { title: `#${tag} | Blog Black Diaz` };
 }
 
 export default async function TagPage({ params }: BlogTagPageProps): Promise<React.ReactElement> {
-  const { tag } = await params;
+  const { tag } = await resolveParams(params);
   const posts = getPostsByTag(tag);
 
   return (
