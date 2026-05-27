@@ -87,7 +87,8 @@ export async function GET(
     const config = parseCommonParams(searchParams);
     const displayName = getDisplayName(searchParams, username);
 
-    const allZero = stats.totalCommits === 0 &&
+    const allZero =
+      stats.totalCommits === 0 &&
       stats.totalPullRequests === 0 &&
       stats.totalContributions === 0 &&
       stats.followers === 0 &&
