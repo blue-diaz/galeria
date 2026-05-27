@@ -1,0 +1,37 @@
+---
+title: "Projeto Prometheus CLI — Uma Ferramenta de Análise de Código"
+description: "Conheça o Prometheus CLI, uma ferramenta experimental para identificação de código frágil, vulnerável e mal otimizado, além de sugestões de arquitetura e segurança."
+date: "2026-05-27"
+author: "Black Diaz"
+category: "Ferramentas"
+tags:
+  - prometheus
+  - cli
+  - análise de código
+  - segurança
+  - open source
+image: "/images/blog/primeiro-post.jpg"
+published: true
+---
+
+# Projeto Prometheus CLI
+
+O **Prometheus** nasceu como um passatempo, mas depois de algumas circunstâncias que me deixaram chateado, resolvi levá-lo um pouco mais a sério. O objetivo da ferramenta é ajudar na **identificação de código frágil, vulnerável e mal otimizado**, além de oferecer sugestões de arquitetura e segurança diretamente no ambiente de desenvolvimento.
+
+## Estado Atual
+
+É importante ser transparente: o sistema de arquitetura do Prometheus ainda é extremamente superficial — ao ponto de ser inútil. Por isso, **no momento não recomendo seu uso em produção**. O componente **Guardian** está usando hashes para segurança, o que não é o ideal; pretendo migrar para **GPG** em breve. O projeto como um todo ainda é **experimental**, então é natural que você encontre diversas falhas e até mesmo vários *hardcodes* pelo código.
+
+## O que já foi feito e os próximos passos
+
+O planejamento inicial que eu havia traçado para a versão **1.0.0** já foi implementado. Agora estou na fase de **coleta de feedbacks** e ajustes finais para resolver os problemas citados acima antes de liberar a primeira versão oficial.
+
+Para que eu consiga evoluir o projeto e torná-lo uma ferramenta verdadeiramente capaz de ajudar, preciso **acima de tudo de casos de uso reais** — relatórios sobre inconsistências, bugs, falsos positivos e tudo mais que aparecer. Assim que conseguir deixá-lo mais confiável, libero a versão 1.0.0.
+
+## Como você pode ajudar
+
+Se tiver interesse, pode contribuir com **feedbacks sobre sua experiência de uso** — como foi o desempenho, o que funcionou bem e o que pode melhorar. Toda opinião é bem-vinda.
+
+## Integração com GitHub
+
+O Prometheus conta também com um **GitHub App** que faz a análise em repositórios a cada *push*, oferecendo insights diretamente nos **PRs gerados**. E fique tranquilo: ele **não assina commits**, então não aparecerá como contribuidor nos seus repositórios.
