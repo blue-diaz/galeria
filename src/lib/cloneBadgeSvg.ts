@@ -3,7 +3,7 @@
  * Substitui placeholders do template base com valores fornecidos.
  */
 
-import { CLONE_BADGE_SVG_BASE } from '@/lib/cloneBadgeBase';
+import { CLONE_BADGE_SVG_BASE } from './cloneBadgeBase';
 import type { CloneBadgeShape, CloneBadgeStyleOptions } from '@/types/clone';
 
 export type { CloneBadgeShape, CloneBadgeStyleOptions };
@@ -50,7 +50,7 @@ function resolveRx(options: CloneBadgeStyleOptions | undefined): number {
 export function renderCloneBadgeSvg(
   label: string,
   value: string,
-  options?: CloneBadgeStyleOptions,
+  options?: CloneBadgeStyleOptions
 ): string {
   const safeLabel = escapeXml(label);
   const safeValue = escapeXml(value);

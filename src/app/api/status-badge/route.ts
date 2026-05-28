@@ -13,14 +13,10 @@ export function GET(request: NextRequest): NextResponse {
   const { searchParams } = request.nextUrl;
 
   const themeQuery = searchParams.get('theme');
-  const themeParam =
-    themeQuery !== null && themeQuery.trim() !== '' ? themeQuery : 'ocean';
+  const themeParam = themeQuery !== null && themeQuery.trim() !== '' ? themeQuery : 'ocean';
 
   const variantQuery = searchParams.get('variant');
-  const variant =
-    variantQuery !== null && variantQuery.trim() !== ''
-      ? variantQuery
-      : 'default';
+  const variant = variantQuery !== null && variantQuery.trim() !== '' ? variantQuery : 'default';
 
   const theme: StatusBadgeTheme = getTheme(themeParam);
 
@@ -29,7 +25,7 @@ export function GET(request: NextRequest): NextResponse {
   return new NextResponse(svg, {
     headers: {
       'Content-Type': 'image/svg+xml',
-      'Cache-Control': `public, max-age=${CACHE_DURATION_SECONDS}, s-maxage=${CACHE_DURATION_SECONDS}`,
-    },
+      'Cache-Control': `public, max-age=${CACHE_DURATION_SECONDS}, s-maxage=${CACHE_DURATION_SECONDS}`
+    }
   });
 }

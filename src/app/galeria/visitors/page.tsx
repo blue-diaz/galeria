@@ -1,7 +1,7 @@
-import Link from "next/link";
-import CategoryNav from "../_components/CategoryNav";
-import SVGGalleryInstructions from "../../components/ui/SVGGalleryInstructions";
-import VisitorsBadgeGrid from "./_components/VisitorsBadgeGrid";
+import Link from 'next/link';
+import CategoryNav from '../_components/CategoryNav';
+import SVGGalleryInstructions from '../../components/ui/SVGGalleryInstructions';
+import VisitorsBadgeGrid from './_components/VisitorsBadgeGrid';
 
 export default function VisitorsPage(): React.ReactElement {
   return (

@@ -13,9 +13,7 @@ function getEmbedUrl(videoUrl: string): string | null {
   }
 
   const hostname = url.hostname.toLowerCase();
-  const normalizedHost = hostname.startsWith('www.')
-    ? hostname.substring(4)
-    : hostname;
+  const normalizedHost = hostname.startsWith('www.') ? hostname.substring(4) : hostname;
   const { pathname } = url;
   const { searchParams } = url;
 
@@ -53,13 +51,9 @@ function getEmbedUrl(videoUrl: string): string | null {
   }
 
   // Vimeo
-  if (
-    normalizedHost === VIMEO_COM ||
-    normalizedHost.endsWith(`.${VIMEO_COM}`)
-  ) {
+  if (normalizedHost === VIMEO_COM || normalizedHost.endsWith(`.${VIMEO_COM}`)) {
     const [id] = pathname.split('/').filter(Boolean);
-    if (id !== undefined && /^\d+$/.test(id))
-      return `https://player.vimeo.com/video/${id}`;
+    if (id !== undefined && /^\d+$/.test(id)) return `https://player.vimeo.com/video/${id}`;
   }
 
   // Loom
@@ -80,8 +74,7 @@ function getEmbedUrl(videoUrl: string): string | null {
     return url.toString();
   }
   if (
-    (hostname === 'player.vimeo.com' ||
-      hostname.endsWith('.player.vimeo.com')) &&
+    (hostname === 'player.vimeo.com' || hostname.endsWith('.player.vimeo.com')) &&
     pathname.startsWith('/video/')
   ) {
     return url.toString();
@@ -96,11 +89,7 @@ function getEmbedUrl(videoUrl: string): string | null {
   return null;
 }
 
-export default function VideoEmbed({
-  url,
-}: {
-  url: string;
-}): React.ReactElement | null {
+export default function VideoEmbed({ url }: { url: string }): React.ReactElement | null {
   const embedUrl = getEmbedUrl(url);
 
   if (embedUrl === null) {

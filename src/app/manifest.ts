@@ -2,8 +2,7 @@ import type { MetadataRoute } from 'next';
 
 const MANIFEST_NAME = 'Galeria Black Diaz';
 const MANIFEST_SHORT_NAME = 'Galeria Black Diaz';
-const MANIFEST_DESCRIPTION =
-  'Recursos gratuitos para seus perfis no GitHub - SVGs e Blog';
+const MANIFEST_DESCRIPTION = 'Recursos gratuitos para seus perfis no GitHub - SVGs e Blog';
 const START_URL = '/';
 const DISPLAY_MODE = 'standalone';
 const BACKGROUND_COLOR = '#000000';
@@ -27,18 +26,18 @@ export default function manifest(): MetadataRoute.Manifest {
       {
         src: '/icons/black-diaz.jpg',
         sizes: ICON_SIZE_32,
-        type: ICON_TYPE_ICO,
+        type: ICON_TYPE_ICO
       },
       {
         src: '/icons/black-diaz.jpg',
         sizes: ICON_SIZE_192,
-        type: ICON_TYPE_PNG,
+        type: ICON_TYPE_PNG
       },
       {
         src: '/icons/black-diaz.jpg',
         sizes: ICON_SIZE_512,
-        type: ICON_TYPE_PNG,
-      },
-    ],
+        type: ICON_TYPE_PNG
+      }
+    ]
   };
 }

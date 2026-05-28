@@ -16,7 +16,7 @@ export default function GalleryGrid({
   items,
   title,
   icon,
-  description,
+  description
 }: GalleryGridProps): React.ReactElement {
   const [notification, setNotification] = useState<string>('');
   const [showModal, setShowModal] = useState<boolean>(false);
@@ -40,11 +40,7 @@ export default function GalleryGrid({
     }
 
     const envCanonicalUrl = process.env['NEXT_PUBLIC_CANONICAL_URL'];
-    if (
-      envCanonicalUrl !== undefined &&
-      envCanonicalUrl !== null &&
-      envCanonicalUrl !== ''
-    ) {
+    if (envCanonicalUrl !== undefined && envCanonicalUrl !== null && envCanonicalUrl !== '') {
       return envCanonicalUrl.replace(/\/$/, '');
     }
 
@@ -108,9 +104,7 @@ export default function GalleryGrid({
               {title}
             </h1>
           )}
-          {description !== null && (
-            <p className="text-[var(--text-muted)]">{description}</p>
-          )}
+          {description !== null && <p className="text-[var(--text-muted)]">{description}</p>}
           <p className="mt-2 text-sm text-[var(--accent-cyan)]">
             {items.length} {items.length === 1 ? 'item' : 'itens'} disponíveis
           </p>
@@ -120,9 +114,7 @@ export default function GalleryGrid({
       {items.length === 0 ? (
         <div className="py-16 text-center">
           <i className="fas fa-folder-open mb-4 text-4xl text-[var(--text-muted)]" />
-          <p className="text-[var(--text-muted)]">
-            Nenhum item encontrado nesta categoria.
-          </p>
+          <p className="text-[var(--text-muted)]">Nenhum item encontrado nesta categoria.</p>
         </div>
       ) : (
         <main className="galeriaGrid mx-auto grid w-full grid-cols-1 gap-5 px-4 pb-9">

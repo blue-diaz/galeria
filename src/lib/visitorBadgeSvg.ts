@@ -1,8 +1,5 @@
 import { VISITOR_BADGE_SVG_BASE } from '@/lib/visitorBadgeBase';
-import type {
-  VisitorBadgeShape,
-  VisitorBadgeStyleOptions,
-} from '@/types/visitor';
+import type { VisitorBadgeShape, VisitorBadgeStyleOptions } from '@/types/visitor';
 
 export type { VisitorBadgeShape, VisitorBadgeStyleOptions };
 
@@ -49,7 +46,7 @@ function resolveRx(options: VisitorBadgeStyleOptions | undefined): number {
 export function renderVisitorBadgeSvg(
   label: string,
   value: string,
-  options?: VisitorBadgeStyleOptions,
+  options?: VisitorBadgeStyleOptions
 ): string {
   const safeLabel = escapeXml(label);
   const safeValue = escapeXml(value);

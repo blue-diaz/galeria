@@ -1,15 +1,11 @@
 import { type NextRequest, NextResponse } from 'next/server';
-import {
-  getVisitorsRedis,
-  normalizeVisitorId,
-  visitorKey,
-} from '@/lib/visitors';
+import { getVisitorsRedis, normalizeVisitorId, visitorKey } from '@/lib/visitors';
 
 export const runtime = 'edge';
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ id: string }> },
+  { params }: { params: Promise<{ id: string }> }
 ): Promise<NextResponse> {
   const { id: rawId } = await params;
   try {
@@ -20,8 +16,7 @@ export async function GET(
 
     const { searchParams } = new URL(request.url);
     const incrementParam = searchParams.get('increment');
-    const shouldIncrement =
-      incrementParam === null ? true : incrementParam !== '0';
+    const shouldIncrement = incrementParam === null ? true : incrementParam !== '0';
 
     const redis = getVisitorsRedis();
     const key = visitorKey(id);
@@ -44,7 +39,7 @@ export async function GET(
       {
         id,
         count,
-        configured: true,
+        configured: true
       },
       {
         headers: {
@@ -52,9 +47,9 @@ export async function GET(
           'Cache-Control': 'no-store',
           // Útil caso você consuma via fetch em sites externos.
           'Access-Control-Allow-Origin': '*',
-          'X-Visitors-Configured': '1',
-        },
-      },
+          'X-Visitors-Configured': '1'
+        }
+      }
     );
   } catch (error) {
     // Normalmente isso acontece quando as envs do Upstash não estão configuradas.
@@ -65,15 +60,15 @@ export async function GET(
         id,
         count: 0,
         configured: false,
-        error: 'Visitors counter not configured',
+        error: 'Visitors counter not configured'
       },
       {
         headers: {
           'Cache-Control': 'no-store',
           'Access-Control-Allow-Origin': '*',
-          'X-Visitors-Configured': '0',
-        },
-      },
+          'X-Visitors-Configured': '0'
+        }
+      }
     );
   }
 }

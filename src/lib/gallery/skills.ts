@@ -12,161 +12,161 @@ export const skillsItems: SVGItem[] = [
     title: 'Astro Build',
     filename: 'badges/skills/tecnologias/badge-astrobuild.svg',
     alt: 'Badge Astro Build',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-cursor',
     title: 'Cursor',
     filename: 'badges/skills/ferramentas/badge-cursor.svg',
     alt: 'Badge Cursor',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-antigravity',
     title: 'Antigravity',
     filename: 'badges/skills/ferramentas/badge-antigravity.svg',
     alt: 'Badge Antigravity',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-blitzjs',
     title: 'Blitz.js',
     filename: 'badges/skills/tecnologias/badge-blitzjs.svg',
     alt: 'Badge Blitz.js',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-bunrest',
     title: 'Bun Rest',
     filename: 'badges/skills/tecnologias/badge-bunrest.svg',
     alt: 'Badge Bun Rest',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-elysia',
     title: 'Elysia',
     filename: 'badges/skills/tecnologias/badge-elysia.svg',
     alt: 'Badge Elysia',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-nhost',
     title: 'Nhost',
     filename: 'badges/skills/tecnologias/badge-nhost.svg',
     alt: 'Badge Nhost',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-qwikcity',
     title: 'Qwik City',
     filename: 'badges/skills/tecnologias/badge-qwikcity.svg',
     alt: 'Badge Qwik City',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-remult',
     title: 'Remult',
     filename: 'badges/skills/tecnologias/badge-remult.svg',
     alt: 'Badge Remult',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-solidstart',
     title: 'SolidStart',
     filename: 'badges/skills/tecnologias/badge-solidstart.svg',
     alt: 'Badge SolidStart',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-turso',
     title: 'Turso',
     filename: 'badges/skills/tecnologias/badge-turso.svg',
     alt: 'Badge Turso',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-umijs',
     title: 'UmiJS',
     filename: 'badges/skills/tecnologias/badge-umijs.svg',
     alt: 'Badge UmiJS',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-javascript',
     title: 'JavaScript',
     filename: 'badges/skills/langs/badge-javascript.svg',
     alt: 'Badge JavaScript',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-typescript',
     title: 'TypeScript',
     filename: 'badges/skills/langs/badge-typescript.svg',
     alt: 'Badge TypeScript',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-python',
     title: 'Python',
     filename: 'badges/skills/langs/badge-python.svg',
     alt: 'Badge Python',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-java',
     title: 'Java',
     filename: 'badges/skills/langs/badge-java.svg',
     alt: 'Badge Java',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-csharp',
     title: 'C#',
     filename: 'badges/skills/langs/badge-csharp.svg',
     alt: 'Badge C#',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-go',
     title: 'Golang',
     filename: 'badges/skills/langs/badge-go.svg',
     alt: 'Badge Golang',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-rust',
     title: 'Rust',
     filename: 'badges/skills/langs/badge-rust.svg',
     alt: 'Badge Rust',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-php',
     title: 'PHP',
     filename: 'badges/skills/langs/badge-php.svg',
     alt: 'Badge PHP',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-ruby',
     title: 'Ruby',
     filename: 'badges/skills/langs/badge-ruby.svg',
     alt: 'Badge Ruby',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-swift',
     title: 'Swift',
     filename: 'badges/skills/langs/badge-swift.svg',
     alt: 'Badge Swift',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-kotlin',
     title: 'Kotlin',
     filename: 'badges/skills/langs/badge-kotlin.svg',
     alt: 'Badge Kotlin',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVAS LINGUAGENS -------------------------- */
   {
@@ -174,63 +174,63 @@ export const skillsItems: SVGItem[] = [
     title: 'C++',
     filename: 'badges/skills/langs/badge-cpp.svg',
     alt: 'Badge C++',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-c',
     title: 'C',
     filename: 'badges/skills/langs/badge-c.svg',
     alt: 'Badge C',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-scala',
     title: 'Scala',
     filename: 'badges/skills/langs/badge-scala.svg',
     alt: 'Badge Scala',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-elixir',
     title: 'Elixir',
     filename: 'badges/skills/langs/badge-elixir.svg',
     alt: 'Badge Elixir',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-haskell',
     title: 'Haskell',
     filename: 'badges/skills/langs/badge-haskell.svg',
     alt: 'Badge Haskell',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-lua',
     title: 'Lua',
     filename: 'badges/skills/langs/badge-lua.svg',
     alt: 'Badge Lua',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-dart',
     title: 'Dart',
     filename: 'badges/skills/langs/badge-dart.svg',
     alt: 'Badge Dart',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-r',
     title: 'R',
     filename: 'badges/skills/langs/badge-r.svg',
     alt: 'Badge R',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-perl',
     title: 'Perl',
     filename: 'badges/skills/langs/badge-perl.svg',
     alt: 'Badge Perl',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- LINGUAGENS ADICIONAIS -------------------------- */
   {
@@ -238,105 +238,105 @@ export const skillsItems: SVGItem[] = [
     title: 'Bash',
     filename: 'badges/skills/langs/badge-bash.svg',
     alt: 'Badge Bash',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-cobol',
     title: 'COBOL',
     filename: 'badges/skills/langs/badge-cobol.svg',
     alt: 'Badge COBOL',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-crystal',
     title: 'Crystal',
     filename: 'badges/skills/langs/badge-crystal.svg',
     alt: 'Badge Crystal',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-delphi',
     title: 'Delphi',
     filename: 'badges/skills/langs/badge-delphi.svg',
     alt: 'Badge Delphi',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-erlang',
     title: 'Erlang',
     filename: 'badges/skills/langs/badge-erlang.svg',
     alt: 'Badge Erlang',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-fortran',
     title: 'Fortran',
     filename: 'badges/skills/langs/badge-fortran.svg',
     alt: 'Badge Fortran',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-fsharp',
     title: 'F#',
     filename: 'badges/skills/langs/badge-fsharp.svg',
     alt: 'Badge F#',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-groovy',
     title: 'Groovy',
     filename: 'badges/skills/langs/badge-groovy.svg',
     alt: 'Badge Groovy',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-matlab',
     title: 'MATLAB',
     filename: 'badges/skills/langs/badge-matlab.svg',
     alt: 'Badge MATLAB',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-nim',
     title: 'Nim',
     filename: 'badges/skills/langs/badge-nim.svg',
     alt: 'Badge Nim',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-objective-c',
     title: 'Objective-C',
     filename: 'badges/skills/langs/badge-objective-c.svg',
     alt: 'Badge Objective-C',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-ocaml',
     title: 'OCaml',
     filename: 'badges/skills/langs/badge-ocaml.svg',
     alt: 'Badge OCaml',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-powershell',
     title: 'PowerShell',
     filename: 'badges/skills/langs/badge-powershell.svg',
     alt: 'Badge PowerShell',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-racket',
     title: 'Racket',
     filename: 'badges/skills/langs/badge-racket.svg',
     alt: 'Badge Racket',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-sql',
     title: 'SQL',
     filename: 'badges/skills/langs/badge-sql.svg',
     alt: 'Badge SQL',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- FRONTEND -------------------------- */
@@ -345,70 +345,70 @@ export const skillsItems: SVGItem[] = [
     title: 'HTML5',
     filename: 'badges/skills/langs/badge-html.svg',
     alt: 'Badge HTML5',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-css',
     title: 'CSS3',
     filename: 'badges/skills/langs/badge-css.svg',
     alt: 'Badge CSS3',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-react',
     title: 'React',
     filename: 'badges/skills/tecnologias/badge-react.svg',
     alt: 'Badge React',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-vue',
     title: 'Vue.js',
     filename: 'badges/skills/tecnologias/badge-vue.svg',
     alt: 'Badge Vue.js',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-angular',
     title: 'Angular',
     filename: 'badges/skills/tecnologias/badge-angular.svg',
     alt: 'Badge Angular',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-nextjs',
     title: 'Next.js',
     filename: 'badges/skills/tecnologias/badge-nextjs.svg',
     alt: 'Badge Next.js',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-nuxt',
     title: 'Nuxt.js',
     filename: 'badges/skills/tecnologias/badge-nuxt.svg',
     alt: 'Badge Nuxt.js',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-svelte',
     title: 'Svelte',
     filename: 'badges/skills/tecnologias/badge-svelte.svg',
     alt: 'Badge Svelte',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-tailwind',
     title: 'Tailwind CSS',
     filename: 'badges/skills/tecnologias/badge-tailwind.svg',
     alt: 'Badge Tailwind CSS',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-sass',
     title: 'Sass',
     filename: 'badges/skills/tecnologias/badge-sass.svg',
     alt: 'Badge Sass',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVOS FRONTEND -------------------------- */
   {
@@ -416,70 +416,70 @@ export const skillsItems: SVGItem[] = [
     title: 'Remix',
     filename: 'badges/skills/tecnologias/badge-remix.svg',
     alt: 'Badge Remix',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-astro',
     title: 'Astro',
     filename: 'badges/skills/tecnologias/badge-astro.svg',
     alt: 'Badge Astro',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-solid',
     title: 'SolidJS',
     filename: 'badges/skills/tecnologias/badge-solid.svg',
     alt: 'Badge SolidJS',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-qwik',
     title: 'Qwik',
     filename: 'badges/skills/tecnologias/badge-qwik.svg',
     alt: 'Badge Qwik',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-htmx',
     title: 'HTMX',
     filename: 'badges/skills/tecnologias/badge-htmx.svg',
     alt: 'Badge HTMX',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-bootstrap',
     title: 'Bootstrap',
     filename: 'badges/skills/tecnologias/badge-bootstrap.svg',
     alt: 'Badge Bootstrap',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-material-ui',
     title: 'Material UI',
     filename: 'badges/skills/tecnologias/badge-material-ui.svg',
     alt: 'Badge Material UI',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-chakra',
     title: 'Chakra UI',
     filename: 'badges/skills/tecnologias/badge-chakra.svg',
     alt: 'Badge Chakra UI',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-styled-components',
     title: 'Styled Components',
     filename: 'badges/skills/tecnologias/badge-styled-components.svg',
     alt: 'Badge Styled Components',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-storybook',
     title: 'Storybook',
     filename: 'badges/skills/ferramentas/badge-storybook.svg',
     alt: 'Badge Storybook',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- BACKEND -------------------------- */
@@ -488,42 +488,42 @@ export const skillsItems: SVGItem[] = [
     title: 'Node.js',
     filename: 'badges/skills/tecnologias/badge-nodejs.svg',
     alt: 'Badge Node.js',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-express',
     title: 'Express',
     filename: 'badges/skills/tecnologias/badge-express.svg',
     alt: 'Badge Express',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-nestjs',
     title: 'NestJS',
     filename: 'badges/skills/tecnologias/badge-nestjs.svg',
     alt: 'Badge NestJS',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-django',
     title: 'Django',
     filename: 'badges/skills/tecnologias/badge-django.svg',
     alt: 'Badge Django',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-laravel',
     title: 'Laravel',
     filename: 'badges/skills/tecnologias/badge-laravel.svg',
     alt: 'Badge Laravel',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-spring',
     title: 'Spring',
     filename: 'badges/skills/tecnologias/badge-spring.svg',
     alt: 'Badge Spring',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVOS BACKEND -------------------------- */
   {
@@ -531,63 +531,63 @@ export const skillsItems: SVGItem[] = [
     title: 'FastAPI',
     filename: 'badges/skills/tecnologias/badge-fastapi.svg',
     alt: 'Badge FastAPI',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-flask',
     title: 'Flask',
     filename: 'badges/skills/tecnologias/badge-flask.svg',
     alt: 'Badge Flask',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-rails',
     title: 'Ruby on Rails',
     filename: 'badges/skills/tecnologias/badge-rails.svg',
     alt: 'Badge Ruby on Rails',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-dotnet',
     title: '.NET',
     filename: 'badges/skills/tecnologias/badge-dotnet.svg',
     alt: 'Badge .NET',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-phoenix',
     title: 'Phoenix',
     filename: 'badges/skills/tecnologias/badge-phoenix.svg',
     alt: 'Badge Phoenix',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-gin',
     title: 'Gin',
     filename: 'badges/skills/tecnologias/badge-gin.svg',
     alt: 'Badge Gin',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-fiber',
     title: 'Fiber',
     filename: 'badges/skills/tecnologias/badge-fiber.svg',
     alt: 'Badge Fiber',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-deno',
     title: 'Deno',
     filename: 'badges/skills/ferramentas/badge-deno.svg',
     alt: 'Badge Deno',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-bun',
     title: 'Bun',
     filename: 'badges/skills/ferramentas/badge-bun.svg',
     alt: 'Badge Bun',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- BANCO DE DADOS -------------------------- */
@@ -596,49 +596,49 @@ export const skillsItems: SVGItem[] = [
     title: 'MongoDB',
     filename: 'badges/skills/tecnologias/badge-mongodb.svg',
     alt: 'Badge MongoDB',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-postgresql',
     title: 'PostgreSQL',
     filename: 'badges/skills/tecnologias/badge-postgresql.svg',
     alt: 'Badge PostgreSQL',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-mysql',
     title: 'MySQL',
     filename: 'badges/skills/tecnologias/badge-mysql.svg',
     alt: 'Badge MySQL',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-redis',
     title: 'Redis',
     filename: 'badges/skills/tecnologias/badge-redis.svg',
     alt: 'Badge Redis',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-firebase',
     title: 'Firebase',
     filename: 'badges/skills/tecnologias/badge-firebase.svg',
     alt: 'Badge Firebase',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-supabase',
     title: 'Supabase',
     filename: 'badges/skills/tecnologias/badge-supabase.svg',
     alt: 'Badge Supabase',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-prisma',
     title: 'Prisma',
     filename: 'badges/skills/tecnologias/badge-prisma.svg',
     alt: 'Badge Prisma',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVOS BANCOS DE DADOS -------------------------- */
   {
@@ -646,56 +646,56 @@ export const skillsItems: SVGItem[] = [
     title: 'SQLite',
     filename: 'badges/skills/tecnologias/badge-sqlite.svg',
     alt: 'Badge SQLite',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-mariadb',
     title: 'MariaDB',
     filename: 'badges/skills/tecnologias/badge-mariadb.svg',
     alt: 'Badge MariaDB',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-cassandra',
     title: 'Cassandra',
     filename: 'badges/skills/tecnologias/badge-cassandra.svg',
     alt: 'Badge Cassandra',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-elasticsearch',
     title: 'Elasticsearch',
     filename: 'badges/skills/tecnologias/badge-elasticsearch.svg',
     alt: 'Badge Elasticsearch',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-dynamodb',
     title: 'DynamoDB',
     filename: 'badges/skills/tecnologias/badge-dynamodb.svg',
     alt: 'Badge DynamoDB',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-planetscale',
     title: 'PlanetScale',
     filename: 'badges/skills/tecnologias/badge-planetscale.svg',
     alt: 'Badge PlanetScale',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-drizzle',
     title: 'Drizzle',
     filename: 'badges/skills/tecnologias/badge-drizzle.svg',
     alt: 'Badge Drizzle ORM',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-typeorm',
     title: 'TypeORM',
     filename: 'badges/skills/tecnologias/badge-typeorm.svg',
     alt: 'Badge TypeORM',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- DEVOPS & CLOUD -------------------------- */
@@ -704,49 +704,49 @@ export const skillsItems: SVGItem[] = [
     title: 'Docker',
     filename: 'badges/skills/ferramentas/badge-docker.svg',
     alt: 'Badge Docker',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-kubernetes',
     title: 'Kubernetes',
     filename: 'badges/skills/ferramentas/badge-kubernetes.svg',
     alt: 'Badge Kubernetes',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-aws',
     title: 'AWS',
     filename: 'badges/skills/tecnologias/badge-aws.svg',
     alt: 'Badge AWS',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-terraform',
     title: 'Terraform',
     filename: 'badges/skills/ferramentas/badge-terraform.svg',
     alt: 'Badge Terraform',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-jenkins',
     title: 'Jenkins',
     filename: 'badges/skills/ferramentas/badge-jenkins.svg',
     alt: 'Badge Jenkins',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-vercel',
     title: 'Vercel',
     filename: 'badges/skills/tecnologias/badge-vercel.svg',
     alt: 'Badge Vercel',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-netlify',
     title: 'Netlify',
     filename: 'badges/skills/tecnologias/badge-netlify.svg',
     alt: 'Badge Netlify',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVOS DEVOPS & CLOUD -------------------------- */
   {
@@ -754,84 +754,84 @@ export const skillsItems: SVGItem[] = [
     title: 'Azure',
     filename: 'badges/skills/tecnologias/badge-azure.svg',
     alt: 'Badge Azure',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-gcp',
     title: 'Google Cloud',
     filename: 'badges/skills/tecnologias/badge-gcp.svg',
     alt: 'Badge Google Cloud',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-digitalocean',
     title: 'DigitalOcean',
     filename: 'badges/skills/tecnologias/badge-digitalocean.svg',
     alt: 'Badge DigitalOcean',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-cloudflare',
     title: 'Cloudflare',
     filename: 'badges/skills/tecnologias/badge-cloudflare.svg',
     alt: 'Badge Cloudflare',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-github-actions',
     title: 'GitHub Actions',
     filename: 'badges/skills/ferramentas/badge-github-actions.svg',
     alt: 'Badge GitHub Actions',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-circleci',
     title: 'CircleCI',
     filename: 'badges/skills/ferramentas/badge-circleci.svg',
     alt: 'Badge CircleCI',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-travisci',
     title: 'Travis CI',
     filename: 'badges/skills/ferramentas/badge-travisci.svg',
     alt: 'Badge Travis CI',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-ansible',
     title: 'Ansible',
     filename: 'badges/skills/ferramentas/badge-ansible.svg',
     alt: 'Badge Ansible',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-nginx',
     title: 'Nginx',
     filename: 'badges/skills/tecnologias/badge-nginx.svg',
     alt: 'Badge Nginx',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-railway',
     title: 'Railway',
     filename: 'badges/skills/tecnologias/badge-railway.svg',
     alt: 'Badge Railway',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-render',
     title: 'Render',
     filename: 'badges/skills/tecnologias/badge-render.svg',
     alt: 'Badge Render',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-fly',
     title: 'Fly.io',
     filename: 'badges/skills/tecnologias/badge-fly.svg',
     alt: 'Badge Fly.io',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- FERRAMENTAS -------------------------- */
@@ -840,42 +840,42 @@ export const skillsItems: SVGItem[] = [
     title: 'Git',
     filename: 'badges/skills/ferramentas/badge-git.svg',
     alt: 'Badge Git',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-github',
     title: 'GitHub',
     filename: 'badges/skills/ferramentas/badge-github.svg',
     alt: 'Badge GitHub',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-gitlab',
     title: 'GitLab',
     filename: 'badges/skills/ferramentas/badge-gitlab.svg',
     alt: 'Badge GitLab',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-vscode',
     title: 'VS Code',
     filename: 'badges/skills/ferramentas/badge-vscode.svg',
     alt: 'Badge VS Code',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-figma',
     title: 'Figma',
     filename: 'badges/skills/ferramentas/badge-figma.svg',
     alt: 'Badge Figma',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-linux',
     title: 'Linux',
     filename: 'badges/skills/tecnologias/badge-linux.svg',
     alt: 'Badge Linux',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVAS FERRAMENTAS -------------------------- */
   {
@@ -883,63 +883,63 @@ export const skillsItems: SVGItem[] = [
     title: 'Neovim',
     filename: 'badges/skills/ferramentas/badge-neovim.svg',
     alt: 'Badge Neovim',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-intellij',
     title: 'IntelliJ IDEA',
     filename: 'badges/skills/ferramentas/badge-intellij.svg',
     alt: 'Badge IntelliJ IDEA',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-postman',
     title: 'Postman',
     filename: 'badges/skills/ferramentas/badge-postman.svg',
     alt: 'Badge Postman',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-insomnia',
     title: 'Insomnia',
     filename: 'badges/skills/ferramentas/badge-insomnia.svg',
     alt: 'Badge Insomnia',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-notion',
     title: 'Notion',
     filename: 'badges/skills/ferramentas/badge-notion.svg',
     alt: 'Badge Notion',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-slack',
     title: 'Slack',
     filename: 'badges/skills/ferramentas/badge-slack.svg',
     alt: 'Badge Slack',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-discord',
     title: 'Discord',
     filename: 'badges/skills/ferramentas/badge-discord.svg',
     alt: 'Badge Discord',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-jira',
     title: 'Jira',
     filename: 'badges/skills/ferramentas/badge-jira.svg',
     alt: 'Badge Jira',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-bitbucket',
     title: 'Bitbucket',
     filename: 'badges/skills/ferramentas/badge-bitbucket.svg',
     alt: 'Badge Bitbucket',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- PACKAGE MANAGERS & BUILD TOOLS -------------------------- */
@@ -948,35 +948,35 @@ export const skillsItems: SVGItem[] = [
     title: 'NPM',
     filename: 'badges/skills/ferramentas/badge-npm.svg',
     alt: 'Badge NPM',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-yarn',
     title: 'Yarn',
     filename: 'badges/skills/ferramentas/badge-yarn.svg',
     alt: 'Badge Yarn',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-pnpm',
     title: 'PNPM',
     filename: 'badges/skills/ferramentas/badge-pnpm.svg',
     alt: 'Badge PNPM',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-webpack',
     title: 'Webpack',
     filename: 'badges/skills/ferramentas/badge-webpack.svg',
     alt: 'Badge Webpack',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-vite',
     title: 'Vite',
     filename: 'badges/skills/ferramentas/badge-vite.svg',
     alt: 'Badge Vite',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVOS BUILD TOOLS -------------------------- */
   {
@@ -984,49 +984,49 @@ export const skillsItems: SVGItem[] = [
     title: 'Rollup',
     filename: 'badges/skills/ferramentas/badge-rollup.svg',
     alt: 'Badge Rollup',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-esbuild',
     title: 'esbuild',
     filename: 'badges/skills/ferramentas/badge-esbuild.svg',
     alt: 'Badge esbuild',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-turbo',
     title: 'Turborepo',
     filename: 'badges/skills/ferramentas/badge-turbo.svg',
     alt: 'Badge Turborepo',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-nx',
     title: 'Nx',
     filename: 'badges/skills/ferramentas/badge-nx.svg',
     alt: 'Badge Nx',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-lerna',
     title: 'Lerna',
     filename: 'badges/skills/ferramentas/badge-lerna.svg',
     alt: 'Badge Lerna',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-gradle',
     title: 'Gradle',
     filename: 'badges/skills/tecnologias/badge-gradle.svg',
     alt: 'Badge Gradle',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-maven',
     title: 'Maven',
     filename: 'badges/skills/tecnologias/badge-maven.svg',
     alt: 'Badge Maven',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- TESTING & QUALITY -------------------------- */
@@ -1035,28 +1035,28 @@ export const skillsItems: SVGItem[] = [
     title: 'ESLint',
     filename: 'badges/skills/ferramentas/badge-eslint.svg',
     alt: 'Badge ESLint',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-prettier',
     title: 'Prettier',
     filename: 'badges/skills/ferramentas/badge-prettier.svg',
     alt: 'Badge Prettier',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-jest',
     title: 'Jest',
     filename: 'badges/skills/ferramentas/badge-jest.svg',
     alt: 'Badge Jest',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-cypress',
     title: 'Cypress',
     filename: 'badges/skills/ferramentas/badge-cypress.svg',
     alt: 'Badge Cypress',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVOS TESTING -------------------------- */
   {
@@ -1064,42 +1064,42 @@ export const skillsItems: SVGItem[] = [
     title: 'Vitest',
     filename: 'badges/skills/ferramentas/badge-vitest.svg',
     alt: 'Badge Vitest',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-playwright',
     title: 'Playwright',
     filename: 'badges/skills/ferramentas/badge-playwright.svg',
     alt: 'Badge Playwright',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-testing-library',
     title: 'Testing Library',
     filename: 'badges/skills/ferramentas/badge-testing-library.svg',
     alt: 'Badge Testing Library',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-mocha',
     title: 'Mocha',
     filename: 'badges/skills/ferramentas/badge-mocha.svg',
     alt: 'Badge Mocha',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-selenium',
     title: 'Selenium',
     filename: 'badges/skills/ferramentas/badge-selenium.svg',
     alt: 'Badge Selenium',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-sonarqube',
     title: 'SonarQube',
     filename: 'badges/skills/ferramentas/badge-sonarqube.svg',
     alt: 'Badge SonarQube',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- APIS & OUTROS -------------------------- */
@@ -1108,14 +1108,14 @@ export const skillsItems: SVGItem[] = [
     title: 'GraphQL',
     filename: 'badges/skills/tecnologias/badge-graphql.svg',
     alt: 'Badge GraphQL',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-flutter',
     title: 'Flutter',
     filename: 'badges/skills/tecnologias/badge-flutter.svg',
     alt: 'Badge Flutter',
-    category: 'skills',
+    category: 'skills'
   },
   /* -------------------------- NOVOS APIs & MOBILE -------------------------- */
   {
@@ -1123,70 +1123,70 @@ export const skillsItems: SVGItem[] = [
     title: 'React Native',
     filename: 'badges/skills/tecnologias/badge-react-native.svg',
     alt: 'Badge React Native',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-expo',
     title: 'Expo',
     filename: 'badges/skills/tecnologias/badge-expo.svg',
     alt: 'Badge Expo',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-ionic',
     title: 'Ionic',
     filename: 'badges/skills/tecnologias/badge-ionic.svg',
     alt: 'Badge Ionic',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-rest',
     title: 'REST API',
     filename: 'badges/skills/tecnologias/badge-rest.svg',
     alt: 'Badge REST API',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-trpc',
     title: 'tRPC',
     filename: 'badges/skills/tecnologias/badge-trpc.svg',
     alt: 'Badge tRPC',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-grpc',
     title: 'gRPC',
     filename: 'badges/skills/tecnologias/badge-grpc.svg',
     alt: 'Badge gRPC',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-websocket',
     title: 'WebSocket',
     filename: 'badges/skills/tecnologias/badge-websocket.svg',
     alt: 'Badge WebSocket',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-socketio',
     title: 'Socket.io',
     filename: 'badges/skills/tecnologias/badge-socketio.svg',
     alt: 'Badge Socket.io',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-rabbitmq',
     title: 'RabbitMQ',
     filename: 'badges/skills/tecnologias/badge-rabbitmq.svg',
     alt: 'Badge RabbitMQ',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-kafka',
     title: 'Kafka',
     filename: 'badges/skills/tecnologias/badge-kafka.svg',
     alt: 'Badge Kafka',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- AI & ML -------------------------- */
@@ -1195,56 +1195,56 @@ export const skillsItems: SVGItem[] = [
     title: 'TensorFlow',
     filename: 'badges/skills/tecnologias/badge-tensorflow.svg',
     alt: 'Badge TensorFlow',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-pytorch',
     title: 'PyTorch',
     filename: 'badges/skills/tecnologias/badge-pytorch.svg',
     alt: 'Badge PyTorch',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-openai',
     title: 'OpenAI',
     filename: 'badges/skills/tecnologias/badge-openai.svg',
     alt: 'Badge OpenAI',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-langchain',
     title: 'LangChain',
     filename: 'badges/skills/tecnologias/badge-langchain.svg',
     alt: 'Badge LangChain',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-huggingface',
     title: 'Hugging Face',
     filename: 'badges/skills/tecnologias/badge-huggingface.svg',
     alt: 'Badge Hugging Face',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-pandas',
     title: 'Pandas',
     filename: 'badges/skills/tecnologias/badge-pandas.svg',
     alt: 'Badge Pandas',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-numpy',
     title: 'NumPy',
     filename: 'badges/skills/tecnologias/badge-numpy.svg',
     alt: 'Badge NumPy',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-jupyter',
     title: 'Jupyter',
     filename: 'badges/skills/ferramentas/badge-jupyter.svg',
     alt: 'Badge Jupyter',
-    category: 'skills',
+    category: 'skills'
   },
 
   /* -------------------------- NOVOS BADGES (2025) -------------------------- */
@@ -1253,111 +1253,111 @@ export const skillsItems: SVGItem[] = [
     title: 'Julia',
     filename: 'badges/skills/langs/badge-julia.svg',
     alt: 'Badge Julia',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-zig',
     title: 'Zig',
     filename: 'badges/skills/langs/badge-zig.svg',
     alt: 'Badge Zig',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-clojure',
     title: 'Clojure',
     filename: 'badges/skills/langs/badge-clojure.svg',
     alt: 'Badge Clojure',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-prometheus',
     title: 'Prometheus',
     filename: 'badges/skills/ferramentas/badge-prometheus.svg',
     alt: 'Badge Prometheus',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-grafana',
     title: 'Grafana',
     filename: 'badges/skills/ferramentas/badge-grafana.svg',
     alt: 'Badge Grafana',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-helm',
     title: 'Helm',
     filename: 'badges/skills/ferramentas/badge-helm.svg',
     alt: 'Badge Helm',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-datadog',
     title: 'Datadog',
     filename: 'badges/skills/ferramentas/badge-datadog.svg',
     alt: 'Badge Datadog',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-sentry',
     title: 'Sentry',
     filename: 'badges/skills/ferramentas/badge-sentry.svg',
     alt: 'Badge Sentry',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-newrelic',
     title: 'New Relic',
     filename: 'badges/skills/ferramentas/badge-newrelic.svg',
     alt: 'Badge New Relic',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-pagerduty',
     title: 'PagerDuty',
     filename: 'badges/skills/ferramentas/badge-pagerduty.svg',
     alt: 'Badge PagerDuty',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-raycast',
     title: 'Raycast',
     filename: 'badges/skills/ferramentas/badge-raycast.svg',
     alt: 'Badge Raycast',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-obsidian',
     title: 'Obsidian',
     filename: 'badges/skills/ferramentas/badge-obsidian.svg',
     alt: 'Badge Obsidian',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-linear',
     title: 'Linear',
     filename: 'badges/skills/ferramentas/badge-linear.svg',
     alt: 'Badge Linear',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-clickup',
     title: 'ClickUp',
     filename: 'badges/skills/ferramentas/badge-clickup.svg',
     alt: 'Badge ClickUp',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-splunk',
     title: 'Splunk',
     filename: 'badges/skills/ferramentas/badge-splunk.svg',
     alt: 'Badge Splunk',
-    category: 'skills',
+    category: 'skills'
   },
   {
     id: 'badge-airflow',
     title: 'Airflow',
     filename: 'badges/skills/ferramentas/badge-airflow.svg',
     alt: 'Badge Airflow',
-    category: 'skills',
-  },
+    category: 'skills'
+  }
 ];

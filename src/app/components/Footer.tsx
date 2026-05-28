@@ -1,11 +1,11 @@
 /**
  * Footer — componente com links, créditos e ações rápidas do rodapé do site.
  */
-import FooterMobileExtras from "./FooterMobileExtras";
-import Link from "next/link";
-import Logo from "./Logo";
-import Container from "./ui/Container";
-import Button from "./ui/Button";
+import FooterMobileExtras from './FooterMobileExtras';
+import Link from 'next/link';
+import Logo from './Logo';
+import Container from './ui/Container';
+import Button from './ui/Button';
 
 export default function Footer(): React.ReactElement {
   return (
@@ -16,7 +16,7 @@ export default function Footer(): React.ReactElement {
         </div>
 
         <p className="textBase mb-5 leading-relaxed text-[var(--text-secondary)]">
-          Feito por{" "}
+          Feito por{' '}
           <Link
             href="https://github.com/blue-diaz"
             target="_blank"
@@ -55,10 +55,8 @@ export default function Footer(): React.ReactElement {
         <FooterMobileExtras />
 
         <p className="textXs m-0 leading-relaxed tracking-wide text-[var(--text-secondary)]">
-          <i className="fas fa-graduation-cap mr-1 text-[var(--accent-light)]" />{" "}
-          Educativo •{" "}
-          <i className="fas fa-code-branch mr-1 text-[var(--accent-light)]" />{" "}
-          Open Source •{" "}
+          <i className="fas fa-graduation-cap mr-1 text-[var(--accent-light)]" /> Educativo •{' '}
+          <i className="fas fa-code-branch mr-1 text-[var(--accent-light)]" /> Open Source •{' '}
           <i className="fas fa-balance-scale mr-1 text-[var(--accent-light)]" />
           <a
             href="/LICENSE.txt"

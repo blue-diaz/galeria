@@ -6,8 +6,7 @@ export function isValidDimension(input: string | null): {
 } {
   if (input === null) return { ok: false, isPercent: false };
   if (/^\d+%$/.test(input)) return { ok: true, isPercent: true };
-  if (/^\d+$/.test(input))
-    return { ok: parseInt(input, 10) > 0, isPercent: false };
+  if (/^\d+$/.test(input)) return { ok: parseInt(input, 10) > 0, isPercent: false };
   return { ok: false, isPercent: false };
 }
 
@@ -22,7 +21,7 @@ function normalizeDimension(input: string | null): string | null {
 function buildViewBox(
   viewBox: string | null,
   originalWidth: string,
-  originalHeight: string,
+  originalHeight: string
 ): string {
   if (viewBox !== null) return viewBox;
   const parsedW = parseFloat(originalWidth.replace(/[^\d.]/g, ''));
@@ -39,16 +38,14 @@ function applyProportionalResize(
   widthInfo: { isPercent: boolean },
   heightInfo: { isPercent: boolean },
   newWidth: string,
-  newHeight: string,
+  newHeight: string
 ): { width: string; height: string } {
   const vbValues = viewBox.split(/[\s,]+/).map(Number);
   if (vbValues.length !== 4) return { width: newWidth, height: newHeight };
 
   const [, , vbWRaw, vbHRaw] = vbValues;
-  const hasVbW =
-    vbWRaw !== undefined && Number.isFinite(vbWRaw) && vbWRaw !== 0;
-  const hasVbH =
-    vbHRaw !== undefined && Number.isFinite(vbHRaw) && vbHRaw !== 0;
+  const hasVbW = vbWRaw !== undefined && Number.isFinite(vbWRaw) && vbWRaw !== 0;
+  const hasVbH = vbHRaw !== undefined && Number.isFinite(vbHRaw) && vbHRaw !== 0;
   if (!hasVbW || !hasVbH) return { width: newWidth, height: newHeight };
 
   let resultW = newWidth;
@@ -72,15 +69,13 @@ function applyProportionalResize(
 
 function resolveAspectRatio(
   fitParam: string | null,
-  preserveAspectRatio: string | null,
+  preserveAspectRatio: string | null
 ): string | null {
   if (fitParam === null) {
     return preserveAspectRatio ?? 'xMidYMid meet';
   }
 
-  const normalizedFit: FitMode | null = ['fill', 'cover', 'contain'].includes(
-    fitParam,
-  )
+  const normalizedFit: FitMode | null = ['fill', 'cover', 'contain'].includes(fitParam)
     ? (fitParam as FitMode)
     : null;
 
@@ -96,10 +91,7 @@ function resolveAspectRatio(
   }
 }
 
-function replaceSvgAttributes(
-  attributesStr: string,
-  attrs: Array<[string, string]>,
-): string {
+function replaceSvgAttributes(attributesStr: string, attrs: Array<[string, string]>): string {
   let result = attributesStr;
   for (const [name, value] of attrs) {
     const regex = new RegExp(`${name}=["'][^"']+["']`);
@@ -116,7 +108,7 @@ export function manipulateSvgDimensions(
   svgContent: string,
   widthParam: string | null,
   heightParam: string | null,
-  fitParam: string | null = null,
+  fitParam: string | null = null
 ): string {
   const widthInfo = isValidDimension(widthParam);
   const heightInfo = isValidDimension(heightParam);
@@ -155,15 +147,12 @@ export function manipulateSvgDimensions(
     widthInfo,
     heightInfo,
     newWidth,
-    newHeight,
+    newHeight
   );
   newWidth = resized.width;
   newHeight = resized.height;
 
-  const newPreserveAspectRatio = resolveAspectRatio(
-    fitParam,
-    preserveAspectRatio,
-  );
+  const newPreserveAspectRatio = resolveAspectRatio(fitParam, preserveAspectRatio);
 
   const newAttributes = replaceSvgAttributes(attributesStr, [
     ['width', newWidth],
@@ -171,7 +160,7 @@ export function manipulateSvgDimensions(
     ['viewBox', viewBox],
     ...(newPreserveAspectRatio !== null
       ? [['preserveAspectRatio', newPreserveAspectRatio] as [string, string]]
-      : []),
+      : [])
   ]);
 
   return svgContent.replace(originalTag, `<svg${newAttributes}>`);

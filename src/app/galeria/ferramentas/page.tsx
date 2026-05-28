@@ -1,8 +1,8 @@
-import Link from "next/link";
-import CategoryNav from "../_components/CategoryNav";
-import GalleryGrid from "../_components/GalleryGrid";
-import SVGGalleryInstructions from "../../components/ui/SVGGalleryInstructions";
-import { getSkillsFerramentasItems } from "@/lib/svgGalleryData";
+import Link from 'next/link';
+import CategoryNav from '../_components/CategoryNav';
+import GalleryGrid from '../_components/GalleryGrid';
+import SVGGalleryInstructions from '../../components/ui/SVGGalleryInstructions';
+import { getSkillsFerramentasItems } from '@/lib/svgGalleryData';
 
 export default function FerramentasPage(): React.ReactElement {
   const items = getSkillsFerramentasItems();

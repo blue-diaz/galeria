@@ -4,19 +4,15 @@ import { isValidDimension, manipulateSvgDimensions } from '../svgManipulator';
 const svgContentCache = new Map<string, string>();
 
 function getSvgFetchBaseOrigin(): string {
-  const configuredBaseOrigin =
-    process.env['NEXT_PUBLIC_APP_URL'] ?? process.env['APP_URL'];
+  const configuredBaseOrigin = process.env['NEXT_PUBLIC_APP_URL'] ?? process.env['APP_URL'];
 
   if (!configuredBaseOrigin) {
-    throw new Error(
-      'Missing APP_URL (or NEXT_PUBLIC_APP_URL) for trusted SVG fetch origin',
-    );
+    throw new Error('Missing APP_URL (or NEXT_PUBLIC_APP_URL) for trusted SVG fetch origin');
   }
 
   const parsedBaseOrigin = new URL(configuredBaseOrigin);
   if (
-    (parsedBaseOrigin.protocol !== 'http:' &&
-      parsedBaseOrigin.protocol !== 'https:') ||
+    (parsedBaseOrigin.protocol !== 'http:' && parsedBaseOrigin.protocol !== 'https:') ||
     parsedBaseOrigin.pathname !== '/' ||
     parsedBaseOrigin.search !== '' ||
     parsedBaseOrigin.hash !== ''
@@ -39,7 +35,7 @@ function isSafeSvgRequestPath(filename: string): boolean {
 
 export async function GET(
   request: NextRequest,
-  { params }: { params: Promise<{ filename: string | string[] }> },
+  { params }: { params: Promise<{ filename: string | string[] }> }
 ): Promise<NextResponse> {
   try {
     const { filename: raw } = await params;
@@ -65,24 +61,16 @@ export async function GET(
     const cached = svgContentCache.get(cacheKey);
     if (cached !== undefined) {
       let svgContent = cached;
-      svgContent = manipulateSvgDimensions(
-        svgContent,
-        widthParam,
-        heightParam,
-        fitParam,
-      );
+      svgContent = manipulateSvgDimensions(svgContent, widthParam, heightParam, fitParam);
       return new NextResponse(svgContent, {
         headers: {
           'Content-Type': 'image/svg+xml; charset=utf-8',
-          'Cache-Control': 'public, max-age=31536000, immutable',
-        },
+          'Cache-Control': 'public, max-age=31536000, immutable'
+        }
       });
     }
 
-    const staticUrl = new URL(
-      `/svg/${filename}`,
-      getSvgFetchBaseOrigin(),
-    ).toString();
+    const staticUrl = new URL(`/svg/${filename}`, getSvgFetchBaseOrigin()).toString();
 
     const response = await fetch(staticUrl);
     if (!response.ok) {
@@ -93,17 +81,12 @@ export async function GET(
     svgContentCache.set(cacheKey, baseContent);
 
     let svgContent = baseContent;
-    svgContent = manipulateSvgDimensions(
-      svgContent,
-      widthParam,
-      heightParam,
-      fitParam,
-    );
+    svgContent = manipulateSvgDimensions(svgContent, widthParam, heightParam, fitParam);
     return new NextResponse(svgContent, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': 'public, max-age=31536000, immutable',
-      },
+        'Cache-Control': 'public, max-age=31536000, immutable'
+      }
     });
   } catch (error) {
     console.error('Error serving SVG:', error);

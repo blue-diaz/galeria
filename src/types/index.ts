@@ -11,16 +11,16 @@ export type {
   BlogPostMetadata,
   ContentRendererProps,
   PostContentProps,
-  PostCardProps,
-} from './blog';
+  PostCardProps
+} from './blog.js';
 export type {
   CategoryType,
   GalleryRouteSlug,
   SVGItem,
   CategoryInfo,
   GalleryCategory,
-  GalleryGridProps,
-} from './galeria';
+  GalleryGridProps
+} from './galeria.js';
 export type {
   GitHubCardTheme,
   GitHubStats,
@@ -31,18 +31,10 @@ export type {
   GitHubLangsCardConfig,
   GitHubCommonParams,
   GitHubStatsThemeConfig,
-  GitHubLangsThemeConfig,
-} from './github';
-export type {
-  VisitorBadgeShape,
-  VisitorBadgeStyleOptions,
-  VisitorVariant,
-} from './visitor';
-export type {
-  CloneBadgeShape,
-  CloneBadgeStyleOptions,
-  CloneVariant,
-} from './clone';
+  GitHubLangsThemeConfig
+} from './github.js';
+export type { VisitorBadgeShape, VisitorBadgeStyleOptions, VisitorVariant } from './visitor.js';
+export type { CloneBadgeShape, CloneBadgeStyleOptions, CloneVariant } from './clone.js';
 export type {
   BadgeTone,
   LogoProps,
@@ -58,8 +50,8 @@ export type {
   Size,
   ButtonProps,
   InputProps,
-  SVGCardProps,
-} from './ui';
-export type { FitMode, CacheEntry } from './svg';
-export type { StatusBadgeTheme } from './statusBadge';
-export type { DisqusCommentsProps } from './disqus';
+  SVGCardProps
+} from './ui.js';
+export type { FitMode, CacheEntry } from './svg.js';
+export type { StatusBadgeTheme } from './statusBadge.js';
+export type { DisqusCommentsProps } from './disqus.js';
