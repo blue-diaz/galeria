@@ -1,0 +1,23 @@
+{
+  "arquetipo": "next-fullstack",
+  "arquivosRaiz": [
+    ".env.example",
+    ".env.local",
+    "README.md",
+    "SECURITY.md",
+    "eslint.config.js",
+    "next.config.mjs",
+    "package-lock.json",
+    "package.json",
+    "postcss.config.mjs",
+    "prometheus.config.json",
+    "svgo.config.js",
+    "tailwind.config.ts",
+    "tsconfig.eslint.json",
+    "tsconfig.json",
+    "vercel.json"
+  ],
+  "confidence": 83,
+  "timestamp": "2026-05-30T09:44:20.138Z",
+  "version": 1
+}

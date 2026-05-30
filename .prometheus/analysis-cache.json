@@ -1,0 +1,2280 @@
+{
+  "entradas": {
+    ".env.example": {
+      "count": 0,
+      "hash": "721ab50b3288476e",
+      "ocorrencias": [],
+      "timestamp": 1780134260244
+    },
+    ".env.local": {
+      "count": 0,
+      "hash": "721ab50b3288476e",
+      "ocorrencias": [],
+      "timestamp": 1780134260247
+    },
+    ".github/workflows/ci.yml": {
+      "count": 0,
+      "hash": "671dff2dea72402a",
+      "ocorrencias": [],
+      "timestamp": 1780134260284
+    },
+    ".github/workflows/codeql.yml": {
+      "count": 2,
+      "hash": "fab46be961e04a34",
+      "ocorrencias": [
+        {
+          "linha": 71,
+          "mensagem": "Operação de rede sem política de retry detectada",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": ".github/workflows/codeql.yml",
+          "sugestao": "Adicione mecanismos de retry para evitar falhas intermitentes de rede",
+          "tipo": "workflow-missing-retry"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Workflow instala dependências sem auditoria de segurança",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": ".github/workflows/codeql.yml",
+          "sugestao": "Adicione um passo de npm audit, snyk ou similar para detectar vulnerabilidades",
+          "tipo": "workflow-sem-audit"
+        }
+      ],
+      "timestamp": 1780134260304
+    },
+    "README.md": {
+      "count": 0,
+      "hash": "b58eea8b77954d5a",
+      "ocorrencias": [],
+      "timestamp": 1780134260540
+    },
+    "SECURITY.md": {
+      "count": 0,
+      "hash": "c09f36d2f0e1fabf",
+      "ocorrencias": [],
+      "timestamp": 1780134260542
+    },
+    "content/posts/prometheus.mdx": {
+      "count": 0,
+      "hash": "8b5ae31f02ad4296",
+      "ocorrencias": [],
+      "timestamp": 1780134260309
+    },
+    "docs/feedback/feedback.md": {
+      "count": 0,
+      "hash": "90a652380e8fb073",
+      "ocorrencias": [],
+      "timestamp": 1780134260314
+    },
+    "eslint.config.js": {
+      "count": 2,
+      "hash": "390db4506d6b4489",
+      "ocorrencias": [
+        {
+          "linha": 213,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "eslint.config.js",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 213,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "eslint.config.js",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260355
+    },
+    "next.config.mjs": {
+      "count": 3,
+      "hash": "1afe96930800818",
+      "ocorrencias": [
+        {
+          "linha": 75,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "next.config.mjs",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+2 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "next.config.mjs",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+2 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "next.config.mjs",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260365
+    },
+    "package-lock.json": {
+      "count": 0,
+      "hash": "4536546ccb8ea36d",
+      "ocorrencias": [],
+      "timestamp": 1780134260528
+    },
+    "package.json": {
+      "count": 0,
+      "hash": "cf8434afb3a42b35",
+      "ocorrencias": [],
+      "timestamp": 1780134260530
+    },
+    "postcss.config.mjs": {
+      "count": 0,
+      "hash": "17d13faeb1b78b73",
+      "ocorrencias": [],
+      "timestamp": 1780134260532
+    },
+    "prometheus.config.json": {
+      "count": 0,
+      "hash": "7d31fa0194d6d57d",
+      "ocorrencias": [],
+      "timestamp": 1780134260535
+    },
+    "src/app/api/clones/[id]/badge/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260547
+    },
+    "src/app/api/clones/[id]/badge/route.ts": {
+      "count": 3,
+      "hash": "49c475c12d1702fa",
+      "ocorrencias": [
+        {
+          "linha": 95,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 35,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 35,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260571
+    },
+    "src/app/api/clones/[id]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260573
+    },
+    "src/app/api/clones/[id]/route.ts": {
+      "count": 3,
+      "hash": "9055fe36af23ccca",
+      "ocorrencias": [
+        {
+          "linha": 33,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260579
+    },
+    "src/app/api/clones/[id]/unic/badge.svg/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260580
+    },
+    "src/app/api/clones/[id]/unic/badge.svg/route.ts": {
+      "count": 3,
+      "hash": "ac9e071ac5a44cbc",
+      "ocorrencias": [
+        {
+          "linha": 100,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/badge.svg/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260592
+    },
+    "src/app/api/clones/[id]/unic/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260595
+    },
+    "src/app/api/clones/[id]/unic/route.ts": {
+      "count": 3,
+      "hash": "a62447065eaf1101",
+      "ocorrencias": [
+        {
+          "linha": 33,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/clones/[id]/unic/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260601
+    },
+    "src/app/api/github-langs/[username]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260602
+    },
+    "src/app/api/github-langs/[username]/route.ts": {
+      "count": 2,
+      "hash": "33d707c78400aee",
+      "ocorrencias": [
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+2 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+2 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260613
+    },
+    "src/app/api/github-langs/preview/[theme]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260615
+    },
+    "src/app/api/github-langs/preview/[theme]/route.ts": {
+      "count": 2,
+      "hash": "607a0c51961afcc",
+      "ocorrencias": [
+        {
+          "linha": 8,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 8,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-langs/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260620
+    },
+    "src/app/api/github-stats/[username]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260621
+    },
+    "src/app/api/github-stats/[username]/route.ts": {
+      "count": 3,
+      "hash": "37f2d831358715ab",
+      "ocorrencias": [
+        {
+          "linha": 96,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 8,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 8,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/[username]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260630
+    },
+    "src/app/api/github-stats/preview/[theme]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260631
+    },
+    "src/app/api/github-stats/preview/[theme]/route.ts": {
+      "count": 2,
+      "hash": "774245e32ab487bf",
+      "ocorrencias": [
+        {
+          "linha": 7,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 7,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/github-stats/preview/[theme]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260635
+    },
+    "src/app/api/status-badge/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260637
+    },
+    "src/app/api/status-badge/route.ts": {
+      "count": 2,
+      "hash": "ed09c10a3becae9b",
+      "ocorrencias": [
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/status-badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/status-badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260640
+    },
+    "src/app/api/svg/[...filename]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260641
+    },
+    "src/app/api/svg/[...filename]/route.ts": {
+      "count": 2,
+      "hash": "75aa4c4ca0bcdd0a",
+      "ocorrencias": [
+        {
+          "linha": 45,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/[...filename]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 45,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+4 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/[...filename]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260648
+    },
+    "src/app/api/svg/index.ts": {
+      "count": 0,
+      "hash": "e0e753d36fdfe433",
+      "ocorrencias": [],
+      "timestamp": 1780134260649
+    },
+    "src/app/api/svg/svgManipulator.ts": {
+      "count": 2,
+      "hash": "7d08850f2ce37beb",
+      "ocorrencias": [
+        {
+          "linha": 29,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+1 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 29,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+1 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/svg/svgManipulator.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260658
+    },
+    "src/app/api/unic-clones/[id]/badge/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260659
+    },
+    "src/app/api/unic-clones/[id]/badge/route.ts": {
+      "count": 3,
+      "hash": "ac9e071ac5a44cbc",
+      "ocorrencias": [
+        {
+          "linha": 100,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260665
+    },
+    "src/app/api/unic-clones/[id]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260667
+    },
+    "src/app/api/unic-clones/[id]/route.ts": {
+      "count": 3,
+      "hash": "a62447065eaf1101",
+      "ocorrencias": [
+        {
+          "linha": 33,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/unic-clones/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260671
+    },
+    "src/app/api/visitors/[id]/badge/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260672
+    },
+    "src/app/api/visitors/[id]/badge/route.ts": {
+      "count": 3,
+      "hash": "69a06e9e45a59d47",
+      "ocorrencias": [
+        {
+          "linha": 102,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 42,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 42,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/badge/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260680
+    },
+    "src/app/api/visitors/[id]/index.ts": {
+      "count": 0,
+      "hash": "cf9e79f416cc5ec0",
+      "ocorrencias": [],
+      "timestamp": 1780134260681
+    },
+    "src/app/api/visitors/[id]/route.ts": {
+      "count": 3,
+      "hash": "fa988ea4946c9ce4",
+      "ocorrencias": [
+        {
+          "linha": 33,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/api/visitors/[id]/route.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260686
+    },
+    "src/app/blog/[slug]/MDXRenderer.tsx": {
+      "count": 0,
+      "hash": "9073a19f3324d8d8",
+      "ocorrencias": [],
+      "timestamp": 1780134260694
+    },
+    "src/app/blog/[slug]/PostContent.tsx": {
+      "count": 2,
+      "hash": "42d51e8a22bdd41",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/PostContent.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/PostContent.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "linha": 64,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/[slug]/PostContent.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        }
+      ],
+      "timestamp": 1780134260716
+    },
+    "src/app/blog/[slug]/index.ts": {
+      "count": 0,
+      "hash": "43c784ba3d49ccf9",
+      "ocorrencias": [],
+      "timestamp": 1780134260687
+    },
+    "src/app/blog/[slug]/page.tsx": {
+      "count": 2,
+      "hash": "d5044af990cf7f2c",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/[slug]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/[slug]/page.tsx",
+          "tipo": "evidencia_contextual"
+        }
+      ],
+      "timestamp": 1780134260699
+    },
+    "src/app/blog/category/[category]/index.ts": {
+      "count": 0,
+      "hash": "26a77bb7318600be",
+      "ocorrencias": [],
+      "timestamp": 1780134260718
+    },
+    "src/app/blog/category/[category]/page.tsx": {
+      "count": 5,
+      "hash": "caf7515afba839de",
+      "ocorrencias": [
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/category/[category]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "detalhes": {
+            "confianca": 0.85,
+            "tecnologia": "next-fullstack",
+            "tipoEvidencia": "codigo"
+          },
+          "linha": 0,
+          "mensagem": "[CODE] Padrão de código específico detectado em src/app/blog/category/[category]/page.tsx",
+          "nivel": "info",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "evidencia_contextual"
+        },
+        {
+          "linha": 53,
+          "mensagem": "[ML 95%] Aninhamento excessivo (8 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 37,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 37,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/category/[category]/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260725
+    },
+    "src/app/blog/index.ts": {
+      "count": 0,
+      "hash": "8c721629e531631f",
+      "ocorrencias": [],
+      "timestamp": 1780134260725
+    },
+    "src/app/blog/layout.tsx": {
+      "count": 2,
+      "hash": "ae626cbb7a779241",
+      "ocorrencias": [
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/layout.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/layout.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260729
+    },
+    "src/app/blog/page.tsx": {
+      "count": 3,
+      "hash": "f243dbf643475238",
+      "ocorrencias": [
+        {
+          "linha": 30,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/page.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260735
+    },
+    "src/app/blog/tag/[tag]/index.ts": {
+      "count": 0,
+      "hash": "26a77bb7318600be",
+      "ocorrencias": [],
+      "timestamp": 1780134260735
+    },
+    "src/app/blog/tag/[tag]/page.tsx": {
+      "count": 3,
+      "hash": "b06140a39f6d8e9f",
+      "ocorrencias": [
+        {
+          "linha": 47,
+          "mensagem": "[ML 95%] Aninhamento excessivo (8 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 31,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 31,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/blog/tag/[tag]/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260740
+    },
+    "src/app/components/DisqusComments.tsx": {
+      "count": 2,
+      "hash": "2279a00b2b5ad6aa",
+      "ocorrencias": [
+        {
+          "linha": 24,
+          "mensagem": "Tipo literal complexo (5 propriedades) - considere extrair",
+          "nivel": "info",
+          "relPath": "src/app/components/DisqusComments.tsx",
+          "tipo": "tipo-literal-inline-complexo"
+        },
+        {
+          "linha": 24,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/DisqusComments.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        }
+      ],
+      "timestamp": 1780134260747
+    },
+    "src/app/components/Footer.tsx": {
+      "count": 0,
+      "hash": "9919b19366913305",
+      "ocorrencias": [],
+      "timestamp": 1780134260754
+    },
+    "src/app/components/FooterMobileExtras.tsx": {
+      "count": 0,
+      "hash": "d47fede09dbd73ba",
+      "ocorrencias": [],
+      "timestamp": 1780134260760
+    },
+    "src/app/components/Header.tsx": {
+      "count": 0,
+      "hash": "6044645173139e6c",
+      "ocorrencias": [],
+      "timestamp": 1780134260766
+    },
+    "src/app/components/Logo.tsx": {
+      "count": 3,
+      "hash": "fc2b0b7d6f13352a",
+      "ocorrencias": [
+        {
+          "linha": 29,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/Logo.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/Logo.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 17,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/Logo.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260772
+    },
+    "src/app/components/ScrollToTop.tsx": {
+      "count": 2,
+      "hash": "9a50b24e1f38fe36",
+      "ocorrencias": [
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ScrollToTop.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 11,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ScrollToTop.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260776
+    },
+    "src/app/components/VideoEmbed.tsx": {
+      "count": 0,
+      "hash": "ba9d089a20aaea17",
+      "ocorrencias": [],
+      "timestamp": 1780134260831
+    },
+    "src/app/components/index.ts": {
+      "count": 0,
+      "hash": "2ced942c6c4f75b3",
+      "ocorrencias": [],
+      "timestamp": 1780134260768
+    },
+    "src/app/components/ui/Badge.tsx": {
+      "count": 0,
+      "hash": "5428a80ae887bd74",
+      "ocorrencias": [],
+      "timestamp": 1780134260779
+    },
+    "src/app/components/ui/Button.tsx": {
+      "count": 0,
+      "hash": "4a984bd9bc79f9ee",
+      "ocorrencias": [],
+      "timestamp": 1780134260783
+    },
+    "src/app/components/ui/Card.tsx": {
+      "count": 0,
+      "hash": "cfb347c5a3f83ece",
+      "ocorrencias": [],
+      "timestamp": 1780134260788
+    },
+    "src/app/components/ui/CodeModal.tsx": {
+      "count": 2,
+      "hash": "1b92e68a70b50918",
+      "ocorrencias": [
+        {
+          "linha": 27,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/CodeModal.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 27,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/CodeModal.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260791
+    },
+    "src/app/components/ui/Container.tsx": {
+      "count": 0,
+      "hash": "759ab2c3c370ad55",
+      "ocorrencias": [],
+      "timestamp": 1780134260793
+    },
+    "src/app/components/ui/FeatureItem.tsx": {
+      "count": 0,
+      "hash": "3e5317fc3bd0295d",
+      "ocorrencias": [],
+      "timestamp": 1780134260796
+    },
+    "src/app/components/ui/Input.tsx": {
+      "count": 0,
+      "hash": "6b1ae10bf68cae8f",
+      "ocorrencias": [],
+      "timestamp": 1780134260800
+    },
+    "src/app/components/ui/Panel.tsx": {
+      "count": 0,
+      "hash": "97dbba2e74bd89c2",
+      "ocorrencias": [],
+      "timestamp": 1780134260802
+    },
+    "src/app/components/ui/PostCard.tsx": {
+      "count": 1,
+      "hash": "8091dad7684c0661",
+      "ocorrencias": [
+        {
+          "linha": 52,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/components/ui/PostCard.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        }
+      ],
+      "timestamp": 1780134260806
+    },
+    "src/app/components/ui/SVGCard.tsx": {
+      "count": 0,
+      "hash": "39b6d1f9a9cf0894",
+      "ocorrencias": [],
+      "timestamp": 1780134260810
+    },
+    "src/app/components/ui/SVGGalleryInstructions.tsx": {
+      "count": 2,
+      "hash": "61e24c6a14c47f85",
+      "ocorrencias": [
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/SVGGalleryInstructions.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/SVGGalleryInstructions.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260820
+    },
+    "src/app/components/ui/SVGGalleryNotification.tsx": {
+      "count": 0,
+      "hash": "a7298dc3e133287e",
+      "ocorrencias": [],
+      "timestamp": 1780134260822
+    },
+    "src/app/components/ui/Tag.tsx": {
+      "count": 0,
+      "hash": "2641722ced03dff0",
+      "ocorrencias": [],
+      "timestamp": 1780134260825
+    },
+    "src/app/components/ui/buttonStyles.ts": {
+      "count": 2,
+      "hash": "6c72e700ac494827",
+      "ocorrencias": [
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/buttonStyles.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/components/ui/buttonStyles.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260785
+    },
+    "src/app/components/ui/index.ts": {
+      "count": 0,
+      "hash": "41e7f871569b4ca1",
+      "ocorrencias": [],
+      "timestamp": 1780134260797
+    },
+    "src/app/error.tsx": {
+      "count": 0,
+      "hash": "2b5e538aa96681ea",
+      "ocorrencias": [],
+      "timestamp": 1780134260836
+    },
+    "src/app/galeria/_components/CategoryNav.tsx": {
+      "count": 3,
+      "hash": "efa5cac8cd822995",
+      "ocorrencias": [
+        {
+          "linha": 46,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/CategoryNav.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260841
+    },
+    "src/app/galeria/_components/GalleryGrid.tsx": {
+      "count": 3,
+      "hash": "13ae72a87f10bbf3",
+      "ocorrencias": [
+        {
+          "linha": 103,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 13,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/GalleryGrid.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260852
+    },
+    "src/app/galeria/_components/SearchInput.tsx": {
+      "count": 2,
+      "hash": "89bac3e32a82e968",
+      "ocorrencias": [
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/SearchInput.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/_components/SearchInput.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260856
+    },
+    "src/app/galeria/_components/index.ts": {
+      "count": 0,
+      "hash": "bbeb724268829991",
+      "ocorrencias": [],
+      "timestamp": 1780134260853
+    },
+    "src/app/galeria/decorativos/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260857
+    },
+    "src/app/galeria/decorativos/page.tsx": {
+      "count": 0,
+      "hash": "60f396a50a51e57a",
+      "ocorrencias": [],
+      "timestamp": 1780134260860
+    },
+    "src/app/galeria/ferramentas/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260861
+    },
+    "src/app/galeria/ferramentas/page.tsx": {
+      "count": 0,
+      "hash": "7b6ea9e340186079",
+      "ocorrencias": [],
+      "timestamp": 1780134260863
+    },
+    "src/app/galeria/index.ts": {
+      "count": 0,
+      "hash": "8ab01140835c73a5",
+      "ocorrencias": [],
+      "timestamp": 1780134260864
+    },
+    "src/app/galeria/info/_components/GitHubStatsPreview.tsx": {
+      "count": 14,
+      "hash": "26271088dd9fa5f2",
+      "ocorrencias": [
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 44,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 55,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 56,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 74,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 87,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 100,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 152,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 118,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 175,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 175,
+          "mensagem": "Possível conflito de variantes para shadow-size (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 120,
+          "mensagem": "[ML 95%] Aninhamento excessivo (10 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+25 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 40,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+25 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubStatsPreview.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260884
+    },
+    "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx": {
+      "count": 14,
+      "hash": "e9cb7df938578524",
+      "ocorrencias": [
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 43,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 54,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 57,
+          "mensagem": "Possível conflito de variantes para text-size (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 75,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 88,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 101,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, focus). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 153,
+          "mensagem": "Possível conflito de variantes para padding:p (variantes: base, md). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 119,
+          "mensagem": "Possível conflito de variantes para bg-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 176,
+          "mensagem": "Possível conflito de variantes para shadow-color (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 176,
+          "mensagem": "Possível conflito de variantes para shadow-size (variantes: base, hover). Verifique ordem/escopo.",
+          "nivel": "sugestao",
+          "origem": "analista-tailwind",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "tailwindcss/regra"
+        },
+        {
+          "linha": 121,
+          "mensagem": "[ML 95%] Aninhamento excessivo (10 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 39,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+25 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 39,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+25 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/info/_components/GitHubTopLangsPreview.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260903
+    },
+    "src/app/galeria/info/_components/index.ts": {
+      "count": 0,
+      "hash": "d971683365674da0",
+      "ocorrencias": [],
+      "timestamp": 1780134260905
+    },
+    "src/app/galeria/info/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260906
+    },
+    "src/app/galeria/info/page.tsx": {
+      "count": 0,
+      "hash": "8f9e2b8cbccb1d4c",
+      "ocorrencias": [],
+      "timestamp": 1780134260910
+    },
+    "src/app/galeria/langs/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260911
+    },
+    "src/app/galeria/langs/page.tsx": {
+      "count": 0,
+      "hash": "b8ccabd0657d697",
+      "ocorrencias": [],
+      "timestamp": 1780134260914
+    },
+    "src/app/galeria/layout.tsx": {
+      "count": 2,
+      "hash": "1ed425f443c49dc",
+      "ocorrencias": [
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/layout.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/layout.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260918
+    },
+    "src/app/galeria/page.tsx": {
+      "count": 0,
+      "hash": "4e368655bbc1172a",
+      "ocorrencias": [],
+      "timestamp": 1780134260923
+    },
+    "src/app/galeria/skills/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260924
+    },
+    "src/app/galeria/skills/page.tsx": {
+      "count": 0,
+      "hash": "c685521c2ef70e3a",
+      "ocorrencias": [],
+      "timestamp": 1780134260927
+    },
+    "src/app/galeria/social/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260928
+    },
+    "src/app/galeria/social/page.tsx": {
+      "count": 0,
+      "hash": "6398a9655e1ae67d",
+      "ocorrencias": [],
+      "timestamp": 1780134260932
+    },
+    "src/app/galeria/tecnologias/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260933
+    },
+    "src/app/galeria/tecnologias/page.tsx": {
+      "count": 0,
+      "hash": "4afbd330fbf8ecd4",
+      "ocorrencias": [],
+      "timestamp": 1780134260936
+    },
+    "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx": {
+      "count": 3,
+      "hash": "215b5ba8678930a",
+      "ocorrencias": [
+        {
+          "linha": 251,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 53,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 53,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/galeria/visitors/_components/VisitorsBadgeGrid.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260954
+    },
+    "src/app/galeria/visitors/_components/index.ts": {
+      "count": 0,
+      "hash": "95c49d26890df51c",
+      "ocorrencias": [],
+      "timestamp": 1780134260937
+    },
+    "src/app/galeria/visitors/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260955
+    },
+    "src/app/galeria/visitors/page.tsx": {
+      "count": 0,
+      "hash": "557421d94485b0c4",
+      "ocorrencias": [],
+      "timestamp": 1780134260958
+    },
+    "src/app/index.ts": {
+      "count": 0,
+      "hash": "c4a71362bacf2f8f",
+      "ocorrencias": [],
+      "timestamp": 1780134260959
+    },
+    "src/app/layout.tsx": {
+      "count": 0,
+      "hash": "7bfda740a31eb639",
+      "ocorrencias": [],
+      "timestamp": 1780134260965
+    },
+    "src/app/loading.tsx": {
+      "count": 0,
+      "hash": "f7a3d05dd229deb4",
+      "ocorrencias": [],
+      "timestamp": 1780134260968
+    },
+    "src/app/manifest.ts": {
+      "count": 0,
+      "hash": "81a425eb0b60cc3a",
+      "ocorrencias": [],
+      "timestamp": 1780134260971
+    },
+    "src/app/not-found.tsx": {
+      "count": 2,
+      "hash": "781f0f0105ea0485",
+      "ocorrencias": [
+        {
+          "linha": 3,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/not-found.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 3,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/not-found.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260974
+    },
+    "src/app/page.tsx": {
+      "count": 0,
+      "hash": "3fd9686e2c91bad2",
+      "ocorrencias": [],
+      "timestamp": 1780134260978
+    },
+    "src/app/politica-de-privacidade/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134260978
+    },
+    "src/app/politica-de-privacidade/page.tsx": {
+      "count": 2,
+      "hash": "393d4d310d3ee099",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+13 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/politica-de-privacidade/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+13 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/politica-de-privacidade/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134260995
+    },
+    "src/app/robots.ts": {
+      "count": 0,
+      "hash": "46276d74ef9bba71",
+      "ocorrencias": [],
+      "timestamp": 1780134260997
+    },
+    "src/app/sitemap.ts": {
+      "count": 0,
+      "hash": "52d3ed3b09bd50db",
+      "ocorrencias": [],
+      "timestamp": 1780134260999
+    },
+    "src/app/style/components.css": {
+      "count": 0,
+      "hash": "58f9f5a3117c767a",
+      "ocorrencias": [],
+      "timestamp": 1780134261039
+    },
+    "src/app/style/globals.css": {
+      "count": 0,
+      "hash": "a71dc657a8136818",
+      "ocorrencias": [],
+      "timestamp": 1780134261055
+    },
+    "src/app/style/responsive.css": {
+      "count": 0,
+      "hash": "b590f4c3e730395",
+      "ocorrencias": [],
+      "timestamp": 1780134261066
+    },
+    "src/app/termos-de-uso/index.ts": {
+      "count": 0,
+      "hash": "923ab67eec123404",
+      "ocorrencias": [],
+      "timestamp": 1780134261067
+    },
+    "src/app/termos-de-uso/page.tsx": {
+      "count": 2,
+      "hash": "ce538d4d36831e96",
+      "ocorrencias": [
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/termos-de-uso/page.tsx",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 14,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+8 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/app/termos-de-uso/page.tsx",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261079
+    },
+    "src/lib/cloneBadgeBase.ts": {
+      "count": 0,
+      "hash": "e65d2d730f15e90a",
+      "ocorrencias": [],
+      "timestamp": 1780134261081
+    },
+    "src/lib/cloneBadgeSvg.ts": {
+      "count": 2,
+      "hash": "da076fab68aa47af",
+      "ocorrencias": [
+        {
+          "linha": 29,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 29,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/cloneBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261084
+    },
+    "src/lib/clones.ts": {
+      "count": 2,
+      "hash": "ce64a82ea601465f",
+      "ocorrencias": [
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/clones.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 1,
+          "mensagem": "Problemas de documentação (media): missing-jsdoc",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/clones.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261088
+    },
+    "src/lib/gallery/decorativos.ts": {
+      "count": 0,
+      "hash": "cbe265b34e6be48",
+      "ocorrencias": [],
+      "timestamp": 1780134261093
+    },
+    "src/lib/gallery/index.ts": {
+      "count": 0,
+      "hash": "2c1cb81095814756",
+      "ocorrencias": [],
+      "timestamp": 1780134261095
+    },
+    "src/lib/gallery/info.ts": {
+      "count": 2,
+      "hash": "3a7a4676e7e7c7b",
+      "ocorrencias": [
+        {
+          "linha": 25,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/info.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 25,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+3 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/info.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261099
+    },
+    "src/lib/gallery/skills.ts": {
+      "count": 2,
+      "hash": "285407261636579f",
+      "ocorrencias": [
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/skills.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 9,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/gallery/skills.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261124
+    },
+    "src/lib/gallery/social.ts": {
+      "count": 0,
+      "hash": "5147f6037a2f9db7",
+      "ocorrencias": [],
+      "timestamp": 1780134261131
+    },
+    "src/lib/gallery/types.ts": {
+      "count": 0,
+      "hash": "da18db2d4004bb18",
+      "ocorrencias": [],
+      "timestamp": 1780134261134
+    },
+    "src/lib/getBaseUrl.ts": {
+      "count": 2,
+      "hash": "468aba5942490f84",
+      "ocorrencias": [
+        {
+          "linha": 26,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/getBaseUrl.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 26,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/getBaseUrl.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261137
+    },
+    "src/lib/github-langs-svg.ts": {
+      "count": 2,
+      "hash": "4abeec7ba6ffa82d",
+      "ocorrencias": [
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+26 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-langs-svg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+26 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-langs-svg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261144
+    },
+    "src/lib/github-stats-svg.ts": {
+      "count": 3,
+      "hash": "58a49fcfcc0d2055",
+      "ocorrencias": [
+        {
+          "linha": 187,
+          "mensagem": "[ML 60%] Número mágico: 60 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "sugestao": "Criar constante com nome descritivo para 60",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+34 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 15,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+34 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats-svg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261156
+    },
+    "src/lib/github-stats.ts": {
+      "count": 4,
+      "hash": "4589a93649fd5607",
+      "ocorrencias": [
+        {
+          "linha": 106,
+          "mensagem": "[ML 95%] Aninhamento excessivo (9 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats.ts",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 187,
+          "mensagem": "[ML 60%] Número mágico: 60 - considerar extrair para constante nomeada",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "src/lib/github-stats.ts",
+          "sugestao": "Criar constante com nome descritivo para 60",
+          "tipo": "ml-magic-numbers"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 16,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/github-stats.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261173
+    },
+    "src/lib/index.ts": {
+      "count": 0,
+      "hash": "29c637a8c4488465",
+      "ocorrencias": [],
+      "timestamp": 1780134261175
+    },
+    "src/lib/posts.ts": {
+      "count": 2,
+      "hash": "56ba405321504f4e",
+      "ocorrencias": [
+        {
+          "linha": 140,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/posts.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 140,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/posts.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261181
+    },
+    "src/lib/statusBadgeSvg.ts": {
+      "count": 2,
+      "hash": "43844bf3f5d3472b",
+      "ocorrencias": [
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/statusBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 10,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+18 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/statusBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261187
+    },
+    "src/lib/svgGalleryData.ts": {
+      "count": 0,
+      "hash": "4338f6f4af7ac8fa",
+      "ocorrencias": [],
+      "timestamp": 1780134261192
+    },
+    "src/lib/visitorBadgeBase.ts": {
+      "count": 0,
+      "hash": "b4fb45a87e46508e",
+      "ocorrencias": [],
+      "timestamp": 1780134261193
+    },
+    "src/lib/visitorBadgeSvg.ts": {
+      "count": 2,
+      "hash": "1568f9c7bf04f1ed",
+      "ocorrencias": [
+        {
+          "linha": 24,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 24,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "src/lib/visitorBadgeSvg.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261196
+    },
+    "src/lib/visitors.ts": {
+      "count": 0,
+      "hash": "3dce6656629cd604",
+      "ocorrencias": [],
+      "timestamp": 1780134261199
+    },
+    "src/types/blog.ts": {
+      "count": 0,
+      "hash": "41dd8c4a0be767c6",
+      "ocorrencias": [],
+      "timestamp": 1780134261202
+    },
+    "src/types/clone.ts": {
+      "count": 0,
+      "hash": "64964c959fa551c5",
+      "ocorrencias": [],
+      "timestamp": 1780134261203
+    },
+    "src/types/disqus.ts": {
+      "count": 0,
+      "hash": "de1235a180aef72f",
+      "ocorrencias": [],
+      "timestamp": 1780134261205
+    },
+    "src/types/galeria.ts": {
+      "count": 0,
+      "hash": "8631ed7ee3927e52",
+      "ocorrencias": [],
+      "timestamp": 1780134261207
+    },
+    "src/types/github.ts": {
+      "count": 0,
+      "hash": "ebea73fa1ff6a",
+      "ocorrencias": [],
+      "timestamp": 1780134261209
+    },
+    "src/types/index.ts": {
+      "count": 0,
+      "hash": "990e58197feafb54",
+      "ocorrencias": [],
+      "timestamp": 1780134261211
+    },
+    "src/types/statusBadge.ts": {
+      "count": 0,
+      "hash": "c13e1eb1094305ab",
+      "ocorrencias": [],
+      "timestamp": 1780134261211
+    },
+    "src/types/svg.ts": {
+      "count": 0,
+      "hash": "f112fb223fa91ea3",
+      "ocorrencias": [],
+      "timestamp": 1780134261212
+    },
+    "src/types/ui.ts": {
+      "count": 0,
+      "hash": "b9111894d4cf0211",
+      "ocorrencias": [],
+      "timestamp": 1780134261215
+    },
+    "src/types/visitor.ts": {
+      "count": 0,
+      "hash": "f2e69f3a7443310",
+      "ocorrencias": [],
+      "timestamp": 1780134261218
+    },
+    "svgo.config.js": {
+      "count": 3,
+      "hash": "811db761ea47730d",
+      "ocorrencias": [
+        {
+          "linha": 18,
+          "mensagem": "[ML 92%] Aninhamento excessivo (7 níveis) - alta probabilidade de bugs",
+          "nivel": "info",
+          "origem": "detector-bugs-ml",
+          "relPath": "svgo.config.js",
+          "sugestao": "Extrair lógica em funções menores para reduzir complexidade",
+          "tipo": "ml-deep-nesting"
+        },
+        {
+          "linha": 68,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "svgo.config.js",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 68,
+          "mensagem": "Problemas de documentação (baixa): magic-constants",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "svgo.config.js",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261220
+    },
+    "tailwind.config.ts": {
+      "count": 2,
+      "hash": "c1200169eaef658b",
+      "ocorrencias": [
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+36 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "tailwind.config.ts",
+          "tipo": "problema-documentacao"
+        },
+        {
+          "linha": 18,
+          "mensagem": "Problemas de documentação (baixa): magic-constants, magic-constants, magic-constants (+36 mais)",
+          "nivel": "info",
+          "origem": "prometheus",
+          "relPath": "tailwind.config.ts",
+          "tipo": "problema-documentacao"
+        }
+      ],
+      "timestamp": 1780134261225
+    },
+    "tsconfig.eslint.json": {
+      "count": 0,
+      "hash": "69213cd7cc9046d3",
+      "ocorrencias": [],
+      "timestamp": 1780134261226
+    },
+    "tsconfig.json": {
+      "count": 0,
+      "hash": "e3a4f9bb5e2639e5",
+      "ocorrencias": [],
+      "timestamp": 1780134261227
+    },
+    "vercel.json": {
+      "count": 0,
+      "hash": "173fd3fc37c8c1ae",
+      "ocorrencias": [],
+      "timestamp": 1780134261228
+    }
+  },
+  "versao": 1
+}
