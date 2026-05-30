@@ -17,7 +17,7 @@ const THEMES = [
   'neon',
   'sunset',
   'ocean',
-  'forest'
+  'forest',
 ] as const satisfies readonly GitHubCardTheme[];
 
 const THEME_BG: Record<string, [string, string]> = {
@@ -26,7 +26,7 @@ const THEME_BG: Record<string, [string, string]> = {
   neon: ['#0a0e27', '#00ff88'],
   sunset: ['#1a0b2e', '#ff6b35'],
   ocean: ['#0a1628', '#00d4ff'],
-  forest: ['#0d2818', '#52b788']
+  forest: ['#0d2818', '#52b788'],
 };
 
 function parseTheme(value: string | null | undefined): GitHubCardTheme {
@@ -39,9 +39,12 @@ function parseTheme(value: string | null | undefined): GitHubCardTheme {
 
 function parseCommonParams(searchParams: URLSearchParams): GitHubCommonParams {
   const theme = parseTheme(searchParams.get('theme'));
-  const borderRadius = searchParams.get('border_radius') ?? searchParams.get('borderRadius');
-  const showBorder = searchParams.get('show_border') ?? searchParams.get('showBorder');
-  const borderWidth = searchParams.get('border_width') ?? searchParams.get('borderWidth');
+  const borderRadius =
+    searchParams.get('border_radius') ?? searchParams.get('borderRadius');
+  const showBorder =
+    searchParams.get('show_border') ?? searchParams.get('showBorder');
+  const borderWidth =
+    searchParams.get('border_width') ?? searchParams.get('borderWidth');
   const widthParam = searchParams.get('width') ?? searchParams.get('w');
   const heightParam = searchParams.get('height') ?? searchParams.get('h');
 
@@ -50,13 +53,17 @@ function parseCommonParams(searchParams: URLSearchParams): GitHubCommonParams {
     ...(borderRadius !== null && { borderRadius: parseInt(borderRadius) }),
     ...(showBorder !== null && { showBorder: showBorder === 'true' }),
     ...(borderWidth !== null && { borderWidth: parseInt(borderWidth) }),
-    ...(widthParam !== null && !Number.isNaN(Number(widthParam)) && { width: Number(widthParam) }),
+    ...(widthParam !== null &&
+      !Number.isNaN(Number(widthParam)) && { width: Number(widthParam) }),
     ...(heightParam !== null &&
-      !Number.isNaN(Number(heightParam)) && { height: Number(heightParam) })
+      !Number.isNaN(Number(heightParam)) && { height: Number(heightParam) }),
   };
 }
 
-function getDisplayName(searchParams: URLSearchParams, defaultUsername: string): string {
+function getDisplayName(
+  searchParams: URLSearchParams,
+  defaultUsername: string,
+): string {
   const name = searchParams.get('name');
   if (name !== null && name.trim() !== '') {
     return name.trim();
@@ -71,14 +78,18 @@ function renderErrorSvg(theme: string, title: string): string {
 
 export async function GET(
   request: Request,
-  { params }: { params: Promise<{ username: string }> }
+  { params }: { params: Promise<{ username: string }> },
 ): Promise<Response> {
   const { username } = await params;
   const { searchParams } = new URL(request.url);
-  const token = searchParams.get('token') ?? searchParams.get('github_token') ?? undefined;
+  const token =
+    searchParams.get('token') ?? searchParams.get('github_token') ?? undefined;
 
   try {
-    const languages = await fetchGitHubTopLanguages(username, token ?? undefined);
+    const languages = await fetchGitHubTopLanguages(
+      username,
+      token ?? undefined,
+    );
     const config = parseCommonParams(searchParams);
     const displayName = getDisplayName(searchParams, username);
 
@@ -87,8 +98,8 @@ export async function GET(
     return new NextResponse(svg, {
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': `public, max-age=${CACHE_MAX_AGE_OK}, s-maxage=${CACHE_S_MAXAGE_OK}`
-      }
+        'Cache-Control': `public, max-age=${CACHE_MAX_AGE_OK}, s-maxage=${CACHE_S_MAXAGE_OK}`,
+      },
     });
   } catch (error) {
     console.error('Erro ao gerar SVG de linguagens:', error);
@@ -98,8 +109,8 @@ export async function GET(
       status: 200,
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
-        'Cache-Control': `public, max-age=${CACHE_MAX_AGE_ERR}, s-maxage=${CACHE_S_MAXAGE_ERR}`
-      }
+        'Cache-Control': `public, max-age=${CACHE_MAX_AGE_ERR}, s-maxage=${CACHE_S_MAXAGE_ERR}`,
+      },
     });
   }
 }

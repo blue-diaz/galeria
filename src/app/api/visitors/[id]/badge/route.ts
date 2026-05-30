@@ -3,7 +3,7 @@ import {
   getVisitorsRedis,
   isVisitorsRedisConfigured,
   normalizeVisitorId,
-  visitorKey
+  visitorKey,
 } from '@/lib/visitors';
 import { renderVisitorBadgeSvg } from '@/lib/visitorBadgeSvg';
 
@@ -14,13 +14,18 @@ function normalizeHexColor(value: string | null): string | undefined {
 
   const withHash = trimmed.startsWith('#') ? trimmed : `#${trimmed}`;
   // Aceita apenas hex curto (3) ou completo (6) para evitar valores maliciosos.
-  if (/^#[0-9a-fA-F]{3}$/.test(withHash) || /^#[0-9a-fA-F]{6}$/.test(withHash)) {
+  if (
+    /^#[0-9a-fA-F]{3}$/.test(withHash) ||
+    /^#[0-9a-fA-F]{6}$/.test(withHash)
+  ) {
     return withHash;
   }
   return undefined;
 }
 
-function normalizeShape(value: string | null): 'rounded' | 'square' | 'pill' | undefined {
+function normalizeShape(
+  value: string | null,
+): 'rounded' | 'square' | 'pill' | undefined {
   if (value === null) return undefined;
   switch (value.trim().toLowerCase()) {
     case 'rounded':
@@ -39,7 +44,9 @@ function normalizeLabel(value: string | null): string | undefined {
   const trimmed = value.trim();
   if (trimmed === '') return undefined;
   // Allow only a safe subset of characters and limit length to avoid abuse.
-  const cleaned = trimmed.replace(/[^0-9A-Za-zÀ-ÿ .,_\-+:/]/g, '').slice(0, 100);
+  const cleaned = trimmed
+    .replace(/[^0-9A-Za-zÀ-ÿ .,_\-+:/]/g, '')
+    .slice(0, 100);
   return cleaned === '' ? undefined : cleaned;
 }
 
@@ -47,7 +54,7 @@ export const runtime = 'edge';
 
 export async function GET(
   request: Request,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ): Promise<NextResponse> {
   const { searchParams } = new URL(request.url);
   const label = normalizeLabel(searchParams.get('label')) ?? 'visitors';
@@ -60,7 +67,7 @@ export async function GET(
     ...(labelBg !== undefined ? { labelBg } : {}),
     ...(valueBg !== undefined ? { valueBg } : {}),
     ...(textColor !== undefined ? { textColor } : {}),
-    ...(shape !== undefined ? { shape } : {})
+    ...(shape !== undefined ? { shape } : {}),
   };
 
   try {
@@ -69,12 +76,13 @@ export async function GET(
     if (id === null) {
       return new NextResponse('Invalid id', {
         status: 400,
-        headers: { 'Cache-Control': 'no-store' }
+        headers: { 'Cache-Control': 'no-store' },
       });
     }
 
     const incrementParam = searchParams.get('increment');
-    const shouldIncrement = incrementParam === null ? true : incrementParam !== '0';
+    const shouldIncrement =
+      incrementParam === null ? true : incrementParam !== '0';
 
     if (!isVisitorsRedisConfigured()) {
       const svg = renderVisitorBadgeSvg(label, 'n/a', styleOptions);
@@ -82,8 +90,8 @@ export async function GET(
         headers: {
           'Content-Type': 'image/svg+xml; charset=utf-8',
           'Cache-Control': 'no-store',
-          'X-Visitors-Configured': '0'
-        }
+          'X-Visitors-Configured': '0',
+        },
       });
     }
 
@@ -109,8 +117,8 @@ export async function GET(
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
         'Cache-Control': 'no-store',
-        'X-Visitors-Configured': '1'
-      }
+        'X-Visitors-Configured': '1',
+      },
     });
   } catch (error) {
     console.error('Visitors badge error:', error);
@@ -119,8 +127,8 @@ export async function GET(
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
         'Cache-Control': 'no-store',
-        'X-Visitors-Configured': '0'
-      }
+        'X-Visitors-Configured': '0',
+      },
     });
   }
 }

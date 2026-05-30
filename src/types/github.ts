@@ -2,7 +2,13 @@
  * Tipos relacionados às estatísticas do GitHub
  */
 
-export type GitHubCardTheme = 'dark' | 'light' | 'neon' | 'sunset' | 'ocean' | 'forest';
+export type GitHubCardTheme =
+  | 'dark'
+  | 'light'
+  | 'neon'
+  | 'sunset'
+  | 'ocean'
+  | 'forest';
 
 export interface GitHubStats {
   totalCommits: number;

@@ -1,8 +1,8 @@
-import Link from 'next/link';
-import CategoryNav from '../_components/CategoryNav';
-import GalleryGrid from '../_components/GalleryGrid';
-import SVGGalleryInstructions from '../../components/ui/SVGGalleryInstructions';
-import { getDecorativosItems, categoryLabels } from '@/lib/svgGalleryData';
+import Link from "next/link";
+import CategoryNav from "../_components/CategoryNav";
+import GalleryGrid from "../_components/GalleryGrid";
+import SVGGalleryInstructions from "../../components/ui/SVGGalleryInstructions";
+import { getDecorativosItems, categoryLabels } from "@/lib/svgGalleryData";
 
 export default function DecorativosPage(): React.ReactElement {
   const items = getDecorativosItems();
@@ -31,7 +31,12 @@ export default function DecorativosPage(): React.ReactElement {
 
       <CategoryNav />
 
-      <GalleryGrid items={items} title={title} icon={icon} description={description} />
+      <GalleryGrid
+        items={items}
+        title={title}
+        icon={icon}
+        description={description}
+      />
 
       <SVGGalleryInstructions />
     </>

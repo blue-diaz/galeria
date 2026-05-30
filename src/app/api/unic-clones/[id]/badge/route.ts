@@ -3,7 +3,7 @@ import {
   getClonesRedis,
   isClonesRedisConfigured,
   normalizeCloneId,
-  unicCloneKey
+  unicCloneKey,
 } from '@/lib/clones';
 import { renderCloneBadgeSvg } from '@/lib/cloneBadgeSvg';
 
@@ -13,13 +13,18 @@ function normalizeHexColor(value: string | null): string | undefined {
   if (trimmed === '') return undefined;
 
   const withHash = trimmed.startsWith('#') ? trimmed : `#${trimmed}`;
-  if (/^#[0-9a-fA-F]{3}$/.test(withHash) || /^#[0-9a-fA-F]{6}$/.test(withHash)) {
+  if (
+    /^#[0-9a-fA-F]{3}$/.test(withHash) ||
+    /^#[0-9a-fA-F]{6}$/.test(withHash)
+  ) {
     return withHash;
   }
   return undefined;
 }
 
-function normalizeShape(value: string | null): 'rounded' | 'square' | 'pill' | undefined {
+function normalizeShape(
+  value: string | null,
+): 'rounded' | 'square' | 'pill' | undefined {
   if (value === null) return undefined;
   switch (value.trim().toLowerCase()) {
     case 'rounded':
@@ -37,7 +42,9 @@ function normalizeLabel(value: string | null): string | undefined {
   if (value === null) return undefined;
   const trimmed = value.trim();
   if (trimmed === '') return undefined;
-  const cleaned = trimmed.replace(/[^0-9A-Za-zÀ-ÿ .,_\-+:/]/g, '').slice(0, 100);
+  const cleaned = trimmed
+    .replace(/[^0-9A-Za-zÀ-ÿ .,_\-+:/]/g, '')
+    .slice(0, 100);
   return cleaned === '' ? undefined : cleaned;
 }
 
@@ -45,7 +52,7 @@ export const runtime = 'edge';
 
 export async function GET(
   request: Request,
-  { params }: { params: Promise<{ id: string }> }
+  { params }: { params: Promise<{ id: string }> },
 ): Promise<NextResponse> {
   const { searchParams } = new URL(request.url);
   const label = normalizeLabel(searchParams.get('label')) ?? 'unic clones';
@@ -58,7 +65,7 @@ export async function GET(
     ...(labelBg !== undefined ? { labelBg } : {}),
     ...(valueBg !== undefined ? { valueBg } : {}),
     ...(textColor !== undefined ? { textColor } : {}),
-    ...(shape !== undefined ? { shape } : {})
+    ...(shape !== undefined ? { shape } : {}),
   };
 
   try {
@@ -67,12 +74,13 @@ export async function GET(
     if (id === null) {
       return new NextResponse('Invalid id', {
         status: 400,
-        headers: { 'Cache-Control': 'no-store' }
+        headers: { 'Cache-Control': 'no-store' },
       });
     }
 
     const incrementParam = searchParams.get('increment');
-    const shouldIncrement = incrementParam === null ? true : incrementParam !== '0';
+    const shouldIncrement =
+      incrementParam === null ? true : incrementParam !== '0';
 
     if (!isClonesRedisConfigured()) {
       const svg = renderCloneBadgeSvg(label, 'n/a', styleOptions);
@@ -80,8 +88,8 @@ export async function GET(
         headers: {
           'Content-Type': 'image/svg+xml; charset=utf-8',
           'Cache-Control': 'no-store',
-          'X-Clones-Configured': '0'
-        }
+          'X-Clones-Configured': '0',
+        },
       });
     }
 
@@ -107,8 +115,8 @@ export async function GET(
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
         'Cache-Control': 'no-store',
-        'X-Clones-Configured': '1'
-      }
+        'X-Clones-Configured': '1',
+      },
     });
   } catch (error) {
     console.error('Unic clones badge error:', error);
@@ -117,8 +125,8 @@ export async function GET(
       headers: {
         'Content-Type': 'image/svg+xml; charset=utf-8',
         'Cache-Control': 'no-store',
-        'X-Clones-Configured': '0'
-      }
+        'X-Clones-Configured': '0',
+      },
     });
   }
 }

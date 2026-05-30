@@ -1,10 +1,13 @@
 /**
  * Campo de busca reutilizável para a galeria.
  */
-import type { SearchInputProps } from '@/types/galeria';
-import React from 'react';
+import type { SearchInputProps } from "@/types/galeria";
+import React from "react";
 
-export default function SearchInput({ value, onChange }: SearchInputProps): React.ReactElement {
+export default function SearchInput({
+  value,
+  onChange,
+}: SearchInputProps): React.ReactElement {
   return (
     <div className="w-full">
       <input

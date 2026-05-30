@@ -24,4 +24,8 @@ export * from './SVGCard';
 export * from './SVGGalleryInstructions';
 export * from './SVGGalleryNotification';
 export * from './Tag';
-export { BUTTON_BASE_CLASSES, VARIANT_CLASSES, SIZE_CLASSES } from './buttonStyles';
+export {
+  BUTTON_BASE_CLASSES,
+  VARIANT_CLASSES,
+  SIZE_CLASSES,
+} from './buttonStyles';

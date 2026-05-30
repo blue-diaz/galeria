@@ -37,7 +37,7 @@ const LANGUAGE_COLORS: Record<string, string> = {
   Haskell: '#5e5086',
   Shell: '#89e051',
   HTML: '#e34c26',
-  CSS: '#563d7c'
+  CSS: '#563d7c',
 };
 
 function pickLanguageColor(name: string): string {
@@ -49,22 +49,22 @@ const FALLBACK_LANGUAGES: GitHubLanguageStat[] = [
     name: 'TypeScript',
     value: 320,
     percentage: 32,
-    color: pickLanguageColor('TypeScript')
+    color: pickLanguageColor('TypeScript'),
   },
   {
     name: 'JavaScript',
     value: 260,
     percentage: 26,
-    color: pickLanguageColor('JavaScript')
+    color: pickLanguageColor('JavaScript'),
   },
   {
     name: 'Python',
     value: 180,
     percentage: 18,
-    color: pickLanguageColor('Python')
+    color: pickLanguageColor('Python'),
   },
   { name: 'Go', value: 140, percentage: 14, color: pickLanguageColor('Go') },
-  { name: 'CSS', value: 100, percentage: 10, color: pickLanguageColor('CSS') }
+  { name: 'CSS', value: 100, percentage: 10, color: pickLanguageColor('CSS') },
 ];
 
 interface GitHubGraphQLError {
@@ -128,13 +128,13 @@ function computeTotalCommits(user: GitHubGraphQLUser): number {
 
 async function executeGraphQL(
   username: string,
-  token: string
+  token: string,
 ): Promise<GitHubGraphQLResponse | null> {
   const query = buildGraphQLQuery(username);
   const headers: Record<string, string> = {
     'Content-Type': 'application/json',
     Accept: 'application/vnd.github.v3+json',
-    Authorization: `Bearer ${token}`
+    Authorization: `Bearer ${token}`,
   };
 
   let response: Response;
@@ -144,7 +144,7 @@ async function executeGraphQL(
       method: 'POST',
       headers,
       body: JSON.stringify({ query }),
-      cache: 'no-store'
+      cache: 'no-store',
     });
   } catch (error) {
     console.error('❌ Erro ao chamar GitHub GraphQL API:', error);
@@ -165,7 +165,10 @@ async function executeGraphQL(
   }
 
   if (Array.isArray(data.errors) && data.errors.length > 0) {
-    console.error('❌ GraphQL errors:', data.errors[0]?.message ?? 'Unknown error');
+    console.error(
+      '❌ GraphQL errors:',
+      data.errors[0]?.message ?? 'Unknown error',
+    );
     return null;
   }
 
@@ -224,9 +227,10 @@ export async function fetchGitHubStats(username: string): Promise<GitHubStats> {
       totalCommits: Number.isFinite(totalCommits) ? totalCommits : 0,
       totalPullRequests: user.pullRequests?.totalCount ?? 0,
       totalContributions:
-        user.contributionsCollection?.contributionCalendar?.totalContributions ?? 0,
+        user.contributionsCollection?.contributionCalendar
+          ?.totalContributions ?? 0,
       followers: user.followers?.totalCount ?? 0,
-      publicRepos: user.repositories?.totalCount ?? 0
+      publicRepos: user.repositories?.totalCount ?? 0,
     };
 
     console.error(`✓ Stats retrieved via GraphQL:`, stats);
@@ -247,12 +251,15 @@ async function fetchGitHubStatsRest(username: string): Promise<GitHubStats> {
     console.error(`📡 Fetching GitHub stats via REST API for ${username}...`);
 
     // eslint-disable-next-line no-undef
-    const userResponse = await fetch(`https://api.github.com/users/${username}`, {
-      headers: {
-        Accept: 'application/vnd.github.v3+json'
+    const userResponse = await fetch(
+      `https://api.github.com/users/${username}`,
+      {
+        headers: {
+          Accept: 'application/vnd.github.v3+json',
+        },
+        cache: 'no-store',
       },
-      cache: 'no-store'
-    });
+    );
 
     if (!userResponse.ok) {
       throw new Error(`HTTP ${userResponse.status}`);
@@ -260,7 +267,7 @@ async function fetchGitHubStatsRest(username: string): Promise<GitHubStats> {
 
     const userData = await userResponse.json();
     console.error(
-      `✓ User data retrieved: ${username} has ${userData.public_repos} public repos and ${userData.followers} followers`
+      `✓ User data retrieved: ${username} has ${userData.public_repos} public repos and ${userData.followers} followers`,
     );
 
     // eslint-disable-next-line no-undef
@@ -268,10 +275,10 @@ async function fetchGitHubStatsRest(username: string): Promise<GitHubStats> {
       `https://api.github.com/users/${username}/repos?per_page=100&type=owner&sort=updated`,
       {
         headers: {
-          Accept: 'application/vnd.github.v3+json'
+          Accept: 'application/vnd.github.v3+json',
         },
-        cache: 'no-store'
-      }
+        cache: 'no-store',
+      },
     );
 
     if (!reposResponse.ok) {
@@ -293,27 +300,30 @@ async function fetchGitHubStatsRest(username: string): Promise<GitHubStats> {
       totalPullRequests: Math.max(Math.round(repos.length * 0.8), 0),
       totalContributions: Math.max(repos.length * 10, 0),
       followers: userData.followers ?? 0,
-      publicRepos: userData.public_repos ?? 0
+      publicRepos: userData.public_repos ?? 0,
     };
 
     console.error(`✓ Stats calculated:`, stats);
     return stats;
   } catch (error) {
-    console.error(`❌ Erro ao buscar stats do GitHub (REST API) para ${username}:`, error);
+    console.error(
+      `❌ Erro ao buscar stats do GitHub (REST API) para ${username}:`,
+      error,
+    );
     // Retorna valores zerados
     return {
       totalCommits: 0,
       totalPullRequests: 0,
       totalContributions: 0,
       followers: 0,
-      publicRepos: 0
+      publicRepos: 0,
     };
   }
 }
 
 export async function fetchGitHubTopLanguages(
   username: string,
-  token?: string
+  token?: string,
 ): Promise<GitHubLanguageStat[]> {
   try {
     console.error(`📡 Fetching top languages for ${username}...`);
@@ -322,14 +332,16 @@ export async function fetchGitHubTopLanguages(
     const authToken = (token ?? process.env['GITHUB_TOKEN'] ?? '').trim();
 
     const headers: Record<string, string> = {
-      Accept: 'application/vnd.github.v3+json'
+      Accept: 'application/vnd.github.v3+json',
     };
 
     if (authToken.length > 0) {
       headers['Authorization'] = `Bearer ${authToken}`;
       console.error('✓ Using GitHub token for authentication');
     } else {
-      console.error('⚠ No GitHub token available - using unauthenticated requests');
+      console.error(
+        '⚠ No GitHub token available - using unauthenticated requests',
+      );
     }
 
     // eslint-disable-next-line no-undef
@@ -337,8 +349,8 @@ export async function fetchGitHubTopLanguages(
       `https://api.github.com/users/${username}/repos?per_page=100&type=owner&sort=updated`,
       {
         headers,
-        cache: 'no-store'
-      }
+        cache: 'no-store',
+      },
     );
 
     if (!reposResponse.ok) {
@@ -353,9 +365,11 @@ export async function fetchGitHubTopLanguages(
     // Processa até 30 repositórios para reduzir chamadas à API
     const reposToProcess = (repos as Array<{ languages_url?: string }>).slice(
       0,
-      MAX_REPOS_TO_PROCESS
+      MAX_REPOS_TO_PROCESS,
     );
-    console.error(`📊 Processing ${reposToProcess.length} repositories for language analysis...`);
+    console.error(
+      `📊 Processing ${reposToProcess.length} repositories for language analysis...`,
+    );
 
     const results = await Promise.allSettled(
       reposToProcess.map(async (repo) => {
@@ -364,12 +378,14 @@ export async function fetchGitHubTopLanguages(
         // eslint-disable-next-line no-undef
         const langResponse = await fetch(repo.languages_url, {
           headers,
-          cache: 'no-store'
+          cache: 'no-store',
         });
 
         if (!langResponse.ok) return new Map();
 
-        const langData = (await langResponse.json().catch(() => ({}))) as Record<string, number>;
+        const langData = (await langResponse
+          .json()
+          .catch(() => ({}))) as Record<string, number>;
 
         const repoLanguages = new Map<string, number>();
         for (const [lang, bytes] of Object.entries(langData)) {
@@ -378,12 +394,15 @@ export async function fetchGitHubTopLanguages(
           repoLanguages.set(lang, safeBytes);
         }
         return repoLanguages;
-      })
+      }),
     );
 
     for (const result of results) {
       if (result.status === 'rejected') {
-        console.error('Erro ao buscar linguagens do repositório:', result.reason);
+        console.error(
+          'Erro ao buscar linguagens do repositório:',
+          result.reason,
+        );
         continue;
       }
       const repoLanguages = result.value;
@@ -392,7 +411,10 @@ export async function fetchGitHubTopLanguages(
       }
     }
 
-    const total = Array.from(languageTotals.values()).reduce((acc, value) => acc + value, 0);
+    const total = Array.from(languageTotals.values()).reduce(
+      (acc, value) => acc + value,
+      0,
+    );
 
     if (total === 0) {
       console.warn(`⚠ No languages found for ${username}, using fallback`);
@@ -408,17 +430,20 @@ export async function fetchGitHubTopLanguages(
           name,
           value,
           percentage,
-          color: pickLanguageColor(name)
+          color: pickLanguageColor(name),
         } satisfies GitHubLanguageStat;
       });
 
     console.error(
       `✓ Top languages retrieved:`,
-      top.map((l) => `${l.name} (${l.percentage}%)`).join(', ')
+      top.map((l) => `${l.name} (${l.percentage}%)`).join(', '),
     );
     return top;
   } catch (error) {
-    console.error(`❌ Erro ao buscar linguagens do GitHub para ${username}:`, error);
+    console.error(
+      `❌ Erro ao buscar linguagens do GitHub para ${username}:`,
+      error,
+    );
     return FALLBACK_LANGUAGES;
   }
 }

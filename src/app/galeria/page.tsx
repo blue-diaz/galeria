@@ -1,15 +1,15 @@
-'use client';
-import Link from 'next/link';
+"use client";
+import Link from "next/link";
 
-import { useState } from 'react';
-import CategoryNav from './_components/CategoryNav';
-import GalleryGrid from './_components/GalleryGrid';
-import SearchInput from './_components/SearchInput';
-import SVGGalleryInstructions from '../components/ui/SVGGalleryInstructions';
-import { svgItems } from '@/lib/svgGalleryData';
+import { useState } from "react";
+import CategoryNav from "./_components/CategoryNav";
+import GalleryGrid from "./_components/GalleryGrid";
+import SearchInput from "./_components/SearchInput";
+import SVGGalleryInstructions from "../components/ui/SVGGalleryInstructions";
+import { svgItems } from "@/lib/svgGalleryData";
 
 export default function GaleriaPage(): React.ReactElement {
-  const [search, setSearch] = useState('');
+  const [search, setSearch] = useState("");
   const filteredItems = svgItems.filter((item) => {
     const text = `${item.title} ${item.filename} ${item.alt}`.toLowerCase();
     return text.includes(search.toLowerCase());
