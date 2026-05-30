@@ -10,7 +10,7 @@ const LOGO_TEXT = 'Black Diaz';
 export default function Logo({
   size = 48,
   showText = true,
-  className = ''
+  className = '',
 }: LogoProps): React.ReactElement {
   return (
     <div
@@ -27,7 +27,7 @@ export default function Logo({
       {showText && (
         <span className="logoText text-xl font-normal tracking-wide text-[var(--text-primary)]">
           {LOGO_TEXT.split(' ').map((part, index) =>
-            index === 1 ? <strong key={part}>{part}</strong> : `${part} `
+            index === 1 ? <strong key={part}>{part}</strong> : `${part} `,
           )}
         </span>
       )}

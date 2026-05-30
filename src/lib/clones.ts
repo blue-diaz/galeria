@@ -5,7 +5,8 @@ let redisSingleton: Redis | null = null;
 function readEnv(...names: string[]): string | undefined {
   for (const name of names) {
     const value = process.env[name];
-    if (value !== undefined && value !== null && value.trim() !== '') return value;
+    if (value !== undefined && value !== null && value.trim() !== '')
+      return value;
   }
   return undefined;
 }
@@ -24,7 +25,7 @@ export function getClonesRedis(): Redis {
 
   if (url === undefined || token === undefined) {
     throw new Error(
-      'Upstash Redis env not configured. Expected UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN.'
+      'Upstash Redis env not configured. Expected UPSTASH_REDIS_REST_URL and UPSTASH_REDIS_REST_TOKEN.',
     );
   }
 

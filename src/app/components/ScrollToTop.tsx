@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
 /**
  * Componente client-side que mostra um botão para rolar de volta ao topo
  * quando o usuário ultrapassa um limiar definido.
  */
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState } from "react";
 
 // Limite de rolagem em pixels para mostrar o botão de voltar ao topo
 const SCROLL_THRESHOLD = 300;
@@ -23,17 +23,17 @@ export default function ScrollToTop(): React.ReactElement | null {
       }
     };
 
-    window.addEventListener('scroll', toggleVisibility);
+    window.addEventListener("scroll", toggleVisibility);
 
     return () => {
-      window.removeEventListener('scroll', toggleVisibility);
+      window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
   const scrollToTop = (): void => {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
 

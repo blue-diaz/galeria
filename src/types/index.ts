@@ -11,7 +11,7 @@ export type {
   BlogPostMetadata,
   ContentRendererProps,
   PostContentProps,
-  PostCardProps
+  PostCardProps,
 } from './blog.js';
 export type {
   CategoryType,
@@ -19,7 +19,7 @@ export type {
   SVGItem,
   CategoryInfo,
   GalleryCategory,
-  GalleryGridProps
+  GalleryGridProps,
 } from './galeria.js';
 export type {
   GitHubCardTheme,
@@ -31,10 +31,18 @@ export type {
   GitHubLangsCardConfig,
   GitHubCommonParams,
   GitHubStatsThemeConfig,
-  GitHubLangsThemeConfig
+  GitHubLangsThemeConfig,
 } from './github.js';
-export type { VisitorBadgeShape, VisitorBadgeStyleOptions, VisitorVariant } from './visitor.js';
-export type { CloneBadgeShape, CloneBadgeStyleOptions, CloneVariant } from './clone.js';
+export type {
+  VisitorBadgeShape,
+  VisitorBadgeStyleOptions,
+  VisitorVariant,
+} from './visitor.js';
+export type {
+  CloneBadgeShape,
+  CloneBadgeStyleOptions,
+  CloneVariant,
+} from './clone.js';
 export type {
   BadgeTone,
   LogoProps,
@@ -50,7 +58,7 @@ export type {
   Size,
   ButtonProps,
   InputProps,
-  SVGCardProps
+  SVGCardProps,
 } from './ui.js';
 export type { FitMode, CacheEntry } from './svg.js';
 export type { StatusBadgeTheme } from './statusBadge.js';
